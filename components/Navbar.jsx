@@ -25,9 +25,19 @@ const Navbar = () => {
     window.addEventListener('scroll', changeColor);
   }, []);
 
+//   <div class="dropdown">
+//   <button class="dropbtn">Dropdown
+//     <i class="fa fa-caret-down"></i>
+//   </button>
+//   <div class="dropdown-content">
+//     <a href="#">Link 1</a>
+//     <a href="#">Link 2</a>
+//     <a href="#">Link 3</a>
+//   </div>
+// </div>
   return (
     <div
-      style={{ backgroundColor: `${color}` }}
+      style={{ backgroundColor: `${color}`}}
       className='fixed left-0 top-0 w-full z-10 ease-in duration-300 font-sans font-thin tracking-wider'
     >
       <div className='w-screen  m-auto flex justify-between items-center p-2 text-white'>
@@ -40,8 +50,21 @@ const Navbar = () => {
             <Link href='/'>Home</Link>
           </li> */}
           <li className='p-4'>
-            <Link href='/#about'>About</Link>
-          </li>
+          <div className="dropdown inline-block relative">
+          <button className="inline-flex items-center">
+            <span className="mr-1">About</span>
+            <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+          </button>
+          <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 text-center">
+            <li className="bg-slate-300/50 hover:bg-slate-600/50 hover:text-[#f5f5f5] ml-[-25px] rounded-xl">
+              <Link className="p-2 block mb-1" href={'/#about'}>About Us</Link>
+            </li>
+            <li className="bg-slate-300/50 hover:bg-slate-600/50 hover:text-[#f5f5f5] ml-[-30px] rounded-xl">
+              <Link className="p-2 block" href={'/#about'}>Our Team</Link>
+            </li>
+          </ul>
+        </div>
+          </li> 
           <li className='p-4'>
             <Link href='/#projects'>Projects</Link>
           </li>

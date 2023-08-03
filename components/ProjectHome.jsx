@@ -31,7 +31,7 @@ function ProjectHome(){
       <div className='relative flex items-center align-middle justify-center p-4 ml-[15%]'>
       <div className="projecthome__parent md:max-h-[980px] ">
         <div className="projecthome__title mr-5 ">
-          <h1 className="md:text-[1000%] text-5xl tracking-wide text-center font-thin mb-10">Projects</h1>
+          <h1 className="md:text-[1000%] text-5xl tracking-wide text-left font-thin mb-10 ml-[-5%]">Projects</h1>
         </div>
         <div className="projecthome__child1 p-10 bg-[#a593b1]/50 rounded-xl md:w-[115%] md:ml-[-15%] ">
           <ProjectHomeCarousel projects={projects} setProjectSelect={setProjectSelect} projectSelect={projectSelect}/>
@@ -42,6 +42,11 @@ function ProjectHome(){
         <div className="projecthome__child2 p-10 bg-[#a593b1]/50 rounded-xl ml-10 w-[475px]">
           <h1 className="text-4xl">{projects[projectSelect].name}</h1>
           <p className="tracking-wider">{projects[projectSelect].desc}</p>
+          <div className="mt-[5%] mb-5 text-center ">
+            <Link href={'/portfolio'}>
+              <button className="inline-block rounded-xl bg-[#c1a0ca] p-3 px-4 font-normal hover:drop-shadow-xl hover:bg-[#9C36FC] hover:text-[#F6F6F6]  text-[#301b3d] tracking-wider">Learn More on our Portfolio</button>
+            </Link>
+          </div>
           {/* <h1 className="text-4xl">Our Story</h1>
           <p className="tracking-wider">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> */}
         </div>

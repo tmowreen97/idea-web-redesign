@@ -54,4 +54,6 @@ polyline {
     .projecthome__child2 { grid-area: 2 / 2 / 3 / 3; }
     .projecthome__img { grid-area: 1 / 2 / 1 / 3; }
 
-  
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }

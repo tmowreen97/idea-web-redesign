@@ -10,7 +10,7 @@ const About = () => {
       <div className='relative flex items-center align-middle justify-center p-4 ml-[15%]'>
         <div className="about__parent ">
           <div className="about__title mt-20 ">
-            <h1 className="md:text-[1100%] text-5xl tracking-wide text-center font-thin ">About</h1>
+            <h1 className="md:text-[1100%] text-5xl tracking-wide text-center font-thin text-[#625a81]">About</h1>
           </div>
           <div className="about__child1 p-10 bg-[#a593b1]/50 rounded-xl mt-5 w-[110%]">
             <h1 className="text-4xl">Our Mission</h1>
