@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 // import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
@@ -27,18 +28,17 @@ const Navbar = () => {
   return (
     <div
       style={{ backgroundColor: `${color}` }}
-      className='fixed left-0 top-0 w-full z-10 ease-in duration-300'
+      className='fixed left-0 top-0 w-full z-10 ease-in duration-300 font-thin tracking-wider'
     >
-      <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
+      <div className='w-screen  m-auto flex justify-between items-center p-2 text-white'>
         <Link href='/'>
-          <h1 style={{ color: `${textColor}` }} className='font-bold text-4xl'>
-            Captur
-          </h1>
+          {/* style={{ color: `${textColor}` }} */}
+          <Image src={'/assets/idea-logo.png'} width={200} height={100} />
         </Link>
         <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
-          <li className='p-4'>
+          {/* <li className='p-4'>
             <Link href='/'>Home</Link>
-          </li>
+          </li> */}
           <li className='p-4'>
             <Link href='/#about'>About</Link>
           </li>
@@ -46,7 +46,16 @@ const Navbar = () => {
             <Link href='/#projects'>Projects</Link>
           </li>
           <li className='p-4'>
-            <Link href='/contact'>Contact</Link>
+            <Link href='/contact'>Services</Link>
+          </li>
+          <li className='p-4'>
+            <Link href='/contact'>Clients</Link>
+          </li>
+          <li className='p-4'>
+            <Link href='/contact'>Culture</Link>
+          </li>
+          <li className='p-4'>
+            <Link href='/contact'>Contact Us</Link>
           </li>
         </ul>
 
