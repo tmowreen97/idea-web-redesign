@@ -7,15 +7,14 @@ function Hero({heading, message}){
   const [coord, setCoord]= useState(["0,0 0,0 0,0"])  
  
   function handleDescTwo(e){
-    // console.log(e)
+    console.log(e)
     console.log('current coord', e.clientX, e.clientY)
-    let x1 = e.clientX-145
     let y1= e.clientY-45
-    let x2 = x1+150
-    let y2= y1-70
-    console.log('clientX, clientY', e.clientX, e.clientY, 'x1,y1', x1, y1, 'x2,y2', x2, y2)
+    let x2 = e.clientX+150
+    let y2= y1-100
+    // console.log('clientX, clientY', e.clientX, e.clientY, 'y1', y1, 'x2,y2', x2, y2)
 
-    setCoord(`${e.clientX},${y1}, ${x2},${y1}, ${x1}, ${y1}`)
+    setCoord(`${e.clientX},${y1}, ${x2},${y1}, ${x2}, ${y2}`)
     setDescTwo(true)
     // "1145,426 1301,426 1301,350"
     // original is 1140, 423 changed to 1142, 375
@@ -42,6 +41,18 @@ function Hero({heading, message}){
         {descTwo ? 
         <>
           <svg  width="100%" height="100%" className="relative"><polyline points={coord} stroke="white" strokeWidth={1.5} fill="none" animation="dash 5s linear"/></svg>
+          <motion.div 
+          initial={{opacity:0}}
+          whileInView={{opacity:1, transition:{delay:.7}}}
+          className='bg-white/50 w-[350px] fixed right-[3%] top-[10%] rounded-xl p-5'>
+            <div className='text-right items-center'>
+              <button className='bg-white/60 rounded-full px-1 hover:bg-[#9C36FC] hover:text-white' onClick={()=> setDescTwo(false)}>
+                ⓧ
+              </button>
+            </div>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </motion.div>
           {/* <motion.div initial={{opacity:0}} whileInView={{opacity:1, transition:{delay:1.1}}} id="desc" className="fixed md:right-[5%] md:bottom-[55%] w-60 bg-[#F5F4F9]/40 rounded-xl" onClick={(e)=>console.log(e)}>
             <button className="absolute right-1 p-2 ease-out 200" onClick={()=> {setDescTwo(false)}}>
               <AiOutlineCloseCircle/>
