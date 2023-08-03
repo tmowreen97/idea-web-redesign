@@ -21,10 +21,16 @@ const About = () => {
             <p className="tracking-wider">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           </div>
           <div className="about__img bg-[#a593b1]/50 items-center justify-center align-middle text-center p-5 ml-20 w-[175%] rounded-xl m-5 motion-safe:animate-pulse hover:animate-none">
-            <div className=''>
-              <Image src={'/assets/filler-1.jpg'} width={500} height={100}/>
-            </div>
             
+            <div className='relative'>
+              <div id='cover' className='hover:block hidden z-10 absolute left-0 bg-slate-600/80 px-[158px] py-[145px] rounded-xl'>
+                <p className='w-[150px] text-white'>Click to see our team</p>
+              </div>
+              <div>
+                <Image src={'/assets/filler-1.jpg'} width={500} height={100}/>
+              </div>
+              
+            </div>
           </div>
         </div>
     </div>
