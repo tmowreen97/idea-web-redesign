@@ -28,10 +28,10 @@ function ProjectHome(){
 
   return(
     <div id='projects' className='w-screen md:max-h-[980px] bg-[#f1e9f6]'>
-      <div className='relative flex items-center align-middle justify-center p-4 ml-[15%]'>
+      <div className='relative flex items-center align-middle justify-center p-4 ml-[15%] mt-16'>
       <div className="projecthome__parent md:max-h-[980px] ">
         <div className="projecthome__title mr-5 ">
-          <h1 className="md:text-[1000%] text-5xl tracking-wide text-left font-thin mb-10 ml-[-5%]">Projects</h1>
+          <h1 className="md:text-[1000%] text-5xl tracking-wide text-left font-thin mb-10 ml-[-5%] text-[#625a81]">Projects</h1>
         </div>
         <div className="projecthome__child1 p-10 bg-[#a593b1]/50 rounded-xl md:w-[115%] md:ml-[-15%] ">
           <ProjectHomeCarousel projects={projects} setProjectSelect={setProjectSelect} projectSelect={projectSelect}/>
