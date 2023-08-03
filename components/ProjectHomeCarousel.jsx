@@ -61,7 +61,7 @@ function ProjectHomeCarousel ({projects, setProjectSelect, projectSelect}){
         <BsChevronCompactRight onClick={()=> handleRight()} size={40}/>
       </div>
       </motion.div>
-      <div className=' flex  text-center  items-center justify-center py-5'>
+      <div className=' flex  text-center  items-center justify-center py-2'>
         {projects.map((proj, i) => (
           <div
             key={i}
