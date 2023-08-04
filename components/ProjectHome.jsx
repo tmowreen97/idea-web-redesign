@@ -28,12 +28,12 @@ function ProjectHome(){
 
   return(
     <div id='projects' className='w-screen md:max-h-[980px] bg-[#DAD3DF]'>
-      <div className='relative flex items-center align-middle justify-center p-4 ml-[10%] mt-16'>
+      <div className='relative flex items-center align-middle justify-center p-4 ml-[8%] mt-16'>
       <div className="projecthome__parent md:max-h-[980px] ">
         <div className="projecthome__title mr-5 ">
-          <h1 className="md:text-[1000%] text-5xl tracking-wide text-center font-thin mb-10  text-[#625a81]">Projects</h1>
+          <h1 className="md:text-[1000%] text-5xl tracking-wide text-left ml-10 font-thin mb-10  text-[#625a81]">Projects</h1>
         </div>
-        <div className="projecthome__child1 p-10 bg-[#a593b1]/50 rounded-xl mr-5">
+        <div className="projecthome__child1 p-10 bg-[#a593b1]/50 rounded-xl mr-5 ml-4">
           <ProjectHomeCarousel projects={projects} setProjectSelect={setProjectSelect} projectSelect={projectSelect}/>
         </div>
         <div className="projecthome__img bg-[#a593b1]/50 items-center justify-center p-5 rounded-xl w-[450px] h-[45%] mt-20">
@@ -44,7 +44,7 @@ function ProjectHome(){
           <p className="tracking-wider mx-2">{projects[projectSelect].desc}</p>
           <div className="mt-[5%] mb-5 text-center ">
             <Link href={'/portfolio'}>
-              <button className="inline-block rounded-xl bg-[#c1a0ca] p-3 px-4 font-normal hover:drop-shadow-xl hover:bg-[#9C36FC] hover:text-[#F6F6F6]  text-[#301b3d] tracking-wider">Learn More on our Portfolio</button>
+              <button className="inline-block rounded-xl bg-[#c1a0ca] p-3 px-4 font-normal hover:drop-shadow-xl hover:bg-[#9C36FC]/80 hover:text-[#F6F6F6]  text-[#301b3d] tracking-wider">Learn More on our Portfolio</button>
             </Link>
           </div>
           {/* <h1 className="text-4xl">Our Story</h1>

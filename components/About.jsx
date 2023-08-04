@@ -28,7 +28,7 @@ const About = () => {
 
   return (
     <div id='about' className='w-screen md:max-h-[980px] bg-[#DAD3DF] '>
-      <div className='relative flex items-center align-middle justify-center p-4 ml-[15%]'>
+      <div className='relative flex items-center align-middle justify-center p-4 ml-[12%]'>
         <div className="about__parent ">
           <div className="about__title mt-20 ">
             <h1 className="md:text-[1100%] text-5xl tracking-wider text-center font-thin text-[#625a81]">About</h1>
