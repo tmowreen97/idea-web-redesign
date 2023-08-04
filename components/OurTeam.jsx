@@ -1,10 +1,11 @@
-import react from "react";
+import {react, useState} from "react";
 import Image from "next/image";
 import {motion} from 'framer-motion';
+import Card from "./Card";
 
 
 function OurTeam (){
-
+  const [flip, setFlip] = useState(false)
   const main_team = [
     {
       name: 'Kazi Karim',
@@ -103,13 +104,25 @@ function OurTeam (){
         <h2 className="italic font-bold">Let us assist you in making your IDEAs a reality!</h2>
       </motion.div>
       <div className="">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mx-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mx-20 pb-20">
           {second_team.map((member)=> {
             return(
-              <div id="card" className="flex">
-                <div className="front-card relative">
-                  <Image src={member.image} width={300} height={400}/>
-                  <div className="absolute w-[300px] h-[300px] top-0 bg-black text-white text-center justify-center items-center">
+              <div className="relative">
+                <Card member={member} setFlip={setFlip} flip={flip}/>
+
+              </div>
+              
+            )
+            
+          })
+          }
+          
+          {/* {second_team.map((member)=> {
+            return(
+              <div key='card' id="card" className="flex " onClick={()=> setFlip(!flip)}>
+                <div className="front-card relative" >
+                  <Image src={member.image} width={300} height={400}/> 
+                  <div className={flip ? "absolute w-[300px] h-[300px] top-0 bg-[#322d44]/80 text-white  text-center justify-center items-center" : "hidden"}>
                     <h1 className="mx-5 mt-[100px] text-4xl ">John Doe</h1>
                     <p className="mx-5 mt-2 ">Intern</p>
                   </div>
@@ -117,7 +130,7 @@ function OurTeam (){
             
               </div>
             )
-          })}
+          })} */}
 
         </div>
 

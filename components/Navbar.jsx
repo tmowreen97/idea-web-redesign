@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 // import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 const Navbar = () => {
@@ -26,15 +27,22 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div
+    <motion.div
+      initial={{opacity:0}}
+      whileInView={{opacity:1, transition:{delay:0.6, duration:1}}}
       style={{ backgroundColor: `${color}`, opacity:50}}
       className='fixed left-0 top-0 w-full z-10 ease-in duration-300 tracking-wider'
     >
       <div className='w-screen  m-auto flex justify-between items-center p-2 text-white'>
-        <Link href='/'>
-          {/* style={{ color: `${textColor}` }} */}
-          <Image src={'/assets/idea-logo.png'} width={200} height={100} />
-        </Link>
+        <motion.div
+        
+        >
+          <Link href='/'>
+            {/* style={{ color: `${textColor}` }} */}
+            <Image src={'/assets/idea-logo.png'} width={200} height={100} />
+          </Link>
+        </motion.div>
+        
         <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
           {/* <li className='p-4'>
             <Link href='/'>Home</Link>
@@ -118,7 +126,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

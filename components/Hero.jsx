@@ -28,13 +28,13 @@ function Hero({heading, message}){
       {/* <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]' /> */}
       <motion.button
         initial={{opacity:0}}
-        whileInView={{opacity:.9, transition:{delay:1.7}}}
+        whileInView={{opacity:1, transition:{delay:1.8, duration:1}}}
         className="absolute left-1/4 top-1/3 bg-red-500 rounded-full w-3 h-3 motion-safe:animate-ping hover:animate-none"
         onClick={() => console.log("Description for Point 1")}
       />
       <motion.button
           initial={{opacity:0}}
-          whileInView={{opacity:1, transition:{delay:1.7}}}
+          whileInView={{opacity:1, transition:{delay:1.8, duration:1}}}
           className="absolute md:left-3/4 md:top-1/2 bg-white rounded-full w-3 h-3 motion-safe:animate-ping hover:animate-none"
           onClick={(e)=> handleDescTwo(e)}
         />
@@ -70,11 +70,15 @@ function Hero({heading, message}){
           </motion.div> 
           </div> : ""
         } */}
-      <div className='p-5 text-[#F5F5F5] z-[2] mt-[-10rem]'>
+      <motion.div 
+      initial={{opacity:0}}
+      whileInView={{opacity:1, transition:{delay:1.2, duration:1}}}
+      className='p-5 text-[#F5F5F5] z-[2] mt-[-10rem]'
+      >
         <h1 className='text-9xl absolute font-thin left-5 bottom-5'>{heading}</h1>
 
         {/* <button className='px-8 py-2 border'>Book</button> */}
-      </div>
+      </motion.div>
     </div>
   );
 };
