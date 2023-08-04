@@ -9,7 +9,7 @@ function Hero({heading, message}){
   function handleDescTwo(e){
     console.log(e)
     console.log('current coord', e.clientX, e.clientY)
-    let y1= e.clientY-45
+    let y1= e.clientY-47
     let x2 = e.clientX+150
     let y2= y1-100
     // console.log('clientX, clientY', e.clientX, e.clientY, 'y1', y1, 'x2,y2', x2, y2)
@@ -44,7 +44,7 @@ function Hero({heading, message}){
           <motion.div 
           initial={{opacity:0}}
           whileInView={{opacity:1, transition:{delay:.7}}}
-          className='bg-white/50 w-[350px] fixed right-[3%] top-[10%] rounded-xl p-5'>
+          className='bg-white/50 w-[350px] fixed right-[3%] top-[10%] rounded-xl px-5 py-4'>
             <div className='text-right items-center'>
               <button className='bg-white/60 rounded-full px-1 hover:bg-[#9C36FC] hover:text-white' onClick={()=> setDescTwo(false)}>
                 ⓧ
@@ -70,8 +70,8 @@ function Hero({heading, message}){
           </motion.div> 
           </div> : ""
         } */}
-      <div className='p-5 text-white z-[2] mt-[-10rem]'>
-        <h2 className='text-9xl absolute font-thin left-5 bottom-5'>{heading}</h2>
+      <div className='p-5 text-[#F5F5F5] z-[2] mt-[-10rem]'>
+        <h1 className='text-9xl absolute font-thin left-5 bottom-5'>{heading}</h1>
 
         {/* <button className='px-8 py-2 border'>Book</button> */}
       </div>

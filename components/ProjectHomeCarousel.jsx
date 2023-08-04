@@ -47,7 +47,7 @@ function ProjectHomeCarousel ({projects, setProjectSelect, projectSelect}){
       // whileInView={{ opacity:1 , transition:{delay:1}}}
 
       style={{backgroundImage:`url(${projects[projectSelect].image})`}}
-      className="w-full h-full rounded-2xl bg-center bg-cover hover:scale-105 hover:opacity-90 duration-500 transform"
+      className="w-[600px] h-[400px] rounded-2xl bg-center bg-cover hover:scale-105 hover:opacity-90 duration-500 transform"
       >
       {/* Left Arrow */}
       
@@ -61,7 +61,7 @@ function ProjectHomeCarousel ({projects, setProjectSelect, projectSelect}){
         <BsChevronCompactRight onClick={()=> handleRight()} size={40}/>
       </div>
       </motion.div>
-      <div className=' flex  text-center  items-center justify-center py-2'>
+      <div className=' flex  text-center  items-center justify-center py-8'>
         {projects.map((proj, i) => (
           <div
             key={i}
