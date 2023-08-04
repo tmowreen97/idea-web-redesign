@@ -11,7 +11,7 @@ const urbanist = Urbanist({
 
 export default function Home() {
   return (
-    <main className={`flex min-h-screen flex-col items-center justify-between ${urbanist.variable} font-sans`}>
+    <main className={`flex min-h-screen flex-col items-center justify-between ${urbanist.variable} font-sans tracking-wider`}>
       <Hero heading='We Empower Ideas'/>
       <About/>
       <ProjectHome/>

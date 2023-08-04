@@ -54,10 +54,10 @@ const Navbar = () => {
             <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
           </button>
           <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 text-center">
-            <li className="bg-slate-300/50 hover:bg-slate-600/50 hover:text-[#f5f5f5] ml-[-20px] rounded-xl">
+            <li className="bg-slate-300/70 hover:bg-slate-600/70 hover:text-[#f5f5f5] ml-[-20px] rounded-xl">
               <Link className="p-2 block mb-1" href={'/#about'}>About Us</Link>
             </li>
-            <li className="bg-slate-300/50 hover:bg-slate-600/50 hover:text-[#f5f5f5] ml-[-30px] rounded-xl">
+            <li className="bg-slate-300/70 hover:bg-slate-600/70 hover:text-[#f5f5f5] ml-[-30px] rounded-xl">
               <Link className="p-2 block" href={'/team'}>Our Team</Link>
             </li>
           </ul>
@@ -70,10 +70,10 @@ const Navbar = () => {
             <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
           </button>
           <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 text-center">
-            <li className="bg-slate-300/50 hover:bg-slate-600/50 hover:text-[#f5f5f5] ml-[-60px] rounded-xl">
+            <li className="bg-slate-300/70 hover:bg-slate-600/70 hover:text-[#f5f5f5] ml-[-60px] rounded-xl">
               <Link className="p-2 block mb-1" href={'/#projects'}>Recent Projects</Link>
             </li>
-            <li className="bg-slate-300/50 hover:bg-slate-600/50 hover:text-[#f5f5f5] ml-[-10px] rounded-xl">
+            <li className="bg-slate-300/70 hover:bg-slate-600/70 hover:text-[#f5f5f5] ml-[-10px] rounded-xl">
               <Link className="p-2 block" href={'/portfolio'}>Portfolio</Link>
             </li>
           </ul>
