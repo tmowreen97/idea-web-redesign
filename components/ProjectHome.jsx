@@ -31,7 +31,7 @@ function ProjectHome(){
       <div className='relative flex items-center align-middle justify-center p-4 ml-[8%] mt-16'>
       <div className="projecthome__parent md:max-h-[980px] ">
         <div className="projecthome__title mr-5 ">
-          <h1 className="md:text-[1000%] text-5xl tracking-wide text-left ml-10 font-thin mb-10  text-[#625a81]">Projects</h1>
+          <h1 className="md:text-[1000%] text-5xl tracking-wide text-left ml-[65px] font-thin mb-10  text-[#625a81]">Projects</h1>
         </div>
         <div className="projecthome__child1 p-10 bg-[#a593b1]/50 rounded-xl mr-5 ml-4">
           <ProjectHomeCarousel projects={projects} setProjectSelect={setProjectSelect} projectSelect={projectSelect}/>
