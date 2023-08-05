@@ -1,6 +1,10 @@
+import ProjectPortfolio from "@/components/ProjectPortfolio"
+
 export default function Portfolio(){
   return(
-    <h1>Portfolio</h1>
+    <div>
+      <ProjectPortfolio/>
+    </div>
   )
 }
 

@@ -17,8 +17,8 @@ export default function Footer(){
             <p className="text-xl">203-917-7907</p>
             <p className="pt-5">©Idea</p>
           </div>
-          <div className=" mx-10">
-          <div className="bg-white/50 w-[500px] h-[300px] rounded-xl ">
+          <div className="ml-20">
+          <div className="bg-[#c8aec7]/70 w-[400px] h-[300px] ml-10  rounded-xl ">
             <div className="items-center justify-center ">
               <form className="text-center pt-5">
                 <h2>Contact Us</h2>
@@ -48,7 +48,7 @@ export default function Footer(){
             </div>
             
           </div>
-          <div className="grid grid-cols-3 gap-10 text-center items-center justify-center align-middle pt-5">
+          <div className="grid grid-cols-3 gap-10 text-center items-center justify-center align-middle pt-5 ml-12">
             <div className="text-center items-center justify-center flex rounded-xl ">
               <div className="bg-[#c1a0ca] hover:bg-[#9C36FC]/80 hover:text-[#F5F5F5]/70 rounded-full p-4 text-2xl">
                 <Link href="https://www.linkedin.com/in/tasreenmowreen" legacyBehavior>
