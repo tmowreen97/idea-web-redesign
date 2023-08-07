@@ -48,7 +48,7 @@ export default function Footer(){
             </div>
             
           </div>
-          <div className="grid grid-cols-3 gap-10 text-center items-center justify-center align-middle pt-5 ml-12">
+          <div className="grid grid-cols-3 gap-10 text-center items-center justify-center align-middle pt-5 ml-10">
             <div className="text-center items-center justify-center flex rounded-xl ">
               <div className="bg-[#c1a0ca] hover:bg-[#9C36FC]/80 hover:text-[#F5F5F5]/70 rounded-full p-4 text-2xl">
                 <Link href="https://www.linkedin.com/in/tasreenmowreen" legacyBehavior>

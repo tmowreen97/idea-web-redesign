@@ -81,13 +81,13 @@ const Navbar = () => {
             {/* <Link href='/#projects'>Projects</Link> */}
           </li>
           <li className='p-4'>
-            <Link href='/contact'>Services</Link>
+            <Link href='/services'>Services</Link>
           </li>
           <li className='p-4'>
-            <Link href='/contact'>Clients</Link>
+            <Link href='/clients'>Clients</Link>
           </li>
           <li className='p-4'>
-            <Link href='/contact'>Culture</Link>
+            <Link href='/culture'>Culture</Link>
           </li>
           <li className='p-4'>
             <Link href='/contact'>Contact Us</Link>

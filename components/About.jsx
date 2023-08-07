@@ -54,11 +54,11 @@ const About = () => {
           <div className="about__img bg-[#a593b1]/50 items-center justify-center align-middle text-center p-5 ml-20 w-[175%] animation-pulse delay-200 rounded-xl m-5 hover:animate-none">
             
             <div className='relative'>
-              {reveal ? <div id='cover' className=' z-10 absolute left-[-8px] bg-[#322d44]/80 px-[165px] py-[145px] rounded-xl ml-2'>
-                <Link href={'/team'} className='text-[#F6F6F6] font-light'><p className='w-[170px]'>Click to See Our Team</p></Link>
+              {reveal ? <div id='cover' className=' z-10 absolute left-[-8px] bg-[#322d44]/80 w-[510px] h-[340px] rounded-xl ml-2 pt-[150px]'>
+                <Link href={'/team'} className='text-[#F6F6F6] font-light '>Click to See Our Team</Link>
               </div>: ""}
-              <div onMouseEnter={()=> mouse()} onMouseOut={()=> console.log('leave')} className='rounded-xl overflow-hidden'>
-                <Image src={'/assets/filler-1.jpg'} width={500} height={100}/>
+              <div onMouseEnter={()=> mouse()} className='rounded-xl overflow-hidden'>
+                <Image src={'/assets/filler-1.jpg'} width={550} height={100}/>
               </div>
               
             </div>

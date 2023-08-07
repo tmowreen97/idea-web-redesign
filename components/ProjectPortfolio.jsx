@@ -5,27 +5,7 @@ import {BsChevronCompactDown} from 'react-icons/bs';
 
 function ProjectPortfolio(){
   const [category, setCategory] = useState('All')
-  const [projHover, setProjHover] = useState(false)
-  const [projClick, setProjClick] = useState(false)
-  console.log(category)
-
-  function mouse (){
-    setProjHover(true)
-    myStopFunction();
-    myFunction();
-  }
-  function myFunction() {
-    let myVar = setTimeout(function(){
-        setProjHover(false)
-      }, 2500);
-  }   
-  function myStopFunction() {
-      if(typeof myVar != 'undefined'){
-          clearTimeout(myVar);
-      }
-  }
-
-
+  
   // if id is odd, open the description div to the right
   //  if id is even, open the description div to the left
   const projects = [
@@ -88,30 +68,29 @@ function ProjectPortfolio(){
         <h1 className="md:text-[1100%] text-5xl font-thin text-[#625a81] text-left tracking-wide">Portfolio</h1>
       </div>
       <div>
-      <div className="text-right mr-20">
+      <div className="text-right">
         <select
           value={category}
           onChange={(e) => {
             setCategory(e.target.value)
           }}
-          className="text-center"
+          className="text-center w-[150px] p-1 rounded-xl mr-20"
         >
-          <option value="all">All</option>
-          <option value="residence">Residences</option>
-          <option value="c">c</option>
-          <option value="d">d</option>
-          <option value="residence">Residences</option>
-          <option value="c">c</option>
-          <option value="d">d</option>
-          <option value="d">d</option>
+          <option value="All">All</option>
+          <option value="Residence">Residence</option>
+          <option value="Category 2">Category 2</option>
+          <option value="Category 3">Category 3</option>
+          <option value="Category 4">Category 4</option>
+          <option value="Category 5">Category 5</option>
+          <option value="Category 6">Category 6</option>
+          <option value="Category 7">Category 7</option>
         </select>
       </div>
       <div className="grid md:grid-cols-2 mx-20 py-10">
         {
           projects.map((proj)=> {
             return(
-              <PortfolioList project={proj} setProjClick={setProjClick} setProjHover={setProjHover}
-              projClick={projClick} projHover={projHover} mouse={mouse}/>
+              <PortfolioList project={proj}/>
             )
           })
         }
