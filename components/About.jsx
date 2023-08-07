@@ -58,7 +58,7 @@ const About = () => {
                 <Link href={'/team'} className='text-secondary_text font-light '>Click to See Our Team</Link>
               </div>: ""}
               <div onMouseEnter={()=> mouse()} className='rounded-xl overflow-hidden'>
-                <Image src={'/assets/filler-1.jpg'} width={550} height={100}/>
+                <Image src={'/assets/filler-1.jpg'} width={550} height={100} alt={'team'}/>
               </div>
               
             </div>

@@ -25,7 +25,7 @@ function PortfolioList({project}){
   return(
     <div className="items-center text-center justify-center p-5 py-10 relative" onMouseEnter={()=> setProjHover(true)}
     onMouseLeave={()=> setProjHover(false)}>
-      <Image src={project.image} width={650} height={500} />
+      <Image src={project.image} width={650} height={500} alt={'project'}/>
       {/* style="position: absolute; top: 0px; z-index: 3;" */}
       <div className={projHover ? "absolute w-[638px] h-[330px] top-5 bg-[#322d44]/80 text-secondary_text  text-center justify-center items-center mt-5" : "hidden"}>
           <h1 className="mx-10 mt-[80px] text-4xl ">{project.name}</h1>

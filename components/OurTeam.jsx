@@ -73,7 +73,7 @@ function OurTeam (){
               return(
                 <div className="flex items-center">
                   <div className="mr-5 rounded-xl overflow-hidden">
-                    <Image src={member.image} width={400} height={600}/>
+                    <Image src={member.image} width={400} height={600} alt={'lead_team'}/>
                   </div>
                   <div className="p-2 w-[260px] text-left bg-white/90 rounded-xl">
                     <h2 className="text-secondary_text">{member.name}</h2>

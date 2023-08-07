@@ -43,7 +43,7 @@ const Navbar = () => {
         >
           <Link href='/'>
             {/* style={{ color: `${textColor}` }} */}
-            <Image src={'/assets/idea-logo.png'} width={200} height={100} />
+            <Image src={'/assets/idea-logo.png'} width={200} height={100} alt={'logo'} />
           </Link>
         </motion.div>
         
