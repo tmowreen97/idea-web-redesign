@@ -2,12 +2,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/router';
 // import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState('transparent');
   const [textColor, setTextColor] = useState('white');
+  const router = useRouter();
+
+  console.log(router.asPath)
 
   const handleNav = () => {
     setNav(!nav);
@@ -49,8 +53,8 @@ const Navbar = () => {
           </li> */}
           <li className='p-4'>
           <div className="dropdown inline-block relative">
-          <button className="inline-flex items-center">
-            <span className="mr-1 tracking-wider">About</span>
+          <button className="inline-flex items-center" id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>
+            <div className="mr-1 tracking-wider ">About</div>
             <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
           </button>
           <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 text-center">
@@ -65,7 +69,7 @@ const Navbar = () => {
           </li> 
           <li className='p-4'>
           <div className="dropdown inline-block relative">
-          <button className="inline-flex items-center">
+          <button className="inline-flex items-center" id={router.asPath == '/#projects' || router.asPath == '/portfolio' ? "active" : ''}>
             <span className="mr-1 tracking-wider">Projects</span>
             <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
           </button>
@@ -81,16 +85,16 @@ const Navbar = () => {
             {/* <Link href='/#projects'>Projects</Link> */}
           </li>
           <li className='p-4'>
-            <Link href='/services'>Services</Link>
+            <Link href='/services' id={router.pathname == "/services" ? "active" : ""}>Services</Link>
           </li>
           <li className='p-4'>
-            <Link href='/clients'>Clients</Link>
+            <Link href='/clients' id={router.pathname == "/clients" ? "active" : ""}>Clients</Link>
           </li>
           <li className='p-4'>
-            <Link href='/culture'>Culture</Link>
+            <Link href='/culture' id={router.pathname == "/culture" ? "active" : ""}>Culture</Link>
           </li>
           <li className='p-4'>
-            <Link href='/contact'>Contact Us</Link>
+            <Link href='/contact' id={router.pathname == "/contact" ? "active" : ""}>Contact Us</Link>
           </li>
         </ul>
 
