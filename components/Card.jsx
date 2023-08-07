@@ -7,7 +7,7 @@ function Card ({member, setFlip, flip}){
         <div className="front-card relative" >
           <Image src={member.image} width={300} height={400}/> 
         </div>
-        <div className={show ? "absolute w-[300px] h-[300px] top-0 bg-[#322d44]/80 text-white  text-center justify-center items-center" : "hidden"}>
+        <div className={show ? "absolute w-[300px] h-[300px] top-0 bg-[#322d44]/80 text-secondary_text  text-center justify-center items-center" : "hidden"}>
               <h1 className="mx-5 mt-[100px] text-4xl ">John Doe</h1>
               <p className="mx-5 mt-2 ">Intern</p>
         </div>

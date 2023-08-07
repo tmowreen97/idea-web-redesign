@@ -66,7 +66,7 @@ function ProjectHomeCarousel ({projects, setProjectSelect, projectSelect}){
           <div
             key={i}
             onClick={() => goToSlide(i)}
-            className={ i===projectSelect ? 'text-2xl cursor-pointer text-[#9C36FC]' : 'text-2xl cursor-pointer text-white' }
+            className={ i===projectSelect ? 'text-2xl cursor-pointer text-accent_2' : 'text-2xl cursor-pointer text-white' }
 
           >
             <RxDotFilled/>

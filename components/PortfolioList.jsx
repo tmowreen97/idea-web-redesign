@@ -27,7 +27,7 @@ function PortfolioList({project}){
     onMouseLeave={()=> setProjHover(false)}>
       <Image src={project.image} width={650} height={500} />
       {/* style="position: absolute; top: 0px; z-index: 3;" */}
-      <div className={projHover ? "absolute w-[638px] h-[330px] top-5 bg-[#322d44]/80 text-[#F5F5F5]  text-center justify-center items-center mt-5" : "hidden"}>
+      <div className={projHover ? "absolute w-[638px] h-[330px] top-5 bg-[#322d44]/80 text-secondary_text  text-center justify-center items-center mt-5" : "hidden"}>
           <h1 className="mx-10 mt-[80px] text-4xl ">{project.name}</h1>
           <p className="mx-32 mt-2 ">{project.description}</p>
           <div className="absolute bottom-0 left-[47%] p-2 motion-safe:animate-bounce text-2xl" onClick={()=> setProjClick(!projClick)}>

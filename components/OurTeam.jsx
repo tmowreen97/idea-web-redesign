@@ -5,7 +5,6 @@ import Card from "./Card";
 
 
 function OurTeam (){
-  const [flip, setFlip] = useState(false)
   const main_team = [
     {
       name: 'Kazi Karim',
@@ -63,9 +62,9 @@ function OurTeam (){
   ]
 
   return(
-    <div className="w-screen h-full items-center text-center justify-center bg-[#DAD3DF]">
+    <div className="w-screen h-full items-center text-center justify-center bg-primary">
       <div className="p-20">
-        <h1 className="md:text-[1100%] text-5xl font-thin text-[#625a81] text-left tracking-wide">Our Team</h1>
+        <h1 className="md:text-[1100%] text-5xl font-thin text-primary_text text-left tracking-wide">Our Team</h1>
       </div>
       <div className="">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mx-20 ">
@@ -76,9 +75,9 @@ function OurTeam (){
                   <div className="mr-5 rounded-xl overflow-hidden">
                     <Image src={member.image} width={400} height={600}/>
                   </div>
-                  <div className="p-2 w-[260px] text-left bg-white rounded-xl">
-                    <h2>{member.name}</h2>
-                    <p className="mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  <div className="p-2 w-[260px] text-left bg-white/90 rounded-xl">
+                    <h2 className="text-secondary_text">{member.name}</h2>
+                    <p className="mx-2 text-secondary_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                   </div>
                 </div>
               )
@@ -108,7 +107,7 @@ function OurTeam (){
           {second_team.map((member)=> {
             return(
               <div className="relative">
-                <Card member={member} setFlip={setFlip} flip={flip}/>
+                <Card member={member}/>
 
               </div>
               

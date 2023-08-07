@@ -7,8 +7,8 @@ function Hero({heading, message}){
   const [coord, setCoord]= useState(["0,0 0,0 0,0"])  
  
   function handleDescTwo(e){
-    console.log(e)
-    console.log('current coord', e.clientX, e.clientY)
+    // console.log(e)
+    // console.log('current coord', e.clientX, e.clientY)
     let y1= e.clientY-47
     let x2 = e.clientX+150
     let y2= y1-100
@@ -21,7 +21,7 @@ function Hero({heading, message}){
     // original x - 145, y +26
 
   }
-  console.log('coord',coord)
+  // console.log('coord',coord)
   return (
     <div className='flex relative items-center justify-center w-screen h-screen pt-12 bg-fixed bg-center bg-cover custom-img tracking-wider'>
       {/* Overlay */}
@@ -46,7 +46,7 @@ function Hero({heading, message}){
           whileInView={{opacity:1, transition:{delay:.7}}}
           className='bg-white/50 w-[350px] fixed right-[3%] top-[10%] rounded-xl px-5 py-4'>
             <div className='text-right items-center'>
-              <button className='bg-white/60 rounded-full px-1 hover:bg-[#9C36FC] hover:text-white' onClick={()=> setDescTwo(false)}>
+              <button className='bg-white/60 rounded-full px-1 hover:bg-accent_2 hover:text-secondary_text' onClick={()=> setDescTwo(false)}>
                 ⓧ
               </button>
             </div>
@@ -73,7 +73,7 @@ function Hero({heading, message}){
       <motion.div 
       initial={{opacity:0}}
       whileInView={{opacity:1, transition:{delay:1.2, duration:1}}}
-      className='p-5 text-[#F5F5F5] z-[2] mt-[-10rem]'
+      className='p-5 text-secondary_text z-[2] mt-[-10rem]'
       >
         <h1 className='text-9xl absolute font-thin left-5 bottom-5'>{heading}</h1>
 
