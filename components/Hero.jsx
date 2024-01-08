@@ -75,7 +75,7 @@ function Hero({heading, message}){
       whileInView={{opacity:1, transition:{delay:1.2, duration:1}}}
       className='p-5 text-secondary_text z-[2] mt-[-10rem]'
       >
-        <h1 className='text-9xl absolute font-thin left-5 bottom-5'>{heading}</h1>
+        <h1 className='text-9xl absolute font-thin left-5 bottom-5'>yolo</h1>
 
         {/* <button className='px-8 py-2 border'>Book</button> */}
       </motion.div>
