@@ -50,7 +50,7 @@ const About = () => {
               About
             </h1>
           </div>
-          <div className="about__child1 p-4 m-4 lg:m-0 lg:text-lg items-center justify-center bg-secondary/40 rounded-xl lg:w-[645px] ">
+          <div className="about__child1 p-4 m-4 lg:m-0 lg:text-lg items-center justify-center bg-secondary rounded-xl lg:w-[645px] ">
             <div className='lg:m-14 m-3'>
               <h2 className="tracking-wider">Our Story</h2>
             </div>
@@ -75,15 +75,15 @@ const About = () => {
             <div className='grid lg:grid-cols-2 justify-center items-center text-center  lg:w-full mx-10 lg:mt-[0%]'>
               {
                 traits.map((trait, index) => (
-                  <div key={index} className='bg-secondary_text/90 italic rounded-xl p-4 w-[200px] m-[4%] mt-1'>
-                    <p className='text-dark_text'>{trait}</p>
+                  <div key={index} className='bg-accent_1 italic rounded-xl p-4 w-[200px] m-[4%] mt-1'>
+                    <p className=''>{trait}</p>
                   </div>
                 ))
               }
             </div>
           </div>
 
-          <div className="about__child2 p-4 m-4 lg:m-0 lg:text-lg items-center justify-center bg-secondary/40 rounded-xl lg:w-[485px]  ">
+          <div className="about__child2 p-4 m-4 lg:m-0 lg:text-lg items-center justify-center bg-secondary rounded-xl lg:w-[485px]  ">
             <div className='lg:my-14 m-3 lg:mx-8'>
               <h2 className="tracking-wider ">Our Mission</h2>
             </div>
@@ -97,7 +97,7 @@ const About = () => {
             
             
           </div>
-          <div className="about__img  bg-secondary/40 p-4 m-4 items-center justify-center text-center rounded-xl hover:animate-none  lg:w-[485px] lg:m-0 ">
+          <div className="about__img  bg-secondary p-4 m-4 items-center justify-center text-center rounded-xl hover:animate-none  lg:w-[485px] lg:m-0 ">
             <div className="relative items-center justify-center" onMouseOver={()=> setShow(true)} onMouseLeave={()=> setShow(false)}>
                 <div className="m-2 overflow-hidden rounded-xl items-center justify-center flex animate-pulse">
                 <Link href={'/team'}>

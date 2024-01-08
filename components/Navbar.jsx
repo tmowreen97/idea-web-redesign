@@ -22,9 +22,10 @@ const Navbar = ({setLightLogo, lightLogo}) => {
     // if (router.asPath == '/'){
     //   setLightLogo(false)
     // }
+    // nav bar color to be transparent if at the top of the page, otherwise change the color
     const changeColor = () => {
       if (window.scrollY >= 25) {
-        setColor('#a88ca4');
+        setColor('#198363');
         setTextColor('#FFFFFF');
         if (setLightLogo) {
           setLightLogo(true)
@@ -53,26 +54,22 @@ const Navbar = ({setLightLogo, lightLogo}) => {
         >
           <Link href='/'>
             {/* style={{ color: `${textColor}` }} */}
-            {lightLogo ? <Image src={'/assets/logos/logo.jpg'} width={200} height={124} alt={'light_logo'} /> : <Image src={'/assets/logos/logo.jpg'} width={100} height={100} alt={'dark_logo'} className="ml-5"/>}
+            {lightLogo ? <Image src={'/assets/logos/logo.jpg'} width={100} height={100} alt={'light_logo'} /> : <Image src={'/assets/logos/logo.jpg'} width={100} height={100} alt={'dark_logo'} />}
           </Link>
         </motion.div>
         
         <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
-          {/* <li className='p-4'>
-            <Link href='/'>Home</Link>
-          </li> */}
           <li className='p-4'>
           <div className="dropdown inline-block relative">
           <button id='about_button' aria-label='about_button' className="inline-flex items-center " id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>
             <div className="mr-1 tracking-wider ">About</div>
             <BiChevronDown />
-            {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> */}
           </button>
           <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 text-center">
-            <li className="bg-button_bg hover:bg-accent_2/80 hover:text-primary_text ml-[-20px] rounded-xl">
+            <li className="bg-button_bg hover:bg-button_bg_hover hover:text-primary_text ml-[-20px] rounded-xl">
               <Link className="p-2 block mb-1" href={'/#about'}>About Us</Link>
             </li>
-            <li className="bg-button_bg hover:bg-accent_2/80 hover:text-primary_text ml-[-30px] rounded-xl">
+            <li className="bg-button_bg hover:bg-button_bg_hover hover:text-primary_text ml-[-30px] rounded-xl">
               <Link className="p-2 block" href={'/team'}>Our Team</Link>
             </li>
           </ul>
@@ -86,26 +83,26 @@ const Navbar = ({setLightLogo, lightLogo}) => {
             {/* <svg className="fill-current h-4 w-4 hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> */}
           </button>
           <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 text-center">
-            <li className="bg-button_bg hover:bg-accent_2/80 hover:text-primary_text ml-[-55px] rounded-xl">
+            <li className="bg-button_bg hover:bg-button_bg_hover hover:text-primary_text ml-[-55px] rounded-xl">
               <Link className="p-2 block mb-1" href={'/#projects'}>Recent Projects</Link>
             </li>
-            <li className="bg-button_bg hover:bg-accent_2/80 hover:text-primary_text ml-[-10px] rounded-xl">
+            <li className="bg-button_bg hover:bg-button_bg_hover hover:text-primary_text ml-[-10px] rounded-xl">
               <Link className="p-2 block" href={'/portfolio'}>Portfolio</Link>
             </li>
           </ul>
         </div>
             {/* <Link href='/#projects'>Projects</Link> */}
           </li>
-          <li className='m-2 p-2 hover:bg-accent_2/60 hover:text-primary_text rounded-xl'>
+          <li className='m-2 p-2 hover:bg-button_bg_hover hover:text-primary_text rounded-xl'>
             <Link href='/services' id={router.pathname == "/services" ? "active" : ""}>Services</Link>
           </li>
-          <li className='m-2 p-2 hover:bg-accent_2/60 hover:text-primary_text rounded-xl'>
+          <li className='m-2 p-2 hover:bg-button_bg hover:text-primary_text rounded-xl'>
             <Link href='/culture' id={router.pathname == "/culture" ? "active" : ""}>Culture</Link>
           </li>
           {/* <li className='p-4'>
             <Link href='/clients' id={router.pathname == "/clients" ? "active" : ""}>Clients</Link>
           </li> */}
-          <li className='m-2 p-2 hover:bg-accent_2/60 hover:text-primary_text rounded-xl'>
+          <li className='m-2 p-2 hover:bg-button_bg_hover hover:text-primary_text rounded-xl'>
             <Link href='/contact' id={router.pathname == "/contact" ? "active" : ""}>Contact</Link>
           </li>
         </ul>
@@ -150,10 +147,10 @@ const Navbar = ({setLightLogo, lightLogo}) => {
                   {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> */}
                 </button>
                 <ul className="dropdown-menu absolute left-0 hidden text-gray-70 text-center z-30">
-                  <li onClick={handleNav} className="bg-button_bg hover:bg-accent_2 hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[200px] m-2 ">
+                  <li onClick={handleNav} className="bg-button_bg hover:bg-button_bg hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[200px] m-2 ">
                     <Link className="block " href={'/#about'}>About Us</Link>
                   </li>
-                  <li onClick={handleNav} className="bg-button_bg hover:bg-accent_2 hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[200px] m-2">
+                  <li onClick={handleNav} className="bg-button_bg hover:bg-button_bg hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[200px] m-2">
                     <Link className="block" href={'/team'}>Our Team</Link>
                   </li>
                 </ul>
@@ -167,10 +164,10 @@ const Navbar = ({setLightLogo, lightLogo}) => {
                   {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> */}
                 </button>
                 <ul className="dropdown-menu absolute left-0 hidden text-gray-70  z-20">
-                  <li onClick={handleNav} className="bg-button_bg hover:bg-accent_2 hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[275px] m-2 ">
+                  <li onClick={handleNav} className="bg-button_bg hover:bg-button_bg hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[275px] m-2 ">
                     <Link className="block " href={'/#projects'}>Recent Projects</Link>
                   </li>
-                  <li onClick={handleNav} className="bg-button_bg hover:bg-accent_2 right-0 hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[200px] m-2">
+                  <li onClick={handleNav} className="bg-button_bg hover:bg-button_bg right-0 hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[200px] m-2">
                     <Link className="block" href={'/portfolio'}>Portfolio</Link>
                   </li>
                 </ul>
@@ -188,21 +185,21 @@ const Navbar = ({setLightLogo, lightLogo}) => {
             </ul>
           
           <div className="flex justify-evenly py-5 pt-10 rounded-xl text-dark_text/90">
-                <div className="bg-button_bg/90 hover:bg-accent_2/80 hover:text-primary_text  rounded-full p-5 text-4xl mx-5">
+                <div className="bg-button_bg/90 hover:bg-button_bg/80 hover:text-primary_text  rounded-full p-5 text-4xl mx-5">
                   <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
                       <a target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                         <AiFillInstagram/>
                       </a>
                   </Link>
                 </div>
-                <div className="bg-button_bg/90 hover:bg-accent_2/80 hover:text-primary_text  rounded-full p-5 text-4xl mx-5">
+                <div className="bg-button_bg/90 hover:bg-button_bg/80 hover:text-primary_text  rounded-full p-5 text-4xl mx-5">
                   <Link href="https://www.facebook.com/profile.php?id=100076951517206" legacyBehavior>
                       <a target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                         <AiFillFacebook/>
                       </a>
                   </Link>
                 </div>
-                <div className="bg-button_bg/90 hover:bg-accent_2/80 hover:text-primary_text rounded-full p-5 text-4xl mx-5">
+                <div className="bg-button_bg/90 hover:bg-button_bg/80 hover:text-primary_text rounded-full p-5 text-4xl mx-5">
                   <Link href="https://www.linkedin.com/company/idea-aec/" legacyBehavior>
                       <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <AiFillLinkedin/>

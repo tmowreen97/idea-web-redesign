@@ -14,12 +14,12 @@ html{
 }
 
 h2{
-  color:#DAD3F5;
+  color:#FFFFF2;
   font-size: 40px;
 }
 
 p{
-  color : #DAD3F5;
+  color : #FFFFF2;
 }
 
 
@@ -205,7 +205,7 @@ polyline {
 
 /* NAV BAR ACTIVE LINK */
 #active{
-  color: blueviolet;
+  color: #7fffd4;
 
 }
 
