@@ -21,11 +21,11 @@ module.exports = {
         footer_bg: '#198363',
         // accent_1 : '#980000',
         button_bg : '#6cb49c',
-        button_bg_hover: '#5fb99b',
+        button_bg_hover: '#7fffd4',
         accent_1: '#42a26c',
         // button_bg : '#8dedd0',
         primary_text : '#FFFFF2',
-        secondary_text : '#fdf9ea',
+        secondary_text : '#FFFFF2',
         dark_text: '#070706',
         light_bg : '#E9DCF9',
         dark_bg : '#170927'

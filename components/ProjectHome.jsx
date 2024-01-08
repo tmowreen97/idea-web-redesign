@@ -1,52 +1,135 @@
 import React, { useState } from "react";
-import Image from "next/image";
-import ProjectHomeCarousel from "./ProjectHomeCarousel";
+import Carousel from "./Carousel";
+import { BsChevronCompactDown, BsChevronCompactUp } from "react-icons/bs";
 import Link from "next/link";
 
 function ProjectHome(){
   const [projectSelect, setProjectSelect]= useState(0)
+  const[showDropDown, setShowDropDown] = useState(false)
   const projects = [
     {
       id: 1,
-      name: 'One',
-      image: "/assets/filler-1.jpg",
-      desc: "Image One"
+      name: 'C23-01',
+      location: 'LOCATION',
+      sector: 'Residential',
+      year: 'YEAR',
+      image: "/assets/need.jpeg",
+      desc: "5-STORY RESIDENTIAL BUILDING",
     },
     {
       id:2,
-      name: 'Two',
-      image: "/assets/filler-2.jpg",
-      desc: "Image Two"
+      name: 'C24-01',
+      image: "/assets/need2.jpeg",
+      location:"LOCATION",
+      sector: "Residential",
+      year: "YEAR",
+      desc: "BD HIGH-END RESIDENCE",
+      disclaimer: ''
     },
     {
       id: 3,
-      name: 'Three',
-      image: "/assets/filler-3.jpg",
-      desc: "Image Three"
+      name: 'C24-02',
+      location: "LOCATION",
+      year: "YEAR",
+      sector: "Educational/Institutional",
+      image: "/assets/need.jpeg",
+      desc: "IDEA COMMUNITY COMPLEX",
     }
   ]
+  //Grabs index from Carousel component
+  function handleIndex(index){
+    setProjectSelect(index)
+  }
 
   return(
-    <div id='projects' className='w-screen md:max-h-[980px] bg-primary'>
-      <div className='relative flex items-center align-middle justify-center p-4 ml-[8%] mt-16'>
-      <div className="projecthome__parent md:max-h-[980px] ">
-        <div className="projecthome__title mr-5 ">
-          <h1 className="md:text-[1000%] text-5xl tracking-wide text-left ml-[65px] font-thin mb-10  text-primary_text">Projects</h1>
+    <div id='projects' className='w-screen lg:h-full bg-primary'>
+      <div className='relative flex items-center justify-center p-4 pt-20 lg:pt-[5%]'>
+      <div className="projecthome__parent lg:grid flexbox  ">
+        <div className="projecthome__title mr-2 ml-5 ">
+          <h1 className="lg:text-[1000%] text-8xl tracking-wide text-left lg:ml-[65px] font-thin mb-10 lg:mt-[8%] text-primary_text">
+            Projects
+          </h1>
         </div>
-        <div className="projecthome__child1 p-10 bg-secondary/50 rounded-xl mr-5 ml-4">
-          <ProjectHomeCarousel projects={projects} setProjectSelect={setProjectSelect} projectSelect={projectSelect}/>
+        <div className="projecthome__child1 lg:p-10 p-2 bg-secondary/50 rounded-xl lg:mr-5 lg:ml-4  lg:m-0 w-[375px] lg:w-[815px]">
+          <div className="lg:h-[450px] lg:w-full lg:px-4 p-1  mb-[0%]">
+            <Carousel 
+              array={projects} 
+              handleIndex = {handleIndex}
+              custom={"lg:w-[620px] xl:w-[700px] lg:h-[400px] w-[355px] h-[300px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
+            />
+            </div>
         </div>
-        <div className="projecthome__img bg-secondary/50 items-center justify-center p-5 rounded-xl w-[450px] h-[45%] mt-20">
-          <h2>Category?</h2>
-        </div>
-        <div className="projecthome__child2 p-10 bg-secondary/50 rounded-xl w-[450px]">
-          <h2 >{projects[projectSelect].name}</h2>
-          <p className="tracking-wider mx-2">{projects[projectSelect].desc}</p>
-          <div className="mt-[5%] mb-5 text-center ">
-            <Link href={'/portfolio'}>
-              <button className="inline-block rounded-xl bg-button_bg p-3 px-4 font-normal hover:drop-shadow-xl hover:bg-button_bg_hover  text-primary_text tracking-wider">Learn More on our Portfolio</button>
-            </Link>
+        <div className="projecthome__img relative bg-secondary/50 items-center text-center justify-center lg:p-5 rounded-xl w-[375px] mt-3 lg:w-[450px] lg:h-[45%] lg:mt-20 lg:m-0">
+          <div className="relative">
+            <button 
+            id='drop_down_button'
+            aria-label='drop_down_button'
+            onClick={()=> {setShowDropDown(!showDropDown)}}
+            data-dropdown-toggle="dropdown" 
+            className="relative lg:w-[400px] lg:text-2xl text-xl justify-between  hover:bg-secondary/60 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg p-4 lg:mt-2 text-center inline-flex items-center text-secondary_text" type="button">
+              {projects[projectSelect].sector}
+              { showDropDown ? <BsChevronCompactUp/> : <BsChevronCompactDown/>}
+            </button>
+            <div id="dropdown" className={ showDropDown ? "z-10 absolute right-0 lg:w-[220px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700": "hidden"}>
+        <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+          <li>
+            <a href="/portfolio/cultural" className="block px-4 py-2 hover:bg-accent_2/80   hover:text-white">Cultural</a>
+          </li>
+          <li>
+            <a href="/portfolio/educational/institutional" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Educational/Institutional</a>
+          </li>
+          <li>
+            <a href="/portfolio/residential" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Residential</a>
+          </li>
+          
+        </ul>
+    </div>
+
+          
+          
           </div>
+          
+
+    
+          {/* <div className='category__select'>
+            <ul>
+              <li>Institutional</li>
+              <li>Educational</li>
+              <li>Commercial</li>
+              <li>Cultural</li>
+              <li>Healthcare Facilities</li>
+              <li>Mixed-Use & High-Rise</li>
+              <li>Residential (High-End)</li>
+              <li>Transportation</li>
+              <li>Industrial</li>
+            </ul>
+
+          </div> */}
+        </div>
+        <div className="projecthome__child2 p-10 bg-secondary/50 rounded-xl md:w-[450px] md:m-0 m-2 md:h-[550px] h-[600px] w-[360px]">
+          <div>
+            <div className="absolute md:w-[380px] h-[525px] w-[250px] md:h-[475px]">
+            <div className="relative">
+              <h2 className="md:text-4xl text-2xl m-2">{projects[projectSelect].name}</h2>
+              <div className="m-2">
+                <h3 className="tracking-wider md:text-xl text-secondary_text">{projects[projectSelect].location}</h3>
+                <h3 className="tracking-wider md:text-xl text-secondary_text">{projects[projectSelect].year}</h3>
+              </div>
+              <p className="tracking-wider m-2 md:text-lg">{projects[projectSelect].desc}</p>
+              {projects[projectSelect].disclaimer ? <p className="tracking-wider m-2 text-[12px]">{projects[projectSelect].disclaimer}</p> : ""}
+            </div>
+            <div className=" text-center absolute bottom-0 md:left-[15%] left-5 ">
+              <Link href={'/portfolio'}>
+                <button id='portfolio_button' aria-label='portfolio_button' className="inline-block rounded-xl bg-button_bg text-dark_text p-3 px-4 font-normal hover:drop-shadow-xl hover:bg-button_bg_hover/70 hover:text-secondary_text  tracking-wider">Learn More on Our Portfolio</button>
+              </Link>
+            </div>
+            
+          </div>
+          </div>
+          
+          
+          
+          
           {/* <h1 className="text-4xl">Our Story</h1>
           <p className="tracking-wider">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> */}
         </div>
