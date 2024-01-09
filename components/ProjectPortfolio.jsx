@@ -1,74 +1,90 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+import { useRouter } from 'next/router';
+import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import PortfolioList from "./PortfolioList";
-import {BsChevronCompactDown} from 'react-icons/bs';
+import {BsChevronCompactDown, BsChevronCompactUp} from 'react-icons/bs';
 
-function ProjectPortfolio(){
-  const [category, setCategory] = useState('All')
+function ProjectPortfolio({ projects, category, showDropDown, setShowDropDown }){
   
-  // if id is odd, open the description div to the right
-  //  if id is even, open the description div to the left
-  const projects = [
-    {
-      name: 'MSC',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/miami-terminal.avif'
-    },
-    {
-      name: 'MSC',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/miami-terminal.avif'
-    },
-    {
-      name: 'MSC',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/miami-terminal.avif'
-    },
-    {
-      name: 'MSC',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/miami-terminal.avif'
-    },
-    {
-      name: 'MSC',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/miami-terminal.avif'
-    },
-    {
-      name: 'MSC',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/miami-terminal.avif'
-    },
-    {
-      name: 'MSC',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/miami-terminal.avif'
-    },
-    {
-      name: 'MSC',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/miami-terminal.avif'
-    },
-    {
-      name: 'MSC',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/miami-terminal.avif'
-    },
-    {
-      name: 'MSC',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/miami-terminal.avif'
-    }
-  ]
+  
+  const router = useRouter();
+  
 
 
   return(
     <div className="w-screen h-full bg-primary">
-      <div className="p-20">
-        <h1 className="md:text-[1100%] text-5xl font-thin text-primary_text text-left tracking-wide">Portfolio</h1>
-      </div>
-      <div>
-      <div className="text-right">
+      <motion.div 
+      initial={{opacity:0}}
+      animate={{opacity:1, transition:{delay:1, duration:1}}}
+      className="md:px-20 pt-20 pb-10">
+        <h1 className="md:text-[1100%] text-8xl font-thin text-primary_text md:text-left text-center tracking-wide">Portfolio</h1>
+      </motion.div>
+      <div className="items-center justify-center" id="outer-container" >
+        
+        <motion.div 
+        initial={{opacity:0}}
+        animate={{opacity:1, transition:{delay:1.5, duration:1}}}
+        className="flex md:justify-start md:mx-20 justify-center "
+        >
+          <div className='relative' id='drop_down_parent'>
+            {/* <label className="text-2xl text-secondary_text mr-2 ">Select a Category:</label> */}
+            <button id='drop_down_button' aria-label='drop_down_button' onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative text-xl justify-between w-[300px] bg-button_bg/30 hover:bg-secondary/70 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg  py-2  ml-2 inline-flex items-center text-secondary_text" type="button">
+              <p className='mx-2'>{category}</p>
+              <motion.p 
+              animate={{y:[-1,2,2,-1]}}
+              transition={{
+                duration: "1",
+                repeat: Infinity,
+              }}
+              className='mx-2 '>
+                { showDropDown ? <BsChevronCompactUp/> : <BsChevronCompactDown/>}
+              </motion.p>
+            </button>
+            <div id="dropdown" className={ showDropDown ? "z-10 absolute right-0 md:w-[200px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 text-center": "hidden"}>
+              <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                <li>
+                  <a href="/portfolio" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Choose A Sector</a>
+                </li>
+                <li>
+                  <a href="/portfolio/commercial-transportation" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Commercial/Transportation</a>
+                </li>
+                <li>
+                  <a href="/portfolio/cultural" className="block px-4 py-2 hover:bg-accent_2/80   hover:text-white">Cultural</a>
+                </li>
+                <li>
+                  <a href="/portfolio/educational-institutional" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Educational/Institutional</a>
+                </li>
+                <li>
+                  <a href="/portfolio/high-rise" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">High-Rise</a>
+                </li>
+                <li>
+                  <a href="/portfolio/industrial" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Industrial</a>
+                </li>
+                <li>
+                  <a href="/portfolio/mixed-use" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Mixed-Use</a>
+                </li>
+                <li>
+                  <a href="/portfolio/performance-venues" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Performance Venues</a>
+                </li>
+                <li>
+                  <a href="/portfolio/residential" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Residential</a>
+                </li>
+{/*                 
+                <li>
+                  <a href="/portfolio/transportation" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white ">Transportation</a>
+                </li> */}
+              </ul>
+            </div>
+          </div>
+
+          
+          
+        </motion.div>
+        
+      {/*  SELECT DROP DOWN*/}
+      {/* <div className="text-right">
         <select
           value={category}
           onChange={(e) => {
@@ -85,18 +101,24 @@ function ProjectPortfolio(){
           <option value="Category 6">Category 6</option>
           <option value="Category 7">Category 7</option>
         </select>
-      </div>
-      <div className="grid md:grid-cols-2 mx-20 py-10">
+      </div> */}
+      <div className="flex items-center justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-4 p-2 m-5 items-center justify-evenly bg-tertiary/80 rounded-xl max-w-[2000px]">
         {
           projects.map((proj)=> {
             return(
-              <PortfolioList project={proj}/>
+              <div key={proj.name} className={proj.child ? `${proj.child}`: "w-full col-span-2"}>
+                <PortfolioList project={proj}/>
+              </div>
+              
             )
           })
         }
 
 
       </div>
+      </div>
+      
       </div>
 
     </div>
