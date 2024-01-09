@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const About = () => {
   const [show, setShow] = useState(false)
-
+  //CHECK screen size
   const useMediaQuery = (width) => {
     const [targetReached, setTargetReached] = useState(false);
   
@@ -32,10 +32,7 @@ const About = () => {
   
     return targetReached;
   };
-
-
   const isBreakPoint = useMediaQuery(800)
-
 
   const traits = [
     'Inter-Disciplinary', 'Sustainable', 'Automation', 'Small-Business', 'Client-Care', 'Ingenuity'

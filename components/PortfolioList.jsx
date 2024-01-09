@@ -4,7 +4,6 @@ import {BsChevronCompactDown, BsChevronCompactUp} from 'react-icons/bs';
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import { Catamaran } from "next/font/google";
 
 function PortfolioList({project}){
 
