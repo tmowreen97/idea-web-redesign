@@ -88,23 +88,6 @@ function ProjectHome(){
           
           
           </div>
-          
-
-    
-          {/* <div className='category__select'>
-            <ul>
-              <li>Institutional</li>
-              <li>Educational</li>
-              <li>Commercial</li>
-              <li>Cultural</li>
-              <li>Healthcare Facilities</li>
-              <li>Mixed-Use & High-Rise</li>
-              <li>Residential (High-End)</li>
-              <li>Transportation</li>
-              <li>Industrial</li>
-            </ul>
-
-          </div> */}
         </div>
         <div className="projecthome__child2 p-10 bg-secondary/50 rounded-xl md:w-[450px] md:m-0 m-2 md:h-[550px] h-[600px] w-[360px]">
           <div>
@@ -126,12 +109,6 @@ function ProjectHome(){
             
           </div>
           </div>
-          
-          
-          
-          
-          {/* <h1 className="text-4xl">Our Story</h1>
-          <p className="tracking-wider">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> */}
         </div>
       </div>
   </div>

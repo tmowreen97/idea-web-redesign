@@ -48,9 +48,6 @@ function ProjectPortfolio({ projects, category, showDropDown, setShowDropDown })
                   <a href="/portfolio" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Choose A Sector</a>
                 </li>
                 <li>
-                  <a href="/portfolio/commercial-transportation" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Commercial/Transportation</a>
-                </li>
-                <li>
                   <a href="/portfolio/cultural" className="block px-4 py-2 hover:bg-accent_2/80   hover:text-white">Cultural</a>
                 </li>
                 <li>
@@ -60,21 +57,8 @@ function ProjectPortfolio({ projects, category, showDropDown, setShowDropDown })
                   <a href="/portfolio/high-rise" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">High-Rise</a>
                 </li>
                 <li>
-                  <a href="/portfolio/industrial" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Industrial</a>
-                </li>
-                <li>
-                  <a href="/portfolio/mixed-use" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Mixed-Use</a>
-                </li>
-                <li>
-                  <a href="/portfolio/performance-venues" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Performance Venues</a>
-                </li>
-                <li>
                   <a href="/portfolio/residential" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Residential</a>
                 </li>
-{/*                 
-                <li>
-                  <a href="/portfolio/transportation" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white ">Transportation</a>
-                </li> */}
               </ul>
             </div>
           </div>
@@ -107,7 +91,7 @@ function ProjectPortfolio({ projects, category, showDropDown, setShowDropDown })
         {
           projects.map((proj)=> {
             return(
-              <div key={proj.name} className={proj.child ? `${proj.child}`: "w-full col-span-2"}>
+              <div key={proj.name} className={proj.child ? `${proj.child}`: "w-full col-span-4"}>
                 <PortfolioList project={proj}/>
               </div>
               
