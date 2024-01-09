@@ -87,11 +87,11 @@ function ProjectPortfolio({ projects, category, showDropDown, setShowDropDown })
         </select>
       </div> */}
       <div className="flex items-center justify-center">
-        <div className="grid grid-cols-1 lg:grid-cols-4 p-2 m-5 items-center justify-evenly bg-tertiary/80 rounded-xl max-w-[2000px]">
+        <div className="grid grid-cols-1  p-2 m-5 items-center justify-evenly bg-tertiary/80 rounded-xl max-w-[4000px]">
         {
           projects.map((proj)=> {
             return(
-              <div key={proj.name} className={proj.child ? `${proj.child}`: "w-full col-span-4"}>
+              <div key={proj.name} className={proj.child ? `${proj.child}`: "w-full "}>
                 <PortfolioList project={proj}/>
               </div>
               

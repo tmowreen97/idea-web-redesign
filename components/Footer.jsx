@@ -82,7 +82,7 @@ export default function Footer(){
                 </div>
                 <input type="hidden" name="_next" value="https://www.ideaaec.com/thank-you"/>
                 <div className="text-center items-center justify-center flex ">
-                  <div className="bg-button_bg hover:bg-button_bg_hover/80 rounded-xl p-2 shadow-xl text-primary_text">
+                  <div className="bg-button_bg hover:bg-button_bg_hover/80 rounded-xl p-2 shadow-xl ">
                     <button id='submit_2' aria-label="submit_2" type='submit'>Send</button>
                   </div>
                 </div>
@@ -90,7 +90,7 @@ export default function Footer(){
             </div>
             
           </div>
-          <div className="grid grid-cols-3  text-center items-center justify-center  pt-5 text-primary_text pb-5">
+          <div className="grid grid-cols-3  text-center items-center justify-center  pt-5  pb-5">
             <div className="text-center items-center justify-center flex rounded-xl ">
               <div className="bg-button_bg hover:bg-button_bg_hover/70  rounded-full p-4 text-2xl">
                 <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
@@ -129,9 +129,7 @@ export default function Footer(){
       </div>
       <div className="flex items-center justify-center pb-5">
         <div className="flex">
-          <p className="text-sm text-dark_text mr-1" >© 2023 by IDEA</p>
-          <p className="text-xs text-dark_text mr-1 mt-[3px]" >CSC</p>
-          <p className="text-xs text-dark_text mr-1 mt-[3px]" >LLC</p>
+          <p className="text-sm text-dark_text" >© 2024 by IDEA <span className="text-xs text-dark_text ">CSC</span> <span className="text-xs text-dark_text" >LLC</span></p>
           
         </div>
           

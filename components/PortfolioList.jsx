@@ -38,8 +38,8 @@ function PortfolioList({project}){
     <div className=" relative p-1" onMouseEnter={()=> setProjHover(true)}
     onMouseLeave={()=> setProjHover(false)}>
       <div className={hide ? "relative rounded-xl overflow-hidden hidden h-full" : "relative rounded-xl overflow-hidden h-full"}>
-        <Image src={project.image}  width={800} height={200} sizes="200vw" alt={project.name} className={project.custom ? `${project.custom}` : 'w-full h-full rounded-lg'}/>
-        <div className={projHover ? "absolute top-0 bottom-0 left-0 right-0 bg-[#322d44]/80 text-secondary_text  " : "hidden"}>
+        <Image src={project.image}  width={800} height={200} sizes="400vw" alt={project.name} className={project.custom ? `${project.custom}` : 'w-full h-full rounded-lg'}/>
+        <div className={projHover ? "absolute top-0 bottom-0 left-0 right-0 bg-tertiary/90 text-secondary_text  " : "hidden"}>
           <div className={project.spacing ? project.spacing : "relative top-1/4"}>
             <div className="relative justify-center items-center text-center m-2 ">
               <h1 className="md:text-4xl text-lg md:mb-5 items-center justify-center">{project.name}</h1>
@@ -61,7 +61,7 @@ function PortfolioList({project}){
               id='our_team_button'
               aria-label='our_team_button'
               onClick={()=> handleClick()}
-              className="hover:bg-accent_2 hover:text-primary_text  bg-light_bg text-dark_text rounded-full overflow-hidden md:text-lg text-xs p-1 md:p-3 m-2"
+              className="hover:bg-button_bg/80 hover:text-primary_text  bg-button_bg_hover text-dark_text rounded-full overflow-hidden md:text-lg text-xs p-1 md:p-3 m-2"
               >Click to Learn More</button>
             </div>
               
