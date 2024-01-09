@@ -20,6 +20,7 @@ module.exports = {
         tertiary : '#042a2c',
         footer_bg: '#0d352b',
         // accent_1 : '#980000',
+        red_accent: '#F14A4A',
         button_bg : '#6cb49c',
         button_bg_hover: '#7fffd4',
         accent_1: '#42a26c',
