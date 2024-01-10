@@ -149,7 +149,7 @@ function ServicesPage(){
         <div className="font-light">
           {/* Title */}
           <div className="items-center justify-center flex">
-            <h1 className="text-dark_text bg-light_bg rounded-2xl p-7 xl:m-10 my-2 2xl:text-7xl lg:text-5xl text-4xl">Engineering Services</h1>
+            <h1 className=" bg-secondary font-thin rounded-2xl p-7 xl:m-10 my-2 2xl:text-7xl lg:text-5xl text-4xl">Engineering Services</h1>
           </div>
           {/* Subsections*/}
           {/* actual grid without title */}
@@ -160,7 +160,7 @@ function ServicesPage(){
                 <div className="xl:h-[675px] flex justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
                   <div className="justify-center">
                     <div className="items-center justify-center flex">
-                      <h1 className="xl:text-4xl text-3xl p-5">{service.title}</h1>
+                      <h1 className="text-dark_text xl:text-4xl text-3xl p-5">{service.title}</h1>
                     </div>
                     <div className="2xl:w-[400px] xl:w-[345px] lg:w-[325px] 2xl:h-[450px] items-center flex justify-center rounded-2xl p-8 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
                     <div className="">
@@ -192,7 +192,7 @@ function ServicesPage(){
                 <div className="flex xl:h-[350px] justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
                   <div className="justify-center">
                     <div className="items-center justify-center flex">
-                      <h1 className="text-3xl xl:text-4xl p-5">{service.title}</h1>
+                      <h1 className="text-dark_text text-3xl xl:text-4xl p-5">{service.title}</h1>
                     </div>
                     <div className="2xl:w-[400px] xl:h-[200px] flex justify-center rounded-2xl p-5 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
                     <div>
@@ -220,7 +220,7 @@ function ServicesPage(){
           {/* Life Cycle */}
           <div className="">
             <div className="flex items-center justify-center">
-              <h1 className="text-dark_text bg-light_bg rounded-2xl p-5 m-10 xl:w-[650px] lg:text-6xl text-4xl text-center">{life_cycle_services.title}</h1>
+              <h1 className="bg-secondary font-thin  rounded-2xl p-5 m-10 xl:w-[650px] lg:text-6xl text-4xl text-center">{life_cycle_services.title}</h1>
             </div>
             <div className="justify-center items-center flex ">
               <div className="flex justify-center 2xl:h-[625px] rounded-2xl 2xl:mx-10 p-5  my-5 2xl:my-0 xl:w-[500px] w-[375px]" style={{backgroundColor: `${life_cycle_services.color}`}}>
@@ -244,7 +244,7 @@ function ServicesPage(){
           {/* Construction */}
           <div className="justify-center">
           <div className="flex justify-center items-center">
-            <h1 className="text-dark_text bg-light_bg rounded-2xl p-5 m-10 xl:w-[650px] lg:text-6xl text-4xl text-center">{construction_services.title}</h1>
+            <h1 className="bg-secondary font-thin  rounded-2xl p-5 m-10 xl:w-[650px] lg:text-6xl text-4xl text-center">{construction_services.title}</h1>
           </div>
             <div className="justify-center flex ">
               <div className="flex justify-center 2xl:h-[625px] rounded-2xl 2xl:mx-10 p-5  my-5 2xl:my-0 xl:w-[500px] w-[375px]" style={{backgroundColor: `${construction_services.color}`}}>
