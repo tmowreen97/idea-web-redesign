@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import {React, useState, useEffect, useCallback} from "react";
-import ReactPlayer from "react-player/lazy";
+// import ReactPlayer from "react-player/lazy";
 import { AiFillInstagram, AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 import {BsChevronCompactDown, BsChevronCompactUp} from 'react-icons/bs';
 
@@ -484,7 +484,7 @@ function Culture_Page_Two(){
                         <Image src={post.single_image.image} width={post.single_image.width} height={post.single_image.height} alt={post.single_image.title} className="rounded-xl overflow-hidden"/>
                         : ""
                       }
-                      {post.video_large && isClient ? 
+                      {/* {post.video_large && isClient ? 
                          <Link href={'https://www.facebook.com/reel/661496844905448'} legacyBehavior>
                          <a target="_blank" rel="noopener noreferrer" aria-label="MSC Groundbreaking Video">
                            {!isBreakPoint ? 
@@ -516,7 +516,7 @@ function Culture_Page_Two(){
                          
                          </Link>
                          : ""                    
-                      }
+                      } */}
                       </div>
                       {/* Text body */}
                       <div className="m-3 max-w-[700px] z-[9]">
@@ -551,7 +551,7 @@ function Culture_Page_Two(){
                         <Image src={post.single_image.image} width={post.single_image.width} height={post.single_image.height} alt={post.single_image.title} className="rounded-xl overflow-hidden"/>
                         : ""
                       }
-                      {post.video_large && isClient ? 
+                      {/* {post.video_large && isClient ? 
                          <Link href={'https://www.facebook.com/reel/661496844905448'} legacyBehavior>
                          <a target="_blank" rel="noopener noreferrer" aria-label="MSC Groundbreaking Video">
                            {!isBreakPoint ? 
@@ -583,7 +583,7 @@ function Culture_Page_Two(){
                          
                          </Link>
                          : ""                    
-                      }
+                      } */}
                       </div>
                       
                     </div>
