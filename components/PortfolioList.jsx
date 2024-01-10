@@ -89,7 +89,7 @@ function PortfolioList({project}){
         animate={{opacity:1, transition: {duration:1}}}
         className={"lg:z-20 flex h-full w-full items-center justify-center  bg-tertiary/80"}
         >
-          <div className="justify-center items-center bg-light_bg text-left p-5 rounded-2xl  z-9 lg:z-20 m-5  h-full md:h-auto max-w-[2500px]  md:top-[10%] md:bottom-[10%] bottom-[0] ">
+          <div className="justify-center items-center bg-accent_3 text-left p-5 rounded-2xl  z-9 lg:z-20 m-5  h-full md:h-auto max-w-[2500px]  md:top-[10%] md:bottom-[10%] bottom-[0] ">
             <div className="flex justify-end lg:my-[-10px] my-2">
               <AiOutlineCloseCircle 
               onClick={()=> handleClick()}
@@ -179,7 +179,7 @@ function PortfolioList({project}){
                   </div>
                   <div className="m-5 flex justify-evenly ">
                     <div>
-                      <h3 className="md:text-2xl text-xl">Services:</h3>
+                      <h3 className="md:text-2xl text-xl text-dark_text">Services:</h3>
                       <ul className="list-disc mx-5 m-3">
                         {project.services.map((service, index) => {
                           return(
@@ -190,7 +190,7 @@ function PortfolioList({project}){
                     </div>
                     { project.resources ? 
                     <div >
-                      <h3 className="md:text-2xl text-xl">Resources:</h3>
+                      <h3 className="md:text-2xl text-xl text-dark_text">Resources:</h3>
                       <ul className="mx-4 m-3">
                         {project.resources.map((link, index) => {
                           return(

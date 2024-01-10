@@ -62,7 +62,7 @@ function ThankYou(){
                 <h2 className="lg:text-2xl text-lg">Inter-Disciplinary Engineering Associates, LLC</h2>
                 <p className="lg:text-2xl text-lg">Construction Solutions Company</p>
               </div>
-              <p className="text-lg">Dhaka | Comilla, Bangladesh</p>
+              <p className="text-lg">Dhaka, Comilla | Bangladesh</p>
               <p className="text-lg">kazi@IdeaCSC.com</p>
               <p className="text-lg ">Mobile: +880 1832-115611</p>
               <p className="text-lg ">Office: +880 1820-685001</p>

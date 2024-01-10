@@ -220,7 +220,7 @@ function ServicesPage(){
           {/* Life Cycle */}
           <div className="">
             <div className="flex items-center justify-center">
-              <h1 className="bg-secondary font-thin  rounded-2xl p-5 m-10 xl:w-[650px] lg:text-6xl text-4xl text-center">{life_cycle_services.title}</h1>
+              <h1 className="bg-secondary font-thin  rounded-2xl p-5 m-10 xl:w-[725px] xl:h-[160px] flex items-center lg:text-6xl text-4xl text-center">{life_cycle_services.title}</h1>
             </div>
             <div className="justify-center items-center flex ">
               <div className="flex justify-center 2xl:h-[625px] rounded-2xl 2xl:mx-10 p-5  my-5 2xl:my-0 xl:w-[500px] w-[375px]" style={{backgroundColor: `${life_cycle_services.color}`}}>
@@ -244,10 +244,10 @@ function ServicesPage(){
           {/* Construction */}
           <div className="justify-center">
           <div className="flex justify-center items-center">
-            <h1 className="bg-secondary font-thin  rounded-2xl p-5 m-10 xl:w-[650px] lg:text-6xl text-4xl text-center">{construction_services.title}</h1>
+            <h1 className="bg-secondary font-thin  rounded-2xl p-5 m-10 xl:w-[725px] lg:text-6xl text-4xl text-center flex items-center">{construction_services.title}</h1>
           </div>
             <div className="justify-center flex ">
-              <div className="flex justify-center 2xl:h-[625px] rounded-2xl 2xl:mx-10 p-5  my-5 2xl:my-0 xl:w-[500px] w-[375px]" style={{backgroundColor: `${construction_services.color}`}}>
+              <div className="flex justify-center xl:h-[500px] 2xl:h-[625px] rounded-2xl 2xl:mx-10 p-5  my-5 2xl:my-0 xl:w-[500px] w-[375px]" style={{backgroundColor: `${construction_services.color}`}}>
                 <div className="2xl:w-[475px] flex justify-center rounded-2xl p-5 xl:m-10 shadow-inner font-medium" style={{backgroundColor: `${construction_services.list_color}`}}>
                   <div className="flex ">
                     <ul className="justify-center items-center">
