@@ -12,6 +12,23 @@ module.exports = {
           '0%, 100%': { transform: 'rotate(-2deg)' },
           '50%': { transform: 'rotate(2deg)' },
         },
+        typing: {
+          "0%": {
+            width: "0%",
+            visibility: "hidden"
+          },
+          "100%": {
+            width: "100%"
+          }  
+        },
+        blink: {
+          "50%": {
+            borderColor: "transparent"
+          },
+          "100%": {
+            borderColor: "white"
+          }  
+        },
 
       },
       colors:{
@@ -26,18 +43,21 @@ module.exports = {
         button_bg: '#7FFFD4',
         accent_1: '#42A26C',
         accent_2: '#86DA96',
+        accent_3: '#63a081',
+        accent_4: '#529673',
         // button_bg : '#8dedd0',
         primary_text : '#FFFFF2',
-        secondary_text : '#FFFFF2',
         dark_text: '#070706',
+
       },
       fontFamily: {
         sans: ['var(--font-urbanist)'],
       },
       animation:{
-        'wiggle': 'wiggle 2s ease-in-out infinite',
+        wiggle: 'wiggle 2s ease-in-out infinite',
         // 'bounce-slow': 'bounce 2s ease-in-out infinite',
-        'pulsing': 'pulsing 2s ease-in-out infinite'
+        pulsing: 'pulsing 2s ease-in-out infinite',
+        typing: "typing 2s steps(20) alternate, blink .8s infinite"
       }
     },
   },

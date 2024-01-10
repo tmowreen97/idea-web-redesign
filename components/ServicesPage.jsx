@@ -115,8 +115,8 @@ function ServicesPage(){
       "AS-BUILT Documentation",
       "Existing Conditions Documentation",
     ],
-    color: '#BBAFDA',
-    list_color: '#b4a7d6'
+    color: '#63a081',
+    list_color: '#529673'
   }
 
   const construction_services = {
@@ -133,8 +133,8 @@ function ServicesPage(){
       "Construction Bid Procurement",
       "Site Safety Coordination & Supervision",
     ],
-    color: '#BBAFDA',
-    list_color: '#b4a7d6'
+    color: '#63a081',
+    list_color: '#529673'
   }
   return(
     <div className="w-screen h-full bg-primary">
@@ -248,7 +248,7 @@ function ServicesPage(){
           </div>
             <div className="justify-center flex ">
               <div className="flex justify-center 2xl:h-[625px] rounded-2xl 2xl:mx-10 p-5  my-5 2xl:my-0 xl:w-[500px] w-[375px]" style={{backgroundColor: `${construction_services.color}`}}>
-                <div className="2xl:w-[475px] flex justify-center rounded-2xl p-5 xl:m-10 shadow-inner font-medium" style={{backgroundColor: `${life_cycle_services.list_color}`}}>
+                <div className="2xl:w-[475px] flex justify-center rounded-2xl p-5 xl:m-10 shadow-inner font-medium" style={{backgroundColor: `${construction_services.list_color}`}}>
                   <div className="flex ">
                     <ul className="justify-center items-center">
                   {construction_services.services.map((service)=> {

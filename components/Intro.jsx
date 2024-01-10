@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 function Intro(){
   return(
-    <div className='w-screen h-full bg-primary font-thin text-primary_text tracking-widest '>
-      <div className="py-10 justify-center items-center">
+    <div id='about' className='w-screen h-full bg-primary font-thin text-primary_text tracking-widest '>
+      <div className="py-2 justify-center items-center">
         <div className="xl:p-20 p-10">
           <div className="xl:flex items-center justify-center">
             <div>
