@@ -1,23 +1,24 @@
 import React from "react";
 import Link from "next/link";
 import { AiFillInstagram, AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
+import {BsArrowReturnRight, BsArrowRight} from "react-icons/bs";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-function ContactPage(){
+function ThankYou(){
   return(
     <div className="w-screen h-full bg-primary font-light">
       <motion.div 
       initial={{opacity:0}}
       animate={{opacity:1, transition:{duration:2, delay:1} }}
-      className="lg:p-20 pt-20 pb-10 px-5 ">
+      className="lg:p-20 pt-20 pb-10 px-5">
         <h1 className="md:text-[1100%] text-8xl font-thin text-primary_text text-left tracking-wide">Contact</h1>
       </motion.div>
-      <div className="md:grid md:grid-cols-2 items-center justify-center lg:px-20 ">
+      <div className="md:grid md:grid-cols-2 items-center justify-center lg:px-20">
         {/* col/row 1/1 area */}
         <div className=" text-xl flex rounded-xl m-3 pt-2 items-center justify-center ">
           {/* Icons on left handle */}
-          <div className="  rounded-xl p-4">
+          <div className="rounded-xl p-4">
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:2}}}
@@ -50,7 +51,7 @@ function ContactPage(){
           {/* col/row 1/1 text */}
           <motion.div 
           initial={{opacity:0}}
-          animate={{opacity:1, transition:{duration:2, delay:1.5}}}
+          animate={{opacity:1, transition:{duration:2, delay:1.5} }}
           className="">
             <div className="lg:pb-[75px] pb-5">
               <div className="lg:pb-[75px] pb-5">
@@ -74,54 +75,42 @@ function ContactPage(){
           </motion.div>
           
         </div>
-        {/* col/row 2/1 form */}
-        <motion.div 
-        initial={{opacity:0}}
-        animate={{opacity:1, transition:{duration:2, delay:1.5}}}
-        className="items-center justify-center flex mt-10 lg:mt-0 ">
-        <div className="lg:w-[500px] lg:h-[400px] w-[350px] h-[385px] bg-secondary rounded-xl lg:ml-20">
-          <form 
-          className="text-center items-center justify-center mt-[3%]" 
-          action="https://formsubmit.co/info@ideaaec.com" 
-          method="POST">
-            <h2>Contact Us</h2>
-            <div className="m-5">
-              {/* <label>Name:</label> */}
-              <input 
-              type="name" 
-              name="name" 
-              className="md:w-[400px] w-[300px] h-[40px] rounded-xl text-center p-1" 
-              placeholder="Name"
-              required/>
+        <div className="text-center justify-evenly lg:mt-[-25px] mt-10">
+          <motion.div 
+          initial={{opacity:0}}
+          animate={{opacity:1, transition:{duration:2, delay:1.5} }}
+          className="text-2xl m-2 mx-8  p-8 bg-secondary rounded-xl text-left  items-center justify-center">
+            <h1 className="">Thank you!</h1>
+            <h1>We look forward to empowering your ideas.</h1>
+          </motion.div>
+          <motion.div 
+          initial={{opacity:0}}
+          animate={{opacity:1, transition:{delay:2}}}
+          className=" text-primary_text mt-10"
+          >
+            <div className="mr-2">
+              <h1 className="p-2 lg:text-lg text-base ">In the meantime, check out what we've been up to:</h1>
             </div>
-            <div className="m-5">
-              {/* <label>Email:</label> */}
-              <input 
-              type="email" 
-              name="email" 
-              className="md:w-[400px] w-[300px] h-[40px] rounded-xl text-center p-1 border-none" 
-              placeholder="Email"
-              required/>
+            <div className="flex justify-center items-center gap-10 mt-5">
+              <motion.div
+              animate={{x:[-3,2,2,-3], opacity:1}}
+              transition={{
+                // duration: "9",
+                delay : 3,
+                repeat: Infinity,
+                repeatDelay: 1
+              }}
+              >
+                <BsArrowRight className="text-3xl text-left"/>
+              </motion.div>
+              <button id='culture' aria-label='culture' className="bg-button_bg p-3 rounded-xl text-dark_text hover:bg-accent_2 hover:text-primary_text text-xl">
+              <Link href={'/culture'}>Culture</Link>
+            </button>
             </div>
-            <div className="m-5">
-              {/* <label>Message:</label> */}
-              <textarea 
-              type="text" 
-              name="message" 
-              className="md:w-[400px]  w-[300px] md:h-[80px] rounded-xl text-center max-h-[100px] p-1 border-none" 
-              placeholder="Message"
-              required/>
-            </div>
-            <input type="hidden" name="_next" value="https://www.ideaaec.com/thank-you"></input>
-            {/* <input type="hidden" name="_captcha" value="false"></input> */}
-            <div className="text-center items-center justify-center flex ">
-              <div className="bg-tertiary/80 hover:bg-accent_2/80 rounded-xl p-2 px-5 shadow-xl text-primary_text">
-                <button id='submit' aria-label="submit" type='submit'>Send</button>
-              </div>
-            </div>
-          </form>
+            
+          </motion.div>
+
         </div>
-      </motion.div>
       </div>
       <div>
         <motion.div 
@@ -151,11 +140,10 @@ function ContactPage(){
           </div>
         </motion.div>
         
-      </div>      
+      </div>       
     </div>
   )
 }
 
-export default ContactPage;
-
+export default ThankYou;
 

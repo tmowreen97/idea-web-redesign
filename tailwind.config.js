@@ -57,7 +57,7 @@ module.exports = {
         wiggle: 'wiggle 2s ease-in-out infinite',
         // 'bounce-slow': 'bounce 2s ease-in-out infinite',
         pulsing: 'pulsing 2s ease-in-out infinite',
-        typing: "typing 2s steps(20) alternate, blink .8s infinite"
+        typing: "typing 2s steps(20) infinite alternate, blink .7s infinite"
       }
     },
   },

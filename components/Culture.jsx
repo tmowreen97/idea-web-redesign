@@ -380,14 +380,14 @@ function Culture_Page_Two(){
       </div> */}
       {/* Social Media Links */}
       <div>
-        <div className="flex font-light md:px-28">
+      <motion.div 
+      // initial={{opacity:0}}
+      // animate={{opacity:1, transition: {delay:5, duration:1}}}
+      className="flex font-light md:px-28">
           <div className="w-max">
-            <h1 className="text-4xl animate-typing overflow-hidden whitespace-nowrap pr-1">Connect with us:</h1>
-
+            <h1 className="text-4xl animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-primary_text p-4 delay-200">Connect with us:</h1>
           </div>
-          
-          
-        </div>
+        </motion.div>
         <motion.div 
         initial={{opacity:0}}
         animate={{opacity:1, transition:{duration:2, delay:1.5} }}
