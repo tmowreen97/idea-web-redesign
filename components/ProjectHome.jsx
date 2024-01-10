@@ -66,7 +66,7 @@ function ProjectHome(){
             aria-label='drop_down_button'
             onClick={()=> {setShowDropDown(!showDropDown)}}
             data-dropdown-toggle="dropdown" 
-            className="relative lg:w-[400px] lg:text-2xl text-xl justify-between  hover:bg-secondary/60 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg p-4 lg:mt-2 text-center inline-flex items-center text-secondary_text" type="button">
+            className="relative lg:w-[400px] lg:text-2xl text-xl justify-between  hover:bg-secondary/60 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg p-4 lg:mt-2 text-center inline-flex items-center text-primary_text" type="button">
               {projects[projectSelect].sector}
               { showDropDown ? <BsChevronCompactUp/> : <BsChevronCompactDown/>}
             </button>
