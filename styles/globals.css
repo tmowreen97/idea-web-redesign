@@ -18,12 +18,8 @@ h2{
   font-size: 40px;
 }
 
-h1{
-  color:'#070706';
-}
-
-p{
-  color : #FFFFF2;
+h1, p , h3{
+  color:#FFFFF2;
 }
 
 

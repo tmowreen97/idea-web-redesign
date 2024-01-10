@@ -56,15 +56,15 @@ function ContactPage(){
               <div className="lg:pb-[75px] pb-5">
                 <div className="flex pb-1">
                   <h2 className="lg:text-8xl text-6xl">IDEA</h2>
-                  <h2 className="lg:text-2xl text-lg lg:pt-14 pt-8 ml-3">AEC</h2>
+                  <h2 className="lg:text-2xl text-lg lg:pt-14 pt-8 ml-3">CSC</h2>
                 </div>
                 <h2 className="lg:text-2xl text-lg">Inter-Disciplinary Engineering Associates, LLC</h2>
-                <p className="lg:text-2xl text-lg">Architectural Engineering Consultants</p>
+                <p className="lg:text-2xl text-lg">Construction Solutions Company</p>
               </div>
               <p className="text-lg">Monroe, Connecticut | Miami, Florida</p>
-              <p className="text-lg">info@IdeaAEC.com</p>
-              <p className="text-lg ">FL: 954-295-2125</p>
-              <p className="text-lg ">CT: 203-917-7907</p>
+              <p className="text-lg">kazi@IdeaCSC.com</p>
+              <p className="text-lg ">Mobile: +880 1832-115611</p>
+              <p className="text-lg ">Office: +880 1820-685001</p>
             </div>
             <div>
               <p className="lg:text-lg text-sm">Please feel free to contact us with any questions or business inquiries.</p>

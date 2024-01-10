@@ -1,85 +1,62 @@
-import {react, useState} from "react";
-import Image from "next/image";
 import {motion} from 'framer-motion';
-import Card from "./Card";
+import TeamList from "./TeamList";
+import AnimatedText from "./AnimatedText";
 
 
 function OurTeam (){
+
+  const words = "Manifesting World Class Ideas"
+
   const main_team = [
     {
       name: 'Kazi Karim',
-      title: 'Principal Engineer',
-      image: '/assets/profile-pic.webp'
+      title: 'Introducing Kazi: Our Visionary Founder & Managing Principal',
+      heading: '',
+      body: [
+        "At the helm of Inter-Disciplinary Engineering Associates, LLC (IDEA) stands Kazi, the visionary Founder & Managing Principal. His leadership fuels the strategic growth of IDEA's integrated Mechanical, Electrical (including Fire Alarm), Plumbing, and Fire Protection (MEP-FP) engineering practice. Drawing from an extensive portfolio of Design and Forensics engineering expertise, Kazi is uniquely experienced to lead and accommodate complex and demanding project engagements.",
+        "Prior to founding IDEA, Kazi's journey included impactful roles at prominent engineering establishments including AltieriSeborWieber LLC (Altieri) and DeSimone Consulting Engineers, LLC (New York). With a wealth of diverse professional experience and knowledge, Kazi continues to drive innovation and excellence, translating engineering visions into tangible accomplishments and developments for the Architectural Engineering industry."
+      ],
+      contact: "/assets/PEKaziAKarimUPDATED.msg",
+      linkedin: "https://www.linkedin.com/in/kazi-a-karim-p-e-2a3a3416/",
+      fun_fact: "Kazi is an enthusiastic sports fan, always willing to hit the field or harwood (football & basketball) for a good competitive workout. His experience as a College and High-School Quarterback empowers Kazi to joyfully Quarterback the growth and development of IDEA.",
+      image: '/assets/blank.jpeg'
     },
     {
-      name: 'Vinoo Jankie',
-      title: 'Principal Engineer',
-      image: '/assets/profile-pic.webp'
-    }
-  ]
+      name: 'Ashik Chowdhury',
+      title: 'Introducing Ashik: a Major Figure at IDEA CSC',
+      heading: "",
+      body:[
+        "In his role as Principal and Electrical Department Lead, Vinoo spearheads overall client engagement, ensuring a seamless experience for all opportunities.",
+        "Vinoo brings 12+ years of detailed Electrical, Fire Alarm, Lighting Controls and Low Voltage (Information Technology, Security, Audio/Visual, etc.) System Design experience to our growing team. With a diverse set of project experience and expertise in multiple sectors of the industry including high-rise residential, mission critical, industrial, and cultural institutions, Vinoo is able to seamlessly service and manage projects of all scales and types. Vinoo has serviced and completed multiple LEED certified projects."
 
-  const second_team = [
-    {
-      name:'',
-      title:'',
-      image:'/assets/profile-pic.webp'
-    },
-    {
-      name:'',
-      title:'',
-      image:'/assets/profile-pic.webp'
-    },
-    {
-      name:'',
-      title:'',
-      image:'/assets/profile-pic.webp'
-    },
-    {
-      name:'',
-      title:'',
-      image:'/assets/profile-pic.webp'
-    },
-    {
-      name:'',
-      title:'',
-      image:'/assets/profile-pic.webp'
-    },
-    {
-      name:'',
-      title:'',
-      image:'/assets/profile-pic.webp'
-    },
-    {
-      name:'',
-      title:'',
-      image:'/assets/profile-pic.webp'
-    },
-    {
-      name:'',
-      title:'',
-      image:'/assets/profile-pic.webp'
+      ],
+      contact: "/assets/PERCDDVinooJankieUPDATED.msg",
+      linkedin: "https://www.linkedin.com/in/vinoo-jankie-pe-09206828/",
+      fun_fact: "Vinoo has two kids and no time for fun… he also has a passion for history, and is an avid reader on the subject.",
+      image: '/assets/blank.jpeg'
     }
   ]
 
   return(
     <div className="w-screen h-full items-center text-center justify-center bg-primary">
-      <div className="p-20">
-        <h1 className="md:text-[1100%] text-5xl font-thin text-primary_text text-left tracking-wide">Our Team</h1>
-      </div>
-      <div className="">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mx-20 ">
+      <motion.div 
+      initial={{opacity:0}}
+      animate={{opacity:1, transition:{delay:1 , duration:1}}}
+      className="lg:p-20 pt-20 pb-10">
+        <h1 className="md:text-[1100%] text-8xl font-thin text-primary_text text-center lg:text-left tracking-wide">Our Team</h1>
+      </motion.div>
+      <motion.div
+      initial={{opacity:0}}
+      animate={{opacity:1, transition:{delay:1.5 , duration:1}}}
+      className="">
+        <div className="md:grid grid-cols-1 md:gap-20 md:mx-20 mt-10">
           {
             main_team.map((member)=> {
               return(
-                <div className="flex items-center">
-                  <div className="mr-5 rounded-xl overflow-hidden">
-                    <Image src={member.image} width={400} height={600} alt={'lead_team'}/>
-                  </div>
-                  <div className="p-2 w-[260px] text-left bg-white/90 rounded-xl">
-                    <h2 className="text-secondary_text">{member.name}</h2>
-                    <p className="mx-2 text-secondary_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                  </div>
+                <div key={member.title}>
+                  <TeamList member={member}/>
                 </div>
+                
               )
               
             })
@@ -88,25 +65,34 @@ function OurTeam (){
 
         </div>
 
+      
+      <div className=" md:p-40 p-10 mx-auto flex flex-col items-center justify-center">
+        <AnimatedText text={words}/>
       </div>
-      <motion.div 
-      // initial={{x:-1500}}
-        animate= {{x:[-1500,0,0,1500]}}
-        transition={{
-          duration: "8",
-          delay : "2",
-          repeat: Infinity,
-          repeatDelay: 1
-        }}
-        className="p-[150px] "
-      >
-        <h2 className="italic font-bold">Let us assist you in making your IDEAs a reality!</h2>
       </motion.div>
-      <div className="">
+      
+      {/* <motion.div 
+      style={{ overflow: "hidden", display: "flex", fontSize: "2rem" }}
+      variants={textContainer}
+      initial="hidden"
+      animate="visible"
+      >
+        {words.map((word, index) => (
+        <motion.span
+          variants={textChild}
+          style={{ marginRight: "5px" }}
+          key={index}
+        >
+          {word}
+        </motion.span>
+      ))}
+        
+      </motion.div> */}
+      {/* <div className="">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mx-20 pb-20">
           {second_team.map((member)=> {
             return(
-              <div className="relative">
+              <div className="relative hover:cursor-pointer">
                 <Card member={member}/>
 
               </div>
@@ -114,26 +100,8 @@ function OurTeam (){
             )
             
           })
-          }
-          
-          {/* {second_team.map((member)=> {
-            return(
-              <div key='card' id="card" className="flex " onClick={()=> setFlip(!flip)}>
-                <div className="front-card relative" >
-                  <Image src={member.image} width={300} height={400}/> 
-                  <div className={flip ? "absolute w-[300px] h-[300px] top-0 bg-[#322d44]/80 text-white  text-center justify-center items-center" : "hidden"}>
-                    <h1 className="mx-5 mt-[100px] text-4xl ">John Doe</h1>
-                    <p className="mx-5 mt-2 ">Intern</p>
-                  </div>
-                </div>
-            
-              </div>
-            )
-          })} */}
-
-        </div>
-
-      </div>
+          } */}
+      
 
       
     </div>

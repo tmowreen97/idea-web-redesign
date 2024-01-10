@@ -93,10 +93,10 @@ function ProjectHome(){
           <div>
             <div className="absolute md:w-[380px] h-[525px] w-[250px] md:h-[475px]">
             <div className="relative">
-              <h2 className="md:text-4xl text-2xl m-2 text-red_accent">{projects[projectSelect].name}</h2>
+              <h2 className="md:text-4xl text-2xl m-2 text-red_accent_2">{projects[projectSelect].name}</h2>
               <div className="m-2">
-                <h3 className="tracking-wider md:text-xl text-secondary_text">{projects[projectSelect].location}</h3>
-                <h3 className="tracking-wider md:text-xl text-secondary_text">{projects[projectSelect].year}</h3>
+                <h3 className="tracking-wider md:text-xl">{projects[projectSelect].location}</h3>
+                <h3 className="tracking-wider md:text-xl">{projects[projectSelect].year}</h3>
               </div>
               <p className="tracking-wider m-2 md:text-lg">{projects[projectSelect].desc}</p>
               {projects[projectSelect].disclaimer ? <p className="tracking-wider m-2 text-[12px]">{projects[projectSelect].disclaimer}</p> : ""}

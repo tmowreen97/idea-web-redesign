@@ -36,12 +36,12 @@ export default function Footer(){
               
             </div>
             <div className="md:mb-[30px]">
-              <p className="md:text-xl text-lg text-dark_text ">Comilla, Dhaka | Bangladesh</p>
+              <p className="md:text-xl text-lg ">Comilla, Dhaka | Bangladesh</p>
             </div>
             <div>
-              <p className="text-lg text-dark_text ">kazi@IdeaCSC.com</p>
-              <p className="text-lg text-dark_text ">Mobile: +880 1832-115611</p>
-              <p className="text-lg text-dark_text ">Office: +880 1820-685001</p>
+              <p className="text-lg ">kazi@IdeaCSC.com</p>
+              <p className="text-lg ">Mobile: +880 1832-115611</p>
+              <p className="text-lg ">Office: +880 1820-685001</p>
             </div>
           </div>
           </div>
@@ -129,7 +129,7 @@ export default function Footer(){
       </div>
       <div className="flex items-center justify-center pb-5">
         <div className="flex">
-          <p className="text-sm text-dark_text" >© 2024 by IDEA <span className="text-xs text-dark_text ">CSC</span> <span className="text-xs text-dark_text" >LLC</span></p>
+          <p className="text-sm " >© 2024 by IDEA <span className="text-xs">CSC</span> <span className="text-xs" >LLC</span></p>
           
         </div>
           
