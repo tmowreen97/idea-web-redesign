@@ -45,19 +45,19 @@ function ProjectPortfolio({ projects, category, showDropDown, setShowDropDown })
             <div id="dropdown" className={ showDropDown ? "z-10 absolute right-0 md:w-[200px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 text-center": "hidden"}>
               <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
                 <li>
-                  <a href="/portfolio" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Choose A Sector</a>
+                  <a href="/portfolio" className="block px-4 py-2 hover:bg-button_bg_2/80  hover:text-white">Choose A Sector</a>
                 </li>
                 <li>
-                  <a href="/portfolio/cultural" className="block px-4 py-2 hover:bg-accent_2/80   hover:text-white">Cultural</a>
+                  <a href="/portfolio/cultural" className="block px-4 py-2 hover:bg-button_bg_2/80   hover:text-white">Cultural</a>
                 </li>
                 <li>
-                  <a href="/portfolio/educational-institutional" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Educational/Institutional</a>
+                  <a href="/portfolio/educational-institutional" className="block px-4 py-2 hover:bg-button_bg_2/80  hover:text-white">Educational/Institutional</a>
                 </li>
                 <li>
-                  <a href="/portfolio/high-rise" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">High-Rise</a>
+                  <a href="/portfolio/high-rise" className="block px-4 py-2 hover:bg-button_bg_2/80  hover:text-white">High-Rise</a>
                 </li>
                 <li>
-                  <a href="/portfolio/residential" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Residential</a>
+                  <a href="/portfolio/residential" className="block px-4 py-2 hover:bg-button_bg_2/80  hover:text-white">Residential</a>
                 </li>
               </ul>
             </div>

@@ -93,7 +93,7 @@ function PortfolioList({project}){
             <div className="flex justify-end lg:my-[-10px] my-2">
               <AiOutlineCloseCircle 
               onClick={()=> handleClick()}
-              className="cursor-pointer hover:bg-accent_2 hover:text-primary_text  rounded-full overflow-hidden text-2xl lg:z-10" />
+              className="cursor-pointer hover:bg-button_bg_2 hover:text-primary_text  rounded-full overflow-hidden text-2xl lg:z-10" />
             </div>
             <div className="lg:grid lg:grid-cols-4 grid-cols-1 sm:flexbox items-center justify-center h-full md:gap-5">
               <div className="lg:col-start-1 lg:col-end-3 md:flex items-center justify-center sm:w-[100%] w-[300px]">
@@ -195,7 +195,7 @@ function PortfolioList({project}){
                         {project.resources.map((link, index) => {
                           return(
                             <li key={index} >
-                              <a href={link.url} className="hover:text-accent_2 hover:underline text-sm md:text-lg" target="__blank" rel="noopener noreferrer" aria-label="Resource">{link.title}</a>
+                              <a href={link.url} className="hover:text-button_bg_2 hover:underline text-sm md:text-lg" target="__blank" rel="noopener noreferrer" aria-label="Resource">{link.title}</a>
                             </li>
                           )
                         })}

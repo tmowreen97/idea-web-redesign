@@ -73,13 +73,13 @@ function ProjectHome(){
             <div id="dropdown" className={ showDropDown ? "z-10 absolute right-0 lg:w-[220px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700": "hidden"}>
         <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
           <li>
-            <a href="/portfolio/cultural" className="block px-4 py-2 hover:bg-accent_2/80   hover:text-white">Cultural</a>
+            <a href="/portfolio/cultural" className="block px-4 py-2 hover:bg-button_bg_2/80   hover:text-white">Cultural</a>
           </li>
           <li>
-            <a href="/portfolio/educational/institutional" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Educational/Institutional</a>
+            <a href="/portfolio/educational/institutional" className="block px-4 py-2 hover:bg-button_bg_2/80  hover:text-white">Educational/Institutional</a>
           </li>
           <li>
-            <a href="/portfolio/residential" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Residential</a>
+            <a href="/portfolio/residential" className="block px-4 py-2 hover:bg-button_bg_2/80  hover:text-white">Residential</a>
           </li>
           
         </ul>
@@ -93,7 +93,7 @@ function ProjectHome(){
           <div>
             <div className="absolute md:w-[380px] h-[525px] w-[250px] md:h-[475px]">
             <div className="relative">
-              <h2 className="md:text-4xl text-2xl m-2 text-red_accent_2">{projects[projectSelect].name}</h2>
+              <h2 className="md:text-4xl text-2xl m-2 text-red_accent_2 text-shadow shadow-dark_red">{projects[projectSelect].name}</h2>
               <div className="m-2">
                 <h3 className="tracking-wider md:text-xl">{projects[projectSelect].location}</h3>
                 <h3 className="tracking-wider md:text-xl">{projects[projectSelect].year}</h3>
@@ -103,7 +103,7 @@ function ProjectHome(){
             </div>
             <div className=" text-center absolute bottom-0 md:left-[15%] left-5 ">
               <Link href={'/portfolio'}>
-                <button id='portfolio_button' aria-label='portfolio_button' className="inline-block rounded-xl bg-button_bg text-dark_text p-3 px-4 font-normal hover:drop-shadow-xl hover:bg-button_bg_hover/70 hover:text-secondary_text  tracking-wider">Learn More on Our Portfolio</button>
+                <button id='portfolio_button' aria-label='portfolio_button' className="inline-block rounded-xl bg-button_bg_2 text-dark_text hover:text-primary_text p-3 px-4 font-normal hover:drop-shadow-xl hover:bg-button_bg hover:text-secondary_text  tracking-wider">Learn More on Our Portfolio</button>
               </Link>
             </div>
             

@@ -11,13 +11,13 @@ function Intro(){
               <h1 className="xl:text-5xl xl:leading-[60px] text-2xl">Now providing World Class Inter-Disciplinary Engineering and Construction services to collaborating partners in Bangladesh.</h1>
             </div>
             <div className="items-center flex justify-center">
-              <Image src={'/assets/logos/logo-cropped-transparent.gif'} width={2000} height={100}/>
+              <Image src={'/assets/logos/logo-cropped.gif'} width={2000} height={100}/>
             </div>
           </div>
       </div>
       <div className="xl:px-20 px-10 py-10">
         <div className="flex justify-right">
-          <h1 className="xl:text-7xl text-2xl ">Introducing <span className="text-red_accent font-semibold xl:text-8xl text-3xl tracking-tight">IDEA csc</span> (US IDEA CSC (PVT.) LTD.), a Sister Company of IDEA aec (USA).</h1>
+          <h1 className="xl:text-7xl text-2xl">Introducing <span className="text-[#f44336] font-semibold xl:text-8xl text-3xl tracking-tight text-shadow shadow-[#660000]">IDEA csc</span> (US IDEA CSC (PVT.) LTD.), a Sister Company of IDEA aec (USA).</h1>
         </div>
       </div>
       </div>

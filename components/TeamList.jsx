@@ -29,7 +29,7 @@ function TeamList({member}){
         
       </div>
       <div className="md:w-[620px] text-left tracking-wider m-2 ">
-        <div className=" bg-secondary/40 rounded-xl p-4 mb-4 ">
+        <div className=" bg-secondary rounded-xl p-4 mb-4 ">
           <div className="m-2">
             <h2 className="text-3xl text-red_accent_2">{member.title}</h2>
             {/* <h2 className="text-2xl">{member.heading}</h2> */}
@@ -46,7 +46,7 @@ function TeamList({member}){
           
         </div>
         
-        <div className=" bg-accent_1/80 rounded-xl p-4  justify-center">
+        <div className=" bg-button_bg/80 rounded-xl p-4  justify-center">
           <p className="mx-2 italic">Fun Fact: </p>
           <p className="mx-2 ">
             {member.fun_fact}

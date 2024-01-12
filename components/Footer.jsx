@@ -92,7 +92,7 @@ export default function Footer(){
           </div>
           <div className="grid grid-cols-3  text-center items-center justify-center  pt-5  pb-5">
             <div className="text-center items-center justify-center flex rounded-xl ">
-              <div className="bg-button_bg hover:bg-button_bg_hover/70  rounded-full p-4 text-2xl">
+              <div className="bg-button_bg hover:bg-[#7a0000] hover:text-[#fce5cd] rounded-full p-4 text-2xl">
                 <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
                     <a target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                       <AiFillInstagram/>

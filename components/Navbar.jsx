@@ -26,7 +26,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
     const changeColor = () => {
       if (window.scrollY >= 25) {
         setColor('#198363');
-        setTextColor('#FFFFFF');
+        
         if (setLightLogo) {
           setLightLogo(true)
         }
@@ -35,7 +35,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
         if (setLightLogo) {
           setLightLogo(false)
         }
-        setTextColor('#FFFFFF');
+        
       }
     };
     window.addEventListener('scroll', changeColor);
@@ -58,7 +58,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
           </Link>
         </motion.div>
         
-        <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
+        <ul style={{ color: '#FFFFFF'}} className='hidden sm:flex'>
           <li className='p-4'>
           <div className="dropdown inline-block relative">
           <button id='about_button' aria-label='about_button' className="inline-flex items-center " id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>
@@ -66,10 +66,10 @@ const Navbar = ({setLightLogo, lightLogo}) => {
             <BiChevronDown />
           </button>
           <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 text-center">
-            <li className="bg-button_bg hover:bg-button_bg_hover/60 hover:text-primary_text ml-[-20px] rounded-xl">
+            <li className="bg-button_bg_2 hover:bg-button_bg hover:text-primary_text ml-[-20px] rounded-xl">
               <Link className="p-2 block mb-1" href={'/#about'}>About Us</Link>
             </li>
-            <li className="bg-button_bg hover:bg-button_bg_hover/60 hover:text-primary_text ml-[-30px] rounded-xl">
+            <li className="bg-button_bg_2 hover:bg-button_bg hover:text-primary_text ml-[-30px] rounded-xl">
               <Link className="p-2 block" href={'/team'}>Our Team</Link>
             </li>
           </ul>
@@ -83,26 +83,26 @@ const Navbar = ({setLightLogo, lightLogo}) => {
             {/* <svg className="fill-current h-4 w-4 hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> */}
           </button>
           <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 text-center">
-            <li className="bg-button_bg hover:bg-button_bg_hover/60 hover:text-primary_text ml-[-55px] rounded-xl">
+            <li className="bg-button_bg_2 hover:bg-button_bg hover:text-primary_text ml-[-55px] rounded-xl">
               <Link className="p-2 block mb-1" href={'/#projects'}>Recent Projects</Link>
             </li>
-            <li className="bg-button_bg hover:bg-button_bg_hover/60 hover:text-primary_text ml-[-10px] rounded-xl">
+            <li className="bg-button_bg_2 hover:bg-button_bg hover:text-primary_text ml-[-10px] rounded-xl">
               <Link className="p-2 block" href={'/portfolio'}>Portfolio</Link>
             </li>
           </ul>
         </div>
             {/* <Link href='/#projects'>Projects</Link> */}
           </li>
-          <li className='m-2 p-2 hover:bg-button_bg_hover/60 hover:text-primary_text rounded-xl'>
+          <li className='m-2 p-2 hover:bg-button_bg hover:text-primary_text rounded-xl'>
             <Link href='/services' id={router.pathname == "/services" ? "active" : ""}>Services</Link>
           </li>
-          <li className='m-2 p-2 hover:bg-button_bg_hover/60 hover:text-primary_text rounded-xl'>
+          <li className='m-2 p-2 hover:bg-button_bg hover:text-primary_text rounded-xl'>
             <Link href='/culture' id={router.pathname == "/culture" ? "active" : ""}>Culture</Link>
           </li>
           {/* <li className='p-4'>
             <Link href='/clients' id={router.pathname == "/clients" ? "active" : ""}>Clients</Link>
           </li> */}
-          <li className='m-2 p-2 hover:bg-button_bg_hover/60 hover:text-primary_text rounded-xl'>
+          <li className='m-2 p-2 hover:bg-button_bg hover:text-primary_text rounded-xl'>
             <Link href='/contact' id={router.pathname == "/contact" ? "active" : ""}>Contact</Link>
           </li>
         </ul>

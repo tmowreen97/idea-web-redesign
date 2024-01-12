@@ -115,7 +115,7 @@ function ContactPage(){
             <input type="hidden" name="_next" value="https://www.ideaaec.com/thank-you"></input>
             {/* <input type="hidden" name="_captcha" value="false"></input> */}
             <div className="text-center items-center justify-center flex ">
-              <div className="bg-tertiary/80 hover:bg-accent_2/80 rounded-xl p-2 px-5 shadow-xl text-primary_text">
+              <div className="bg-tertiary/80 hover:bg-button_bg_2/80 rounded-xl p-2 px-5 shadow-xl text-primary_text">
                 <button id='submit' aria-label="submit" type='submit'>Send</button>
               </div>
             </div>
@@ -128,21 +128,21 @@ function ContactPage(){
         initial={{opacity:0}}
         animate={{opacity:1, transition:{duration:2, delay:2.5} }}
         className="flex justify-evenly p-14 pb-24 rounded-xl text-primary_text/90">
-          <div className="bg-tertiary/80 hover:bg-accent_2/80  rounded-full p-7 text-4xl mx-2">
+          <div className="bg-tertiary/80 hover:bg-button_bg_2/80  rounded-full p-7 text-4xl mx-2">
             <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
                 <a target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                   <AiFillInstagram/>
                 </a>
             </Link>
           </div>
-          <div className="bg-tertiary/80 hover:bg-accent_2/80  rounded-full p-7 text-4xl mx-2">
+          <div className="bg-tertiary/80 hover:bg-button_bg_2/80  rounded-full p-7 text-4xl mx-2">
             <Link href="https://www.facebook.com/profile.php?id=100076951517206" legacyBehavior>
                 <a target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                   <AiFillFacebook/>
                 </a>
             </Link>
           </div>
-          <div className="bg-tertiary/80 hover:bg-accent_2/80  rounded-full p-7 text-4xl mx-2">
+          <div className="bg-tertiary/80 hover:bg-button_bg_2/80  rounded-full p-7 text-4xl mx-2">
             <Link href="https://www.linkedin.com/company/idea-aec/" legacyBehavior>
                 <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <AiFillLinkedin/>

@@ -49,7 +49,7 @@ const About = () => {
           </div>
           <div className="about__child1 p-4 m-4 lg:m-0 lg:text-lg items-center justify-center bg-secondary rounded-xl lg:w-[645px] ">
             <div className='lg:m-14 m-3'>
-              <h2 className="tracking-wider text-red_accent_2">Our Story</h2>
+              <h2 className="tracking-wider text-red_accent_2 text-shadow shadow-dark_red">Our Story</h2>
             </div>
             <div className='lg:m-14 m-3'>
               <div>
@@ -72,7 +72,7 @@ const About = () => {
             <div className='grid lg:grid-cols-2 justify-center items-center text-center  lg:w-full mx-10 lg:mt-[0%]'>
               {
                 traits.map((trait, index) => (
-                  <div key={index} className='bg-accent_1 italic rounded-xl p-4 w-[200px] m-[4%] mt-1'>
+                  <div key={index} className='bg-button_bg italic rounded-xl p-4 w-[200px] m-[4%] mt-1'>
                     <p className=''>{trait}</p>
                   </div>
                 ))
@@ -82,7 +82,7 @@ const About = () => {
 
           <div className="about__child2 p-4 m-4 lg:m-0 lg:text-lg items-center justify-center bg-secondary rounded-xl lg:w-[485px]  ">
             <div className='lg:my-14 m-3 lg:mx-8'>
-              <h2 className="tracking-wider text-red_accent_2 ">Our Mission</h2>
+              <h2 className="tracking-wider text-red_accent_2 text-shadow shadow-dark_red ">Our Mission</h2>
             </div>
             <div className='lg:m-8 m-3'>
               <div>

@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -7,6 +8,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      textShadow: {
+        sm: '0 1px 2px var(--tw-shadow-color)',
+        DEFAULT: '0 2px 4px var(--tw-shadow-color)',
+        lg: '0 8px 16px var(--tw-shadow-color)',
+      },
       keyframes: {
         wiggle: {
           '0%, 100%': { transform: 'rotate(-2deg)' },
@@ -36,15 +42,14 @@ module.exports = {
         secondary: '#237059',
         tertiary : '#042a2c',
         footer_bg: '#0D352B',
-        // accent_1 : '#980000',
-        red_accent: '#F14A4A',
+        red_accent: '#ac3a3a',
         red_accent_2: '#F25C5C',
-        button_bg_hover : '#6CB49C',
-        button_bg: '#7FFFD4',
-        accent_1: '#42A26C',
-        accent_2: '#86DA96',
+        dark_red: '#602020',
+// #7FFFD4
+        button_bg: '#42A26C',
+        button_bg_2: '#86DA96',
         accent_3: '#63a081',
-        accent_4: '#529673',
+        accent_4: '#498767',
         // button_bg : '#8dedd0',
         primary_text : '#FFFFF2',
         dark_text: '#070706',
@@ -57,11 +62,21 @@ module.exports = {
         wiggle: 'wiggle 2s ease-in-out infinite',
         // 'bounce-slow': 'bounce 2s ease-in-out infinite',
         pulsing: 'pulsing 2s ease-in-out infinite',
-        typing: "typing 2s steps(20) infinite alternate, blink .7s infinite"
+        typing: "typing 3s steps(20)  alternate, blink .7s 8 "
       }
     },
   },
   plugins: [
     // require('flowbite/plugin')
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'text-shadow': (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme('textShadow') }
+      )
+    }),
   ],
 }

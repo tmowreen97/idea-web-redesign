@@ -116,7 +116,7 @@ function ServicesPage(){
       "Existing Conditions Documentation",
     ],
     color: '#63a081',
-    list_color: '#529673'
+    list_color: '#498767'
   }
 
   const construction_services = {
@@ -134,7 +134,7 @@ function ServicesPage(){
       "Site Safety Coordination & Supervision",
     ],
     color: '#63a081',
-    list_color: '#529673'
+    list_color: '#498767'
   }
   return(
     <div className="w-screen h-full bg-primary">
