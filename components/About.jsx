@@ -49,7 +49,7 @@ const About = () => {
           </div>
           <div className="about__child1 p-4 m-4 lg:m-0 lg:text-lg items-center justify-center bg-secondary rounded-xl lg:w-[645px] ">
             <div className='lg:m-14 m-3'>
-              <h2 className="tracking-wider text-red_accent_2 text-shadow shadow-dark_red">Our Story</h2>
+              <h2 className="tracking-wider text-red_text text-shadow-sm shadow-dark_red">Our Story</h2>
             </div>
             <div className='lg:m-14 m-3'>
               <div>
@@ -82,7 +82,7 @@ const About = () => {
 
           <div className="about__child2 p-4 m-4 lg:m-0 lg:text-lg items-center justify-center bg-secondary rounded-xl lg:w-[485px]  ">
             <div className='lg:my-14 m-3 lg:mx-8'>
-              <h2 className="tracking-wider text-red_accent_2 text-shadow shadow-dark_red ">Our Mission</h2>
+              <h2 className="tracking-wider text-red_text text-shadow-sm shadow-dark_red ">Our Mission</h2>
             </div>
             <div className='lg:m-8 m-3'>
               <div>
