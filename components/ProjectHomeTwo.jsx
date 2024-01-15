@@ -11,7 +11,10 @@ function ProjectHomeTwo(){
       sector: 'Residential',
       year: 'YEAR',
       image: "/assets/need.jpeg",
-      desc: "5-STORY RESIDENTIAL BUILDING",
+      desc: [
+        "5-STORY RESIDENTIAL BUILDING",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      ]
     },
     {
       id:2,
@@ -20,7 +23,10 @@ function ProjectHomeTwo(){
       location:"LOCATION",
       sector: "Residential",
       year: "YEAR",
-      desc: "BD HIGH-END RESIDENCE",
+      desc: [
+        "BD HIGH-END RESIDENCE",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      ],
       disclaimer: ''
     },
     {
@@ -30,7 +36,10 @@ function ProjectHomeTwo(){
       year: "YEAR",
       sector: "Educational/Institutional",
       image: "/assets/need.jpeg",
-      desc: "IDEA COMMUNITY COMPLEX",
+      desc: [
+        "IDEA COMMUNITY COMPLEX",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      ]
     }
   ]
   //Grabs index from Carousel component
@@ -44,22 +53,26 @@ function ProjectHomeTwo(){
           <div>
             {/* TITLE */}
             <div>
-              <h1 className="lg:text-[1100%] text-8xl font-thin my-8 text-justify">Current Developments</h1>
+              <h1 className="lg:text-[1100%] text-5xl p-2 font-thin my-8 text-justify">Current Developments</h1>
             </div>
             <div className="lg:flex justify-center gap-10">
-              <div className="bg-secondary p-14 rounded-xl">
+              <div className="bg-secondary rounded-xl xl:w-full lg:py-16 p-6 m-2 justify-center items-center flex">
                <Carousel 
                 array={projects} 
                 handleIndex = {handleIndex}
-                custom={"lg:w-[620px] xl:w-[700px] lg:h-[400px] w-[355px] h-[300px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
+                custom={"lg:w-[700px] xl:w-[800px] xl:h-[450px] lg:h-[400px] md:w-[550px] w-[325px] h-[225px] rounded-2xl bg-center bg-cover hover:scale-105 duration-500 transform"}
               /> 
               </div>
-              <div className="bg-secondary w-full rounded-xl">
-                <div className="p-14">
-                  <h2>{projects[projectSelect].name}</h2>
-                  <h3>{projects[projectSelect].location}</h3>
-                  <h3>{projects[projectSelect].year}</h3>
-                  <p>{projects[projectSelect].desc}</p>
+              <div className="bg-secondary rounded-xl lg:w-[500px] m-2">
+                <div className=" lg:p-10 p-4 w-full">
+                  <h2 className="text-red_text text-shadow-sm shadow-dark_red">{projects[projectSelect].name}</h2>
+                  <h3 className="text-2xl">{projects[projectSelect].location}</h3>
+                  <h3 className="text-2xl">{projects[projectSelect].year}</h3>
+                  {projects[projectSelect].desc.map((line)=> {
+                    return(
+                      <p className="text-lg">{line}</p>
+                    )
+                  })}
                 </div>
               </div>
               
