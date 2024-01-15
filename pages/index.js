@@ -3,10 +3,9 @@ import Hero from '@/components/Hero'
 import Intro from '@/components/Intro'
 import { Urbanist } from 'next/font/google'
 import About from '@/components/About'
-import ProjectHome from '@/components/ProjectHome'
 import Navbar from '@/components/Navbar'
 import { useState } from 'react';
-import ProjectHomeTwo from '@/components/ProjectHomeTwo'
+import Developments from '@/components/Developments'
 
 const urbanist = Urbanist({ 
   subsets: ['latin'],
@@ -22,7 +21,8 @@ export default function Home() {
       <Hero heading='We Empower Ideas'/>
       <Intro/>
       <About/>
-      <ProjectHomeTwo/>
+      <Developments/>
+      
     </main>
   )
 }

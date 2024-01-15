@@ -75,23 +75,8 @@ const Navbar = ({setLightLogo, lightLogo}) => {
           </ul>
         </div>
           </li> 
-          <li className='p-4'>
-          <div className="dropdown inline-block relative">
-          <button id='project_button' aria-label='project_button' className="inline-flex items-center" id={router.asPath == '/#projects' || router.asPath == '/portfolio' ? "active" : ''}>
-            <span className="mr-1 tracking-wider">Projects</span>
-            <BiChevronDown />
-            {/* <svg className="fill-current h-4 w-4 hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> */}
-          </button>
-          <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 text-center">
-            <li className="bg-button_bg_2 hover:bg-button_bg hover:text-primary_text ml-[-55px] rounded-xl">
-              <Link className="p-2 block mb-1" href={'/#projects'}>Recent Projects</Link>
-            </li>
-            <li className="bg-button_bg_2 hover:bg-button_bg hover:text-primary_text ml-[-10px] rounded-xl">
-              <Link className="p-2 block" href={'/portfolio'}>Portfolio</Link>
-            </li>
-          </ul>
-        </div>
-            {/* <Link href='/#projects'>Projects</Link> */}
+          <li className='m-2 p-2 hover:bg-button_bg hover:text-primary_text rounded-xl'>
+            <Link href='/#developments' id={router.asPath == "/#developments" ? "active" : ""}>Developments</Link>
           </li>
           <li className='m-2 p-2 hover:bg-button_bg hover:text-primary_text rounded-xl'>
             <Link href='/services' id={router.pathname == "/services" ? "active" : ""}>Services</Link>

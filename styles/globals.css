@@ -205,7 +205,8 @@ polyline {
 
 /* NAV BAR ACTIVE LINK */
 #active{
-  color: #86DA96;
+  /* ff7d91 */
+  color: #fea9a9;
 
 }
 

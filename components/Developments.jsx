@@ -1,7 +1,7 @@
 import Carousel from "./Carousel";
 import { useState } from "react";
 
-function ProjectHomeTwo(){
+function Developments(){
   const [projectSelect, setProjectSelect]= useState(0)
   const projects = [
     {
@@ -47,20 +47,20 @@ function ProjectHomeTwo(){
     setProjectSelect(index)
   }
   return(
-    <div id='projects' className="w-screen h-full bg-primary">
+    <div id='developments' className="w-screen bg-primary">
       <div className="justify-center items-center">
         <div className="flex items-center justify-center px-[10%] 2xl:px-[14%] py-[5%]">
           <div>
             {/* TITLE */}
             <div>
-              <h1 className="lg:text-[1100%] text-5xl p-2 font-thin my-8 text-justify">Current Developments</h1>
+              <h1 className="lg:text-[1100%] text-5xl p-2 font-thin my-8 text-justify">Developments</h1>
             </div>
             <div className="lg:flex justify-center gap-10">
-              <div className="bg-secondary rounded-xl xl:w-full lg:py-16 p-6 m-2 justify-center items-center flex">
+              <div className="bg-secondary rounded-xl xl:w-full lg:py-10 p-2 m-2 justify-center items-center flex">
                <Carousel 
                 array={projects} 
                 handleIndex = {handleIndex}
-                custom={"lg:w-[700px] xl:w-[800px] xl:h-[450px] lg:h-[400px] md:w-[550px] w-[325px] h-[225px] rounded-2xl bg-center bg-cover hover:scale-105 duration-500 transform"}
+                custom={"lg:w-[700px] xl:w-[800px] xl:h-[500px] lg:h-[400px] md:w-[550px] w-[325px] h-[225px] rounded-2xl bg-center bg-cover hover:scale-105 duration-500 transform"}
               /> 
               </div>
               <div className="bg-secondary rounded-xl lg:w-[500px] m-2">
@@ -87,4 +87,4 @@ function ProjectHomeTwo(){
   )
 }
 
-export default ProjectHomeTwo;
+export default Developments;

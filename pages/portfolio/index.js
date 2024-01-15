@@ -109,8 +109,8 @@ export default function Portfolio(){
 
   return(
     <div onClick={()=> handleClick()}>
-      <Navbar lightLogo={true}/>
-      <ProjectPortfolio projects={projects} category={'Choose A Sector'} showDropDown={showDropDown} setShowDropDown={setShowDropDown}/>
+      {/* <Navbar lightLogo={true}/>
+      <ProjectPortfolio projects={projects} category={'Choose A Sector'} showDropDown={showDropDown} setShowDropDown={setShowDropDown}/> */}
     </div>
   )
 }
