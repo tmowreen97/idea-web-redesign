@@ -42,9 +42,10 @@ module.exports = {
         secondary: '#237059',
         tertiary : '#042a2c',
         footer_bg: '#0D352B',
-        red_accent: '#ac3a3a',
+        red_text: '#F44336',
         red_accent_2: '#F25C5C',
-        dark_red: '#602020',
+        dark_red: '#660000',
+        // dark_red: '#602020',
 // #7FFFD4
         button_bg: '#42A26C',
         button_bg_2: '#86DA96',
