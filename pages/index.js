@@ -6,6 +6,7 @@ import About from '@/components/About'
 import ProjectHome from '@/components/ProjectHome'
 import Navbar from '@/components/Navbar'
 import { useState } from 'react';
+import ProjectHomeTwo from '@/components/ProjectHomeTwo'
 
 const urbanist = Urbanist({ 
   subsets: ['latin'],
@@ -21,7 +22,7 @@ export default function Home() {
       <Hero heading='We Empower Ideas'/>
       <Intro/>
       <About/>
-      <ProjectHome/>
+      <ProjectHomeTwo/>
     </main>
   )
 }

@@ -43,15 +43,15 @@ function ProjectHome(){
 
   return(
     <div id='projects' className='w-screen lg:h-full bg-primary'>
-      <div className='relative flex items-center justify-center p-4 pt-20 lg:pt-[5%]'>
-      <div className="projecthome__parent lg:grid flexbox  ">
-        <div className="projecthome__title mr-2 ml-5 ">
-          <h1 className="lg:text-[1000%] text-8xl tracking-wide text-left lg:ml-[65px] font-thin mb-10 lg:mt-[8%] text-primary_text">
-            Projects
+      <div className='flex items-center justify-center p-4 pt-20 lg:pt-[5%]'>
+      <div className="projecthome__parent lg:grid flexbox mx-[8%] ">
+        <div className="projecthome__title  m-[5%]">
+          <h1 className="lg:text-[1000%] text-8xl tracking-wide font-thin lg:mt-[8%] text-primary_text">
+            Current Developments
           </h1>
         </div>
-        <div className="projecthome__child1 lg:p-10 p-2 bg-secondary/50 rounded-xl lg:mr-5 lg:ml-4  lg:m-0 w-[375px] lg:w-[815px]">
-          <div className="lg:h-[450px] lg:w-full lg:px-4 p-1  mb-[0%]">
+        <div className="projecthome__child1 lg:p-10 p-2 bg-secondary/50 rounded-xl ml-[5%]">
+          <div className="lg:h-[450px] lg:px-4 p-1 flex  justify-center">
             <Carousel 
               array={projects} 
               handleIndex = {handleIndex}
@@ -59,7 +59,7 @@ function ProjectHome(){
             />
             </div>
         </div>
-        <div className="projecthome__img relative bg-secondary/50 items-center text-center justify-center lg:p-5 rounded-xl w-[375px] mt-3 lg:w-[450px] lg:h-[45%] lg:mt-20 lg:m-0">
+        {/* <div className="projecthome__img relative bg-secondary/50 items-center text-center justify-center lg:p-5 rounded-xl w-[375px] mt-3 lg:w-[450px] lg:h-[45%] lg:mt-20 lg:m-0">
           <div className="relative">
             <button 
             id='drop_down_button'
@@ -88,8 +88,8 @@ function ProjectHome(){
           
           
           </div>
-        </div>
-        <div className="projecthome__child2 p-10 bg-secondary/50 rounded-xl md:w-[450px] md:m-0 m-2 md:h-[550px] h-[600px] w-[360px]">
+        </div> */}
+        <div className="projecthome__child2 p-10 bg-secondary/50 rounded-xl mr-[5%] md:h-[550px] h-[600px] ">
           <div>
             <div className="absolute md:w-[380px] h-[525px] w-[250px] md:h-[475px]">
             <div className="relative">
