@@ -53,7 +53,7 @@ function Developments(){
           <div>
             {/* TITLE */}
             <div>
-              <h1 className="lg:text-[1100%] text-5xl p-2 font-thin my-8 text-justify">Developments</h1>
+              <h1 className="lg:text-[1100%] text-5xl p-2 font-thin m-12 text-justify">Developments</h1>
             </div>
             <div className="lg:flex justify-center gap-10">
               <div className="bg-secondary rounded-xl xl:w-full lg:py-10 p-2 m-2 justify-center items-center flex">

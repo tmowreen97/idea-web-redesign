@@ -73,7 +73,7 @@ function Culture_Page_Two(){
       animate={{opacity:1, transition: {delay:1.5, duration:2}}}
       className="flex font-light md:px-28">
           <div className="flex text-center justify-center xl:m-10 m-5 w-full">
-            <h1 className="text-6xl font-thin tracking-wide leading-[70px]">
+            <h1 className="lg:text-6xl text-4xl font-thin tracking-wide lg:leading-[70px] leading-[40px]">
               Check out our <span className="motion-safe:animate-pulse hover:animate-none"><Link 
               href={'https://www.ideaaec.com/culture'} 
               rel="noopener noreferrer" target="_blank" 
@@ -87,7 +87,7 @@ function Culture_Page_Two(){
         <motion.div
         initial={{opacity:0}}
         animate={{opacity:1, transition:{delay:2, duration:1.5} }} 
-        className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-beige_text ease-in-out duration-300 rounded-full p-7 text-5xl mx-2">
+        className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-beige_text ease-in-out duration-300 rounded-full lg:p-7 p-5 lg:text-5xl text-4xl mx-2">
           <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
               <a target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <AiFillInstagram/>
@@ -97,7 +97,7 @@ function Culture_Page_Two(){
         <motion.div
         initial={{opacity:0}}
         animate={{opacity:1, transition:{delay:2.5, duration:1.5} }}  
-        className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-beige_text ease-in-out duration-300 rounded-full p-7 text-5xl mx-2">
+        className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-beige_text ease-in-out duration-300 rounded-full lg:p-7 p-5 lg:text-5xl text-4xl mx-2">
           <Link href="https://www.facebook.com/profile.php?id=100076951517206" legacyBehavior>
               <a target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <AiFillFacebook/>
@@ -107,7 +107,7 @@ function Culture_Page_Two(){
         <motion.div
         initial={{opacity:0}}
         animate={{opacity:1, transition:{delay:3, duration:1.5} }}   
-        className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-beige_text ease-in-out duration-300 rounded-full p-7 text-5xl mx-2">
+        className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-beige_text ease-in-out duration-300 rounded-full lg:p-7 p-5 lg:text-5xl text-4xl mx-2">
           <Link href="https://www.linkedin.com/company/idea-aec/" legacyBehavior>
               <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <AiFillLinkedin/>
