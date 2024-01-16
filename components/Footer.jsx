@@ -1,14 +1,20 @@
-import React from "react";
+import {React, useEffect, useState} from "react";
 import Link from "next/link";
 import {AiFillLinkedin, AiFillFacebook, AiFillInstagram} from 'react-icons/ai';
 import Image from "next/image";
+import { useRouter } from "next/router";
 
-export default function Footer(){
+export default function Footer({logo}){
   return(
     <div id='footer' className="w-full h-full  bg-secondary">
       <div className="flex items-center justify-center pt-[50px]">
         <div className=" lg:grid lg:grid-cols-2 justify-evenly text-dark_text tracking-wide">
-          <div className="items-center justify-between text-2xl font-light flex md:p-0 px-5" >
+          <div className="items-center justify-center text-2xl font-light flex md:p-0 px-5" >
+          { logo ? 
+          <div className="mx-4">
+            <Image src={'/assets/logos/logo-transparent.png'} width={275} height={100}/>
+          </div> 
+          : 
           <div className="  rounded-xl  text-center mx-3 mt-[20%] md:mx-0 md:mt-0 ">
             <div className="my-1">
               <Image src={'/assets/logos/clip-1.png'} width={70} height={70} alt={'icon'}/>
@@ -22,7 +28,7 @@ export default function Footer(){
             <div className="my-1">
               <Image src={'/assets/logos/clip-4.png'} width={65} height={65} alt={'icon'}/>
             </div>
-          </div>
+          </div>}
           <div className="mb-10">
             <div className="md:mb-[30px]">
                <div className="flex pt-8">
@@ -82,7 +88,7 @@ export default function Footer(){
                 </div>
                 <input type="hidden" name="_next" value="https://www.ideaaec.com/thank-you"/>
                 <div className="text-center items-center justify-center flex ">
-                  <div className="bg-button_bg hover:bg-button_bg_hover/80 rounded-xl p-2 shadow-xl ">
+                  <div className="bg-button_bg hover:bg-button_bg_2 rounded-xl p-2 shadow-xl ">
                     <button id='submit_2' aria-label="submit_2" type='submit'>Send</button>
                   </div>
                 </div>
@@ -92,7 +98,7 @@ export default function Footer(){
           </div>
           <div className="grid grid-cols-3  text-center items-center justify-center  pt-5  pb-5">
             <div className="text-center items-center justify-center flex rounded-xl ">
-              <div className="bg-button_bg hover:bg-[#7a0000] hover:text-[#fce5cd] rounded-full p-4 text-2xl">
+              <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-beige_text ease-in-out duration-300 rounded-full p-4 text-2xl">
                 <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
                     <a target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                       <AiFillInstagram/>
@@ -101,7 +107,7 @@ export default function Footer(){
               </div>
             </div>
             <div className="text-center items-center justify-center flex  p-1 rounded-xl ">
-              <div className="bg-button_bg hover:bg-button_bg_hover/70  rounded-full p-4 text-2xl">
+              <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-beige_text ease-in-out duration-300 rounded-full p-4 text-2xl">
                 <Link href="https://www.facebook.com/profile.php?id=100076951517206" legacyBehavior>
                     <a target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                       <AiFillFacebook/>
@@ -110,7 +116,7 @@ export default function Footer(){
               </div>
             </div>
             <div className="text-center items-center justify-center flex  p-1 rounded-xl ">
-              <div className="bg-button_bg hover:bg-button_bg_hover/70  rounded-full p-4 text-2xl">
+              <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-beige_text ease-in-out duration-300 rounded-full p-4 text-2xl">
                 <Link href="https://www.linkedin.com/company/idea-aec/" legacyBehavior>
                     <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                       <AiFillLinkedin/>
