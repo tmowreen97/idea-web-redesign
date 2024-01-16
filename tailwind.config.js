@@ -45,6 +45,7 @@ module.exports = {
         red_text: '#F44336',
         red_accent_2: '#F25C5C',
         dark_red: '#660000',
+        beige_text: '#fce5cd',
         // dark_red: '#602020',
 // #7FFFD4
         button_bg: '#42A26C',
