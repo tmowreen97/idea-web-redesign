@@ -58,12 +58,11 @@ function ContactPage(){
                   <h2 className="lg:text-8xl text-6xl">IDEA</h2>
                   <h2 className="lg:text-2xl text-lg lg:pt-14 pt-8 ml-3">CSC</h2>
                 </div>
-                <h2 className="lg:text-2xl text-lg">Inter-Disciplinary Engineering Associates, LLC</h2>
+                <h2 className="lg:text-2xl text-lg">Inter-Disciplinary Engineering Associates</h2>
                 <p className="lg:text-2xl text-lg">Construction Solutions Company</p>
               </div>
-              <p className="text-lg">Dhaka, Comilla | Bangladesh</p>
+              <p className="text-lg">Comilla, Dhaka | Bangladesh</p>
               <p className="text-lg">kazi@IdeaCSC.com</p>
-              <p className="text-lg ">Mobile: +880 1832-115611</p>
               <p className="text-lg ">Office: +880 1820-685001</p>
             </div>
             <div>
@@ -115,7 +114,7 @@ function ContactPage(){
             <input type="hidden" name="_next" value="https://www.ideaaec.com/thank-you"></input>
             {/* <input type="hidden" name="_captcha" value="false"></input> */}
             <div className="text-center items-center justify-center flex ">
-              <div className="bg-tertiary/80 hover:bg-button_bg_2/80 rounded-xl p-2 px-5 shadow-xl text-primary_text">
+              <div className="bg-button_bg hover:bg-button_bg_2/80 rounded-xl p-2 px-5 shadow-xl text-primary_text">
                 <button id='submit' aria-label="submit" type='submit'>Send</button>
               </div>
             </div>
@@ -128,21 +127,21 @@ function ContactPage(){
         initial={{opacity:0}}
         animate={{opacity:1, transition:{duration:2, delay:2.5} }}
         className="flex justify-evenly p-14 pb-24 rounded-xl text-primary_text/90">
-          <div className="bg-tertiary/80 hover:bg-button_bg_2/80  rounded-full p-7 text-4xl mx-2">
+          <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-beige_text ease-in-out duration-300 rounded-full p-7 text-4xl mx-2">
             <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
                 <a target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                   <AiFillInstagram/>
                 </a>
             </Link>
           </div>
-          <div className="bg-tertiary/80 hover:bg-button_bg_2/80  rounded-full p-7 text-4xl mx-2">
+          <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-beige_text ease-in-out duration-300 rounded-full p-7 text-4xl mx-2">
             <Link href="https://www.facebook.com/profile.php?id=100076951517206" legacyBehavior>
                 <a target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                   <AiFillFacebook/>
                 </a>
             </Link>
           </div>
-          <div className="bg-tertiary/80 hover:bg-button_bg_2/80  rounded-full p-7 text-4xl mx-2">
+          <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-beige_text ease-in-out duration-300 rounded-full p-7 text-4xl mx-2">
             <Link href="https://www.linkedin.com/company/idea-aec/" legacyBehavior>
                 <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <AiFillLinkedin/>

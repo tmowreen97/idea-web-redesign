@@ -37,7 +37,7 @@ export default function Footer({logo}){
                 </div>
                 <div className="pt-5">
                   <h1 className="">Inter-Disciplinary Engineering Associates,</h1>
-                  <h1 className="">Construction Solutions Company LLC</h1>
+                  <h1 className="">Construction Solutions Company</h1>
                 </div>
               
             </div>
@@ -46,7 +46,6 @@ export default function Footer({logo}){
             </div>
             <div>
               <p className="text-lg ">kazi@IdeaCSC.com</p>
-              <p className="text-lg ">Mobile: +880 1832-115611</p>
               <p className="text-lg ">Office: +880 1820-685001</p>
             </div>
           </div>
@@ -135,7 +134,7 @@ export default function Footer({logo}){
       </div>
       <div className="flex items-center justify-center pb-5">
         <div className="flex">
-          <p className="text-sm " >© 2024 by IDEA <span className="text-xs">CSC</span> <span className="text-xs" >LLC</span></p>
+          <p className="text-sm " >© 2024 by IDEA <span className="text-xs">CSC</span> <span className="text-xs" >(PVT.) LTD.</span></p>
           
         </div>
           

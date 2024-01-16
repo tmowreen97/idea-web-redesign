@@ -10,7 +10,7 @@ function TeamList({member}){
       <div className="md:mr-5 rounded-xl overflow-hidden m-2">
         <div className="relative" onMouseEnter={()=> setShowDetails(true)} onMouseLeave={()=> setShowDetails(false)}>
           <Image src={member.image} width={600} height={600} alt={'lead_team'}/>
-          {showDetails ? <div className="absolute top-0 bottom-0 left-0 right-0 bg-dark_bg/90">
+          {showDetails ? <div className="absolute top-0 bottom-0 left-0 right-0 bg-tertiary/90">
             <div className="flex text-white my-[65%] justify-evenly text-lg ">
               <Link href={member.contact} legacyBehavior className="my-[50%]">
                 <a target="_blank" rel="noopener noreferrer" aria-label="Contact">

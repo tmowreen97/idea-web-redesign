@@ -70,7 +70,7 @@ function Developments(){
                   <h3 className="text-2xl">{projects[projectSelect].year}</h3>
                   {projects[projectSelect].desc.map((line)=> {
                     return(
-                      <p className="text-lg">{line}</p>
+                      <p key={line} className="text-lg">{line}</p>
                     )
                   })}
                 </div>

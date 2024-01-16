@@ -1,5 +1,6 @@
 import react from "react"
 import Image from 'next/image';
+import { motion } from "framer-motion";
 
 function Intro(){
   return(
@@ -10,9 +11,10 @@ function Intro(){
             <div>
               <h1 className="xl:text-5xl xl:leading-[60px] text-2xl">Now providing World Class Inter-Disciplinary Engineering and Construction services to collaborating partners in Bangladesh.</h1>
             </div>
-            <div className="items-center flex justify-center max-w-[800px]">
+            <motion.div 
+            className="items-center flex justify-center max-w-[800px]">
               <Image src={'/assets/logos/logo-cropped.gif'} width={1700} height={100}/>
-            </div>
+            </motion.div>
           </div>
       </div>
       <div className="xl:px-20 px-10 py-10">

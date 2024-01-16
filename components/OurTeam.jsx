@@ -19,7 +19,7 @@ function OurTeam (){
       contact: "/assets/PEKaziAKarimUPDATED.msg",
       linkedin: "https://www.linkedin.com/in/kazi-a-karim-p-e-2a3a3416/",
       fun_fact: "Kazi is an enthusiastic sports fan, always willing to hit the field or harwood (football & basketball) for a good competitive workout. His experience as a College and High-School Quarterback empowers Kazi to joyfully Quarterback the growth and development of IDEA.",
-      image: '/assets/blank.jpeg'
+      image: '/assets/kazi_2.jpeg'
     },
     {
       name: 'Ashik Chowdhury',
@@ -33,7 +33,7 @@ function OurTeam (){
       contact: "/assets/PERCDDVinooJankieUPDATED.msg",
       linkedin: "https://www.linkedin.com/in/vinoo-jankie-pe-09206828/",
       fun_fact: "Vinoo has two kids and no time for fun… he also has a passion for history, and is an avid reader on the subject.",
-      image: '/assets/blank.jpeg'
+      image: '/assets/ashik_3.jpeg'
     }
   ]
 
