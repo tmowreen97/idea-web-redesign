@@ -15,8 +15,12 @@ export default function Footer({logo}){
             <Image src={'/assets/logos/logo-transparent.png'} width={275} height={100}/>
           </div> 
           : 
-          <div className="  rounded-xl  text-center mx-3 mt-[20%] md:mx-0 md:mt-0 ">
-            <div className="my-1">
+          // mx-3 mt-[20%] md:mx-0 md:mt-0 
+          <div className="  rounded-xl  text-center">
+            <div className="mx-20">
+              <Image src={'/assets/logos/vertical-symbol.png'} width={95} height={100}/>
+            </div>
+            {/* <div className="my-1">
               <Image src={'/assets/logos/clip-1.png'} width={70} height={70} alt={'icon'}/>
             </div>
             <div className="my-1">
@@ -27,7 +31,7 @@ export default function Footer({logo}){
             </div>
             <div className="my-1">
               <Image src={'/assets/logos/clip-4.png'} width={65} height={65} alt={'icon'}/>
-            </div>
+            </div> */}
           </div>}
           <div className="mb-10">
             <div className="md:mb-[30px]">
@@ -45,7 +49,7 @@ export default function Footer({logo}){
               <p className="md:text-xl text-lg ">Comilla, Bangladesh</p>
             </div>
             <div>
-              <p className="text-lg ">kazi@IdeaCSC.com</p>
+              <p className="text-lg ">info@IdeaCSC.com</p>
               <p className="text-lg ">Office: +880 1820-685001</p>
             </div>
           </div>
