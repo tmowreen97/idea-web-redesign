@@ -49,6 +49,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
       className='fixed left-0 top-0 w-full z-10 ease-in duration-200 tracking-wider'
     >
       <div className='w-screen  m-auto flex justify-between items-center p-3 text-white ml-1'>
+        {/* logo */}
         <motion.div
         
         >
@@ -57,7 +58,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
             {lightLogo ? <Image src={'/assets/logos/logo-white.png'} width={145} height={100} alt={'light_logo'} /> : <Image src={'/assets/logos/logo-white-2.png'} width={80} height={100} alt={'dark_logo'} />}
           </Link>
         </motion.div>
-        
+        {/* nav bar */}
         <ul style={{ color: '#FFFFFF'}} className='hidden sm:flex'>
           <li className='p-4'>
           <div className="dropdown inline-block relative">
@@ -84,9 +85,6 @@ const Navbar = ({setLightLogo, lightLogo}) => {
           <li className='m-2 p-2 hover:bg-button_bg hover:text-primary_text rounded-xl'>
             <Link href='/culture' id={router.pathname == "/culture" ? "active" : ""}>Culture</Link>
           </li>
-          {/* <li className='p-4'>
-            <Link href='/clients' id={router.pathname == "/clients" ? "active" : ""}>Clients</Link>
-          </li> */}
           <li className='m-2 p-2 hover:bg-button_bg hover:text-primary_text rounded-xl'>
             <Link href='/contact' id={router.pathname == "/contact" ? "active" : ""}>Contact</Link>
           </li>
@@ -104,8 +102,8 @@ const Navbar = ({setLightLogo, lightLogo}) => {
         <div
           className={
             nav
-              ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-dark_bg ease-in duration-300 tracking-wider pt-10 z-30'
-              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-dark_bg ease-in duration-300 tracking-wider z-30'
+              ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-tertiary ease-in duration-300 tracking-wider pt-10 z-30'
+              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-tertiary ease-in duration-300 tracking-wider z-30'
           }
         >
           
@@ -118,9 +116,6 @@ const Navbar = ({setLightLogo, lightLogo}) => {
 
           </div>
             <ul className="justify-center items-center mx-[19%] mt-5">
-
-            
-            
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500 '>
               <Link href='/' id={router.pathname == "/" ? "active" : ""}>Home</Link>
             </li>
@@ -141,22 +136,8 @@ const Navbar = ({setLightLogo, lightLogo}) => {
                 </ul>
               </div>
             </li>
-            <li className='p-4 text-4xl hover:text-gray-500 '>
-            <div className="dropdown inline-block relative">
-                <button id='project_button' aria-label='project_button' className="inline-flex items-center " id={router.asPath == '/#projects' || router.asPath == '/portfolio' ? "active" : ''}>
-                  <div className="relative">Projects</div>
-                  <BiChevronDown />
-                  {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> */}
-                </button>
-                <ul className="dropdown-menu absolute left-0 hidden text-gray-70  z-20">
-                  <li onClick={handleNav} className="bg-button_bg hover:bg-button_bg hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[275px] m-2 ">
-                    <Link className="block " href={'/#projects'}>Recent Projects</Link>
-                  </li>
-                  <li onClick={handleNav} className="bg-button_bg hover:bg-button_bg right-0 hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[200px] m-2">
-                    <Link className="block" href={'/portfolio'}>Portfolio</Link>
-                  </li>
-                </ul>
-              </div>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500 '>
+              <Link href='/#developments' id={router.pathname == "/#developments" ? "active" : ""}>Developments</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500 '>
               <Link href='/services' id={router.pathname == "/services" ? "active" : ""}>Services</Link>

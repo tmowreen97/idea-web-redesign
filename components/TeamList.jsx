@@ -31,7 +31,7 @@ function TeamList({member}){
       <div className="md:w-[620px] text-left tracking-wider m-2 ">
         <div className=" bg-secondary rounded-xl p-4 mb-4 ">
           <div className="m-2">
-            <h2 className="text-3xl text-red_text text-shadow-sm shadow-dark_red">{member.title}</h2>
+            <h2 className="text-3xl text-red_text text-shadow-sm shadow-dark_red font-light">{member.title}</h2>
             {/* <h2 className="text-2xl">{member.heading}</h2> */}
           </div>
           <div>

@@ -16,7 +16,7 @@ export default function Home() {
   const [lightLogo, setLightLogo] = useState(false)
 
   return (
-    <main className={`${urbanist.variable} font-sans tracking-wider justify-center items-center`}>
+    <main className={`${urbanist.variable} font-sans tracking-wider justify-center items-center h-full`}>
       <Navbar setLightLogo={setLightLogo} lightLogo={lightLogo} />
       <Hero heading='We Empower Ideas'/>
       <Intro/>

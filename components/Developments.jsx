@@ -47,7 +47,7 @@ function Developments(){
     setProjectSelect(index)
   }
   return(
-    <div id='developments' className="w-screen bg-primary">
+    <div id='developments' className="w-screen h-full bg-primary">
       <div className="justify-center items-center">
         <div className="flex items-center justify-center px-[10%] 2xl:px-[14%] py-[5%]">
           <div>

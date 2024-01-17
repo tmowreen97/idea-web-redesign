@@ -321,9 +321,9 @@ function Hero({heading}){
       <motion.div 
       initial={{opacity:0.1}}
       whileInView={{opacity:[0.5, 0.8, 1], transition:{delay:1.2, duration:1}}}
-      className='p-5 text-primary_text  outline-black z-0 mt-[-10rem]'
+      className='p-5 text-primary_text  z-0 mt-[-10rem]'
       >
-        <h1 className='lg:text-[700%] text-7xl bg-slate-800/50 rounded-xl md:bg-white/0 m-2 md:m-0 absolute lg:font-thin lg:right-[1%] right-0 bottom-1 p-3 z-0'>{heading}</h1>
+        <h1 className='lg:text-[800%] text-7xl text-shadow-sm shadow-tertiary bg-slate-800/50 rounded-xl md:bg-white/0 m-2 md:m-0 absolute lg:font-thin lg:right-[1%] right-0 bottom-1 p-3 z-0'>{heading}</h1>
       </motion.div>
     </div>
   );

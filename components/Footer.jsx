@@ -42,7 +42,7 @@ export default function Footer({logo}){
               
             </div>
             <div className="md:mb-[30px]">
-              <p className="md:text-xl text-lg ">Comilla, Dhaka | Bangladesh</p>
+              <p className="md:text-xl text-lg ">Comilla, Bangladesh</p>
             </div>
             <div>
               <p className="text-lg ">kazi@IdeaCSC.com</p>
