@@ -17,7 +17,7 @@ export default function Footer({logo}){
           : 
           // mx-3 mt-[20%] md:mx-0 md:mt-0 
           <div className="  rounded-xl  text-center">
-            <div className="mx-20">
+            <div className="lg:mx-20">
               <Image src={'/assets/logos/vertical-symbol.png'} width={95} height={100}/>
             </div>
           </div>}

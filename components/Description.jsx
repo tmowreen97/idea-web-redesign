@@ -9,7 +9,7 @@ function Description({data, handleClick}){
   const[fixed, setFixed] = useState(data)
   console.log(fixed, 'fixed')
   return(
-    <div className="mx-20 m-10">
+    <div className="lg:mx-20 lg:m-10">
       <div className="flex justify-end lg:my-[-10px] m-2">
         <AiOutlineCloseCircle 
         onClick={()=> handleClick(fixed.id)}

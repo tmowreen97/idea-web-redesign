@@ -48,7 +48,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
       style={{ backgroundColor: `${color}`, opacity:40}}
       className='fixed left-0 top-0 w-full z-10 ease-in duration-200 tracking-wider'
     >
-      <div className='w-screen  m-auto flex justify-between items-center p-3 text-white ml-1'>
+      <div className='w-screen h-full m-auto flex justify-between items-center p-3 text-white ml-1'>
         {/* logo */}
         <motion.div
         
@@ -109,10 +109,11 @@ const Navbar = ({setLightLogo, lightLogo}) => {
           
           <ul>
           <div className='flex justify-evenly '>
-              <Image src={'/assets/logos/clip-1.png'} width={104} height={100} className="m-1 my-3" alt={'icon'}/>
-              <Image src={'/assets/logos/clip-2.png'} width={60} height={60} className="m-1" alt={'icon'}/>
-              <Image src={'/assets/logos/clip-3.png'} width={65} height={60} className="m-1" alt={'icon'}/>
-              <Image src={'/assets/logos/clip-4.png'} width={70} height={60} className="m-1" alt={'icon'}/>
+              <Image src={'/assets/logos/icon-1.png'} width={104} height={100} className="m-1 my-3" alt={'icon'}/>
+              <Image src={'/assets/logos/icon-2.png'} width={60} height={60} className="m-1" alt={'icon'}/>
+              <Image src={'/assets/logos/icon-3.png'} width={65} height={60} className="m-1" alt={'icon'}/>
+              <Image src={'/assets/logos/icon-4.png'} width={70} height={60} className="m-1" alt={'icon'}/>
+              <Image src={'/assets/logos/icon-5.png'} width={70} height={60} className="m-1" alt={'icon'}/>
 
           </div>
             <ul className="justify-center items-center mx-[19%] mt-5">
