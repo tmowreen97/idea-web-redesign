@@ -18,53 +18,58 @@ function ThankYou(){
         {/* col/row 1/1 area */}
         <div className=" text-xl flex rounded-xl m-3 pt-2 items-center justify-center ">
           {/* Icons on left handle */}
-          <div className="rounded-xl p-4">
+          <div className="lg:px-4 px-2 lg:mr-4">
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:2}}}
-              className="lg:mb-2 mb-5"
+              className=""
             >
-              <Image src={'/assets/logos/clip-1.png'} width={84} height={82} alt={'icon'}/>
+              <Image src={'/assets/logos/icon-1.png'} width={115} height={80} alt={'icon'}/>
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:2.5}}}
-              className="lg:mb-2 mb-5"
+              className=""
             >
-            <Image src={'/assets/logos/clip-2.png'} width={80} height={80} alt={'icon'}/>              
+            <Image src={'/assets/logos/icon-2.png'} width={115} height={80} alt={'icon'}/>              
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:3}}}
-              className="lg:mb-3 mb-6"
+              className=""
             >
-            <Image src={'/assets/logos/clip-3.png'} width={80} height={80} alt={'icon'}/>              
+            <Image src={'/assets/logos/icon-3.png'} width={115} height={80} alt={'icon'}/>              
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:3.5}}}
             >
-            <Image src={'/assets/logos/clip-4.png'} width={82} height={82} alt={'icon'}/>              
+            <Image src={'/assets/logos/icon-4.png'} width={115} height={82} alt={'icon'}/>              
             </motion.div>
-
+            <motion.div
+              initial={{opacity:0}}
+              animate={{opacity:1, transition:{duration:2, delay:4}}}
+            >
+            <Image src={'/assets/logos/icon-5.png'} width={115} height={82} alt={'icon'}/>              
+            </motion.div>
           </div>
           {/* col/row 1/1 text */}
           <motion.div 
           initial={{opacity:0}}
           animate={{opacity:1, transition:{duration:2, delay:1.5} }}
           className="">
-            <div className="lg:pb-[75px] pb-5">
-              <div className="lg:pb-[75px] pb-5">
+            <div className="lg:pb-[70px] pb-5">
+              <div className="lg:pb-[70px] pb-5">
                 <div className="flex pb-1">
-                  <h2 className="lg:text-8xl text-6xl">IDEA</h2>
-                  <h2 className="lg:text-2xl text-lg lg:pt-14 pt-8 ml-3">CSC</h2>
+                  <h2 className="xl:text-9xl text-6xl">IDEA<span className="xl:text-2xl text-lg xl:pt-14 pt-8 ml-3">CSC</span></h2>
                 </div>
-                <h2 className="lg:text-2xl text-lg">Inter-Disciplinary Engineering Associates</h2>
-                <p className="lg:text-2xl text-lg">Construction Solutions Company</p>
+                <h2 className="xl:text-3xl text-lg">Inter-Disciplinary Engineering Associates</h2>
+                <p className="xl:text-3xl text-lg">Construction Solutions Company<span className="xl:text-2xl text-lg"> (PVT.) LTD.</span></p>
               </div>
-              <p className="text-lg">Comilla, Dhaka | Bangladesh</p>
-              <p className="text-lg">kazi@IdeaCSC.com</p>
-              <p className="text-lg ">Office: +880 1820-685001</p>
+              <p className="">Comilla, BD | Florida, USA</p>
+              <p className="">info@IdeaCSC.com</p>
+              <p className="">BD: +880 1820-685001</p>
+              <p className="">US: 954-295-2125</p>
             </div>
             <div>
               <p className="lg:text-lg text-sm">Please feel free to contact us with any questions or business inquiries.</p>
@@ -88,7 +93,7 @@ function ThankYou(){
           className=" text-primary_text mt-10"
           >
             <div className="mr-2">
-              <h1 className="p-2 lg:text-lg text-base ">In the meantime, check out what we've been up to:</h1>
+              <h1 className="p-2 lg:text-lg text-base ">In the meantime, check out what we've been up to at IDEA AEC:</h1>
             </div>
             <div className="flex justify-center items-center gap-10 mt-5">
               <motion.div
@@ -103,7 +108,7 @@ function ThankYou(){
                 <BsArrowRight className="text-3xl text-left"/>
               </motion.div>
               <button id='culture' aria-label='culture' className="bg-button_bg p-3 rounded-xl text-dark_text hover:bg-button_bg_2 hover:text-primary_text text-xl">
-              <Link href={'/culture'}>Culture</Link>
+              <Link href={'https://www.ideaaec.com'} rel="noopener noreferrer" target="_blank" >IDEA AEC</Link>
             </button>
             </div>
             

@@ -20,18 +20,6 @@ export default function Footer({logo}){
             <div className="mx-20">
               <Image src={'/assets/logos/vertical-symbol.png'} width={95} height={100}/>
             </div>
-            {/* <div className="my-1">
-              <Image src={'/assets/logos/clip-1.png'} width={70} height={70} alt={'icon'}/>
-            </div>
-            <div className="my-1">
-              <Image src={'/assets/logos/clip-2.png'} width={62} height={62} alt={'icon'}/>
-            </div>
-            <div className="my-1">
-              <Image src={'/assets/logos/clip-3.png'} width={65} height={65} alt={'icon'}/>
-            </div>
-            <div className="my-1">
-              <Image src={'/assets/logos/clip-4.png'} width={65} height={65} alt={'icon'}/>
-            </div> */}
           </div>}
           <div className="mb-10">
             <div className="md:mb-[30px]">
@@ -42,15 +30,17 @@ export default function Footer({logo}){
                 <div className="pt-5">
                   <h1 className="">Inter-Disciplinary Engineering Associates,</h1>
                   <h1 className="">Construction Solutions Company</h1>
+                  <h1>(PVT.) LTD.</h1>
                 </div>
               
             </div>
             <div className="md:mb-[30px]">
-              <p className="md:text-xl text-lg ">Comilla, Bangladesh</p>
+              <p className="md:text-xl text-lg ">Comilla, BD | Florida, USA</p>
             </div>
             <div>
               <p className="text-lg ">info@IdeaCSC.com</p>
-              <p className="text-lg ">Office: +880 1820-685001</p>
+              <p className="text-lg ">BD: +880 1820-685001</p>
+              <p className="text-lg ">US: 954-295-2125</p>
             </div>
           </div>
           </div>
@@ -89,7 +79,7 @@ export default function Footer({logo}){
                   placeholder="Message"
                   required/>
                 </div>
-                <input type="hidden" name="_next" value="https://www.ideaaec.com/thank-you"/>
+                <input type="hidden" name="_next" value="https://www.ideacsc.com/thank-you"/>
                 <div className="text-center items-center justify-center flex ">
                   <div className="bg-button_bg hover:bg-button_bg_2 rounded-xl p-2 shadow-xl ">
                     <button id='submit_2' aria-label="submit_2" type='submit'>Send</button>
@@ -138,7 +128,7 @@ export default function Footer({logo}){
       </div>
       <div className="flex items-center justify-center pb-5">
         <div className="flex">
-          <p className="text-sm " >© 2024 by IDEA <span className="text-xs">CSC</span> <span className="text-xs" >(PVT.) LTD.</span></p>
+          <p className="text-sm " >© 2024 by US IDEA CSC <span className="text-xs" >(PVT.) LTD.</span></p>
           
         </div>
           
