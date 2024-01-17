@@ -56,15 +56,15 @@ function ThankYou(){
           {/* col/row 1/1 text */}
           <motion.div 
           initial={{opacity:0}}
-          animate={{opacity:1, transition:{duration:2, delay:1.5} }}
+          animate={{opacity:1, transition:{duration:2, delay:1.5}}}
           className="">
             <div className="lg:pb-[70px] pb-5">
               <div className="lg:pb-[70px] pb-5">
                 <div className="flex pb-1">
                   <h2 className="xl:text-9xl text-6xl">IDEA<span className="xl:text-2xl text-lg xl:pt-14 pt-8 ml-3">CSC</span></h2>
                 </div>
-                <h2 className="xl:text-3xl text-lg">Inter-Disciplinary Engineering Associates</h2>
-                <p className="xl:text-3xl text-lg">Construction Solutions Company<span className="xl:text-2xl text-lg"> (PVT.) LTD.</span></p>
+                <h2 className="xl:text-2xl text-lg">Inter-Disciplinary Engineering Associates</h2>
+                <p className="xl:text-2xl text-lg">Construction Solutions Company<span className="xl:text-2xl text-lg"> (PVT.) LTD.</span></p>
               </div>
               <p className="">Comilla, BD | Florida, USA</p>
               <p className="">info@IdeaCSC.com</p>

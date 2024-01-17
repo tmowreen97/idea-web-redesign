@@ -11,7 +11,7 @@ export default function Footer({logo}){
         <div className=" lg:grid lg:grid-cols-2 justify-evenly text-dark_text tracking-wide">
           <div className="items-center justify-center text-2xl font-light flex md:p-0 px-5" >
           { logo ? 
-          <div className="mx-4">
+          <div className="lg:mx-4">
             <Image src={'/assets/logos/logo-transparent.png'} width={275} height={100}/>
           </div> 
           : 
@@ -21,26 +21,25 @@ export default function Footer({logo}){
               <Image src={'/assets/logos/vertical-symbol.png'} width={95} height={100}/>
             </div>
           </div>}
-          <div className="mb-10">
-            <div className="md:mb-[30px]">
-               <div className="flex pt-8">
-                  <h1 className="md:text-7xl text-6xl ">IDEA</h1>
-                  <h1 className="pl-2 md:pt-9 text-2xl pt-6 ">CSC</h1>
+          <div className="lg:mb-10">
+            <div className="lg:mb-[30px] mb-2">
+                <div className="flex lg:pt-8">
+                  <h1 className="lg:text-7xl text-6xl ">IDEA <span className="text-2xl">CSC</span></h1>
                 </div>
-                <div className="pt-5">
-                  <h1 className="">Inter-Disciplinary Engineering Associates,</h1>
-                  <h1 className="">Construction Solutions Company</h1>
-                  <h1>(PVT.) LTD.</h1>
+                <div className="lg:pt-5 pt-2">
+                  <h1 className="lg:text-2xl text-lg">Inter-Disciplinary Engineering Associates,</h1>
+                  <h1 className="lg:text-2xl text-lg">Construction Solutions Company</h1>
+                  <h1 className="lg:text-2xl text-base">(PVT.) LTD.</h1>
                 </div>
               
             </div>
             <div className="md:mb-[30px]">
-              <p className="md:text-xl text-lg ">Comilla, BD | Florida, USA</p>
+              <p className="lg:text-xl text-base ">Comilla, BD | Florida, USA</p>
             </div>
             <div>
-              <p className="text-lg ">info@IdeaCSC.com</p>
-              <p className="text-lg ">BD: +880 1820-685001</p>
-              <p className="text-lg ">US: 954-295-2125</p>
+              <p className="lg:text-lg text-base">info@IdeaCSC.com</p>
+              <p className="lg:text-lg text-base">BD: +880 1820-685001</p>
+              <p className="lg:text-lg text-base">US: 954-295-2125</p>
             </div>
           </div>
           </div>
@@ -49,7 +48,7 @@ export default function Footer({logo}){
             <div className="items-center justify-center">
               <form 
               className="text-center pt-2 pb-4 items-center justify-center"
-              action="https://formsubmit.co/info@ideaaec.com" 
+              action="https://formsubmit.co/info@ideacsc.com" 
               method="POST">
                 <h2 className="text-primary_text">Contact Us</h2>
                 <div className="m-2">
