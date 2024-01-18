@@ -48,7 +48,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
       style={{ backgroundColor: `${color}`, opacity:40}}
       className='fixed left-0 top-0 w-full z-10 ease-in duration-200 tracking-wider'
     >
-      <div className='w-screen h-full m-auto flex justify-between items-center p-3 text-white ml-1'>
+      <div className='w-screen h-full m-auto flex justify-between items-center p-3 text-primary_text ml-1'>
         {/* logo */}
         <motion.div
         
@@ -63,29 +63,29 @@ const Navbar = ({setLightLogo, lightLogo}) => {
           <li className='p-4'>
           <div className="dropdown inline-block relative">
           <button id='about_button' aria-label='about_button' className="inline-flex items-center " id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>
-            <div className="mr-1 tracking-wider ">About</div>
-            <BiChevronDown />
+            <p className="mr-1 tracking-wide">About</p>
+            <span><BiChevronDown /></span>
           </button>
           <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 text-center">
-            <li className="bg-button_bg_2 hover:bg-button_bg hover:text-primary_text ml-[-20px] rounded-xl">
+            <li className="bg-button_bg_2 hover:bg-button_bg hover:text-primary_text w-[90px] ml-[-20px] rounded-xl">
               <Link className="p-2 block mb-1" href={'/#about'}>About Us</Link>
             </li>
-            <li className="bg-button_bg_2 hover:bg-button_bg hover:text-primary_text ml-[-30px] rounded-xl">
+            <li className="bg-button_bg_2 hover:bg-button_bg hover:text-primary_text w-[100px] ml-[-29px] rounded-xl">
               <Link className="p-2 block" href={'/team'}>Our Team</Link>
             </li>
           </ul>
         </div>
           </li> 
-          <li className='m-2 p-2 hover:bg-button_bg hover:text-primary_text rounded-xl'>
+          <li className='m-2 p-2 hover:bg-button_bg text-primary_text  rounded-xl'>
             <Link href='/#developments' id={router.asPath == "/#developments" ? "active" : ""}>Developments</Link>
           </li>
-          <li className='m-2 p-2 hover:bg-button_bg hover:text-primary_text rounded-xl'>
+          <li className='m-2 p-2 hover:bg-button_bg text-primary_text rounded-xl'>
             <Link href='/services' id={router.pathname == "/services" ? "active" : ""}>Services</Link>
           </li>
-          <li className='m-2 p-2 hover:bg-button_bg hover:text-primary_text rounded-xl'>
+          <li className='m-2 p-2 hover:bg-button_bg text-primary_text rounded-xl'>
             <Link href='/culture' id={router.pathname == "/culture" ? "active" : ""}>Culture</Link>
           </li>
-          <li className='m-2 p-2 hover:bg-button_bg hover:text-primary_text rounded-xl'>
+          <li className='m-2 p-2 hover:bg-button_bg text-primary_text rounded-xl'>
             <Link href='/contact' id={router.pathname == "/contact" ? "active" : ""}>Contact</Link>
           </li>
         </ul>
@@ -108,12 +108,13 @@ const Navbar = ({setLightLogo, lightLogo}) => {
         >
           
           <ul>
-          <div className='flex justify-evenly '>
-              <Image src={'/assets/logos/icon-1.png'} width={104} height={100} className="m-1 my-3" alt={'icon'}/>
-              <Image src={'/assets/logos/icon-2.png'} width={60} height={60} className="m-1" alt={'icon'}/>
-              <Image src={'/assets/logos/icon-3.png'} width={65} height={60} className="m-1" alt={'icon'}/>
-              <Image src={'/assets/logos/icon-4.png'} width={70} height={60} className="m-1" alt={'icon'}/>
-              <Image src={'/assets/logos/icon-5.png'} width={70} height={60} className="m-1" alt={'icon'}/>
+          <div className='flex justify-center '>
+              {/* <Image src={'/assets/logos/icon-1.png'} width={70} height={100} className="" alt={'icon'}/>
+              <Image src={'/assets/logos/icon-2.png'} width={60} height={20} className="" alt={'icon'}/>
+              <Image src={'/assets/logos/icon-3.png'} width={65} height={20} className="" alt={'icon'}/>
+              <Image src={'/assets/logos/icon-4.png'} width={70} height={60} className="" alt={'icon'}/>
+              <Image src={'/assets/logos/icon-5.png'} width={70} height={60} className="" alt={'icon'}/> */}
+              <Image src={'/assets/logos/logo-landing.png'} width={275} height={20}/>
 
           </div>
             <ul className="justify-center items-center mx-[19%] mt-5">
@@ -138,7 +139,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
               </div>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500 '>
-              <Link href='/#developments' id={router.pathname == "/#developments" ? "active" : ""}>Developments</Link>
+              <Link href='/#developments' id={router.asPath == '/#developments' ? "active" : ""}>Developments</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500 '>
               <Link href='/services' id={router.pathname == "/services" ? "active" : ""}>Services</Link>
