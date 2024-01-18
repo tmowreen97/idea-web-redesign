@@ -2,6 +2,7 @@ import Carousel from "./Carousel";
 import { useState } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import Description from "./Description";
+import { motion } from 'framer-motion';
 
 
 function Developments(){
@@ -87,7 +88,7 @@ function Developments(){
     <div id='developments' className="w-screen h-full bg-primary">
       <div className="justify-center items-center">
         <div className="flex items-center justify-center lg:px-[10%] 2xl:px-[14%] py-[5%]">
-          <div className={hide ? "relative rounded-xl overflow-hidden hidden h-full" : "relative rounded-xl overflow-hidden h-full"}>
+          <div className={hide ? "relative rounded-xl overflow-hidden hidden h-full ease-in-out duration-300" : "relative rounded-xl overflow-hidden h-full"}>
             {/* TITLE */}
             <div>
               <h1 className="lg:text-[1100%] text-5xl p-2 font-thin lg:m-12 text-justify">Developments</h1>
@@ -115,7 +116,7 @@ function Developments(){
                 <div className="justify-center items-center flex lg:m-0 m-20">
                   <button 
                   onClick={()=> handleClick()}
-                  className="bg-button_bg hover:bg-button_bg_2  p-3 rounded-xl absolute bottom-8 tracking-wide font-light ">Read More</button>
+                  className="bg-button_bg hover:bg-button_bg_2  p-3 rounded-xl absolute bottom-8 tracking-wide font-light ease-in-out duration-300">Read More</button>
                 </div>
               </div>
               
@@ -127,8 +128,11 @@ function Developments(){
         
       </div>
       { projClick ? 
-      <div className="">
-        <div className="w-full h-full bg-none lg:fixed top-0 bottom-0 right-0 left-0 z-10">
+      <motion.div 
+      initial={{opacity:0}}
+      animate={{opacity:1, transition:{duration:3, delay:1}}}
+      className="">
+        <div className="w-full h-full bg-none lg:fixed top-0 bottom-0 right-0 left-0 z-10 ease-in-out duration-300 ">
           <div className="lg:z-20 flex h-full w-full items-center justify-center bg-tertiary/90">
             <div className="justify-center items-center bg-accent_3 text-left lg:p-20 p-10 rounded-2xl z-9 lg:z-20 lg:m-20 m-4 h-full md:h-auto max-w-[2500px]  md:top-[10%] md:bottom-[10%] bottom-[0]">
               <Description data={projects[projectSelect]} handleClick={handleClick}/>
@@ -138,7 +142,7 @@ function Developments(){
           </div>
           
         </div>
-      </div> : ""}
+      </motion.div> : ""}
         
 
 
