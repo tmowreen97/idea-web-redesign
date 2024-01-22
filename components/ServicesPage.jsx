@@ -10,17 +10,50 @@ function ServicesPage(){
       title: 'Mechanical',
       icon: '',
       services: [
-        "Central Plant Design (Chilled water, Condenser Water, Heating Hot Water and Steam)",
-        "Chiller System Design",
-        "Cooling Tower System Designs",
-        "Boiler (Steam/Water) System Designs",
-        "Central Systems",
-        "Variable Refrigerant Systems",
-        "Energy Modeling",
-        "Building Automation and Energy Management Systems",
-        "Existing Systems and Modernization",
-        "LEED and Sustainable Design",
-        "BIM Modeling",
+        {
+          service:"Central Plant Design (Chilled water, Condenser Water, Heating Hot Water and Steam)",
+          alt:"mech-1",
+        },
+        {
+          service:"Chiller System Design",
+          alt:"mech-2",
+        },
+        {
+          service:"Cooling Tower System Designs",
+          alt:"mech-3",
+        },
+        {
+          service:"Boiler (Steam/Water) System Designs",
+          alt:"mech-4",
+        },
+        {
+          service:"Central Systems",
+          alt:"mech-5",
+        },
+        {
+          service:"Variable Refrigerant Systems",
+          alt:"mech-6",
+        },
+        {
+          service:"Energy Modeling",
+          alt:"mech-7",
+        },
+        {
+          service:"Building Automation and Energy Management Systems",
+          alt:"mech-8",
+        },
+        {
+          service:"Existing Systems and Modernization",
+          alt:"mech-9",
+        },
+        {
+          service:"LEED and Sustainable Design",
+          alt:"mech-10",
+        },
+        {
+          service:"BIM Modeling",
+          alt:"mech-11",
+        },
       ],
       color: '#C2F0BD',
       list_color: '#AED8AA'
@@ -30,20 +63,62 @@ function ServicesPage(){
       title: 'Electrical',
       icon: '',
       services: [
-        "Electrical Power Systems",
-        "Fire Alarm Design",
-        "Medium Voltage Systems",
-        "Emergency and Standby Systems",
-        "Uninterruptible Power Systems",
-        "Renewable Energy Systems",
-        "Fire Alarm",
-        "Lighting Design",
-        "Lighting Control Systems",
-        "Short Circuit Studies",
-        "Arc Flash Studies",
-        "Selective Coordination Studies",
-        "LEED and Sustainable Design",
-        "BIM Modeling",
+        {
+          service:"Electrical Power Systems",
+          alt:"elect-1",
+        },
+        {
+          service:"Fire Alarm Design",
+          alt:"elect-2",
+        },
+        {
+          service:"Medium Voltage Systems",
+          alt:"elect-3",
+        },
+        {
+          service:"Emergency and Standby Systems",
+          alt:"elect-4",
+        },
+        {
+          service:"Uninterruptible Power Systems",
+          alt:"elect-5",
+        },
+        {
+          service:"Renewable Energy Systems",
+          alt:"elect-6",
+        },
+        {
+          service:"Fire Alarm",
+          alt:"elect-7",
+        },
+        {
+          service:"Lighting Design",
+          alt:"elect-8",
+        },
+        {
+          service:"Lighting Control Systems",
+          alt:"elect-9",
+        },
+        {
+          service:"Short Circuit Studies",
+          alt:"elect-10",
+        },
+        {
+          service:"Arc Flash Studies",
+          alt:"elect-11",
+        },
+        {
+          service:"Selective Coordination Studies",
+          alt:"elect-12",
+        },
+        {
+          service:"LEED and Sustainable Design",
+          alt:"elect-13",
+        },
+        {
+          service:"BIM Modeling",
+          alt:"elect-14",
+        },
       ],
       color: '#C2B7E9',
       list_color: '#AEA4D1'
@@ -53,19 +128,59 @@ function ServicesPage(){
       title: 'Plumbing',
       icon: '',
       services: [
-        "Potable and Non-Potable Water System",
-        "Water Pressure Booster System",
-        "Drainage System including Waste & Storm", 
-        "Plumbing System Retrofitting and Renovation",
-        "Flood Mitigation Design", 
-        "Rainwater Harvesting System",
-        "Stormwater Detention/Retention Design ",
-        "Commercial Kitchen Design",
-        "Natural Gas System Design",
-        "Gas Pressure Booster System ",
-        "Liquid Propane (LP) Design",
-        "Water Conservation Design",
-        "LEED and Sustainable Design",
+        {
+          service:"Potable and Non-Potable Water System",
+          alt:"plumb-1",
+        },
+        {
+          service:"Water Pressure Booster System",
+          alt:"plumb-2",
+        },
+        {
+          service:"Drainage System including Waste & Storm",
+          alt:"plumb-3",
+        },
+        {
+          service:"Plumbing System Retrofitting and Renovation",
+          alt:"plumb-4",
+        },
+        {
+          service:"Flood Mitigation Design",
+          alt:"plumb-5",
+        },
+        {
+          service:"Rainwater Harvesting System",
+          alt:"plumb-6",
+        },
+        {
+          service:"Stormwater Detention/Retention Design",
+          alt:"plumb-7",
+        },
+        {
+          service:"Commercial Kitchen Design",
+          alt:"plumb-8",
+        },
+        {
+          service:"Natural Gas System Design",
+          alt:"plumb-9",
+        },
+        {
+          service:"Gas Pressure Booster System ",
+          alt:"plumb-10",
+        },
+        {
+          service:"Liquid Propane (LP) Design",
+          alt:"plumb-11",
+        },
+        {
+          service:"Water Conservation Design",
+          alt:"plumb-12",
+        },
+        {
+          service:"LEED and Sustainable Design",
+          alt:"plumb-13",
+        },
+
       ],
       color: '#EDB87A',
       list_color: '#D5A56D'
@@ -77,11 +192,26 @@ function ServicesPage(){
       title: 'Fire Protection',
       icon: '',
       services: [
-        "Wet Fire Sprinkler System Design",
-        "Dry Fire Sprinkler Design",
-        "Hydraulic Calculations",
-        "Special Agent Design",
-        "Fire Pump and standpipe System",
+        {
+          service:"Wet Fire Sprinkler System Design",
+          alt:"fp-1",
+        },
+        {
+          service:"Dry Fire Sprinkler Design",
+          alt:"fp-2",
+        },
+        {
+          service:"Hydraulic Calculations",
+          alt:"fp-3",
+        },
+        {
+          service:"Special Agent Design",
+          alt:"fp-4",
+        },
+        {
+          service:"Fire Pump and standpipe System",
+          alt:"fp-5",
+        },
       ],
       color: '#F89090',
       list_color: '#DF8181'
@@ -91,10 +221,22 @@ function ServicesPage(){
       title: 'Low Voltage List',
       icon: '',
       services: [
-        "Copper Systems Telecom Design ",
-        "Fiber Systems Telecom Design ",
-        "Security Systems",
-        "Wireless Heat Mapping",
+        {
+          service:"Copper Systems Telecom Design",
+          alt:"lv-1",
+        },
+        {
+          service:"Fiber Systems Telecom Design",
+          alt:"lv-1",
+        },
+        {
+          service:"Security Systems",
+          alt:"lv-1",
+        },
+        {
+          service:"Wireless Heat Mapping",
+          alt:"lv-1",
+        },
       ],
       color: '#ADDEDF',
       list_color: '#9BC7C8'
@@ -104,19 +246,58 @@ function ServicesPage(){
   const life_cycle_services = {
     title: 'Existing Facility Services',
     services: [
-      "MEP-FP System Upgrades",
-      "Code Compliance/Upgrades",
-      "Efficiency/Energy Use Evaluations",
-      "Building Management/Automation System Upgrades",
-      "Oil To Gas/Steam Conversion",
-      "Boiler Replacement and Upgrades",
-      "Exhaust System Upgrades",
-      "Condensation / Humidification / Dehumidification Issues",
-      "Code Compliance Upgrades For Normal and Emergency Lighting",
-      "Code Compliance Upgrades For Lighting Controls",
-      "Fire Alarm System Upgrades",
-      "AS-BUILT Documentation",
-      "Existing Conditions Documentation",
+      {
+        service:"MEP-FP System Upgrades",
+        alt:"existing-1",
+      },
+      {
+        service:"Code Compliance/Upgrades",
+        alt:"existing-1",
+      },
+      {
+        service:"Efficiency/Energy Use Evaluations",
+        alt:"existing-1",
+      },
+      {
+        service:"Building Management/Automation System Upgrades",
+        alt:"existing-1",
+      },
+      {
+        service:"Oil To Gas/Steam Conversion",
+        alt:"existing-1",
+      },
+      {
+        service:"Boiler Replacement and Upgrades",
+        alt:"existing-1",
+      },
+      {
+        service:"Exhaust System Upgrades",
+        alt:"existing-1",
+      },
+      {
+        service:"Condensation / Humidification / Dehumidification Issues",
+        alt:"existing-1",
+      },
+      {
+        service:"Code Compliance Upgrades For Normal and Emergency Lighting",
+        alt:"existing-1",
+      },
+      {
+        service:"Code Compliance Upgrades For Lighting Controls",
+        alt:"existing-1",
+      },
+      {
+        service:"Fire Alarm System Upgrades",
+        alt:"existing-1",
+      },
+      {
+        service:"AS-BUILT Documentation",
+        alt:"existing-1",
+      },
+      {
+        service:"Existing Conditions Documentation",
+        alt:"existing-1",
+      },
     ],
     color: '#63a081',
     list_color: '#498767'
@@ -313,8 +494,8 @@ function ServicesPage(){
                       <ul className="items-center justify-center">
                         {service.services.map((list_item)=> {
                           return(
-                            <li className="list-disc xl:text-lg">
-                              <p className="text-dark_text lg:leading-6 xl:leading-7">{list_item}</p>
+                            <li key={list_item.alt} className="list-disc xl:text-lg">
+                              <p className="text-dark_text lg:leading-6 xl:leading-7">{list_item.service}</p>
                             </li>
                             
                           )
@@ -349,8 +530,8 @@ function ServicesPage(){
                       <ul className=" items-center justify-center">
                         {service.services.map((list_item)=> {
                           return(
-                            <li className="list-disc xl:text-lg">
-                              <p className="text-dark_text lg:leading-6 xl:leading-7">{list_item}</p>
+                            <li key={list_item.alt} className="list-disc xl:text-lg">
+                              <p className="text-dark_text lg:leading-6 xl:leading-7">{list_item.service}</p>
                             </li>
                           )
                         })}
@@ -383,10 +564,10 @@ function ServicesPage(){
               <div className="2xl:w-[500px] flex items-center justify-center rounded-2xl p-5 xl:m-10 shadow-inner font-medium" style={{backgroundColor: `${life_cycle_services.list_color}`}}>
                 <div>
                   <ul className="items-center justify-center">
-                  {life_cycle_services.services.map((service)=> {
+                  {life_cycle_services.services.map((list_item)=> {
                     return(
-                      <li className="list-disc xl:text-lg">
-                        <p className="text-dark_text text-lg lg:leading-6 xl:leading-7">{service}</p>
+                      <li key={list_item.alt} className="list-disc xl:text-lg">
+                        <p className="text-dark_text text-lg lg:leading-6 xl:leading-7">{list_item.service}</p>
                       </li>
                     )
                   })}
