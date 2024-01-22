@@ -177,7 +177,7 @@ function ServicesPage(){
         <div className="font-light">
           {/* Title */}
           <div className="items-center justify-center flex">
-            <h1 className=" bg-secondary font-thin rounded-2xl p-7 xl:m-10 my-2 2xl:text-7xl lg:text-5xl text-4xl flex">Engineering Services<a target="_blank" rel="noopener noreferrer" href="https://www.ideaaec.com/services" ><CiShare1 className="text-[65%] hover:scale-110 ease-in-out duration-200 items-center justify-center align-middle cursor-pointer hover:text-button_bg_2" /></a></h1>
+            <h1 className=" bg-secondary font-thin rounded-2xl p-7 xl:m-10 my-2 2xl:text-7xl lg:text-5xl text-3xl flex">Engineering Services<a target="_blank" rel="noopener noreferrer" href="https://www.ideaaec.com/services" ><CiShare1 className="text-[65%] m-1 hover:scale-110 ease-in-out duration-200 items-center justify-center align-middle cursor-pointer hover:text-button_bg_2" /></a></h1>
           </div>
           {/* Subsections*/}
           {/* actual grid without title */}
