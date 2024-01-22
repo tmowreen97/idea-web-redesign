@@ -122,23 +122,46 @@ function ServicesPage(){
     list_color: '#498767'
   }
 
-  const construction_services = {
-    title: 'Construction Services',
-    services: [
-      "Owner's Representation",
-      "Design Management",
-      "Construction Management Assistance",
-      "Project Coordination",
-      "Sub-Consultant Procurement",
-      "Sub-Consultant Management",
-      "Cost Estimation",
-      "Construction Project Schedule Development",
-      "Construction Bid Procurement",
-      "Site Safety Coordination & Supervision",
-    ],
-    color: '#63a081',
-    list_color: '#498767'
-  }
+  const construction_services = [
+    {
+      title: 'Overall Services',
+      services: [
+        "Owner's Representation", 
+        "Construction Management", 
+        "Project Management", 
+        "Design", 
+        "Design-Build", 
+        "Design-Bid-Build", 
+        "Design Management ",
+        "Project Coordination", 
+        "Sub-Consultant Procurement & Management", 
+        "Cost Estimation & Cost Control", 
+        "Construction Project Schedule Development", 
+        "Construction Bid Procurement", 
+
+      ],
+      color: '#63a081',
+      list_color: '#498767'
+    },
+    {
+      title: 'Construction Services',
+      services:[
+        "Equipment & Material Procurement",
+        "Quality Control",
+        "Permitting", 
+        "Construction Site Supervision", 
+        "Scheduling", 
+        "Look-Ahead Scheduling", 
+        "Shop Drawings Review ",
+        "Coordination Drawings Review", 
+        "Construction Status Reporting", 
+        "Site Safety Coordination & Supervision",
+        "Inspections and Completed Operations",
+      ],
+      color: '#63a081',
+      list_color: '#498767'
+    }
+  ]
   return(
     <div className="w-screen h-full bg-primary">
       <motion.div 
@@ -149,29 +172,42 @@ function ServicesPage(){
       </motion.div>
       <div className="pb-20">
         {/* CONSTRUCTION SERVICES */}
-        <div className="justify-center">
+        <div className="justify-center font-light">
+          {/* TITLE */}
           <div className="flex justify-center items-center">
-            <h1 className="bg-secondary font-thin rounded-2xl p-5 m-10 2xl:text-7xl lg:text-5xl text-4xl text-center flex items-center">{construction_services.title}</h1>
+            <h1 className="bg-secondary font-thin rounded-2xl p-7 xl:m-10 my-2 2xl:text-7xl lg:text-5xl text-3xl flex">Construction Management Services</h1>
           </div>
+          {/* BODY */}
             <div className="justify-center flex ">
-              <div className="flex justify-center xl:h-[500px] 2xl:h-[625px] rounded-2xl 2xl:mx-10 p-5  my-5 2xl:my-0 xl:w-[500px] w-[375px]" style={{backgroundColor: `${construction_services.color}`}}>
-                <div className="2xl:w-[475px] flex justify-center rounded-2xl p-5 xl:m-10 shadow-inner font-medium" style={{backgroundColor: `${construction_services.list_color}`}}>
-                  <div className="flex ">
-                    <ul className="justify-center items-center">
-                  {construction_services.services.map((service)=> {
-                    return(
-                      <li className="list-disc text-lg lg:leading-6 xl:leading-7">{service}</li>
-                    )
-                  })}
-                </ul>
+            <div id='subsection' className="xl:grid xl:grid-cols-2 items-center xl:gap-10 xl:p-0 xl:mx-[20%] xl:mb-10 justify-center">
+            {construction_services.map((service)=> {
+              return(
+                <div className="xl:h-[625px] flex justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
+                  <div className="justify-center">
+                    <div className="items-center justify-center flex">
+                      <h1 className="text-dark_text text-3xl xl:text-4xl p-5">{service.title}</h1>
+                    </div>
+                    <div className="2xl:w-[400px] xl:w-[345px] lg:w-[325px] 2xl:h-[450px] flex justify-center rounded-2xl p-8 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
+                    <div className="">
+                      <ul className="items-center justify-center">
+                        {service.services.map((list_item)=> {
+                          return(
+                            <li className="list-disc xl:text-lg">
+                              <p className="text-dark_text lg:leading-6 xl:leading-7">{list_item}</p>
+                            </li>
+                            
+                          )
+                        })}
+                      </ul>
+                    </div>
+                      
+                    </div>
                   </div>
-                
-              </div>
-              </div>
-              
+                </div>
+              )
+            })}
+          </div>             
             </div>
-            
-
             </div>
         {/* Engineering Services Section */}
         <div className="font-light">
