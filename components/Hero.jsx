@@ -228,24 +228,13 @@ function Hero({heading}){
   return (
     <div className='flex items-center justify-center h-screen w-screen pb-16 bg-center bg-cover custom-img'>
       <div className=" mb-40 md:mb-0 ">
-        { !isBreakPoint ? 
+        {/* { !isBreakPoint ? 
           <h1></h1>
-        // blinkers.map((blinker)=> {
-        //   return(
-        //     <motion.div 
-        //     initial={{opacity:0}}
-        //     animate ={{opacity:1, transition: {delay:1.5, duration:1}}}
-        //     key={blinker.name}>
-        //       <Blinker blinker={blinker} delayTime={blinker.delayTime} blinker_name={blinker.name} repeatDelayTime={blinker.repeatDelayTime} bgColor={blinker.bgColor} classDesc={blinker.classDesc}/>
-        //     </motion.div>
-        //   )
-        // }) : 
         :
         <div className="text-center justify-center items-center flex">
           <div className='justify-center items-center ml-10'>
           
           
-          {/* MOBILE HERO */}
           <motion.div
             initial={{opacity:0}}
             whileInView={{opacity:1, transition:{delay:2, duration:1}}}
@@ -285,12 +274,6 @@ function Hero({heading}){
                 <Link  href={'/#projects'} >
                   <p className='mobile-desc'>East End Food Institute (EEFI)</p>
                 </Link>
-                {/* <a href="#projects" >
-                  <p className='mobile-desc'>
-                    East End Food Institute (EEFI)
-                  </p>
-                
-                </a> */}
               </motion.div>
               <motion.div 
               initial={{opacity:0}}
@@ -316,7 +299,7 @@ function Hero({heading}){
             }
           </div>
         </div>
-      }
+      } */}
       </div>
       <motion.div 
       initial={{opacity:0.1}}

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function Intro(){
   return(
-    <div id='about' className='w-screen h-full bg-primary font-thin text-primary_text tracking-widest '>
+    <div id='about' className='w-screen h-full bg-primary font-thin text-primary_text lg:tracking-widest tracking-wider'>
       <div className="py-2 justify-center items-center">
         <div className="xl:p-20 p-10">
           <div className="xl:flex items-center justify-center">

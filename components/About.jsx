@@ -41,9 +41,9 @@ const About = () => {
   return (
     <div id='about' className='w-screen h-full bg-primary font-light'>
       <div className=' flex items-center justify-center lg:p-4 '>
-        <div className="about__parent lg:grid mt-[5%] lg:mx-[15%]">
-          <div className="about__title m-[5%] lg:m-0 ">
-            <h1 className="lg:text-[1100%] text-8xl tracking-wider text-center font-thin text-primary_text ">
+        <div className="about__parent lg:grid lg:mx-[15%]">
+          <div className="about__title  lg:m-0 ">
+            <h1 className="lg:text-[1100%] text-8xl tracking-wider text-center font-thin text-primary_text lg:mt-[35%] lg:m-0 m-4">
               About
             </h1>
           </div>

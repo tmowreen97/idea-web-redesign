@@ -91,7 +91,7 @@ function Developments(){
           <div className={hide ? "relative rounded-xl overflow-hidden hidden h-full ease-in-out duration-300" : "relative rounded-xl overflow-hidden h-full"}>
             {/* TITLE */}
             <div>
-              <h1 className="lg:text-[1100%] text-5xl p-2 font-thin lg:m-12 text-justify">Developments</h1>
+              <h1 className="lg:text-[1100%] text-[350%] p-2 font-thin lg:m-12 lg:text-justify text-center">Developments</h1>
             </div>
             <div className="lg:flex justify-center lg:gap-10">
               <div className="bg-secondary rounded-xl xl:w-full lg:py-10 p-2 m-2 justify-center items-center flex">
