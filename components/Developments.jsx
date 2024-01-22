@@ -98,7 +98,7 @@ function Developments(){
                <Carousel 
                 array={projects} 
                 handleIndex = {handleIndex}
-                custom={"lg:w-[700px] xl:w-[775px] xl:h-[500px] lg:h-[400px] md:w-[550px] w-[325px] h-[225px] rounded-2xl bg-center bg-cover hover:scale-[103%] duration-500 transform"}
+                custom={"lg:w-[700px] xl:w-[775px] xl:h-[500px] lg:h-[400px] md:w-[550px] w-[325px] h-[225px] rounded-2xl bg-center bg-cover hover:scale-[102%] duration-500 transform"}
               /> 
               </div>
               <div className="bg-secondary rounded-xl lg:w-[500px] m-2 relative lg:h-auto h-full">
