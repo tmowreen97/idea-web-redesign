@@ -123,40 +123,111 @@ function ServicesPage(){
   }
 
   const construction_services = [
+    // Overall
     {
       title: 'Overall Services',
       services: [
-        "Owner's Representation", 
-        "Construction Management", 
-        "Project Management", 
-        "Design", 
-        "Design-Build", 
-        "Design-Bid-Build", 
-        "Design Management ",
-        "Project Coordination", 
-        "Sub-Consultant Procurement & Management", 
-        "Cost Estimation & Cost Control", 
-        "Construction Project Schedule Development", 
-        "Construction Bid Procurement", 
+        {
+          service:"Owner's Representation",
+          alt:"overall-1",
+        },
+        {
+          service:"Construction Management",
+          alt:"overall-2",
+        },
+        {
+          service:"Project Management",
+          alt:"overall-3",
+        },
+        {
+          service:"Design",
+          alt:"overall-4",
+        },
+        {
+          service:"Design-Build",
+          alt:"overall-5",
+        },
+        {
+          service:"Design-Bid-Build",
+          alt:"overall-6",
+        },
+        {
+          service:"Design Management ",
+          alt:"overall-7",
+        },
+        {
+          service:"Project Coordination",
+          alt:"overall-8",
+        },
+        {
+          service:"Sub-Consultant Procurement & Management",
+          alt:"overall-9",
+        },
+        {
+          service:"Cost Estimation & Cost Control",
+          alt:"overall-10",
+        },
+        {
+          service:"Construction Project Schedule Development",
+          alt:"overall-11",
+        },
+        {
+          service:"Construction Bid Procurement",
+          alt:"overall-12",
+        }, 
 
       ],
       color: '#63a081',
       list_color: '#498767'
     },
+    // Construction
     {
       title: 'Construction Services',
       services:[
-        "Equipment & Material Procurement",
-        "Quality Control",
-        "Permitting", 
-        "Construction Site Supervision", 
-        "Scheduling", 
-        "Look-Ahead Scheduling", 
-        "Shop Drawings Review ",
-        "Coordination Drawings Review", 
-        "Construction Status Reporting", 
-        "Site Safety Coordination & Supervision",
-        "Inspections and Completed Operations",
+        {
+          service:"Equipment & Material Procurement",
+          alt:"const-1",
+        },
+        {
+          service:"Quality Control",
+          alt:"const-2",
+        },
+        {
+          service:"Permitting",
+          alt:"const-3",
+        },
+        {
+          service:"Construction Site Supervision",
+          alt:"const-4",
+        },
+        {
+          service:"Scheduling",
+          alt:"const-5",
+        },
+        {
+          service:"Look-Ahead Scheduling",
+          alt:"const-6",
+        },
+        {
+          service:"Shop Drawings Review",
+          alt:"const-7",
+        },
+        {
+          service:"Coordination Drawings Review",
+          alt:"const-8",
+        },
+        {
+          service:"Construction Status Reporting",
+          alt:"const-9",
+        },
+        {
+          service:"Site Safety Coordination & Supervision",
+          alt:"const-10",
+        },
+        {
+          service:"Inspections and Completed Operations",
+          alt:"const-11",
+        },
       ],
       color: '#63a081',
       list_color: '#498767'
@@ -174,50 +245,61 @@ function ServicesPage(){
         {/* CONSTRUCTION SERVICES */}
         <div className="justify-center font-light">
           {/* TITLE */}
-          <div className="flex justify-center items-center">
+          <motion.div 
+          initial={{opacity:0}}
+          animate={{opacity:1, transition:{delay:1.5 , duration:1}}}
+          className="flex justify-center items-center">
             <h1 className="bg-secondary font-thin rounded-2xl p-7 xl:m-10 my-2 2xl:text-7xl lg:text-5xl text-3xl flex">Construction Management Services</h1>
-          </div>
+          </motion.div>
           {/* BODY */}
-            <div className="justify-center flex ">
-            <div id='subsection' className="xl:grid xl:grid-cols-2 items-center xl:gap-10 xl:p-0 xl:mx-[20%] xl:mb-10 justify-center">
-            {construction_services.map((service)=> {
-              return(
-                <div className="xl:h-[625px] flex justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
-                  <div className="justify-center">
-                    <div className="items-center justify-center flex">
-                      <h1 className="text-dark_text text-3xl xl:text-4xl p-5">{service.title}</h1>
-                    </div>
-                    <div className="2xl:w-[400px] xl:w-[345px] lg:w-[325px] 2xl:h-[450px] flex justify-center rounded-2xl p-8 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
-                    <div className="">
-                      <ul className="items-center justify-center">
-                        {service.services.map((list_item)=> {
-                          return(
-                            <li className="list-disc xl:text-lg">
-                              <p className="text-dark_text lg:leading-6 xl:leading-7">{list_item}</p>
-                            </li>
-                            
-                          )
-                        })}
-                      </ul>
-                    </div>
-                      
+            <motion.div 
+            initial={{opacity:0}}
+            animate={{opacity:1, transition:{delay:2, duration:1}}} 
+            className="justify-center flex ">
+              <div id='subsection' className="xl:grid xl:grid-cols-2 items-center xl:gap-10 xl:p-0 xl:mx-[20%] xl:mb-10 justify-center">
+              {construction_services.map((service)=> {
+                return(
+                  <div className="xl:h-[625px] flex justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
+                    <div className="justify-center">
+                      <div className="items-center justify-center flex">
+                        <h1 className="text-dark_text text-3xl xl:text-4xl p-5">{service.title}</h1>
+                      </div>
+                      <div className="2xl:w-[400px] xl:w-[345px] lg:w-[325px] 2xl:h-[450px] flex justify-center rounded-2xl p-8 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
+                      <div className="">
+                        <ul className="items-center justify-center">
+                          {service.services.map((list_item)=> {
+                            return(
+                              <li key={list_item.alt} className="list-disc xl:text-lg">
+                                <p className="text-dark_text lg:leading-6 xl:leading-7">{list_item.service}</p>
+                              </li>
+                              
+                            )
+                          })}
+                        </ul>
+                      </div>
+                        
+                      </div>
                     </div>
                   </div>
-                </div>
-              )
-            })}
-          </div>             
-            </div>
-            </div>
+                )
+              })}
+            </div>             
+            </motion.div>
+        </div>
         {/* Engineering Services Section */}
         <div className="font-light">
           {/* Title */}
-          <div className="items-center justify-center flex">
+          <motion.div 
+          initial={{opacity:0}}
+          animate={{opacity:1, transition:{delay:2.5, duration:1}}} 
+          className="items-center justify-center flex">
             <h1 className=" bg-secondary font-thin rounded-2xl p-7 xl:m-10 my-2 2xl:text-7xl lg:text-5xl text-3xl flex">Engineering Services<a target="_blank" rel="noopener noreferrer" href="https://www.ideaaec.com/services" ><CiShare1 className="text-[65%] m-1 hover:scale-110 ease-in-out duration-200 items-center justify-center align-middle cursor-pointer hover:text-button_bg_2" /></a></h1>
-          </div>
+          </motion.div>
           {/* Subsections*/}
           {/* actual grid without title */}
-          <div id="subsection" className="xl:grid xl:grid-cols-3 xl:gap-10 xl:p-0 xl:mx-[5%] justify-center items-center">
+          <motion.div 
+          initial={{opacity:0}}
+          animate={{opacity:1, transition:{delay:3, duration:1}}} id="subsection" className="xl:grid xl:grid-cols-3 xl:gap-10 xl:p-0 xl:mx-[5%] justify-center items-center">
             {engineering_services.map((service)=> {
               return(
                 // **
@@ -245,12 +327,16 @@ function ServicesPage(){
                 </div>
               )
             })}
-          </div>
+          </motion.div>
         </div>
         {/* Engineering Services Section TWO */}
         <div className="font-light">
           {/* Subsections*/}
-          <div id='subsection' className="xl:grid xl:grid-cols-2 items-center xl:gap-10 xl:p-0 xl:mx-[20%] xl:m-10 justify-center">
+          <motion.div 
+          initial={{opacity:0}}
+          animate={{opacity:1, transition:{delay:3.5, duration:1}}} 
+          id='subsection' 
+          className="xl:grid xl:grid-cols-2 items-center xl:gap-10 xl:p-0 xl:mx-[20%] xl:m-10 justify-center">
             {engineering_services_two.map((service)=> {
               return(
                 <div className="flex xl:h-[350px] justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
@@ -276,17 +362,23 @@ function ServicesPage(){
                 </div>
               )
             })}
-          </div>
+          </motion.div>
         </div>
         {/* Life Cycle + Construction */}
         <div id='extraservices' className="mx-[5%] justify-center font-light">
           {/* TITLES */}
           {/* Life Cycle */}
           <div className="">
-            <div className="flex items-center justify-center">
+            <motion.div 
+            initial={{opacity:0}}
+            animate={{opacity:1, transition:{delay:4, duration:1}}} 
+            className="flex items-center justify-center">
               <h1 className="bg-secondary font-thin  rounded-2xl p-5 m-10 flex items-center 2xl:text-7xl lg:text-5xl text-4xl text-center">{life_cycle_services.title}</h1>
-            </div>
-            <div className="justify-center items-center flex ">
+            </motion.div>
+            <motion.div 
+            initial={{opacity:0}}
+            animate={{opacity:1, transition:{delay:4.5, duration:1}}} 
+            className="justify-center items-center flex ">
               <div className="flex justify-center 2xl:h-[625px] rounded-2xl 2xl:mx-10 p-5  my-5 2xl:my-0 xl:w-[500px] w-[375px]" style={{backgroundColor: `${life_cycle_services.color}`}}>
               <div className="2xl:w-[500px] flex items-center justify-center rounded-2xl p-5 xl:m-10 shadow-inner font-medium" style={{backgroundColor: `${life_cycle_services.list_color}`}}>
                 <div>
@@ -303,7 +395,7 @@ function ServicesPage(){
                 
               </div>
               </div>  
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
