@@ -129,11 +129,11 @@ function Developments(){
       </div>
       { projClick ? 
       <motion.div 
-      initial={{opacity:0}}
-      animate={{opacity:1, transition:{duration:3, delay:1}}}
+      initial={{opacity:0.5}}
+      animate={{opacity:1, transition:{duration:1}}}
       className="">
-        <div className="w-full h-full bg-none lg:fixed top-0 bottom-0 right-0 left-0 z-10 ease-in-out duration-300 ">
-          <div className="lg:z-20 flex h-full w-full items-center justify-center bg-tertiary/90">
+        <div className="w-full h-full bg-none lg:fixed top-0 bottom-0 right-0 left-0 z-10  ">
+          <div className="lg:z-20 flex h-full w-full items-center justify-center bg-dark_bg/95">
             <div className="justify-center items-center bg-accent_3 text-left lg:p-20 p-10 rounded-2xl z-9 lg:z-20 lg:m-20 m-4 h-full md:h-auto max-w-[2500px]  md:top-[10%] md:bottom-[10%] bottom-[0]">
               <Description data={projects[projectSelect]} handleClick={handleClick}/>
               {/* <h1 className="text-7xl">{projects[projectSelect].name}</h1> */}

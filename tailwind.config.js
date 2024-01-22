@@ -41,6 +41,7 @@ module.exports = {
         primary: '#025138',
         secondary: '#237059',
         tertiary : '#042a2c',
+        dark_bg: '#021C15',
         footer_bg: '#0D352B',
         red_text: '#F44336',
         red_accent_2: '#F25C5C',
