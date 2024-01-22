@@ -51,7 +51,7 @@ const About = () => {
             <div className='lg:m-14 m-3'>
               <h2 className="tracking-wider text-red_text text-shadow-sm shadow-dark_red">Our Story</h2>
             </div>
-            <div className='lg:m-14 m-3'>
+            <div className='lg:mx-14 lg:m-5 m-3'>
               <div>
                 <p className='my-[4%]'>
                 IDEA CSC provides integrated Engineering and Construction Management services to the Architectural Construction Industry. We are Engineers and Construction Managers collaborating our experience and expertise to provide top quality and uncompromised services to our clients. Our integrated approach is led by our United States (America) based Inter-Disciplinary Engineering team (IDEA AEC) with focus on building efficiency between the Design and Construction phases and delivering client specific, on-budget (cost-effective), on schedule, efficient, and coordinated solutions. Our team utilizes top-tier engineering and construction technologies and resources to service our project engagements.
@@ -74,7 +74,7 @@ const About = () => {
             <div className='grid md:grid-cols-2 justify-center items-center text-center  lg:w-full lg:mx-10'>
               {
                 traits.map((trait, index) => (
-                  <div key={index} className='bg-button_bg italic rounded-xl p-4 max-w-[200px] lg:m-[4%] m-2 mt-1 flex justify-center items-center'>
+                  <div key={index} className='bg-button_bg italic rounded-xl p-4 max-w-[200px] lg:m-[4%] mx-2 flex justify-center items-center'>
                     <p className='flex text-center'>{trait}</p>
                   </div>
                 ))
