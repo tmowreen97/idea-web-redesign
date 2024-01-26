@@ -209,9 +209,9 @@ function Developments(){
           exit= {{opacity:0.5, transition:{duration:2}}}
           animate={{opacity:1, transition:{duration:.5}}}
           className="">
-          <div className="w-full h-full bg-none lg:fixed top-0 bottom-0 right-0 left-0 z-10">
-            <div className="lg:z-20 flex h-full w-full items-center justify-center bg-dark_bg/95 ease-in-out duration-200">
-              <div className="justify-center items-center bg-accent_3 text-left lg:p-20 p-10 rounded-2xl z-9 lg:z-20 lg:m-20 m-4 h-full md:h-auto max-w-[2500px]  md:top-[10%] md:bottom-[10%] bottom-[0]">
+          <div className="w-full h-full bg-none 2xl:fixed top-0 bottom-0 right-0 left-0 z-10">
+            <div className="2xl:z-20 flex h-full w-full items-center justify-center bg-dark_bg/95 ease-in-out duration-200">
+              <div className="justify-center items-center bg-accent_3 text-left 2xl:p-6 p-1 rounded-2xl z-9 2xl:z-20 lg:m-20 m-4 h-full md:h-auto max-w-[2500px]  md:top-[10%] md:bottom-[10%] bottom-[0]">
                 <Description data={projects[projectSelect]} handleClick={handleClick}/>
                 {/* <h1 className="text-7xl">{projects[projectSelect].name}</h1> */}
               </div>
