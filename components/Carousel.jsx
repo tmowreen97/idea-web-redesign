@@ -19,7 +19,7 @@ function Carousel ({array,  custom, handleIndex}){
 
         handleIndex(currentIndex)
     }
-
+    // Automatically flip through Carousel
     resetTimeout();
     timeoutRef.current = setTimeout(
       () =>
