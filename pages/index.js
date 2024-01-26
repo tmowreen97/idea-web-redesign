@@ -6,6 +6,7 @@ import About from '@/components/About'
 import Navbar from '@/components/Navbar'
 import { useState } from 'react';
 import Developments from '@/components/Developments'
+import AboutUs from '@/components/AboutUs'
 
 const urbanist = Urbanist({ 
   subsets: ['latin'],
@@ -20,7 +21,8 @@ export default function Home() {
       <Navbar setLightLogo={setLightLogo} lightLogo={lightLogo} />
       <Hero heading='We Empower Ideas'/>
       <Intro/>
-      <About/>
+      <AboutUs/>
+      {/* <About/> */}
       <Developments/>
       
     </main>
