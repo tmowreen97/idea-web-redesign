@@ -54,19 +54,16 @@ const About = () => {
             <div className='lg:mx-14 lg:m-5 m-3'>
               <div>
                 <p className='my-[4%]'>
-                IDEA CSC provides integrated Engineering and Construction Management services to the Architectural Construction Industry. We are Engineers and Construction Managers collaborating our experience and expertise to provide top quality and uncompromised services to our clients. Our integrated approach is led by our United States (America) based Inter-Disciplinary Engineering team (<span className='font-bold text-button_bg_2 hover:underline cursor-pointer'><Link href={"https://www.ideaaec.com"}target='_blank' rel="noopener noreferrer">IDEA AEC</Link></span>) with focus on building efficiency between the Design and Construction phases and delivering client specific, on-budget (cost-effective), on schedule, efficient, and coordinated solutions. Our team utilizes top-tier engineering and construction technologies and resources to service our project engagements.
+                IDEA <span className='text-sm'>CSC</span> provides integrated Engineering and Construction Management services to the Architectural Construction Industry. We are Engineers and Construction Managers collaborating our expertise to provide top quality and uncompromised services to our clients. Our integrated approach is led by our USA based Inter-Disciplinary Engineering team, <span className='font-bold text-button_bg_2 hover:underline cursor-pointer'><Link href={"https://www.ideaaec.com"}target='_blank' rel="noopener noreferrer">IDEA <span className='text-sm'>AEC</span></Link></span>. We focus in building efficiency between the Design and Construction phases of a project. Our approach consists of delivering client specific, cost-effective, on schedule and coordinated solutions.
                 </p>
                 <p className='my-[4%]'>
-                In addition to providing unparalleled Engineering and Construction Management services, we are striving to positively impact and improve the Construction and Architectural Engineering industry in Bangladesh. Our Construction Solutions Company (IDEA CSC) team will deploy our accomplished Interdisciplinary Mechanical, Electrical, Plumbing and Fire Protection Engineering from our <span className='font-bold text-button_bg_2 hover:underline cursor-pointer'><Link href={"https://www.ideaaec.com"}target='_blank' rel="noopener noreferrer">IDEA AEC</Link></span>  parent company. Our team member’s experience and expertise include projects & opportunities at various scales from small to large complex projects in various sectors of the industry including Theatrical/Performance Venues, Institutions & Campuses, High-End Residences & High-Rise Residentials, Terminal & Mixed Use, Commercial and Public Venues.
+                In addition to providing unparalleled Engineering and Construction Management services, we strive to positively impact and improve the current industry in Bangladesh. Our Construction Solutions Company (IDEA <span className='text-sm'>CSC</span>) team will deploy our accomplished Inter-Disciplinary Mechanical, Electrical, Plumbing and Fire Protection Engineering from our <span className='font-bold text-button_bg_2 hover:underline cursor-pointer'><Link href={"https://www.ideaaec.com"}target='_blank' rel="noopener noreferrer">IDEA <span className='text-sm'>AEC</span></Link></span> parent company. Our team members' experience encompasses projects and opportunities at various scales, complexities as well as sectors of the industry including Theatrical/Performance Venues, Institutions & Campuses, High-End Residences & High-Rise Residentials, Terminal & Mixed Use, Commercial and Public Venues.
                 </p>
                 <p className='my-[4%]'>
-                Our <span className='font-bold text-button_bg_2 hover:underline cursor-pointer'><Link href={"https://www.ideaaec.com"}target='_blank' rel="noopener noreferrer">IDEA AEC</Link></span>  has completed the design (currently In-Construction) of the World’s largest cruise Terminal, the MSC Miami Cruise Terminal in Miami, FL (USA). The terminal is scheduled to be completed late 2024).
-                </p>
-                <p className='my-[4%]'>
-                As an organization, we are striving to positively impact and improve Bangladesh from Humanitarian picture. Our IDEA CSC team includes Bangladesh educated young professionals empowered and led by our US Engineering experts. Collectively, we are aiming to educate our Bangladeshi engineering students population and on-coming engineering construction management team members.
+                As an organization, we aim to positively impact and improve Bangladesh from a humanitarian perspective. Our IDEA <span className='text-sm'>CSC</span> team includes young and educated Bangladeshi professionals empowered and led by our US Engineering experts. Collectively, our goal is to educate our Bangladeshi engineering students alongside on-coming engineering construction management team members.
                 </p>
                 <p className='mt-[4%]'>
-                Prioritizing Client’s needs, IDEA CSC strives to collaborate (as a prime or sub-consultant) with service providers of the Architectural Engineering Industry including Developers, Owners, Architects, Engineers, Designers and Contractors.
+                Prioritizing client’s needs, IDEA <span className='text-sm'>CSC</span> strives to collaborate (as a prime or sub-consultant) with service providers of the Architectural Engineering Industry including Developers, Owners, Architects, Engineers, Designers and Contractors.
                 </p>
               </div>
             </div>
@@ -82,24 +79,24 @@ const About = () => {
             </div>
           </div>
 
-          <div className="about__child2 p-4 m-4 lg:m-0 lg:text-lg items-center justify-center bg-secondary rounded-xl lg:w-[485px] lg:h-[90%] ">
+          <div className="about__child2 p-4 m-4 lg:m-0 lg:text-lg items-center justify-center bg-secondary rounded-xl lg:w-[485px]">
             <div className='lg:my-14 m-3 lg:mx-8'>
               <h2 className="tracking-wider text-red_text text-shadow-sm shadow-dark_red ">Our Mission</h2>
             </div>
             <div className='lg:m-8 m-3'>
               <div>
                 <p className="my-[4%]">
-                IDEA CSC, we strive to cultivate enduring partnerships founded on qualities of service, trust, collaboration, and the relentless pursuit of Construction and Engineering innovation. We deploy the expertise and experience of our established US based Engineering parent company to empower our initiatives. Collectively, we align our efforts to implement client-specific and sustainable building system solutions, as well as educate and empower the Construction and Engineering community in Bangladesh.
+                IDEA <span className='text-sm'>CSC</span>, we strive to cultivate enduring partnerships founded on qualities of service, trust, collaboration, and the relentless pursuit of Construction and Engineering innovation. We deploy the expertise and experience of our established US based Engineering parent company to empower our initiatives. Collectively, we align our efforts to implement client-specific and sustainable building system solutions, as well as educate and empower the Construction and Engineering community in Bangladesh.
                 </p>
                 <p className="mt-[4%]">
-                Our integrated Construction and Engineering approach embraces technology as we strive to develop efficiencies and improve the Architectural Engineering industry. Together, we are pushing boundaries ensuring mutual growth and success for our clients and collaboration partners.
+                Our integrated Construction and Engineering approach embraces technology as we aim to develop efficiencies and improve the Architectural Engineering industry. Together, we are pushing boundaries ensuring mutual growth and success for our clients and collaboration partners.
                 </p>
               </div>
             </div>
             
             
           </div>
-          <div className="about__img flex bg-secondary p-4 m-4 items-center justify-center text-center rounded-xl hover:animate-none  lg:w-[485px] lg:mt-[-80px] lg:m-0 ">
+          <div className="about__img flex bg-secondary p-4 m-4 items-center justify-center text-center rounded-xl hover:animate-none  lg:w-[485px] lg:m-0 ">
             <div className="relative items-center justify-center" onMouseOver={()=> setShow(true)} onMouseLeave={()=> setShow(false)}>
                 <div className="m-2 overflow-hidden rounded-xl items-center justify-center flex animate-pulse">
                 <Link href={'/team'}>

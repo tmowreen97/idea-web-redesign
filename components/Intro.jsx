@@ -19,7 +19,7 @@ function Intro(){
       </div>
       <div className="xl:px-20 px-10 py-10">
         <div className="flex justify-right">
-          <h1 className="xl:text-7xl text-2xl">Introducing <span className="text-red_text font-semibold xl:text-8xl text-3xl tracking-tight text-shadow shadow-dark_red">IDEA CSC</span> (US IDEA CSC (PVT.) LTD.), a Sister Company of IDEA AEC (USA).</h1>
+          <h1 className="xl:text-7xl text-2xl">Introducing <span className="text-red_text font-semibold xl:text-8xl text-3xl tracking-tight text-shadow shadow-dark_red">IDEA <span className="xl:text-6xl text-xl">CSC</span></span> (US IDEA <span className="xl:text-5xl text-lg">CSC</span> (PVT.) LTD.), a Sister Company of IDEA <span className="xl:text-5xl text-lg">AEC</span> (USA).</h1>
         </div>
       </div>
       </div>
