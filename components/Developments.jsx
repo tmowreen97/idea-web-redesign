@@ -103,7 +103,7 @@ function Developments(){
               </div>
               <div className="bg-secondary rounded-xl lg:w-[500px] m-2 relative lg:h-auto h-full">
                 <div className=" lg:p-10 p-4 w-full">
-                  <h2 className="text-red_text text-shadow-sm shadow-dark_red">{projects[projectSelect].name}</h2>
+                  <h2 className="text-red_heading text-shadow-sm shadow-dark_red/40">{projects[projectSelect].name}</h2>
                   <h3 className="text-2xl">{projects[projectSelect].location}</h3>
                   <h3 className="text-2xl">{projects[projectSelect].year}</h3>
                   {projects[projectSelect].desc.map((line)=> {

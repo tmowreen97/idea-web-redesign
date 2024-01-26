@@ -12,13 +12,14 @@ const AboutUs = () => {
     <div className='bg-primary w-screen justify-center items-center flex'>
       <div className='m-10'>
         <div className='grid grid-cols-2'>
-          <h1 className="lg:text-[1100%] text-[350%] font-thin text-left ml-20">About</h1>
+          <h1 className="lg:text-[1100%] text-[350%] font-thin text-center">About</h1>
         </div>
         <div className='grid grid-cols-2 justify-center gap-2'>
           <div className='justify-center items-center max-w-[650px] bg-secondary rounded-xl p-12 '>
             {/* Our Story Title */}
-            <div className='flex justify-left px-8'>
-              <h2>Our Story</h2>
+            <div className='flex justify-left px-8 '>
+              {/* text-[#DB4859] */}
+              <h2 className='text-red_heading text-shadow-sm shadow-dark_red/40'>Our Story</h2>
             </div>
             {/* Our Story Text */}
             <div className='px-8 text-lg tracking-wider font-light'>
@@ -52,7 +53,7 @@ const AboutUs = () => {
             <div>
             <div className='bg-secondary max-w-[580px] justify-center rounded-xl p-12'>
               <div className='flex justify-left px-8 '>
-                <h2>Our Mission</h2>
+                <h2 className='text-red_heading text-shadow-sm shadow-dark_red/40'>Our Mission</h2>
               </div>
               <div className='px-8 text-lg tracking-wider font-light'>
                 <p className="my-[4%]">
@@ -63,7 +64,7 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-            <div className='flex justify-center bg-secondary max-w-[580px] mt-12 p-4 items-end rounded-xl' onMouseOver={()=> setShow(true)} onMouseLeave={()=> setShow(false)}>
+            <div className='flex justify-center bg-secondary max-w-[580px] mt-10 p-4 items-end rounded-xl' onMouseOver={()=> setShow(true)} onMouseLeave={()=> setShow(false)}>
               <Link href={"/team"}>
                 <div className='relative items-center justify-center animate-pulse'>
                   <Image src={'/assets/team.jpeg'} width={500} height={100} className='rounded-xl'/>
