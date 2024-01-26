@@ -14,10 +14,10 @@ const AboutUs = () => {
         <div className='grid grid-cols-2'>
           <h1 className="lg:text-[1100%] text-[350%] font-thin text-left ml-20">About</h1>
         </div>
-        <div className='grid grid-cols-2  justify-center gap-10'>
-          <div className='justify-center items-center max-w-[675px] bg-secondary rounded-xl p-12'>
+        <div className='grid grid-cols-2 justify-center gap-2'>
+          <div className='justify-center items-center max-w-[650px] bg-secondary rounded-xl p-12 '>
             {/* Our Story Title */}
-            <div className='flex justify-center'>
+            <div className='flex justify-left px-8'>
               <h2>Our Story</h2>
             </div>
             {/* Our Story Text */}
@@ -48,9 +48,10 @@ const AboutUs = () => {
             </div>
           </div>
           {/* 2nd column */}
-          <div className=''>
-            <div className='bg-secondary justify-end max-w-[650px] rounded-xl p-12'>
-              <div className='flex justify-center '>
+          <div className='w-full h-full justify-center flex'>
+            <div>
+            <div className='bg-secondary max-w-[580px] justify-center rounded-xl p-12'>
+              <div className='flex justify-left px-8 '>
                 <h2>Our Mission</h2>
               </div>
               <div className='px-8 text-lg tracking-wider font-light'>
@@ -62,7 +63,7 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-            <div className='flex justify-center bg-secondary max-w-[650px] mt-4 p-4 items-end rounded-xl' onMouseOver={()=> setShow(true)} onMouseLeave={()=> setShow(false)}>
+            <div className='flex justify-center bg-secondary max-w-[580px] mt-12 p-4 items-end rounded-xl' onMouseOver={()=> setShow(true)} onMouseLeave={()=> setShow(false)}>
               <Link href={"/team"}>
                 <div className='relative items-center justify-center animate-pulse'>
                   <Image src={'/assets/team.jpeg'} width={500} height={100} className='rounded-xl'/>
@@ -89,7 +90,7 @@ const AboutUs = () => {
           </div> */}
           {/* end copy */}
             
-            
+          </div>
           </div>
 
         </div>
