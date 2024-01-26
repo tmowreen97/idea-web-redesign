@@ -109,11 +109,11 @@ const Navbar = ({setLightLogo, lightLogo}) => {
           
           <ul>
           <div className='flex justify-center '>
-              {/* <Image src={'/assets/logos/icon-1.png'} width={70} height={100} className="" alt={'icon'}/>
-              <Image src={'/assets/logos/icon-2.png'} width={60} height={20} className="" alt={'icon'}/>
-              <Image src={'/assets/logos/icon-3.png'} width={65} height={20} className="" alt={'icon'}/>
-              <Image src={'/assets/logos/icon-4.png'} width={70} height={60} className="" alt={'icon'}/>
-              <Image src={'/assets/logos/icon-5.png'} width={70} height={60} className="" alt={'icon'}/> */}
+              {/* <Image src={'/assets/logos/const-icon.png'} width={70} height={100} className="" alt={'icon'}/>
+              <Image src={'/assets/logos/mech-icon.png'} width={60} height={20} className="" alt={'icon'}/>
+              <Image src={'/assets/logos/elec-icon.png'} width={65} height={20} className="" alt={'icon'}/>
+              <Image src={'/assets/logos/plumb-icon.png'} width={70} height={60} className="" alt={'icon'}/>
+              <Image src={'/assets/logos/fp-icon.png'} width={70} height={60} className="" alt={'icon'}/> */}
               <Image src={'/assets/logos/logo-landing.png'} width={275} height={20}/>
 
           </div>

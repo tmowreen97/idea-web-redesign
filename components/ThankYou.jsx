@@ -24,33 +24,33 @@ function ThankYou(){
               animate={{opacity:1, transition:{duration:2, delay:2}}}
               className=""
             >
-              <Image src={'/assets/logos/icon-1.png'} width={115} height={80} alt={'icon'}/>
+              <Image src={'/assets/logos/const-icon.png'} width={115} height={80} alt={'icon'}/>
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:2.5}}}
               className=""
             >
-            <Image src={'/assets/logos/icon-2.png'} width={115} height={80} alt={'icon'}/>              
+            <Image src={'/assets/logos/mech-icon.png'} width={115} height={80} alt={'icon'}/>              
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:3}}}
               className=""
             >
-            <Image src={'/assets/logos/icon-3.png'} width={115} height={80} alt={'icon'}/>              
+            <Image src={'/assets/logos/elec-icon.png'} width={115} height={80} alt={'icon'}/>              
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:3.5}}}
             >
-            <Image src={'/assets/logos/icon-4.png'} width={115} height={82} alt={'icon'}/>              
+            <Image src={'/assets/logos/plumb-icon.png'} width={115} height={82} alt={'icon'}/>              
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:4}}}
             >
-            <Image src={'/assets/logos/icon-5.png'} width={115} height={82} alt={'icon'}/>              
+            <Image src={'/assets/logos/fp-icon.png'} width={115} height={82} alt={'icon'}/>              
             </motion.div>
           </div>
           {/* col/row 1/1 text */}

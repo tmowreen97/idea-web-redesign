@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from 'next/link';
 import { CiShare1 } from "react-icons/ci";
+import Image from 'next/image';
 
 
 function ServicesPage(){
@@ -55,6 +56,7 @@ function ServicesPage(){
           alt:"mech-11",
         },
       ],
+      icon: "/assets/logos/mech-icon.png",
       color: '#C2F0BD',
       list_color: '#AED8AA'
     },
@@ -120,6 +122,8 @@ function ServicesPage(){
           alt:"elect-14",
         },
       ],
+      icon: "/assets/logos/elec-icon.png",
+      width:50,
       color: '#C2B7E9',
       list_color: '#AEA4D1'
     },
@@ -180,8 +184,9 @@ function ServicesPage(){
           service:"LEED and Sustainable Design",
           alt:"plumb-13",
         },
-
       ],
+      icon: "/assets/logos/plumb-icon.png",
+      width:50,
       color: '#EDB87A',
       list_color: '#D5A56D'
     },
@@ -213,6 +218,8 @@ function ServicesPage(){
           alt:"fp-5",
         },
       ],
+      icon: "/assets/logos/fp-icon.png",
+      width:50,
       color: '#F89090',
       list_color: '#DF8181'
     },
@@ -238,6 +245,8 @@ function ServicesPage(){
           alt:"lv-1",
         },
       ],
+      icon: "/assets/logos/fp-icon.png",
+      width:50,
       color: '#ADDEDF',
       list_color: '#9BC7C8'
     }
@@ -358,8 +367,9 @@ function ServicesPage(){
         }, 
 
       ],
-      color: '#63a081',
-      list_color: '#498767'
+      icon: "/assets/logos/const-icon.png",
+      color: '#EFEBA5',
+      list_color: '#D7D394'
     },
     // Construction
     {
@@ -410,8 +420,9 @@ function ServicesPage(){
           alt:"const-11",
         },
       ],
-      color: '#63a081',
-      list_color: '#498767'
+      icon: "/assets/logos/const-icon.png",
+      color: '#EFEBA5',
+      list_color: '#D7D394'
     }
   ]
   return(
@@ -442,9 +453,12 @@ function ServicesPage(){
                 return(
                   <div className="xl:h-[625px] flex justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
                     <div className="justify-center">
-                      <div className="items-center justify-center flex">
+                      <div className="items-center justify-evenly flex my-2">
                         <h1 className="text-dark_text text-3xl xl:text-4xl p-5">{service.title}</h1>
+                        <Image src={service.icon} width={75} height={100} className="bg-black/10 rounded-full py-2"/>
                       </div>
+                      <div className="flex justify-center">
+
                       <div className="2xl:w-[400px] xl:w-[345px] lg:w-[325px] 2xl:h-[450px] flex justify-center rounded-2xl p-8 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
                       <div className="">
                         <ul className="items-center justify-center">
@@ -459,6 +473,7 @@ function ServicesPage(){
                         </ul>
                       </div>
                         
+                      </div>
                       </div>
                     </div>
                   </div>
@@ -488,6 +503,7 @@ function ServicesPage(){
                   <div className="justify-center">
                     <div className="items-center justify-center flex">
                       <h1 className="text-dark_text xl:text-4xl text-3xl p-5">{service.title}</h1>
+                      <Image src={service.icon} width={service.width ? service.width : 75} height={100} className="bg-black/10 rounded-full py-2"/>
                     </div>
                     <div className="2xl:w-[400px] xl:w-[345px] lg:w-[325px] 2xl:h-[450px] items-center flex justify-center rounded-2xl p-8 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
                     <div className="">
@@ -524,6 +540,7 @@ function ServicesPage(){
                   <div className="justify-center">
                     <div className="items-center justify-center flex">
                       <h1 className="text-dark_text text-3xl xl:text-4xl p-5">{service.title}</h1>
+                      <Image src={service.icon} width={service.width ? service.width : 75} height={100} className="bg-black/10 rounded-full py-2"/>
                     </div>
                     <div className="2xl:w-[400px] xl:h-[200px] flex justify-center rounded-2xl p-5 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
                     <div>
