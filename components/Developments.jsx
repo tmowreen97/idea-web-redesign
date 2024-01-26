@@ -83,7 +83,7 @@ function Developments(){
     setProjectSelect(index)
   }
 
-  console.log(projectSelect, 'project select')
+  // console.log(projectSelect, 'project select')
   return(
     <div id='developments' className="w-screen h-full bg-primary">
       <div className="justify-center items-center">

@@ -11,18 +11,17 @@ const AboutUs = () => {
   return (
     <div className='bg-primary w-screen justify-center items-center flex'>
       <div className='m-10'>
-        <div className='grid grid-cols-2'>
-          <h1 className="lg:text-[1100%] text-[350%] font-thin text-center">About</h1>
+        <div className='lg:grid lg:grid-cols-2'>
+          <h1 className="lg:text-[1100%] text-[525%] font-thin text-center">About</h1>
         </div>
-        <div className='grid grid-cols-2 justify-center gap-2'>
-          <div className='justify-center items-center max-w-[650px] bg-secondary rounded-xl p-12 '>
+        <div className='lg:grid lg:grid-cols-2 justify-center gap-2'>
+          <div className='justify-center items-center lg:max-w-[650px] lg:w-full md:w-[500px] w-[350px] bg-secondary rounded-xl lg:p-12 p-6'>
             {/* Our Story Title */}
-            <div className='flex justify-left px-8 '>
-              {/* text-[#DB4859] */}
+            <div className='flex justify-left lg:px-8'>
               <h2 className='text-red_heading text-shadow-sm shadow-dark_red/40'>Our Story</h2>
             </div>
             {/* Our Story Text */}
-            <div className='px-8 text-lg tracking-wider font-light'>
+            <div className='lg:px-8 lg:text-lg tracking-wider font-light'>
               <p className='my-[4%]'>
                 IDEA <span className='text-sm'>CSC</span> provides integrated Engineering and Construction Management services to the Architectural Construction Industry. We are Engineers and Construction Managers collaborating our expertise to provide top quality and uncompromised services to our clients. Our integrated approach is led by our USA based Inter-Disciplinary Engineering team, <span className='font-bold text-button_bg_2 hover:underline cursor-pointer'><Link href={"https://www.ideaaec.com"}target='_blank' rel="noopener noreferrer">IDEA <span className='text-sm'>AEC</span></Link></span>. We focus in building efficiency between the Design and Construction phases of a project. Our approach consists of delivering client specific, cost-effective, on schedule and coordinated solutions.
               </p>
@@ -38,8 +37,8 @@ const AboutUs = () => {
               <div className='grid grid-cols-2 justify-center gap-4 '>
                 {traits.map((trait)=> {
                   return(
-                    <div className='bg-button_bg text-center italic rounded-xl p-4'>
-                      <p className='' key={trait}>{trait}</p>
+                    <div key={trait} className='bg-button_bg text-center italic rounded-xl lg:p-4 p-3 text-sm lg:text-lg'>
+                      <p>{trait}</p>
                     </div>
                     
                   )
@@ -49,13 +48,13 @@ const AboutUs = () => {
             </div>
           </div>
           {/* 2nd column */}
-          <div className='w-full h-full justify-center flex'>
+          <div className='w-full h-full justify-center flex lg:my-0 my-4'>
             <div>
-            <div className='bg-secondary max-w-[580px] justify-center rounded-xl p-12'>
-              <div className='flex justify-left px-8 '>
+            <div className='bg-secondary lg:max-w-[580px] justify-center lg:w-full md:w-[500px] w-[350px] rounded-xl lg:p-12 p-6'>
+              <div className='flex justify-left lg:px-8'>
                 <h2 className='text-red_heading text-shadow-sm shadow-dark_red/40'>Our Mission</h2>
               </div>
-              <div className='px-8 text-lg tracking-wider font-light'>
+              <div className='lg:px-8 lg:text-lg tracking-wider font-light'>
                 <p className="my-[4%]">
                 IDEA <span className='text-sm'>CSC</span>, we strive to cultivate enduring partnerships founded on qualities of service, trust, collaboration, and the relentless pursuit of Construction and Engineering innovation. We deploy the expertise and experience of our established US based Engineering parent company to empower our initiatives. Collectively, we align our efforts to implement client-specific and sustainable building system solutions, as well as educate and empower the Construction and Engineering community in Bangladesh.
                 </p>
@@ -64,7 +63,7 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-            <div className='flex justify-center bg-secondary max-w-[580px] mt-10 p-4 items-end rounded-xl' onMouseOver={()=> setShow(true)} onMouseLeave={()=> setShow(false)}>
+            <div className='flex justify-center bg-secondary lg:max-w-[580px] lg:w-full md:w-[500px] w-[350px] lg:mt-10 mt-4 p-4 items-end rounded-xl' onMouseOver={()=> setShow(true)} onMouseLeave={()=> setShow(false)}>
               <Link href={"/team"}>
                 <div className='relative items-center justify-center  p-3'>
                   <Image src={'/assets/team.jpeg'} width={475} height={100} className={show ? 'rounded-xl' : 'rounded-xl animate-pulse'}/>
