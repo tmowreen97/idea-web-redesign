@@ -103,7 +103,7 @@ const About = () => {
                   <div className="relative items-center justify-center ">
                     {isBreakPoint ? <Image src={'/assets/team.jpeg'} width={200} height={100} alt={'team'} className='rounded-xl'/> : <Image src={'/assets/team.jpeg'} width={500} height={300} alt={'team'} className='rounded-xl'/> }
                     <div className={show ? "absolute bg-cover bottom-0 left-0 right-0 top-0 bg-tertiary/80 rounded-xl text-dark_text  " : "hidden"}>
-                        <h1 className="lg:mx-5 justify-center lg:top-[44%]  top-[40%] relative lg:text-2xl text-lg text-primary_text">Click to See Our Team</h1>
+                        {/* <h1 className="lg:mx-5 justify-center lg:top-[44%]  top-[40%] relative lg:text-2xl text-lg text-primary_text">Click to See Our Team</h1> */}
                     </div>
                   </div>
                   </Link>

@@ -44,7 +44,7 @@ module.exports = {
         dark_bg: '#021C15',
         footer_bg: '#0D352B',
         red_text: '#F44336',
-        red_heading: '#DD3E50',
+        red_heading: '#DB4859',
         red_accent_2: '#F25C5C',
         dark_red: '#660000',
         beige_text: '#fce5cd',
