@@ -15,6 +15,7 @@ const AboutUs = () => {
           <h1 className="lg:text-[1100%] text-[525%] font-thin text-center">About</h1>
         </div>
         <div className='lg:grid lg:grid-cols-2 justify-center gap-2'>
+          {/* 1st column */}
           <div className='justify-center items-center lg:max-w-[650px] lg:w-full md:w-[500px] w-[350px] bg-secondary rounded-xl lg:p-12 p-6'>
             {/* Our Story Title */}
             <div className='flex justify-left lg:px-8'>

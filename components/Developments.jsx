@@ -161,24 +161,28 @@ function Developments(){
 
   // console.log(projectSelect, 'project select')
   return(
-    <div id='developments' className="w-screen h-full bg-primary">
+    <div id='developments' className="w-screen h-full bg-primary justify-center">
       <div className="justify-center items-center">
         <div className="flex items-center justify-center lg:px-[10%] 2xl:px-[10%] py-10">
           <div className={hide ? "relative rounded-xl overflow-hidden hidden h-full ease-in-out duration-300" : "relative rounded-xl overflow-hidden h-full ease-in-out duration-300"}>
             {/* TITLE */}
             <div>
-              <h1 className="lg:text-[1100%] text-[350%] p-2 font-thin lg:m-12 lg:text-justify text-center">Developments</h1>
+              <h1 className="2xl:text-[1100%] lg:text-9xl text-[350%] p-2 font-thin lg:m-12 lg:text-justify text-center">Developments</h1>
             </div>
-            <div className="lg:flex justify-center lg:gap-10">
-              <div className="bg-secondary rounded-xl xl:w-full lg:py-10 p-2 m-2 justify-center items-center flex">
-               <Carousel 
-                array={projects} 
-                handleIndex = {handleIndex}
-                custom={"lg:w-[700px] xl:w-[775px] xl:h-[500px] lg:h-[400px] md:w-[550px] w-[325px] h-[225px] rounded-2xl bg-center bg-cover hover:scale-[102%] duration-500 transform"}
-              /> 
+            <div className="xl:flex justify-center 2xl:gap-10 gap-2">
+              <div className=" justify-center items-center flex">
+                <div className="bg-secondary rounded-xl 2xl:w-full 2xl:py-10 lg:max-w-[825px] p-2 m-2">
+                  <Carousel 
+                    array={projects} 
+                    handleIndex = {handleIndex}
+                    // xl:w-[700px] xl:h-[490px] lg:w-[500px] lg:h-[400px] md:w-[400px] md:h-[300px] w-[275px] h-[200px] 
+                    custom={"2xl:w-[775px] 2xl:h-[500px] xl:w-[700px] xl:h-[425px] lg:w-[625px] lg:h-[375px] md:w-[550px] md:h-[300px] w-[325px] h-[225px] rounded-2xl bg-center bg-cover hover:scale-[102%] duration-500 transform"}
+                  /> 
+                </div>
+               
               </div>
-              <div className="bg-secondary rounded-xl lg:w-[500px] m-2 relative lg:h-auto h-full">
-                <div className=" lg:p-10 p-4 w-full">
+              <div className="bg-secondary rounded-xl xl:w-[500px] m-2 relative xl:h-auto h-full">
+                <div className=" xl:p-10 p-4 w-full">
                   <h2 className="text-red_heading text-shadow-sm shadow-dark_red/40">{projects[projectSelect].name}</h2>
                   <h3 className="text-2xl">{projects[projectSelect].location}</h3>
                   <h3 className="text-2xl">{projects[projectSelect].year}</h3>
@@ -189,7 +193,7 @@ function Developments(){
                   })}
                   
                 </div>
-                <div className="justify-center items-center flex lg:m-0 m-20">
+                <div className="justify-center items-center flex m-10">
                   <button 
                   onClick={()=> handleClick()}
                   className="bg-button_bg hover:bg-button_bg_2  p-3 rounded-xl absolute bottom-8 tracking-wide font-light ease-in-out duration-300">Read More</button>
