@@ -5,7 +5,7 @@ export default function Contact (){
   
   return(
     <div>
-      <Navbar lightLogo={true}/>
+      {/* <Navbar lightLogo={true}/> */}
       <ContactPage/>
     </div>
   )

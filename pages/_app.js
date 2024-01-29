@@ -13,6 +13,7 @@ const urbanist = Urbanist({
 })
 export default function App({ Component, pageProps }) {
   const router = useRouter()
+  const [lightLogo, setLightLogo] = useState(false)
   const [logo, setLogo] = useState(false)
   useEffect(()=> {
     if (router.pathname=='/contact' || router.pathname=='/thank-you'){
@@ -26,6 +27,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <main className={urbanist.className}>
+      <Navbar setLightLogo={setLightLogo} lightLogo={lightLogo} />
       <Component {...pageProps} />
       <Footer logo={logo} setLogo={setLogo}/>
     </main>

@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 export default function Culture(){
   return(
     <div>
-      <Navbar lightLogo={true}/>
+      {/* <Navbar lightLogo={true}/> */}
       <CulturePage/>
     </div>
   )
