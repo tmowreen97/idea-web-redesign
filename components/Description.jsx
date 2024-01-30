@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Image from 'next/image';
+import Link from 'next/link';
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import Carousel from "./Carousel";
 
@@ -19,14 +21,26 @@ function Description({data, handleClick}){
       </div>
       <div className="2xl:flex gap-10">
         {/* Carousel */}
-        <div className=" h-full w-full  flex justify-center">
+        <div>
+          <div className=" w-full  flex justify-center">
           <div className=" bg-secondary/80 rounded-xl max-w-[750px] xl:p-4 p-2 m-1 ">
             <Carousel
               array={fixed.images_array}
-              custom={" xl:w-[700px] xl:h-[490px] lg:w-[500px] lg:h-[400px] md:w-[400px] md:h-[300px] w-[275px] h-[200px] m-3 right-0 rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
+              custom={" xl:w-[700px] xl:h-[490px] lg:w-[500px] lg:h-[400px] md:w-[400px] md:h-[300px] w-[275px] h-[200px] m-2 rounded-2xl bg-center bg-cover hover:scale-[105%]  duration-500 transform"}
             />
           </div>
         </div>
+        <div className="   w-auto flex justify-center items-center">
+          <Link href={'https://www.ideaaec.com'} target='_blank' rel='no_openner no_referrer'>
+          <div className="  hover:bg-[#9C36FC]/50 rounded-xl flex items-center p-2 my-2 cursor-pointer">
+            <p className="italic w-[450px]">Click here to check out our ongoing project, MSC Cruise Terminal, that we've been working on in Miami, Florida</p>
+            <Image src={'/assets/logos/idea-aec-logo.png'} width={100} height={100} className="bg-[#E9DCF9]/50 rounded-xl p-1"/>
+          </div>
+          </Link>
+        </div>
+        </div>
+        
+        
         
         {/* Description */}
         <div className="2xl:m-0 md:m-10 m-4">

@@ -163,15 +163,15 @@ function Developments(){
   return(
     <div id='developments' className="w-screen h-full bg-primary justify-center">
       <div className="justify-center items-center">
-        <div className="flex items-center justify-center lg:px-[10%] 2xl:px-[10%] py-10">
-          <div className={hide ? "relative rounded-xl overflow-hidden hidden h-full ease-in-out duration-300" : "relative rounded-xl overflow-hidden h-full ease-in-out duration-300"}>
+        <div className="flex items-center justify-center lg:px-[10%] 2xl:px-[10%] 2xl:py-10">
+          <div className={hide ? "relative rounded-xl overflow-hidden xl:hidden 2xl:block h-full ease-in-out duration-300" : "relative rounded-xl overflow-hidden h-full ease-in-out duration-300"}>
             {/* TITLE */}
             <div>
               <h1 className="2xl:text-[1100%] lg:text-9xl text-[350%] p-2 font-thin lg:m-12 lg:text-justify text-center">Developments</h1>
             </div>
-            <div className="xl:flex justify-center 2xl:gap-10 gap-2">
+            <div className="xl:flex justify-center 2xl:gap-4 gap-2">
               <div className=" justify-center items-center flex">
-                <div className="bg-secondary rounded-xl 2xl:w-full 2xl:py-10 lg:max-w-[825px] p-2 m-2">
+                <div className="bg-secondary rounded-xl 2xl:p-10 lg:max-w-[850px] p-2 m-2">
                   <Carousel 
                     array={projects} 
                     handleIndex = {handleIndex}
@@ -181,7 +181,8 @@ function Developments(){
                 </div>
                
               </div>
-              <div className="bg-secondary rounded-xl xl:w-[500px] m-2 relative xl:h-auto h-full">
+              <div className="flex justify-center">
+              <div className="bg-secondary rounded-xl lg:max-w-[600px] md:max-w-[570px] max-w-[325px] m-2 relative xl:h-auto h-full">
                 <div className=" xl:p-10 p-4 w-full">
                   <h2 className="text-red_heading text-shadow-sm shadow-dark_red/40">{projects[projectSelect].name}</h2>
                   <h3 className="text-2xl">{projects[projectSelect].location}</h3>
@@ -199,7 +200,7 @@ function Developments(){
                   className="bg-button_bg hover:bg-button_bg_2  p-3 rounded-xl absolute bottom-8 tracking-wide font-light ease-in-out duration-300">Read More</button>
                 </div>
               </div>
-              
+              </div>
             </div>
             
           </div>
