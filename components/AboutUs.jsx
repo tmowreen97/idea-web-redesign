@@ -19,10 +19,10 @@ const AboutUs = () => {
           <div className='justify-center items-center lg:max-w-[650px] lg:w-full md:w-[500px] w-[350px] bg-secondary rounded-xl lg:p-12 p-6'>
             {/* Our Story Title */}
             <div className='flex justify-left lg:px-8'>
-              <h2 className='text-red_heading text-shadow-sm shadow-dark_red/40'>Our Story</h2>
+              <h2 className='text-red_heading text-shadow shadow-dark_red font-light'>Our Story</h2>
             </div>
             {/* Our Story Text */}
-            <div className='lg:px-8 lg:text-lg tracking-wider font-light'>
+            <div className='lg:px-6 lg:text-xl tracking-wider font-light'>
               <p className='my-[4%]'>
                 IDEA <span className='text-sm'>CSC</span> provides integrated Engineering and Construction Management services to the Architectural Construction Industry. We are Engineers and Construction Managers collaborating our expertise to provide top quality and uncompromised services to our clients. Our integrated approach is led by our USA based Inter-Disciplinary Engineering team, <span className='font-bold text-button_bg_2 hover:underline cursor-pointer'><Link href={"https://www.ideaaec.com"}target='_blank' rel="noopener noreferrer">IDEA <span className='text-sm'>AEC</span></Link></span>. We focus in building efficiency between the Design and Construction phases of a project. Our approach consists of delivering client specific, cost-effective, on schedule and coordinated solutions.
               </p>
@@ -53,7 +53,8 @@ const AboutUs = () => {
             <div>
             <div className='bg-secondary lg:max-w-[580px] justify-center lg:w-full md:w-[500px] w-[350px] rounded-xl lg:p-12 p-6'>
               <div className='flex justify-left lg:px-8'>
-                <h2 className='text-red_heading text-shadow-sm shadow-dark_red/40'>Our Mission</h2>
+                {/*  */}
+                <h2 className='text-dark_red text-shadow shadow-red_heading'>Our Mission</h2>
               </div>
               <div className='lg:px-8 lg:text-lg tracking-wider font-light'>
                 <p className="my-[4%]">

@@ -506,7 +506,7 @@ function ServicesPage(){
                     {/* List Title w Image*/}
                     <div className="items-center justify-center flex my-2">
                       <h1 className="text-dark_text xl:text-4xl text-3xl p-5">{service.title}</h1>
-                      <Image src={service.icon} width={service.width ? service.width : 70} height={100} className="bg-black/10 rounded-2xl py-2"/>
+                      <Image src={service.icon} width={service.width ? service.width : 70} height={100} className="bg-black/20 rounded-2xl py-2"/>
                     </div>
                     <div className="2xl:w-[400px] xl:w-[345px] lg:w-[325px] 2xl:h-[450px] items-center flex justify-center rounded-2xl p-8 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
                     <div className="">
@@ -586,6 +586,7 @@ function ServicesPage(){
             className="justify-center items-center flex ">
               {/* "xl:h-[675px] flex justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" */}
               <div className="flex justify-center 2xl:h-[625px] rounded-2xl 2xl:mx-10 p-5  my-5 2xl:my-0 xl:w-[600px] w-[375px]" style={{backgroundColor: `${existing_services.color}`}}>
+                {/* <Image src={'/assets/logos/logo-landing.png'} width={100} height={100}/> */}
               {/* 2xl:w-[400px] xl:w-[345px] lg:w-[325px] 2xl:h-[450px] items-center flex justify-center rounded-2xl p-8 shadow-inner font-medium */}
               <div className="2xl:w-[500px] flex items-center justify-center rounded-2xl p-5 xl:m-10 shadow-inner font-medium" style={{backgroundColor: `${existing_services.list_color}`}}>
                 <div className="flex items-center justify-center m-4">
