@@ -57,6 +57,7 @@ function ServicesPage(){
         },
       ],
       icon: "/assets/logos/mech-icon.png",
+      width:65,
       color: '#C2F0BD',
       list_color: '#AED8AA'
     },
@@ -219,13 +220,13 @@ function ServicesPage(){
         },
       ],
       icon: "/assets/logos/fp-icon.png",
-      width:50,
+      width:60,
       color: '#F89090',
       list_color: '#DF8181'
     },
     //Low Voltage
     {
-      title: 'Low Voltage List',
+      title: 'Low Voltage',
       icon: '',
       services: [
         {
@@ -245,14 +246,14 @@ function ServicesPage(){
           alt:"lv-1",
         },
       ],
-      icon: "/assets/logos/fp-icon.png",
-      width:50,
+      icon: "/assets/logos/lv-icon.png",
+      width:55,
       color: '#ADDEDF',
       list_color: '#9BC7C8'
     }
   ]
 
-  const life_cycle_services = {
+  const existing_services = {
     title: 'Existing Facility Services',
     services: [
       {
@@ -448,14 +449,15 @@ function ServicesPage(){
             initial={{opacity:0}}
             animate={{opacity:1, transition:{delay:2, duration:1}}} 
             className="justify-center flex ">
-              <div id='subsection' className="xl:grid xl:grid-cols-2 items-center xl:gap-10 xl:p-0 xl:mx-[20%] xl:mb-10 justify-center">
+              <div id='subsection' className="lg:grid lg:grid-cols-2 items-center lg:gap-10 lg:p-0 xl:mx-[20%] lg:mb-10 justify-center">
               {construction_services.map((service)=> {
                 return(
                   <div className="xl:h-[625px] flex justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
                     <div className="justify-center">
+                      {/* List Title w Image*/}
                       <div className="items-center justify-evenly flex my-2">
                         <h1 className="text-dark_text text-3xl xl:text-4xl p-5">{service.title}</h1>
-                        <Image src={service.icon} width={75} height={100} className="bg-black/10 rounded-full py-2"/>
+                        <Image src={service.icon} width={70} height={100} className="bg-black/10 rounded-2xl py-2"/>
                       </div>
                       <div className="flex justify-center">
 
@@ -501,9 +503,10 @@ function ServicesPage(){
                 // **
                 <div className="xl:h-[675px] flex justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
                   <div className="justify-center">
-                    <div className="items-center justify-center flex">
+                    {/* List Title w Image*/}
+                    <div className="items-center justify-center flex my-2">
                       <h1 className="text-dark_text xl:text-4xl text-3xl p-5">{service.title}</h1>
-                      <Image src={service.icon} width={service.width ? service.width : 75} height={100} className="bg-black/10 rounded-full py-2"/>
+                      <Image src={service.icon} width={service.width ? service.width : 70} height={100} className="bg-black/10 rounded-2xl py-2"/>
                     </div>
                     <div className="2xl:w-[400px] xl:w-[345px] lg:w-[325px] 2xl:h-[450px] items-center flex justify-center rounded-2xl p-8 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
                     <div className="">
@@ -536,15 +539,18 @@ function ServicesPage(){
           className="xl:grid xl:grid-cols-2 items-center xl:gap-10 xl:p-0 xl:mx-[20%] xl:m-10 justify-center">
             {engineering_services_two.map((service)=> {
               return(
-                <div className="flex xl:h-[350px] justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
-                  <div className="justify-center">
-                    <div className="items-center justify-center flex">
+                <div className="flex justify-center">
+                <div className=" xl:h-[350px] text-dark_text p-5 my-5 rounded-2xl xl:w-[550px] w-[375px] flex justify-center" style={{backgroundColor: `${service.color}`}}>
+                  <div className="">
+                    {/* List Title w Image */}
+                    <div className="items-center justify-center flex my-2">
                       <h1 className="text-dark_text text-3xl xl:text-4xl p-5">{service.title}</h1>
-                      <Image src={service.icon} width={service.width ? service.width : 75} height={100} className="bg-black/10 rounded-full py-2"/>
+                      <Image src={service.icon} width={service.width ? service.width : 70} height={100} className="bg-black/10 rounded-2xl py-2"/>
                     </div>
                     <div className="2xl:w-[400px] xl:h-[200px] flex justify-center rounded-2xl p-5 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
                     <div>
-                      <ul className=" items-center justify-center">
+                      {/* List */}
+                      <ul>
                         {service.services.map((list_item)=> {
                           return(
                             <li key={list_item.alt} className="list-disc xl:text-lg">
@@ -558,37 +564,40 @@ function ServicesPage(){
                     </div>
                   </div>
                 </div>
+                </div>
               )
             })}
           </motion.div>
         </div>
-        {/* Life Cycle + Construction */}
+        {/* Existing Services*/}
         <div id='extraservices' className="mx-[5%] justify-center font-light">
-          {/* TITLES */}
-          {/* Life Cycle */}
-          <div className="">
+          {/* Existing */}
+          <div>
+            {/* TITLE */}
             <motion.div 
             initial={{opacity:0}}
             animate={{opacity:1, transition:{delay:4, duration:1}}} 
             className="flex items-center justify-center">
-              <h1 className="bg-secondary font-thin  rounded-2xl p-5 m-10 flex items-center 2xl:text-7xl lg:text-5xl text-4xl text-center">{life_cycle_services.title}</h1>
+              <h1 className="bg-secondary font-thin  rounded-2xl p-5 m-10 flex items-center 2xl:text-7xl lg:text-5xl text-4xl text-center">{existing_services.title}</h1>
             </motion.div>
             <motion.div 
             initial={{opacity:0}}
             animate={{opacity:1, transition:{delay:4.5, duration:1}}} 
             className="justify-center items-center flex ">
-              <div className="flex justify-center 2xl:h-[625px] rounded-2xl 2xl:mx-10 p-5  my-5 2xl:my-0 xl:w-[500px] w-[375px]" style={{backgroundColor: `${life_cycle_services.color}`}}>
-              <div className="2xl:w-[500px] flex items-center justify-center rounded-2xl p-5 xl:m-10 shadow-inner font-medium" style={{backgroundColor: `${life_cycle_services.list_color}`}}>
-                <div>
-                  <ul className="items-center justify-center">
-                  {life_cycle_services.services.map((list_item)=> {
-                    return(
-                      <li key={list_item.alt} className="list-disc xl:text-lg">
-                        <p className="text-dark_text text-lg lg:leading-6 xl:leading-7">{list_item.service}</p>
-                      </li>
-                    )
-                  })}
-                </ul>
+              {/* "xl:h-[675px] flex justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" */}
+              <div className="flex justify-center 2xl:h-[625px] rounded-2xl 2xl:mx-10 p-5  my-5 2xl:my-0 xl:w-[600px] w-[375px]" style={{backgroundColor: `${existing_services.color}`}}>
+              {/* 2xl:w-[400px] xl:w-[345px] lg:w-[325px] 2xl:h-[450px] items-center flex justify-center rounded-2xl p-8 shadow-inner font-medium */}
+              <div className="2xl:w-[500px] flex items-center justify-center rounded-2xl p-5 xl:m-10 shadow-inner font-medium" style={{backgroundColor: `${existing_services.list_color}`}}>
+                <div className="flex items-center justify-center m-4">
+                  <ul className="">
+                    {existing_services.services.map((list_item)=> {
+                      return(
+                        <li key={list_item.alt} className="list-disc xl:text-lg">
+                          <p className="text-dark_text text-lg lg:leading-6 xl:leading-7">{list_item.service}</p>
+                        </li>
+                      )
+                    })}
+                  </ul>
                 </div>
                 
               </div>
