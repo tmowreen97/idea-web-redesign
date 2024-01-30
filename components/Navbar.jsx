@@ -62,9 +62,9 @@ const Navbar = ({setLightLogo, lightLogo}) => {
         <ul style={{ color: '#FFFFFF'}} className='hidden sm:flex'>
           <li className='p-4'>
           <div className="dropdown inline-block relative">
-          <button id='about_button' aria-label='about_button' className="inline-flex items-center " id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>
-            <p className="mr-1 tracking-wide">About</p>
-            <span><BiChevronDown /></span>
+          <button aria-label='about_button' className="inline-flex items-center ">
+            <p className="mr-1 tracking-wide" id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>About</p>
+            <span id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}><BiChevronDown /></span>
           </button>
           <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 text-center">
             <li className="bg-button_bg_2 hover:bg-button_bg hover:text-primary_text w-[90px] ml-[-20px] rounded-xl">
