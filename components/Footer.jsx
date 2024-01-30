@@ -27,23 +27,25 @@ export default function Footer({logo}){
                   <h1 className="lg:text-7xl text-6xl ">IDEA <span className="text-2xl">CSC</span></h1>
                 </div>
                 <div className="lg:pt-5 pt-2">
-                  <h1 className="lg:text-2xl text-lg">Inter-Disciplinary Engineering Associates,</h1>
-                  <h1 className="lg:text-2xl text-lg">Construction Solutions Company</h1>
-                  <h1 className="lg:text-2xl text-base">(PVT.) LTD.</h1>
+                  <h1 className="xl:text-2xl text-lg">Inter-Disciplinary Engineering Associates,</h1>
+                  <h1 className="xl:text-2xl text-lg">Construction Solutions Company</h1>
+                  <h1 className="xl:text-2xl text-base">(PVT.) LTD.</h1>
                 </div>
               
             </div>
             <div className="md:mb-[30px]">
-              <p className="lg:text-xl text-base ">Comilla, BD | Florida, USA</p>
+              <p className="xl:text-xl text-base ">Comilla, BD | Florida, USA</p>
             </div>
             <div>
-              <p className="lg:text-lg text-base">info@IdeaCSC.com</p>
-              <p className="lg:text-lg text-base">BD: +880 1820-685001</p>
-              <p className="lg:text-lg text-base">US: 954-295-2125</p>
+              <p className="xl:text-lg text-base">info@IdeaCSC.com</p>
+              <p className="xl:text-lg text-base">BD: +880 1820-685001</p>
+              <p className="xl:text-lg text-base">US: 954-295-2125</p>
             </div>
           </div>
           </div>
-          <div className="lg:ml-[160px] lg:w-[450px] w-full  h-[95%] mt-5" >
+          {/* "xl:ml-[160px] lg:ml-[50px] lg:max-w-[450px] w-full  h-[95%] mt-5" */}
+          <div className=" flex justify-center items-center" >
+          <div className="md:max-w-[450px] max-w-[350px] w-full ">
           <div className="bg-footer_bg  md:h-[290px]  rounded-xl ">
             <div className="items-center justify-center">
               <form 
@@ -118,7 +120,7 @@ export default function Footer({logo}){
             </div>
             
           </div>
-          
+          </div>
         </div>
           
         </div>
