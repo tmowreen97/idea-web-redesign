@@ -67,7 +67,7 @@ const AboutUs = () => {
             <div className='flex justify-center bg-secondary lg:max-w-[580px] lg:w-full md:w-[500px] w-[350px] lg:mt-10 mt-4 p-4 items-end rounded-xl' onMouseOver={()=> setShow(true)} onMouseLeave={()=> setShow(false)}>
               <Link href={"/team"}>
                 <div className='relative items-center justify-center  p-3'>
-                  <Image src={'/assets/idea-vest.jpg'} width={415} height={100} className={show ? 'rounded-xl' : 'rounded-xl animate-pulse'}/>
+                  <Image src={'/assets/idea-vest.jpg'} width={415} height={100} className={show ? 'rounded-xl' : 'rounded-xl motion-safe:animate-pulse'}/>
                   <div className={show ? "absolute bg-cover bottom-3 top-3 left-3 right-3 bg-tertiary/80 rounded-xl text-dark_text  " : "hidden"}>
                     <h1 className='flex items-center justify-center h-full text-2xl animate-none'>Click to See Our Team</h1>
                   </div>

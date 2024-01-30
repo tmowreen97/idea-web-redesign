@@ -32,8 +32,8 @@ function Description({data, handleClick}){
         </div>
         <div className="   w-auto flex justify-center items-center">
           <Link href={'https://www.ideaaec.com'} target='_blank' rel='no_openner no_referrer'>
-          <div className="  hover:bg-[#9C36FC]/50 rounded-xl flex items-center p-2 my-2 cursor-pointer">
-            <p className="italic w-[450px]">Click here to check out our ongoing project, MSC Cruise Terminal, that we've been working on in Miami, Florida</p>
+          <div className="  hover:bg-[#9C36FC]/50 rounded-xl flex justify-center items-center p-2 my-2 cursor-pointer">
+            <p className="italic max-w-[450px] text-sm md:text-base ">Click here to check out our ongoing project, <span className="font-bold">MSC Cruise Terminal</span>, that we've been working on in Miami, Florida</p>
             <Image src={'/assets/logos/idea-aec-logo.png'} width={100} height={100} className="bg-[#E9DCF9]/50 rounded-xl p-1"/>
           </div>
           </Link>

@@ -163,8 +163,8 @@ function Developments(){
   return(
     <div id='developments' className="w-screen h-full bg-primary justify-center">
       <div className="justify-center items-center">
-        <div className="flex items-center justify-center lg:px-[10%] 2xl:px-[10%] 2xl:py-10">
-          <div className={hide ? "relative rounded-xl overflow-hidden xl:hidden 2xl:block h-full ease-in-out duration-300" : "relative rounded-xl overflow-hidden h-full ease-in-out duration-300"}>
+        <div className={hide? "flex items-center justify-center lg:px-[10%] 2xl:px-[10%] 2xl:py-10 bg-dark_bg/95" : "flex items-center justify-center lg:px-[10%] 2xl:px-[10%] 2xl:py-10"}>
+          <div className={hide ? "relative rounded-xl overflow-hidden hidden 2xl:block h-full ease-in-out duration-300" : "relative rounded-xl overflow-hidden h-full ease-in-out duration-300"}>
             {/* TITLE */}
             <div>
               <h1 className="2xl:text-[1100%] lg:text-9xl text-[350%] p-2 font-thin lg:m-12 lg:text-justify text-center">Developments</h1>
@@ -216,7 +216,7 @@ function Developments(){
           className="">
           <div className="w-full h-full bg-none 2xl:fixed top-0 bottom-0 right-0 left-0 z-10">
             <div className="2xl:z-20 flex h-full w-full items-center justify-center bg-dark_bg/95 ease-in-out duration-200">
-              <div className="justify-center items-center bg-accent_3 text-left 2xl:p-6 p-1 rounded-2xl z-9 2xl:z-20 lg:m-20 m-4 h-full md:h-auto max-w-[2500px]  md:top-[10%] md:bottom-[10%] bottom-[0]">
+              <div className="justify-center items-center bg-accent_3 text-left 2xl:p-6 p-1 rounded-2xl z-9 2xl:z-20 lg:m-20 m-6 h-full md:h-auto max-w-[2500px]  bottom-[0]">
                 <Description data={projects[projectSelect]} handleClick={handleClick}/>
                 {/* <h1 className="text-7xl">{projects[projectSelect].name}</h1> */}
               </div>

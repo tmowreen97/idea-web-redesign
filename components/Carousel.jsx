@@ -78,7 +78,7 @@ function Carousel ({array,  custom, handleIndex}){
         <BsChevronCompactRight onClick={()=> handleRight()} size={40}/>
       </div>
       </motion.div>
-      <div className=' flex  text-center  items-center justify-center py-6'>
+      <div className=' flex  text-center  items-center justify-center lg:py-6'>
         {array.map((current, i) => (
           <div
             key={i}
