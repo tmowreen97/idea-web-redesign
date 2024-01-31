@@ -158,8 +158,6 @@ function Developments(){
   function handleIndex(index){
     setProjectSelect(index)
   }
-
-  // console.log(projectSelect, 'project select')
   return(
     <div id='developments' className="w-screen h-full bg-primary justify-center">
       <div className="justify-center items-center">
@@ -184,12 +182,12 @@ function Developments(){
               <div className="flex justify-center">
               <div className="bg-secondary rounded-xl lg:max-w-[525px] md:max-w-[570px] max-w-[325px] m-2 relative xl:h-auto h-full">
                 <div className=" xl:p-10 p-4 w-full">
-                  <h2 className="text-red_heading text-shadow-sm shadow-dark_red/40">{projects[projectSelect].name}</h2>
+                  <h2 className="text-dark_red text-shadow-sm shadow-red_heading/40 font-medium">{projects[projectSelect].name}</h2>
                   <h3 className="text-2xl">{projects[projectSelect].location}</h3>
                   <h3 className="text-2xl">{projects[projectSelect].year}</h3>
                   {projects[projectSelect].desc.map((line)=> {
                     return(
-                      <p key={line} className="text-lg leading-[25px]">{line}</p>
+                      <p key={line} className="lg:text-xl leading-[25px]">{line}</p>
                     )
                   })}
                   
