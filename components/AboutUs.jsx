@@ -19,7 +19,7 @@ const AboutUs = () => {
           <div className='justify-center items-center lg:max-w-[650px] lg:w-full md:w-[500px] w-[350px] bg-secondary rounded-xl lg:p-10 p-6'>
             {/* Our Story Title */}
             <div className='flex justify-left lg:px-6'>
-              <h2 className='text-dark_red text-shadow-sm shadow-red_heading/40 font-medium'>Our Story</h2>
+              <h2 className='text-red_heading  text-shadow-sm shadow-dark_red font-medium'>Our Story</h2>
             </div>
             {/* Our Story Text */}
             <div className='lg:px-6 lg:text-xl tracking-wider font-light'>
