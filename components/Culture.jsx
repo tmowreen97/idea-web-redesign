@@ -72,13 +72,13 @@ function Culture_Page_Two(){
       initial={{opacity:0}}
       animate={{opacity:1, transition: {delay:1.5, duration:2}}}
       className="flex font-light md:px-28">
-          <div className="flex text-center justify-center xl:m-10 m-5 w-full">
+          <div className="flex text-center justify-center xl:mx-[10%] xl:my-[5%] mx-5 my-5 w-full">
             <h1 className="lg:text-6xl text-4xl font-thin tracking-wide lg:leading-[70px] leading-[40px]">
               Check out our <span className="motion-safe:animate-pulse hover:animate-none"><Link 
               href={'https://www.ideaaec.com/culture'} 
               rel="noopener noreferrer" target="_blank" 
               className="text-button_bg_2 text-shadow-lg shadow-tertiary/80 font-medium hover:underline">culture page </Link></span> 
-              and don't forget to connect with us!</h1>
+              and don't forget to connect with us at <Link href={"https://www.ideaaec.com"} className="text-purple_accent_3">IDEA <span className="lg:text-4xl text-2xl">AEC</span></Link>!</h1>
             {/* <h1 className="text-4xl animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-primary_text p-4 delay-200">Connect with us:</h1> */}
           </div>
       </motion.div>
