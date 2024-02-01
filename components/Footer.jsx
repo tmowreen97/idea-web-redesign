@@ -18,7 +18,7 @@ export default function Footer({logo}){
           // mx-3 mt-[20%] md:mx-0 md:mt-0 
           <div className="  rounded-xl  text-center">
             <div className="lg:mx-20">
-              <Image src={'/assets/logos/vertical-symbol.png'} width={95} height={100}/>
+              <Image src={'/assets/logos/vertical-symbol.png'} width={100} height={100}/>
             </div>
           </div>}
           <div className="lg:mb-10">
@@ -45,7 +45,7 @@ export default function Footer({logo}){
           </div>
           {/* "xl:ml-[160px] lg:ml-[50px] lg:max-w-[450px] w-full  h-[95%] mt-5" */}
           <div className=" flex justify-center items-center" >
-          <div className="md:max-w-[450px] max-w-[350px] w-full ">
+          <div className="md:max-w-[450px] max-w-[350px] w-full m-4 xl:m-0">
           <div className="bg-footer_bg  md:h-[290px]  rounded-xl ">
             <div className="items-center justify-center">
               <form 
@@ -91,11 +91,12 @@ export default function Footer({logo}){
             
           </div>
           {/* Need statement before socials */}
-          <div className="">
-            <div>
-              <p className="italic m-2 mx-4">Keep in touch by following us at IDEA AEC!:</p>
+          <div className="flex justify-around w-full">
+          <div className="p-2" >
+            <div className="">
+              <p className="italic m-2">Keep in touch by following us at IDEA AEC:</p>
             </div>
-          <div className="grid grid-cols-3  text-center items-center justify-center">
+          <div className="grid grid-cols-3 gap-6 text-center items-center justify-center">
             <div className="text-center items-center justify-center flex rounded-xl ">
               <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-beige_text ease-in-out duration-300 rounded-full p-4 text-2xl">
                 <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
@@ -124,6 +125,7 @@ export default function Footer({logo}){
               </div>
             </div>
             
+          </div>
           </div>
           </div>
           </div>
