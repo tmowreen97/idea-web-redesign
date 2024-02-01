@@ -10,8 +10,8 @@ html{
 }
 
 .custom-img{
-  /* hero-ai-2.png */
-  background-image: url("/assets/landing-even-1.png ");
+  /* "/assets/landing-even-noborder.png " */
+  background-image: url("/assets/landing-abstract-noborder.png ");
 }
 .mobile-img{
   /* hero-ai-2.png */

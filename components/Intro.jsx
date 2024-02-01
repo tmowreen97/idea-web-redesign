@@ -1,5 +1,6 @@
 import react from "react"
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion } from "framer-motion";
 
 function Intro(){
@@ -19,7 +20,7 @@ function Intro(){
       </div>
       <div className="xl:px-28 px-10 py-10 max-w-[1800px]">
         <div className="flex justify-right">
-          <h1 className="xl:text-7xl md:text-5xl text-2xl">Introducing <span className="text-red_text font-semibold xl:text-8xl md:text-6xl text-3xl tracking-tight text-shadow shadow-dark_red">IDEA <span className="xl:text-6xl md:text-4xl text-xl">CSC</span></span> (US IDEA <span className="xl:text-5xl md:text-3xl text-lg">CSC</span> (PVT.) LTD.), a Sister Company of IDEA <span className="xl:text-5xl md:text-3xl text-lg">AEC</span> (USA).</h1>
+          <h1 className="xl:text-7xl md:text-5xl text-2xl">Introducing <span className="text-red_text font-semibold xl:text-8xl md:text-6xl text-3xl tracking-tight text-shadow shadow-dark_red">IDEA <span className="xl:text-6xl md:text-4xl text-xl">CSC</span></span> (US IDEA <span className="xl:text-5xl md:text-3xl text-lg">CSC</span> (PVT.) LTD.), a Sister Company of <span href={'https://www.ideaaec.com'} className='text-purple_accent_3'>IDEA <span className="xl:text-5xl md:text-3xl text-lg">AEC</span> (USA)</span>.</h1>
         </div>
       </div>
       </div>
