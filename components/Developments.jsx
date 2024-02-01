@@ -17,6 +17,7 @@ function Developments(){
   }
 
   const projects = [
+    // 5 STORY
     {
       id: 0,
       name: 'C23-01',
@@ -64,24 +65,20 @@ function Developments(){
       ],
 
     },
+    // BD RESIDENCE
     {
       id:1,
       name: 'C24-01',
-      image: "/assets/need2.jpeg",
+      image: "/assets/projects/bd-res-render.png",
       images_array: [
         {
-          title: 'eefi-1',
-          image: '/assets/filler/filler-4.jpg'
+          title: 'bd-res-1',
+          image: '/assets/projects/bd-res-render.png'
         },
         {
-          title: 'eefi-2',
-          image: '/assets/filler/filler-5.jpg'
+          title: 'bd-res-2',
+          image: '/assets/projects/bd-res-plan.png'
         },
-        {
-          title: 'eefi-3',
-          image: '/assets/filler/filler-6.jpg'
-        },
-        
       ],
       location:"LOCATION",
       sector: "Residential",
@@ -109,6 +106,7 @@ function Developments(){
         'Eighth Service',
       ],
     },
+    // COMMUNITY COMPLEX
     {
       id: 2,
       name: 'C24-02',
