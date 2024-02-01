@@ -434,6 +434,7 @@ function ServicesPage(){
       className="lg:p-20 pt-20  pb-10">
         <h1 className="md:text-[1100%] text-8xl font-thin text-primary_text text-center lg:text-left tracking-wide">Services</h1>
       </motion.div>
+      <div>
       <div className="pb-20">
         {/* CONSTRUCTION SERVICES */}
         <div className="justify-center font-light">
@@ -442,7 +443,7 @@ function ServicesPage(){
           initial={{opacity:0}}
           animate={{opacity:1, transition:{delay:1.5 , duration:1}}}
           className="flex justify-center items-center">
-            <h1 className="bg-secondary font-thin rounded-2xl p-7 xl:m-10 my-2 2xl:text-7xl lg:text-5xl text-3xl flex">Construction Management Services</h1>
+            <h1 className="bg-secondary font-thin rounded-2xl p-7 xl:m-10 my-2 2xl:text-7xl lg:text-6xl text-3xl  flex">Construction Management Services</h1>
           </motion.div>
           {/* BODY */}
             <motion.div 
@@ -485,16 +486,17 @@ function ServicesPage(){
             </motion.div>
         </div>
         {/* Engineering Services Section */}
-        <div className="font-light">
+        <div className="font-light justify-center">
           {/* Title */}
           <motion.div 
           initial={{opacity:0}}
           animate={{opacity:1, transition:{delay:2.5, duration:1}}} 
           className="items-center justify-center flex">
-            <h1 className=" bg-secondary font-thin rounded-2xl p-7 xl:m-10 my-2 2xl:text-7xl lg:text-5xl text-3xl flex">Engineering Services<a target="_blank" rel="noopener noreferrer" href="https://www.ideaaec.com/services" ><CiShare1 className="text-[65%] m-1 hover:scale-110 ease-in-out duration-200 items-center justify-center align-middle cursor-pointer hover:text-button_bg_2" /></a></h1>
+            <h1 className=" bg-secondary font-thin rounded-2xl p-7 xl:m-10 my-2 2xl:text-7xl lg:text-6xl text-3xl flex">Engineering Services<a target="_blank" rel="noopener noreferrer" href="https://www.ideaaec.com/services" ><CiShare1 className="text-[65%] m-1 hover:scale-110 ease-in-out duration-200 items-center justify-center align-middle cursor-pointer hover:text-button_bg_2" /></a></h1>
           </motion.div>
           {/* Subsections*/}
           {/* actual grid without title */}
+          <div className="justify-center flex items-center">
           <motion.div 
           initial={{opacity:0}}
           animate={{opacity:1, transition:{delay:3, duration:1}}} id="subsection" className="xl:grid xl:grid-cols-3 xl:gap-10 xl:p-0 xl:mx-[5%] justify-center items-center">
@@ -532,15 +534,16 @@ function ServicesPage(){
         {/* Engineering Services Section TWO */}
         <div className="font-light">
           {/* Subsections*/}
+          <div className="flex justify-center items-center">
           <motion.div 
           initial={{opacity:0}}
           animate={{opacity:1, transition:{delay:3.5, duration:1}}} 
           id='subsection' 
-          className="xl:grid xl:grid-cols-2 items-center xl:gap-10 xl:p-0 xl:mx-[20%] xl:m-10 justify-center">
+          className="xl:grid xl:grid-cols-2 items-center xl:gap-10 xl:p-0  xl:m-10 justify-center">
             {engineering_services_two.map((service)=> {
               return(
                 <div className="flex justify-center">
-                <div className=" xl:h-[350px] text-dark_text p-5 my-5 rounded-2xl xl:w-[550px] w-[375px] flex justify-center" style={{backgroundColor: `${service.color}`}}>
+                <div className=" xl:h-[350px] text-dark_text p-5 my-5 rounded-2xl xl:w-[500px] w-[375px] flex justify-center" style={{backgroundColor: `${service.color}`}}>
                   <div className="">
                     {/* List Title w Image */}
                     <div className="items-center justify-center flex my-2">
@@ -568,9 +571,11 @@ function ServicesPage(){
               )
             })}
           </motion.div>
+           </div>
+          </div>
         </div>
         {/* Existing Services*/}
-        <div id='extraservices' className="mx-[5%] justify-center font-light">
+        <div className="mx-[5%] justify-center font-light">
           {/* Existing */}
           <div>
             {/* TITLE */}
@@ -578,33 +583,40 @@ function ServicesPage(){
             initial={{opacity:0}}
             animate={{opacity:1, transition:{delay:4, duration:1}}} 
             className="flex items-center justify-center">
-              <h1 className="bg-secondary font-thin  rounded-2xl p-5 m-10 flex items-center 2xl:text-7xl lg:text-5xl text-4xl text-center">{existing_services.title}</h1>
+              <h1 className="bg-secondary font-thin  rounded-2xl p-5 m-10 flex items-center 2xl:text-7xl lg:text-6xl text-3xl  text-center">{existing_services.title}</h1>
             </motion.div>
-            <motion.div 
-            initial={{opacity:0}}
-            animate={{opacity:1, transition:{delay:4.5, duration:1}}} 
-            className="justify-center items-center flex ">
-              {/* "xl:h-[675px] flex justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" */}
-              <div className="flex justify-center 2xl:h-[625px] rounded-2xl 2xl:mx-10 p-5  my-5 2xl:my-0 xl:w-[600px] w-[375px]" style={{backgroundColor: `${existing_services.color}`}}>
-                {/* <Image src={'/assets/logos/logo-landing.png'} width={100} height={100}/> */}
-              {/* 2xl:w-[400px] xl:w-[345px] lg:w-[325px] 2xl:h-[450px] items-center flex justify-center rounded-2xl p-8 shadow-inner font-medium */}
-              <div className="2xl:w-[500px] flex items-center justify-center rounded-2xl p-5 xl:m-10 shadow-inner font-medium" style={{backgroundColor: `${existing_services.list_color}`}}>
-                <div className="flex items-center justify-center m-4">
-                  <ul className="">
-                    {existing_services.services.map((list_item)=> {
-                      return(
-                        <li key={list_item.alt} className="list-disc xl:text-lg">
-                          <p className="text-dark_text text-lg lg:leading-6 xl:leading-7">{list_item.service}</p>
-                        </li>
-                      )
-                    })}
-                  </ul>
+            <div className="flex justify-center">
+              <motion.div 
+              initial={{opacity:0}}
+              animate={{opacity:1, transition:{delay:4.5, duration:1}}}>
+                <div className="flex justify-center 2xl:h-[675px] rounded-2xl 2xl:mx-10 p-5 my-5 2xl:my-0 xl:w-[600px] w-[375px]" style={{backgroundColor: `${existing_services.color}`}}>
+                  <div>
+
+                  <div className="justify-center flex xl:my-0 my-4">
+                   <Image src={'/assets/logos/logo-landing.png'} width={200} height={100}/> 
+                  </div>
+                  {/* "2xl:w-[400px] xl:w-[345px] lg:w-[325px] 2xl:h-[450px] items-center flex justify-center rounded-2xl p-8 shadow-inner font-medium" */}
+                <div className="2xl:w-[500px] flex items-center justify-center rounded-2xl px-5 py-4 xl:mx-10 xl:my-4 shadow-inner font-medium" style={{backgroundColor: `${existing_services.list_color}`}}>
+                  <div className="flex items-center justify-center p-4 xl:p-6">
+                    <ul className="">
+                      {existing_services.services.map((list_item)=> {
+                        return(
+                          <li key={list_item.alt} className="list-disc xl:text-lg">
+                            <p className="text-dark_text text-lg lg:leading-6 xl:leading-7">{list_item.service}</p>
+                          </li>
+                        )
+                      })}
+                    </ul>
+                  </div>
+                  
                 </div>
-                
-              </div>
-              </div>  
-            </motion.div>
+                </div>
+                </div>  
+              </motion.div>
+            </div>
+            
           </div>
+        </div>
         </div>
       </div>
     </div>
