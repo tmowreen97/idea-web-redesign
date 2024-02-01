@@ -11,7 +11,11 @@ html{
 
 .custom-img{
   /* hero-ai-2.png */
-  background-image: url("/assets/landing-abstract-1.png ");
+  background-image: url("/assets/landing-even-1.png ");
+}
+.mobile-img{
+  /* hero-ai-2.png */
+  background-image: url("/assets/hero-ai-2.png ");
 }
 
 h2{
