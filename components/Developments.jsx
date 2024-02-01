@@ -1,6 +1,5 @@
 import Carousel from "./Carousel";
 import { useState } from "react";
-import { AiOutlineCloseCircle } from "react-icons/ai";
 import Description from "./Description";
 import { motion } from 'framer-motion';
 
