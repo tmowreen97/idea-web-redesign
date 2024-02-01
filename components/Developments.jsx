@@ -169,12 +169,12 @@ function Developments(){
             </div>
             <div className="xl:flex justify-center 2xl:gap-4 gap-2">
               <div className=" justify-center items-center flex">
-                <div className="bg-secondary rounded-xl 2xl:p-10 lg:max-w-[850px] p-2 m-2">
+                <div className="bg-secondary rounded-xl 2xl:p-10 lg:max-w-[850px] lg:p-4 p-2 m-2">
                   <Carousel 
                     array={projects} 
                     handleIndex = {handleIndex}
                     // xl:w-[700px] xl:h-[490px] lg:w-[500px] lg:h-[400px] md:w-[400px] md:h-[300px] w-[275px] h-[200px] 
-                    custom={"2xl:w-[775px] 2xl:h-[500px] xl:w-[700px] xl:h-[425px] lg:w-[625px] lg:h-[375px] md:w-[550px] md:h-[300px] w-[325px] h-[225px] rounded-2xl bg-center bg-cover hover:scale-[102%] duration-500 transform"}
+                    custom={"2xl:w-[775px] 2xl:h-[500px] xl:w-[675px] xl:h-[425px] lg:w-[625px] lg:h-[375px] md:w-[550px] md:h-[300px] w-[325px] h-[225px] rounded-2xl bg-center bg-cover hover:scale-[102%] duration-500 transform"}
                   /> 
                 </div>
                
@@ -187,7 +187,7 @@ function Developments(){
                   <h3 className="text-2xl">{projects[projectSelect].year}</h3>
                   {projects[projectSelect].desc.map((line)=> {
                     return(
-                      <p key={line} className="lg:text-xl leading-[25px]">{line}</p>
+                      <p key={line} className="lg:text-xl text-lg leading-[25px]">{line}</p>
                     )
                   })}
                   

@@ -29,7 +29,7 @@ export default function Footer({logo}){
                 <div className="lg:pt-5 pt-2">
                   <h1 className="xl:text-2xl text-lg">Inter-Disciplinary Engineering Associates,</h1>
                   <h1 className="xl:text-2xl text-lg">Construction Solutions Company</h1>
-                  <h1 className="xl:text-2xl text-base">(PVT.) LTD.</h1>
+                  <h1 className="xl:text-2xl text-lg">US IDEA <span className="xl:text-xl text-sm">CSC</span> (PVT.) LTD.</h1>
                 </div>
               
             </div>
@@ -90,7 +90,12 @@ export default function Footer({logo}){
             </div>
             
           </div>
-          <div className="grid grid-cols-3  text-center items-center justify-center  pt-5  pb-5">
+          {/* Need statement before socials */}
+          <div className="">
+            <div>
+              <p className="italic m-2 mx-4">Keep in touch by following us at IDEA AEC!:</p>
+            </div>
+          <div className="grid grid-cols-3  text-center items-center justify-center">
             <div className="text-center items-center justify-center flex rounded-xl ">
               <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-beige_text ease-in-out duration-300 rounded-full p-4 text-2xl">
                 <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
@@ -121,6 +126,7 @@ export default function Footer({logo}){
             
           </div>
           </div>
+          </div>
         </div>
           
         </div>
@@ -129,7 +135,7 @@ export default function Footer({logo}){
       </div>
       <div className="flex items-center justify-center pb-5">
         <div className="flex">
-          <p className="text-sm " >© 2024 by US IDEA CSC <span className="text-xs" >(PVT.) LTD.</span></p>
+          <p className="text-sm " >© 2024 by US IDEA <span className="text-xs" >CSC</span> (PVT.) LTD.</p>
           
         </div>
           
