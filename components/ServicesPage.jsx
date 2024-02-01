@@ -246,8 +246,8 @@ function ServicesPage(){
           alt:"lv-1",
         },
       ],
-      icon: "/assets/logos/lv-icon.png",
-      width:55,
+      icon: "/assets/logos/lowvolt-icon.png",
+      width:60,
       color: '#ADDEDF',
       list_color: '#9BC7C8'
     }
@@ -453,7 +453,7 @@ function ServicesPage(){
               <div id='subsection' className="lg:grid lg:grid-cols-2 items-center lg:gap-10 lg:p-0 xl:mx-[20%] lg:mb-10 justify-center">
               {construction_services.map((service)=> {
                 return(
-                  <div className="xl:h-[625px] flex justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
+                  <div key={service.title} className="xl:h-[625px] flex justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
                     <div className="justify-center">
                       {/* List Title w Image*/}
                       <div className="items-center justify-evenly flex my-2">
@@ -503,7 +503,7 @@ function ServicesPage(){
             {engineering_services.map((service)=> {
               return(
                 // **
-                <div className="xl:h-[675px] flex justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
+                <div key={service.title} className="xl:h-[675px] flex justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
                   <div className="justify-center">
                     {/* List Title w Image*/}
                     <div className="items-center justify-center flex my-2">
@@ -542,7 +542,7 @@ function ServicesPage(){
           className="xl:grid xl:grid-cols-2 items-center xl:gap-10 xl:p-0  xl:m-10 justify-center">
             {engineering_services_two.map((service)=> {
               return(
-                <div className="flex justify-center">
+                <div key={service.title} className="flex justify-center">
                 <div className=" xl:h-[350px] text-dark_text p-5 my-5 rounded-2xl xl:w-[500px] w-[375px] flex justify-center" style={{backgroundColor: `${service.color}`}}>
                   <div className="">
                     {/* List Title w Image */}
@@ -583,7 +583,7 @@ function ServicesPage(){
             initial={{opacity:0}}
             animate={{opacity:1, transition:{delay:4, duration:1}}} 
             className="flex items-center justify-center">
-              <h1 className="bg-secondary font-thin  rounded-2xl p-5 m-10 flex items-center 2xl:text-7xl lg:text-6xl text-3xl  text-center">{existing_services.title}</h1>
+              <h1 className="bg-secondary font-thin  rounded-2xl p-7 xl:m-10 flex items-center 2xl:text-7xl lg:text-6xl text-3xl  text-center">{existing_services.title}</h1>
             </motion.div>
             <div className="flex justify-center">
               <motion.div 
@@ -592,7 +592,7 @@ function ServicesPage(){
                 <div className="flex justify-center 2xl:h-[675px] rounded-2xl 2xl:mx-10 p-5 my-5 2xl:my-0 xl:w-[600px] w-[375px]" style={{backgroundColor: `${existing_services.color}`}}>
                   <div>
 
-                  <div className="justify-center flex xl:my-0 my-4">
+                  <div className="justify-center flex xl:mb-0 mb-4">
                    <Image src={'/assets/logos/logo-landing.png'} width={200} height={100}/> 
                   </div>
                   {/* "2xl:w-[400px] xl:w-[345px] lg:w-[325px] 2xl:h-[450px] items-center flex justify-center rounded-2xl p-8 shadow-inner font-medium" */}
