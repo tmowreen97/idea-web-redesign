@@ -29,7 +29,7 @@ export default function Footer({logo}){
                 <div className="lg:pt-5 pt-2">
                   <h1 className="xl:text-2xl text-lg">Inter-Disciplinary Engineering Associates,</h1>
                   <h1 className="xl:text-2xl text-lg">Construction Solutions Company</h1>
-                  <h1 className="xl:text-2xl text-lg">US IDEA <span className="xl:text-xl text-sm">CSC</span> (PVT.) LTD.</h1>
+                  <h1 className="xl:text-2xl text-lg">US IDEA <span className="xl:text-lg text-xs">CSC</span> (PVT.) LTD.</h1>
                 </div>
               
             </div>
@@ -94,7 +94,7 @@ export default function Footer({logo}){
           <div className="flex justify-around w-full">
           <div className="p-2" >
             <div className="">
-              <p className="italic m-2">Keep in touch by following us at IDEA AEC:</p>
+              <p className="italic m-2">Keep in touch by following us at IDEA <span className="text-xs">AEC</span>:</p>
             </div>
           <div className="grid grid-cols-3 gap-6 text-center items-center justify-center">
             <div className="text-center items-center justify-center flex rounded-xl ">
