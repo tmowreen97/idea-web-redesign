@@ -7,7 +7,6 @@ function Carousel ({array,  custom, handleIndex}){
 
   const [currentIndex, setCurrentIndex] = useState(0)
   const [time, setTime] = useState(4500)
-  console.log(array[currentIndex], 'text')
     
   const timeoutRef = useRef(null);
   function resetTimeout() {

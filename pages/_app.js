@@ -17,13 +17,11 @@ export default function App({ Component, pageProps }) {
   const [logo, setLogo] = useState(false)
   useEffect(()=> {
     if (router.pathname=='/contact' || router.pathname=='/thank-you'){
-      console.log(router.pathname)
       setLogo(true)
     }else{
       setLogo(false)
     }
   }, [router])
-  console.log(logo, 'logo')
 
   return (
     <main className={urbanist.className}>

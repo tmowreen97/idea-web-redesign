@@ -7,10 +7,7 @@ import Carousel from "./Carousel";
 
 
 function Description({data, handleClick}){
-
-  console.log(data, 'data')
   const[fixed, setFixed] = useState(data)
-  console.log(fixed, 'fixed')
   return(
     <div className="lg:mx-20 lg:m-10">
       {/* Close Button */}
