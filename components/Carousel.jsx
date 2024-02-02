@@ -7,6 +7,7 @@ function Carousel ({array,  custom, handleIndex}){
 
   const [currentIndex, setCurrentIndex] = useState(0)
   const [time, setTime] = useState(4500)
+  console.log(array[currentIndex], 'text')
     
   const timeoutRef = useRef(null);
   function resetTimeout() {
@@ -20,21 +21,21 @@ function Carousel ({array,  custom, handleIndex}){
 
         handleIndex(currentIndex)
     }
-    console.log(array[currentIndex].image)
-    if(array[currentIndex].image.endsWith('res-render.png')){
-      setTime(10000)
-    }
-    else{
-      setTime(4500)
-    }
+    // console.log(array[currentIndex].image)
+    // if(array[currentIndex].image.endsWith('res-render.png')){
+    //   setTime(10000)
+    // }
+    // else{
+    //   setTime(4500)
+    // }
     // Automatically flip through Carousel
     resetTimeout();
     timeoutRef.current = setTimeout(
-      () =>
+      () => 
         setCurrentIndex((prevIndex) =>
           prevIndex === array.length - 1 ? 0 : prevIndex + 1
         ),
-      time
+      (array[currentIndex].timer ? array[currentIndex].timer : time)
     );
 
     return () => {

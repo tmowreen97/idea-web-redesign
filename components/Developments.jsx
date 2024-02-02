@@ -80,7 +80,8 @@ function Developments(){
         },
         {
           title: 'bd-res-2',
-          image: '/assets/projects/Walkthrough.gif'
+          image: '/assets/projects/Walkthrough.gif',
+          timer: 10000
         },
       ],
       location:"LOCATION",
@@ -166,6 +167,7 @@ function Developments(){
                   <Carousel 
                     array={projects} 
                     handleIndex = {handleIndex}
+
                     // xl:w-[700px] xl:h-[490px] lg:w-[500px] lg:h-[400px] md:w-[400px] md:h-[300px] w-[275px] h-[200px] 
                     custom={"2xl:w-[775px] 2xl:h-[500px] xl:w-[675px] xl:h-[425px] lg:w-[625px] lg:h-[375px] md:w-[550px] md:h-[300px] w-[325px] h-[225px] rounded-2xl bg-center bg-cover hover:scale-[102%] duration-500 transform"}
                   /> 
