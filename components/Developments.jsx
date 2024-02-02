@@ -68,15 +68,19 @@ function Developments(){
     {
       id:1,
       name: 'C24-01',
-      image: "/assets/projects/bd-res-render.png",
+      image: "/assets/projects/bd-render.png",
       images_array: [
         {
           title: 'bd-res-1',
+          image: '/assets/projects/bd-render.png'
+        },
+        {
+          title: 'bd-res-2',
           image: '/assets/projects/bd-res-render.png'
         },
         {
           title: 'bd-res-2',
-          image: '/assets/projects/bd-res-plan.png'
+          image: '/assets/projects/Walkthrough.gif'
         },
       ],
       location:"LOCATION",
@@ -112,19 +116,11 @@ function Developments(){
       location: "LOCATION",
       year: "YEAR",
       sector: "Educational/Institutional",
-      image: "/assets/need.jpeg",
+      image: "/assets/projects/comm-complex.png",
       images_array: [
         {
           title: 'eefi-1',
-          image: '/assets/filler/filler-7.jpg'
-        },
-        {
-          title: 'eefi-2',
-          image: '/assets/filler/filler-8.jpg'
-        },
-        {
-          title: 'eefi-3',
-          image: '/assets/filler/filler-9.jpg'
+          image: '/assets/projects/comm-complex.png'
         },
       ],
       desc: [
