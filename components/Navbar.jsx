@@ -10,7 +10,7 @@ import { AiOutlineClose, AiOutlineMenu, AiFillInstagram, AiFillFacebook, AiFillL
 const Navbar = ({setLightLogo, lightLogo}) => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState('transparent');
-  const [textColor, setTextColor] = useState('white');
+  const [textColor, setTextColor] = useState('');
   
   const router = useRouter();
 
@@ -26,12 +26,14 @@ const Navbar = ({setLightLogo, lightLogo}) => {
     const changeColor = () => {
       if (window.scrollY >= 25) {
         setColor('#198363');
+        setTextColor("#CCFFCC")
         
         if (setLightLogo) {
           setLightLogo(true)
         }
       } else {
         setColor('transparent');
+        setTextColor("#FFFF00")
         if (setLightLogo) {
           setLightLogo(false)
         }
@@ -48,22 +50,22 @@ const Navbar = ({setLightLogo, lightLogo}) => {
       style={{ backgroundColor: `${color}`, opacity:40}}
       className='fixed left-0 top-0 w-full z-10 ease-in duration-200 tracking-wider'
     >
-      <div className='w-screen h-full m-auto flex justify-between items-center p-3 text-primary_text ml-1'>
+      <div className='w-screen h-full m-auto flex justify-between items-center p-3 ml-1 ' >
         {/* logo */}
         <motion.div
         
         >
           <Link href='/'>
-            {/* style={{ color: `${textColor}` }} */}
+            
             {lightLogo ? <Image src={'/assets/logos/nav-bar-updated.png'} width={300} height={100} alt={'light_logo'} /> : <Image src={'/assets/logos/logo-landing.png'} width={150} height={100} alt={'dark_logo'} />}
           </Link>
         </motion.div>
         {/* nav bar */}
-        <ul style={{ color: '#FFFFFF'}} className='hidden sm:flex'>
+        <ul color={{textColor}} className='hidden sm:flex text-[#94FA94]'>
           <li className='p-4'>
           <div className="dropdown inline-block relative">
           <button aria-label='about_button' className="inline-flex items-center ">
-            <p className="mr-1 tracking-wide" id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>About</p>
+            <p className="mr-1 tracking-wide text-[#94FA94]" id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>About</p>
             <span id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}><BiChevronDown /></span>
           </button>
           <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 text-center">
@@ -76,16 +78,16 @@ const Navbar = ({setLightLogo, lightLogo}) => {
           </ul>
         </div>
           </li> 
-          <li className='m-2 p-2 hover:bg-button_bg text-primary_text  rounded-xl'>
+          <li className='m-2 p-2 hover:bg-button_bg   rounded-xl'>
             <Link href='/#developments' id={router.asPath == "/#developments" ? "active" : ""}>Developments</Link>
           </li>
-          <li className='m-2 p-2 hover:bg-button_bg text-primary_text rounded-xl'>
+          <li className='m-2 p-2 hover:bg-button_bg  rounded-xl'>
             <Link href='/services' id={router.pathname == "/services" ? "active" : ""}>Services</Link>
           </li>
-          <li className='m-2 p-2 hover:bg-button_bg text-primary_text rounded-xl'>
+          <li className='m-2 p-2 hover:bg-button_bg rounded-xl'>
             <Link href='/culture' id={router.pathname == "/culture" ? "active" : ""}>Culture</Link>
           </li>
-          <li className='m-2 p-2 hover:bg-button_bg text-primary_text rounded-xl'>
+          <li className='m-2 p-2 hover:bg-button_bg  rounded-xl'>
             <Link href='/contact' id={router.pathname == "/contact" ? "active" : ""}>Contact</Link>
           </li>
         </ul>
