@@ -62,8 +62,6 @@ function Carousel ({array,  custom, handleIndex}){
     setCurrentIndex(slideIndex);
   };
 
-  console.log(array)
-
   return (
     <div className="relative group items-center justify-center z-5">
 
