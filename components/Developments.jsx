@@ -198,7 +198,7 @@ function Developments(){
                
               </div>
               <div className="flex justify-center">
-              <div className="bg-secondary rounded-xl lg:max-w-[525px] md:max-w-[570px] max-w-[325px] m-2 relative xl:h-auto h-full">
+              <div className="bg-secondary rounded-xl lg:max-w-[525px] md:max-w-[570px] max-w-[325px] m-2 relative xl:h-auto md:h-full h-[650px]">
                 <div className=" xl:p-10 p-4 w-full font-light mb-8 md:mb-0">
                   <h2 className="text-dark_red text-shadow-sm shadow-red_heading/40 font-medium text-4xl">{projects[projectSelect].name}</h2>
                   <h3 className="text-2xl">{projects[projectSelect].location}</h3>
