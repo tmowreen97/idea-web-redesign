@@ -51,7 +51,7 @@ function Description({data, handleClick}){
             {fixed.desc.map((line, i)=> {
             return(
               <div>
-                <p key={i} className="2xl:text-xl">{line}</p>
+                <p key={i} className="2xl:text-lg">{line}</p>
               </div>
             )
           })}
@@ -65,7 +65,7 @@ function Description({data, handleClick}){
               <ul>
                 {fixed.proj_features.map((feature)=> {
                   return(
-                    <li className="list-disc ml-7 text-primary_text 2xl:text-xl">{feature}</li>
+                    <li className="list-disc ml-7 text-primary_text 2xl:text-lg">{feature}</li>
                   )
                 })}
               </ul> 

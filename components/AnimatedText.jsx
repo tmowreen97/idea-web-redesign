@@ -46,7 +46,7 @@ export default function AnimatedText({text}){
           <motion.span
             variants={letter}
             key={index}
-            className="md:text-6xl text-2xl font-thin py-5 tracking-wider md:m-4 m-1"
+            className="lg:text-6xl md:text-4xl text-2xl font-thin py-5 tracking-wider lg:m-4 md:m-2 m-1"
           >
             {word}
           </motion.span>

@@ -6,32 +6,40 @@ import AnimatedText from "./AnimatedText";
 function OurTeam (){
 
   const words = "Manifesting World Class Ideas"
-
+  
+   
+  
+  
+  
   const main_team = [
+    // kazi
     {
       name: 'Kazi Karim',
       title: 'Introducing Kazi: Our Visionary Founder & Managing Principal',
       heading: '',
       body: [
-        "At the helm of Inter-Disciplinary Engineering Associates, LLC (IDEA) stands Kazi, the visionary Founder & Managing Principal. His leadership fuels the strategic growth of IDEA's integrated Mechanical, Electrical (including Fire Alarm), Plumbing, and Fire Protection (MEP-FP) engineering practice. Drawing from an extensive portfolio of Design and Forensics engineering expertise, Kazi is uniquely experienced to lead and accommodate complex and demanding project engagements.",
-        "Prior to founding IDEA, Kazi's journey included impactful roles at prominent engineering establishments including AltieriSeborWieber LLC (Altieri) and DeSimone Consulting Engineers, LLC (New York). With a wealth of diverse professional experience and knowledge, Kazi continues to drive innovation and excellence, translating engineering visions into tangible accomplishments and developments for the Architectural Engineering industry."
+        "As President, Kazi leads the strategic growth and development of Inter-Disciplinary Engineering Associates, Construction Solutions Company in Bangladesh.",
+        "Kazi’s extensive portfolio of Design, Construction and Forensics engineering experience empowers him to service and excel at accommodating very complex and demanding projects. As a project manager and lead engineer, he has successfully managed and led design & construction efforts of multiple sustainable LEED certified facilities in various sectors of the construction industry including performance art centers, museums/galleries, higher education buildings, historical buildings, mixed-use, industrial warehouses, commercial spaces, parks and recreational centers and high-rise & high-end residences.",
+        "A very detailed approach and extensive experience in project management, design development and construction administration has empowered Kazi to complete multiple large projects throughout the country. Kazi has managed and designed complex MEP-FP projects including Electrical designs of normal and emergency power systems, lighting control systems, emergency lighting systems, fire alarm systems, as well as low voltage systems (telecommunications systems, security systems, etc.).",
+        "Kazi’s professional experience includes MEP-FP Engineering services, at prominent US Engineering Companies including AltieriSeborWieber LLC (Altieri), and DeSimone Consulting Engineers, LLC."
       ],
       contact: "/assets/PEKaziAKarimUPDATED.msg",
       linkedin: "https://www.linkedin.com/in/kazi-a-karim-p-e-2a3a3416/",
       fun_fact: "Kazi is an enthusiastic sports fan, always willing to hit the field or harwood (football & basketball) for a good competitive workout. His experience as a College and High-School Quarterback empowers Kazi to joyfully Quarterback the growth and development of IDEA.",
       image: '/assets/kazi_2.jpeg'
     },
+    // ASHIK
+    
+ 
+
     {
       name: 'Ashik Chowdhury',
-      title: 'Introducing Ashik: a Major Figure at IDEA CSC',
+      title: 'Introducing Ashik: Our Construction Services Lead',
       heading: "",
       body:[
-        "In his role as Principal and Electrical Department Lead, Vinoo spearheads overall client engagement, ensuring a seamless experience for all opportunities.",
-        "Vinoo brings 12+ years of detailed Electrical, Fire Alarm, Lighting Controls and Low Voltage (Information Technology, Security, Audio/Visual, etc.) System Design experience to our growing team. With a diverse set of project experience and expertise in multiple sectors of the industry including high-rise residential, mission critical, industrial, and cultural institutions, Vinoo is able to seamlessly service and manage projects of all scales and types. Vinoo has serviced and completed multiple LEED certified projects."
-
+        "In his role as Construction Leadm Mr.Ashik leads our Construction services including Construction Management assignments. He utilizes his 15+ years of Construction Management experience to empower IDEA CSC’s Construction Services offerings. Mr. Ashik also brings 10+ years of international management experience to our team.",
+        "His expertise includes, but is not limited to, Project Management, Construction Management, Project Coordination, Sub-Contractor Procurement & Management, Cost Estimation & Cost Control, Construction Project Schedule Development, Construction Bid Procurement, Equipment & Material Procurement and Permitting."
       ],
-      contact: "/assets/PERCDDVinooJankieUPDATED.msg",
-      linkedin: "https://www.linkedin.com/in/vinoo-jankie-pe-09206828/",
       fun_fact: "Vinoo has two kids and no time for fun… he also has a passion for history, and is an avid reader on the subject.",
       image: '/assets/ashik_3.jpeg'
     }
@@ -66,7 +74,7 @@ function OurTeam (){
         </div>
 
       
-      <div className=" md:p-40 p-10 mx-auto flex flex-col items-center justify-center">
+      <div className=" xl:p-40 p-10 mx-auto flex flex-col items-center justify-center">
         <AnimatedText text={words}/>
       </div>
       </motion.div>

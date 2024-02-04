@@ -70,7 +70,7 @@ function Developments(){
         },
         {
           title: 'bd-res-2',
-          image: '/assets/projects/Walkthrough.gif',
+          image: '/assets/projects/walkthrough-edited.gif',
           timer: 10000
         },
       ],
