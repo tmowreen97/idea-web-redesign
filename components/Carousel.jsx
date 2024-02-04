@@ -62,7 +62,7 @@ function Carousel ({array,  custom, handleIndex}){
     setCurrentIndex(slideIndex);
   };
 
-  
+  console.log(array)
 
   return (
     <div className="relative group items-center justify-center z-5">
@@ -76,15 +76,15 @@ function Carousel ({array,  custom, handleIndex}){
       >
       {/* Left Arrow */}
       
-      <div className="hidden group-hover:block absolute top-[50%] translate-x-0 translate-y-[-50%] left-2 text-2xl p-2 rounded-full text-black bg-slate-200/60 shadow-gray-600/90 hover:bg-slate-600/50 hover:text-[#F9FBFD]">
+      {array.length > 1 ? <div className="hidden group-hover:block absolute top-[50%] translate-x-0 translate-y-[-50%] left-2 text-2xl p-2 rounded-full text-black bg-slate-200/60 shadow-gray-600/90 hover:bg-slate-600/50 hover:text-[#F9FBFD]">
         <BsChevronCompactLeft onClick={()=> handleLeft()} size={40}/>
-      </div>
+      </div> : ""}
 
       {/* Right Arrow */}
       
-      <div className="hidden group-hover:block absolute top-[50%] translate-x-0 translate-y-[-50%] right-2 text-2xl p-2 rounded-full text-black bg-slate-200/60 shadow-gray-600/90 hover:bg-slate-600/50 hover:text-[#F9FBFD]">
+      {array.length > 1 ? <div className="hidden group-hover:block absolute top-[50%] translate-x-0 translate-y-[-50%] right-2 text-2xl p-2 rounded-full text-black bg-slate-200/60 shadow-gray-600/90 hover:bg-slate-600/50 hover:text-[#F9FBFD]">
         <BsChevronCompactRight onClick={()=> handleRight()} size={40}/>
-      </div>
+      </div> : ""}
       </motion.div>
       <div className=' flex  text-center  items-center justify-center md:py-6'>
         {array.map((current, i) => (
