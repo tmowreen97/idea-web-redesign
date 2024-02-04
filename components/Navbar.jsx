@@ -119,7 +119,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
               <Image src={'/assets/logos/logo-landing.png'} width={275} height={20}/>
 
           </div>
-            <ul className="justify-center items-center mx-[19%] mt-5">
+            <ul className="justify-center items-center mx-[19%] mt-5 text-primary_text">
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500 '>
               <Link href='/' id={router.pathname == "/" ? "active" : ""}>Home</Link>
             </li>
