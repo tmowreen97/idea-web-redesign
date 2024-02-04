@@ -2,7 +2,7 @@ import '@/styles/globals.css'
 import Navbar from '@/components/Navbar'
 // import { Urbanist } from 'next/font/google'
 import Footer from '@/components/Footer'
-import Foot from '@/components/Foot'
+import Head from 'next/head';
 import { Urbanist } from 'next/font/google'
 import { useState, useEffect, useReducer } from 'react'
 import {useRouter} from 'next/router'
@@ -25,6 +25,9 @@ export default function App({ Component, pageProps }) {
 
   return (
     <main className={urbanist.className}>
+      <Head>
+      <title>IDEA | Inter-Disciplinary Engineering Associates</title>
+      </Head>
       <Navbar setLightLogo={setLightLogo} lightLogo={lightLogo} />
       <Component {...pageProps} />
       <Footer logo={logo} setLogo={setLogo}/>
