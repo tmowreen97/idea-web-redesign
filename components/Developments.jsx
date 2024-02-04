@@ -176,7 +176,7 @@ function Developments(){
     setProjectSelect(index)
   }
   return(
-    <div id='developments' className="w-screen h-full bg-primary justify-center" onClick={()=> handleEscape()}>
+    <div id='developments' className="w-screen h-full bg-primary justify-center">
       <div className="justify-center items-center">
         <div  className={hide? "flex items-center justify-center lg:px-[10%] 2xl:px-[10%] bg-dark_bg/95" : "flex items-center justify-center lg:px-[10%] 2xl:px-[10%] py-10"}>
           <div className={hide ? "relative rounded-xl overflow-hidden hidden  h-full ease-in-out duration-300" : "relative rounded-xl overflow-hidden h-full ease-in-out duration-300"}>
