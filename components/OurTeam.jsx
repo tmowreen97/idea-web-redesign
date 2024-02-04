@@ -37,7 +37,7 @@ function OurTeam (){
       title: 'Introducing Ashik: Our Construction Services Lead',
       heading: "",
       body:[
-        "In his role as Construction Leadm Mr.Ashik leads our Construction services including Construction Management assignments. He utilizes his 15+ years of Construction Management experience to empower IDEA CSC’s Construction Services offerings. Mr. Ashik also brings 10+ years of international management experience to our team.",
+        "In his role as Construction Lead Mr.Ashik leads our Construction services including Construction Management assignments. He utilizes his 15+ years of Construction Management experience to empower IDEA CSC’s Construction Services offerings. Mr. Ashik also brings 10+ years of international management experience to our team.",
         "His expertise includes, but is not limited to, Project Management, Construction Management, Project Coordination, Sub-Contractor Procurement & Management, Cost Estimation & Cost Control, Construction Project Schedule Development, Construction Bid Procurement, Equipment & Material Procurement and Permitting."
       ],
       fun_fact: "Vinoo has two kids and no time for fun… he also has a passion for history, and is an avid reader on the subject.",
