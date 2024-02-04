@@ -6,11 +6,6 @@ import AnimatedText from "./AnimatedText";
 function OurTeam (){
 
   const words = "Manifesting World Class Ideas"
-  
-   
-  
-  
-  
   const main_team = [
     // kazi
     {
@@ -78,38 +73,7 @@ function OurTeam (){
         <AnimatedText text={words}/>
       </div>
       </motion.div>
-      
-      {/* <motion.div 
-      style={{ overflow: "hidden", display: "flex", fontSize: "2rem" }}
-      variants={textContainer}
-      initial="hidden"
-      animate="visible"
-      >
-        {words.map((word, index) => (
-        <motion.span
-          variants={textChild}
-          style={{ marginRight: "5px" }}
-          key={index}
-        >
-          {word}
-        </motion.span>
-      ))}
-        
-      </motion.div> */}
-      {/* <div className="">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mx-20 pb-20">
-          {second_team.map((member)=> {
-            return(
-              <div className="relative hover:cursor-pointer">
-                <Card member={member}/>
-
-              </div>
-              
-            )
             
-          })
-          } */}
-      
 
       
     </div>
