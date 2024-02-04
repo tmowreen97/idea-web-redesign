@@ -9,12 +9,12 @@ import Carousel from "./Carousel";
 function Description({data, handleClick}){
   const[fixed, setFixed] = useState(data)
   return(
-    <div className="lg:mx-20 lg:m-10">
+    <div className=" lg:m-10">
       {/* Close Button */}
-      <div className="flex justify-end lg:my-[-10px] m-2">
+      <div className="flex justify-end m-2 ">
         <AiOutlineCloseCircle 
         onClick={()=> handleClick(fixed.id)}
-        className="cursor-pointer bg-button_bg hover:bg-dark_red hover:text-beige_text text-shadow-lg shadow-black rounded-full lg:text-4xl text-2xl 2xl:z-10" />
+        className="cursor-pointer bg-button_bg hover:bg-dark_red hover:text-beige_text text-shadow-lg shadow-black rounded-full lg:text-4xl text-2xl" />
       </div>
       <div className="2xl:flex gap-10">
         {/* Carousel */}
@@ -41,14 +41,17 @@ function Description({data, handleClick}){
         
         {/* Description */}
         <div className="2xl:m-0 md:m-10 m-4">
-          <h1 className="2xl:text-7xl lg:text-6xl md:text-5xl text-4xl">{fixed.name}</h1>
-          <h2 className="2xl:text-4xl lg:text-3xl text-2xl">{fixed.location}</h2>
-          <h2 className="2xl:text-4xl lg:text-3xl text-2xl">{fixed.year}</h2>
+          <div className="py-2">
+            <h1 className="2xl:text-5xl lg:text-4xl text-3xl">{fixed.name}</h1>
+            <h2 className="2xl:text-3xl text-2xl">{fixed.location}</h2>
+            <h2 className="2xl:text-3xl text-2xl">{fixed.year}</h2>
+          </div>
+          
           <div>
             {fixed.desc.map((line, i)=> {
             return(
               <div>
-                <p key={i} className="2xl:text-lg">{line}</p>
+                <p key={i} className="2xl:text-xl">{line}</p>
               </div>
             )
           })}
@@ -58,20 +61,20 @@ function Description({data, handleClick}){
         <div className="justify-left justify-between">
           {/* Project Features */}
           <div className=" py-2">
-            <h2 className="2xl:text-4xl lg:text-3xl text-2xl my-1">Project Features:</h2>
+            <h2 className="lg:text-3xl text-2xl my-1">Project Features:</h2>
               <ul>
                 {fixed.proj_features.map((feature)=> {
                   return(
-                    <li className="list-disc ml-7 text-primary_text 2xl:text-lg">{feature}</li>
+                    <li className="list-disc ml-7 text-primary_text 2xl:text-xl">{feature}</li>
                   )
                 })}
               </ul> 
           </div>
           <div className="py-2">
-            <h2 className="2xl:text-4xl lg:text-3xl text-2xl">Services Provided:</h2>
+            <h2 className="lg:text-3xl text-2xl">Services Provided:</h2>
             <div className="sm:flex gap-4">
               <div>
-                <h2 className="2xl:text-2xl lg:text-xl text-lg underline my-1">Construction Services</h2>
+                <h2 className="lg:text-xl text-lg underline my-1">Construction Services</h2>
                 <ul>
                   {fixed.const_services.map((service)=> {
                     return(
@@ -80,8 +83,9 @@ function Description({data, handleClick}){
                   })}
                 </ul>
               </div>
-              <div>
-                <h2 className="2xl:text-2xl lg:text-xl text-lg underline my-1">Engineering Services</h2>
+              {fixed.eng_services ? 
+                <div>
+                <h2 className="lg:text-xl text-lg underline my-1">Engineering Services</h2>
                 <ul>
                   {fixed.eng_services.map((service)=> {
                     return(
@@ -89,7 +93,7 @@ function Description({data, handleClick}){
                     )
                   })}
                 </ul>
-              </div> 
+              </div> : ""}
             </div>
             
           </div>

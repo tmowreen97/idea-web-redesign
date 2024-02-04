@@ -16,13 +16,142 @@ function Developments(){
   }
 
   const projects = [
-    // 5 STORY
+    // BD RESIDENCE
     {
-      id: 0,
-      name: 'C23-01',
-      location: 'LOCATION',
-      sector: 'Residential',
-      year: 'YEAR',
+      id:1,
+      name: 'BD HIGH-END RESIDENCE',
+      location:"Comilla, Bangladesh",
+      size: '3500 SF / 325 SQM',
+      sector: "Residential",
+      year: "JULY 2024",
+      services: [
+        {
+          alt: 'bd-res-service-1',
+          service: 'Engineering Services'
+        },
+        {
+          alt: 'bd-res-service-1',
+          service: 'Construction Services'
+        }
+      ],
+      desc: [
+        "Renovation and addition to existing single family residence. Existing condition includes 2-Bedrooms, 2-Bathrooms; located in Comilla, Bangladesh.",
+        "Residence will be upgraded to American style high-end facilities and systems. Completed project will include 4-Bedrooms and 3.5-Bathrooms. The roof level floor will be programmed with a family gathering room (Light Room). Project will also include erection of a separate utility building structure."
+      ],
+      proj_features:[
+        "Emergency Power (Generator) System",
+        "Central Mechanical (ducted) system with multiple zones.",
+        "Central domestic hot water system.",
+        "Wired surveillance and security system.",
+        "Rain water harvesting system.",
+      ],
+      const_services:[
+        'Construction Management',
+        "Design-Build",
+        "Sub-Consultant Procurement & Management",
+        "Cost Estimation & Cost Control",
+        "Construction Bid Procurement",
+      ],
+      eng_services:[
+        "Architectural Design",
+        "Electrical Design",
+        "Mechanical (HVAC) Design",
+        "Plumbing Design",
+      ],
+      image: "/assets/projects/bd-render.png",
+      images_array: [
+        {
+          title: 'bd-res-1',
+          image: '/assets/projects/bd-render.png'
+        },
+        {
+          title: 'bd-res-2',
+          image: '/assets/projects/bd-res-render-1.png'
+        },
+        {
+          title: 'bd-res-2',
+          image: '/assets/projects/Walkthrough.gif',
+          timer: 10000
+        },
+      ],
+    },
+    // COMMUNITY COMPLEX
+    {
+      id: 2,
+      name: 'IDEA COMMUNITY COMPLEX CENTER',
+      location: "Comilla, Bangladesh",
+      size: "36,000 SF / 3,345 SQM",
+      year: "JULY 2026",
+      sector: "Mixed-Use",
+      desc: [
+        "The project will be a new state-of-the-art 36,000 SF / 3,345 SQM Mixed-Use community facility. The program will include a Non-Profit Foundation Community center, Learning center, Commercial/Marketing area,  Offices, Residential units, Recreational facilities, Restaurants/Cafes, etc.",
+        "Project will include sustainable and energy efficient design and systems.",
+      ],
+      proj_features:[
+        'Solar Photovoltaic (PV) System',
+        "Energy efficient system.",
+        "Emergency Power (Generator) system.",
+        "Central Mechanical (ducted) system with multiple zones. ",
+        "Central domestic hot water system.",
+        "Wired Surveillance and security system.",
+        "Rain water harvesting system.",
+      ],
+      const_services:[
+        'Construction Management',
+        "Design-Build",
+        "Sub-Consultant Procurement & Management",
+        "Cost Estimation & Cost Control",
+        "Construction Bid Procurement",
+      ],
+      eng_services:[
+        'Architectural Design',
+        "Electrical Design",
+        "Mechanical (HVAC) Design",
+        "Plumbing Design",
+        "Fire Protection (Sprinkler) System",
+        "Low Voltage (Security & Information Technology) Design",
+      ],
+      image: "/assets/projects/comm-complex.png",
+      images_array: [
+        {
+          title: 'eefi-1',
+          image: '/assets/projects/comm-complex.png'
+        },
+      ],
+    },
+    // 5 STORY
+
+    {
+      id: 3,
+      name: '5-STORY RESIDENTIAL BUILDING',
+      location: 'Comilla, Bangladesh',
+      size:'9,000 SF / 836 SQM',
+      year: '2023',
+      sector: 'Mid-High Rise Residential',
+      desc: [
+        "The project is a 5-Story Mid-Rise Multi-Unit Residential building development. The building consists of nine (9) high-end residential units.",
+      ],
+      proj_features:[
+        "Emergency Power (IPS) System.",
+        "Wire Internet System.",
+        "Power Infrastructure for AC system.",
+        "Wired Surveillance and security system.",
+        "Digital intercom system.",
+      ],
+      const_services:[
+        'Construction Management',
+        "Owner’s Representation",
+        "Construction Project Schedule Development",
+        "Sub-Contractor Procuremtn & Management",
+        "Cost Estimation & Cost Control",
+        "Construction Bid Procurement ",
+        "Equipment & Material Procurement",
+        "Permitting",
+        "Construction Site Supervision",
+        "Construction Status Reporting",
+        "Site Safety Coordination & Supervision",
+        "Inspections and Completed Operations",
+      ],
       image: "/assets/need.jpeg",
       images_array: [
         {
@@ -37,116 +166,9 @@ function Developments(){
           title: 'eefi-3',
           image: '/assets/filler/filler-3.jpg'
         },
-
-        
-      ],
-      desc: [
-        "5-STORY RESIDENTIAL BUILDING",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-      ],
-      proj_features:[
-        'First Feature',
-        'Second Feature',
-        'Third Feature',
-        'Fourth Feature',
-      ],
-      const_services:[
-        'First Service',
-        'Second Service',
-        'Third Service',
-        'Fourth Service',
-      ],
-      eng_services:[
-        'Fifth Service',
-        'Sixth Service',
-        'Seventh Service',
-        'Eighth Service',
       ],
 
     },
-    // BD RESIDENCE
-    {
-      id:1,
-      name: 'C24-01',
-      image: "/assets/projects/bd-render.png",
-      images_array: [
-        {
-          title: 'bd-res-1',
-          image: '/assets/projects/bd-render.png'
-        },
-        {
-          title: 'bd-res-2',
-          image: '/assets/projects/bd-res-render.png'
-        },
-        {
-          title: 'bd-res-2',
-          image: '/assets/projects/Walkthrough.gif',
-          timer: 10000
-        },
-      ],
-      location:"LOCATION",
-      sector: "Residential",
-      year: "YEAR",
-      desc: [
-        "BD HIGH-END RESIDENCE",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-      ],
-      proj_features:[
-        'First Feature',
-        'Second Feature',
-        'Third Feature',
-        'Fourth Feature',
-      ],
-      const_services:[
-        'First Service',
-        'Second Service',
-        'Third Service',
-        'Fourth Service',
-      ],
-      eng_services:[
-        'Fifth Service',
-        'Sixth Service',
-        'Seventh Service',
-        'Eighth Service',
-      ],
-    },
-    // COMMUNITY COMPLEX
-    {
-      id: 2,
-      name: 'C24-02',
-      location: "LOCATION",
-      year: "YEAR",
-      sector: "Educational/Institutional",
-      image: "/assets/projects/comm-complex.png",
-      images_array: [
-        {
-          title: 'eefi-1',
-          image: '/assets/projects/comm-complex.png'
-        },
-      ],
-      desc: [
-        "IDEA COMMUNITY COMPLEX",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-      ],
-      proj_features:[
-        'First Feature',
-        'Second Feature',
-        'Third Feature',
-        'Fourth Feature',
-      ],
-      const_services:[
-        'First Service',
-        'Second Service',
-        'Third Service',
-        'Fourth Service',
-      ],
-      eng_services:[
-        'Fifth Service',
-        'Sixth Service',
-        'Seventh Service',
-        'Eighth Service',
-      ],
-    }
   ]
   //Grabs index from Carousel component
   function handleIndex(index){
@@ -156,7 +178,7 @@ function Developments(){
     <div id='developments' className="w-screen h-full bg-primary justify-center">
       <div className="justify-center items-center">
         <div className={hide? "flex items-center justify-center lg:px-[10%] 2xl:px-[10%] bg-dark_bg/95" : "flex items-center justify-center lg:px-[10%] 2xl:px-[10%] py-10"}>
-          <div className={hide ? "relative rounded-xl overflow-hidden hidden 2xl:block h-full ease-in-out duration-300" : "relative rounded-xl overflow-hidden h-full ease-in-out duration-300"}>
+          <div className={hide ? "relative rounded-xl overflow-hidden hidden  h-full ease-in-out duration-300" : "relative rounded-xl overflow-hidden h-full ease-in-out duration-300"}>
             {/* TITLE */}
             <div>
               <h1 className="2xl:text-[1100%] lg:text-9xl text-[350%] p-2 font-thin lg:m-12 lg:text-justify text-center">Developments</h1>
@@ -176,16 +198,13 @@ function Developments(){
               </div>
               <div className="flex justify-center">
               <div className="bg-secondary rounded-xl lg:max-w-[525px] md:max-w-[570px] max-w-[325px] m-2 relative xl:h-auto h-full">
-                <div className=" xl:p-10 p-4 w-full">
-                  <h2 className="text-dark_red text-shadow-sm shadow-red_heading/40 font-medium">{projects[projectSelect].name}</h2>
+                <div className=" xl:p-10 p-4 w-full font-light">
+                  <h2 className="text-dark_red text-shadow-sm shadow-red_heading/40 font-medium text-4xl">{projects[projectSelect].name}</h2>
                   <h3 className="text-2xl">{projects[projectSelect].location}</h3>
                   <h3 className="text-2xl">{projects[projectSelect].year}</h3>
-                  {projects[projectSelect].desc.map((line)=> {
-                    return(
-                      <p key={line} className="lg:text-xl text-lg leading-[25px]">{line}</p>
-                    )
-                  })}
-                  
+                  <h3 className="text-2xl">{projects[projectSelect].size}</h3>
+                  <h3 className="text-2xl">{projects[projectSelect].sector}</h3>
+                  <p className="lg:text-xl text-lg leading-[25px]">{projects[projectSelect].desc[0]}</p>
                 </div>
                 <div className="justify-center items-center flex m-10">
                   <button 
@@ -207,9 +226,9 @@ function Developments(){
           exit= {{opacity:0.5, transition:{duration:2}}}
           animate={{opacity:1, transition:{duration:.5}}}
           className="">
-          <div className="w-full h-full bg-none 2xl:fixed top-0 bottom-0 right-0 left-0 z-10">
+          <div className="w-full h-full bg-none top-0 bottom-0 right-0 left-0 z-10">
             <div className="2xl:z-20 flex h-full w-full items-center justify-center bg-dark_bg/95 ease-in-out duration-200">
-              <div className="justify-center items-center bg-accent_3 text-left 2xl:p-6 p-1 rounded-2xl z-9 2xl:z-20 lg:m-20 m-6 h-full md:h-auto max-w-[2500px]  bottom-[0]">
+              <div className="justify-center items-center bg-accent_3 text-left  p-1 rounded-2xl z-9 lg:m-20  m-6 h-full md:h-auto max-w-[2500px]  bottom-[0]">
                 <Description data={projects[projectSelect]} handleClick={handleClick}/>
                 {/* <h1 className="text-7xl">{projects[projectSelect].name}</h1> */}
               </div>

@@ -453,11 +453,11 @@ function ServicesPage(){
               <div id='subsection' className="lg:grid lg:grid-cols-2 items-center lg:gap-10 lg:p-0 xl:mx-[20%] lg:mb-10 justify-center">
               {construction_services.map((service)=> {
                 return(
-                  <div key={service.title} className="xl:h-[625px] flex justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
+                  <div key={service.title} className="xl:h-[625px] flex justify-center text-dark_text p-5  py-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
                     <div className="justify-center">
                       {/* List Title w Image*/}
                       <div className="items-center justify-evenly flex my-2">
-                        <h1 className="text-dark_text text-3xl xl:text-4xl p-5">{service.title}</h1>
+                        <h1 className="text-dark_text text-3xl xl:text-4xl p-4">{service.title}</h1>
                         <Image src={service.icon} width={70} height={100} className="bg-black/10 rounded-2xl py-2"/>
                       </div>
                       <div className="flex justify-center">
