@@ -205,7 +205,7 @@ function Developments(){
                 <div className="justify-center items-center flex m-10">
                   <button 
                   onClick={()=> handleClick()}
-                  className="bg-button_bg hover:bg-button_bg_2  p-3 rounded-xl absolute bottom-8 tracking-wide font-light ease-in-out duration-300">Read More</button>
+                  className="bg-button_bg hover:bg-button_bg_2  p-3 mt-[20px] md:mt-0 rounded-xl absolute bottom-8 tracking-wide font-light ease-in-out duration-300">Read More</button>
                 </div>
               </div>
               </div>
