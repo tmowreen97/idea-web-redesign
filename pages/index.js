@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <main className={`${urbanist.variable} font-sans tracking-wider justify-center items-center h-full`}>
-      <Navbar setLightLogo={setLightLogo} lightLogo={lightLogo} />
+      {/* <Navbar setLightLogo={setLightLogo} lightLogo={lightLogo} /> */}
       <Hero heading='We Empower Ideas'/>
       <Intro/>
       <AboutUs/>
