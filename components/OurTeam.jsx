@@ -10,7 +10,7 @@ function OurTeam (){
     // kazi
     {
       name: 'Kazi Karim',
-      title: 'Introducing Kazi: Our Visionary Founder & Managing Principal',
+      title: 'Introducing Kazi: Our Visionary Founder & President',
       heading: '',
       body: [
         "As President, Kazi leads the strategic growth and development of Inter-Disciplinary Engineering Associates, Construction Solutions Company in Bangladesh.",
