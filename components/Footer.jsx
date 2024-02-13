@@ -12,7 +12,7 @@ export default function Footer({logo}){
           <div className="items-center justify-center text-2xl font-light flex md:p-0 px-5" >
           { logo ? 
           <div className="lg:mx-4">
-            <Image src={'/assets/logos/logo-transparent.png'} width={275} height={100}/>
+            <Image src={'/assets/logos/logo-transparent-updated.png'} width={275} height={100}/>
           </div> 
           : 
           // mx-3 mt-[20%] md:mx-0 md:mt-0 
