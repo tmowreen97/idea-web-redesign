@@ -61,11 +61,11 @@ const Navbar = ({setLightLogo, lightLogo}) => {
           </Link>
         </motion.div>
         {/* nav bar */}
-        <ul color={{textColor}} className='hidden sm:flex text-[#94FA94]'>
+        <ul color={{textColor}} className='hidden sm:flex text-primary_text'>
           <li className='p-4'>
           <div className="dropdown inline-block relative">
           <button aria-label='about_button' className="inline-flex items-center ">
-            <p className="mr-1 tracking-wide text-[#94FA94]" id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>About</p>
+            <p className="mr-1 tracking-wide text-primary_text" id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>About</p>
             <span id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}><BiChevronDown /></span>
           </button>
           <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 text-center">
