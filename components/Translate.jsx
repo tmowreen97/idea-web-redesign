@@ -31,13 +31,13 @@ const Translate = ({setEnglish, english}) => {
         className='text-primary_text flex w-fit rounded-lg'>
           <div 
           onClick={() => {handleExt()}}
-          className=' rounded-lg w-fit flex items-center justify-center bg-accent_3 cursor-pointer p-3' >
+          className=' rounded-lg w-fit flex items-center justify-center bg-accent_3 cursor-pointer lg:p-3 p-1' >
             {
               !show ? 
               <MdKeyboardDoubleArrowLeft  
-              className='text-2xl'/> :
+              className='lg:text-2xl text-lg'/> :
               <MdKeyboardDoubleArrowRight 
-              className='text-2xl'/>
+              className='lg:text-2xl text-lg'/>
             }
           </div>
           
@@ -54,7 +54,7 @@ const Translate = ({setEnglish, english}) => {
           // }}
           
           transition={{duration:1}}
-          className='p-4 items-center justify-center bg-accent_3 rounded-lg flex'>
+          className='xl:p-4 lg:p-1 items-center justify-center bg-accent_3 rounded-lg flex'>
             <div className='items-center m-2'>
               <p className=''>Would you like to change the language?</p>
               <div className='flex items-center justify-center'>

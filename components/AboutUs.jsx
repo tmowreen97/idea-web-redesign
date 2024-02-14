@@ -13,13 +13,13 @@ const AboutUs = () => {
 
   return (
     <div className='bg-primary w-screen'>
-      <div className='absolute my-32'>
+      <div className='absolute 2xl:my-32 '>
         <Translate setEnglish={setEnglish} english={english}/>
       </div>
       <div className='justify-center items-center flex'>
       <div className='m-10'>
         <div className='lg:grid lg:grid-cols-2'>
-          <h1 className="lg:text-[1100%] text-[525%] font-thin text-center">About</h1>
+          <h1 className="lg:text-[1100%] text-[525%] font-thin text-center md:pt-0 pt-5">About</h1>
         </div>
         <div className='lg:grid lg:grid-cols-2 justify-center gap-2'>
           {/* 1st column */}
