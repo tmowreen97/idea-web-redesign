@@ -33,7 +33,7 @@ const Translate = ({setEnglish, english}) => {
           onClick={() => {handleExt()}}
           className=' rounded-lg w-fit flex items-center justify-center bg-accent_3 cursor-pointer p-3' >
             {
-              show ? 
+              !show ? 
               <MdKeyboardDoubleArrowLeft  
               className='text-2xl'/> :
               <MdKeyboardDoubleArrowRight 

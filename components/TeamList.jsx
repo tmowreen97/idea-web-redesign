@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
  
-function TeamList({member}){
+function TeamList({member, english}){
 
   const [showDetails, setShowDetails] = useState(false)
   return(
@@ -39,12 +39,19 @@ function TeamList({member}){
           </div>
           <div className="flex items-center justify-center">
           <div>
-            {member.body.map((body_text, index)=> {
+            { english ? 
+            member.body.map((body_text, index)=> {
               return(
                  <p key={index} className="m-4 lg:text-xl ">{body_text}</p>
               )
              
-            })}
+            }) : 
+            member.body_bangla.map((body_text, index)=> {
+              return(
+                 <p key={index} className="m-4 lg:text-xl ">{body_text}</p>
+              )
+            })
+            }
           </div>
           </div>
           

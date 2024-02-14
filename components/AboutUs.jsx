@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const AboutUs = () => {
   const [show, setShow] = useState(false)
-  const [english, setEnglish] = useState(false)
+  const [english, setEnglish] = useState(true)
   const traits = [
     'Inter-Disciplinary', 'Sustainable', 'Automation', 'Small-Business', 'Client-Care', 'Ingenuity'
   ]
@@ -13,7 +13,7 @@ const AboutUs = () => {
 
   return (
     <div className='bg-primary w-screen'>
-      <div className='absolute my-20'>
+      <div className='absolute my-32'>
         <Translate setEnglish={setEnglish} english={english}/>
       </div>
       <div className='justify-center items-center flex'>
