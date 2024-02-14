@@ -46,15 +46,13 @@ const Translate = ({setEnglish, english}) => {
             opacity: show ? [0.5,0] : 1,
             x: show ? -10 : 0
           }}
+          transition={{
+            duration:1
+          }}
           initial={{
             opacity:0 , x:-50
           }}
-          // whileInView={{
-          //   opacity: show ? 1 :0,
-          // }}
-          
-          transition={{duration:1}}
-          className='xl:p-4 lg:p-1 items-center justify-center bg-accent_3 rounded-lg flex'>
+          className='xl:p-3 lg:p-1 items-center justify-center bg-accent_3 rounded-lg flex'>
             <div className='items-center m-2'>
               <p className=''>Would you like to change the language?</p>
               <div className='flex items-center justify-center'>

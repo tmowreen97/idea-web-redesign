@@ -6,8 +6,11 @@ import Image from 'next/image'
 const AboutUs = () => {
   const [show, setShow] = useState(false)
   const [english, setEnglish] = useState(true)
-  const traits = [
+  const english_traits = [
     'Inter-Disciplinary', 'Sustainable', 'Automation', 'Small-Business', 'Client-Care', 'Ingenuity'
+  ]
+  const bangla_traits = [
+    'ইন্টার-ডিসিপ্লিনারি', 'টেকসই','অটোমেশন','ছোট ব্যবসা','ক্লায়েন্ট-কেয়ার','চতুরতা'
   ]
 
 
@@ -36,7 +39,7 @@ const AboutUs = () => {
               </p>
               : 
               <p className='my-[5%]'>
-                IDEA CSC স্থাপতিক শিল্প নির্মাণ শিল্পে ঐচ্ছিক প্রযুক্তিবিদ্যা এবং নির্মাণ ব্যবস্থাপনা সেবা সরবরাহ করে। আমরা আমাদের দক্ষতা সংযোজন করছি ইন্জিনিয়ার এবং নির্মাণ পরিচালকরা আমাদের ক্লায়েন্টদের উপর শীর্ষ গুণমান এবং অসম্মিলিত সেবা প্রদানের জন্য। আমাদের ঐচ্ছিক পদ্ধতি আমাদের মার্কিন ভিত্তিস্থ আন্তর্জাতিক প্রযুক্তিবিদ্যা দল, আইডিআ এসি দ্বারা নেতৃত্ব করে। আমরা একটি প্রকল্পের ডিজাইন এবং নির্মাণ পর্যায়ে দক্ষতা মধ্যে দক্ষতা বাড়ানোর মুখোমুখি। আমাদের পদ্ধতি ব্যক্তিগত, মূল্য-কারগর, সময়সূচী অনুযায়ী, এবং সমন্বিত সমাধান প্রদানে দেখা যায়।
+                IDEA <span className='lg:text-base text-sm'>CSC</span> স্থাপতিক শিল্প নির্মাণ শিল্পে ঐচ্ছিক প্রযুক্তিবিদ্যা এবং নির্মাণ ব্যবস্থাপনা সেবা সরবরাহ করে। আমরা আমাদের দক্ষতা সংযোজন করছি ইন্জিনিয়ার এবং নির্মাণ পরিচালকরা আমাদের ক্লায়েন্টদের উপর শীর্ষ গুণমান এবং অসম্মিলিত সেবা প্রদানের জন্য। আমাদের ঐচ্ছিক পদ্ধতি আমাদের মার্কিন ভিত্তিস্থ আন্তর্জাতিক প্রযুক্তিবিদ্যা দল, <span className='font-bold text-button_bg_2 hover:underline cursor-pointer'><Link href={"https://www.ideaaec.com"}target='_blank' rel="noopener noreferrer">IDEA <span className='lg:text-base text-sm'>AEC</span></Link></span> দ্বারা নেতৃত্ব করে। আমরা একটি প্রকল্পের ডিজাইন এবং নির্মাণ পর্যায়ে দক্ষতা মধ্যে দক্ষতা বাড়ানোর মুখোমুখি। আমাদের পদ্ধতি ব্যক্তিগত, মূল্য-কারগর, সময়সূচী অনুযায়ী, এবং সমন্বিত সমাধান প্রদানে দেখা যায়।
               </p>
               
               }
@@ -46,16 +49,16 @@ const AboutUs = () => {
               </p>
               :
                 <p className='my-[5%]'>
-                  অসামান্য প্রযুক্তিবিদ্যা এবং নির্মাণ ব্যবস্থাপনা সেবা প্রদানের সাথে সাথে, আমরা চেষ্টা করছি বাংলাদেশের বর্তমান শিল্পটি কেমন প্রভাব ফেলতে। আমাদের নির্মাণ সমাধান কোম্পানি (আইডিআ সিএসসি) দল আমাদের আইডিআ এসি মাতা কোম্পানি থেকে আমাদের আইডিআ এসি পিতা কোম্পানি থেকে আমাদের সমৃদ্ধ আন্তর্জাতিক যান্ত্রিক, বৈদ্যুতিক, পাইপ লাইন এবং অগ্নিপ্রতিরক্ষা প্রযুক্তিবিদ্যা প্রদান করতে। আমাদের দলের সদস্যদের অভিজ্ঞতা প্রকল্প এবং সুযোগ স্কেল, জটিলতা, এবং বিভিন্ন খাতে প্রকল্প সম্পর্কিত।
+                  অতুলনীয় প্রকৌশল এবং নির্মাণ ব্যবস্থাপনা পরিষেবা প্রদানের পাশাপাশি, আমরা বাংলাদেশের বর্তমান শিল্পকে ইতিবাচকভাবে প্রভাবিত ও উন্নত করার চেষ্টা করি। আমাদের কনস্ট্রাকশন সলিউশন কোম্পানি (IDEA <span className='text-sm'>CSC</span>) টিম আমাদের <span className='font-bold text-button_bg_2 hover:underline cursor-pointer'><Link href={"https://www.ideaaec.com"}target='_blank' rel="noopener noreferrer">IDEA <span className='lg:text-base text-sm'>AEC</span></Link></span> মূল কোম্পানি থেকে আমাদের দক্ষ আন্তঃ-শৃঙ্খলা যান্ত্রিক, বৈদ্যুতিক, নদীর গভীরতানির্ণয় এবং অগ্নি সুরক্ষা প্রকৌশল স্থাপন করবে। আমাদের দলের সদস্যদের অভিজ্ঞতা বিভিন্ন স্কেল, জটিলতা, সেইসাথে থিয়েটার/পারফরম্যান্স স্পেস, প্রতিষ্ঠান এবং ক্যাম্পাস, উচ্চ-প্রান্তের আবাসিক এবং উচ্চ-বৃদ্ধির আবাসিক, টার্মিনাল এবং মিশ্র-ব্যবহার, বাণিজ্যিক এবং শিল্প খাতের প্রকল্প এবং সুযোগগুলিকে অন্তর্ভুক্ত করে। পাবলিক ভেন্যু।
                 </p>
               }
               {english ? 
               <p className='my-[4%]'>
-                As an organization, we aim to positively impact and improve Bangladesh from a humanitarian perspective. Our IDEA <span className='lg:text-base text-sm'>CSC</span> team includes young and educated Bangladeshi professionals empowered and led by our US Engineering experts. Collectively, our goal is to educate our Bangladeshi engineering students alongside on-coming engineering construction management team members.
+                As an organization, we aim to positively impact and improve Bangladesh from a humanitarian perspective. Our IDEA <span className='lg:text-base text-sm'>CSC</span> team includes young and educated Bangladeshi professionals empowered and led by our USA Engineering experts. Collectively, our goal is to educate our Bangladeshi engineering students alongside on-coming engineering construction management team members.
               </p>
               :
               <p className='my-[5%]'>
-                একটি সংগঠন হিসেবে, আমরা একটি মানবিক দিক থেকে বাংলাদেশকে সুধারতে এবং প্রভাব ফেলতে চাই। আমাদের আইডিআ সিএসসি দলে যুব এবং শিক্ষিত বাংলাদেশী পেশাদারদের আমাদের মার্কিন প্রযুক্তিবিদ্যা বিশেষজ্ঞদের নেতৃত্ব এবং শক্তিশালী হিসেবে পরিচালিত হয়েছে। সমন্বিতভাবে, আমাদের লক্ষ্য হল বাংলাদেশী প্রযুক্তিবিদ্যা ছাত্রদের শিক্ষা দান করা এবং আগত প্রযুক্তিবিদ্যা নির্মাণ পরিচালনা দলের সাথে সহযোগিতা করা।
+                একটি সংগঠন হিসেবে আমরা মানবিক দৃষ্টিকোণ থেকে বাংলাদেশকে উন্নত ও প্রভাবিত করতে চাই। আমাদের IDEA <span className='lg:text-base text-sm'>CSC</span> টিম তরুণ এবং শিক্ষিত বাংলাদেশী পেশাদারদের নিয়ে গঠিত যা আমাদের USA প্রযুক্তি বিশেষজ্ঞদের নেতৃত্বে এবং শক্তিশালী করা হয়েছে। সম্মিলিতভাবে, আমাদের লক্ষ্য হল বাংলাদেশী প্রকৌশল শিক্ষার্থীদের শিক্ষিত করা এবং আগত ইঞ্জিনিয়ারিং নির্মাণ ব্যবস্থাপনা দলের সাথে সহযোগিতা করা।
               </p>
               }
               {english ? 
@@ -64,11 +67,12 @@ const AboutUs = () => {
               </p> 
               :
               <p className='my-[5%]'>
-                গ্রাহকদের প্রাথমিকভাবে গুরুত্ব দেওয়ার প্রয়াস করে, আইডিআ সিএসসি সেবা সরবরাহকারীরা সহযোগিতা করতে চেষ্টা করে (মৌলিক বা উপ-পরামর্শক হিসেবে) স্থাপত্য প্রযুক্তি শিল্পের পরিষেবাদাতাদের সহ যেমন ডেভেলপার, মালিক, স্থপতি, প্রকৌশলী, ডিজাইনার, এবং ঠেকাদার।
+                গ্রাহকদের প্রাথমিকভাবে গুরুত্ব দেওয়ার প্রয়াস করে, IDEA <span className='lg:text-base text-sm'>CSC</span> সেবা সরবরাহকারীরা সহযোগিতা করতে চেষ্টা করে (মৌলিক বা উপ-পরামর্শক হিসেবে) স্থাপত্য প্রযুক্তি শিল্পের পরিষেবাদাতাদের সহ যেমন ডেভেলপার, মালিক, স্থপতি, প্রকৌশলী, ডিজাইনার, এবং ঠেকাদার।
               </p>
               }
               <div className='grid grid-cols-2 justify-center gap-4 '>
-                {traits.map((trait)=> {
+                {english ? 
+                english_traits.map((trait)=> {
                   return(
                     <div key={trait} className='bg-button_bg text-center italic rounded-xl lg:p-4 p-3 text-sm lg:text-lg'>
                       <p>{trait}</p>
@@ -76,7 +80,18 @@ const AboutUs = () => {
                     
                   )
                   
-                })}
+                })
+                :
+                bangla_traits.map((trait)=> {
+                  return(
+                    <div key={trait} className='bg-button_bg text-center italic rounded-xl lg:p-4 p-3 text-sm lg:text-lg'>
+                      <p>{trait}</p>
+                    </div>
+                    
+                  )
+                  
+                })
+                }
               </div>
             </div>
           </div>
@@ -97,7 +112,7 @@ const AboutUs = () => {
                 </p> 
                 :
                 <p className="my-[4%]">
-                  আইডিআ সিএসসি-তে, আমরা সেবা, বিশ্বাস, সহযোগিতা, এবং নির্মাণ এবং প্রযুক্তির নতুনত্বের গুণগত ভিত্তিতে দীর্ঘমেয়াদী সহযোগিতা চার্য উন্নত করতে চেষ্টা করি। আমরা আমাদের স্থায়ী মার্কিন ভিত্তিস্থ প্রযুক্তি মাতৃ সংস্থার দক্ষতা এবং অভিজ্ঞতা ব্যবহার করি আমাদের প্রযুক্তিবিদ্যা প্রতিষ্ঠান প্রণব করতে। সমমিলিতে, আমরা গ্রাহক-নির্দিষ্ট এবং টেকসই ভবন প্রণালীর সমাধান প্রযুক্ত করতে, এবং বাংলাদেশের নির্মাণ এবং প্রযুক্তি সম্প্রদায়কে শিক্ষাদান এবং শক্তিশালী করতে প্রয়োজনীয়।
+                  IDEA <span className='lg:text-base text-sm'>CSC</span>-তে, আমরা সেবা, বিশ্বাস, সহযোগিতা, এবং নির্মাণ এবং প্রযুক্তির নতুনত্বের গুণগত ভিত্তিতে দীর্ঘমেয়াদী সহযোগিতা চার্য উন্নত করতে চেষ্টা করি। আমরা আমাদের স্থায়ী মার্কিন ভিত্তিস্থ প্রযুক্তি মাতৃ সংস্থার দক্ষতা এবং অভিজ্ঞতা ব্যবহার করি আমাদের প্রযুক্তিবিদ্যা প্রতিষ্ঠান প্রণব করতে। সমমিলিতে, আমরা গ্রাহক-নির্দিষ্ট এবং টেকসই ভবন প্রণালীর সমাধান প্রযুক্ত করতে, এবং বাংলাদেশের নির্মাণ এবং প্রযুক্তি সম্প্রদায়কে শিক্ষাদান এবং শক্তিশালী করতে প্রয়োজনীয়।
                 </p>
                 }
                 {english ? 
