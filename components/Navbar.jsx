@@ -9,13 +9,13 @@ import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
 import { FaToggleOff } from "react-icons/fa6";
 import { FaToggleOn } from "react-icons/fa6";
 import { AiOutlineClose, AiOutlineMenu, AiFillInstagram, AiFillFacebook, AiFillLinkedin } from 'react-icons/ai';
+import Translate from './Translate';
 // import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 const Navbar = ({setLightLogo, lightLogo}) => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState('transparent');
   const [textColor, setTextColor] = useState('');
-  const [show, setShow] = useState(false)
   
   const router = useRouter();
 
@@ -48,11 +48,6 @@ const Navbar = ({setLightLogo, lightLogo}) => {
     window.addEventListener('scroll', changeColor);
   }, []);
 
-  function handleExt(){
-    return(
-      setShow(!show)
-    )
-  }
   return (
     <div className='flex'>
 
@@ -197,52 +192,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
       </div>
       {/* TRANSLATE OPTION */}
       {/* <div>
-        <motion.div 
-        animate={{
-          backgroundColor:show ? '#63a081' : '',
-          transition:{
-            delay:.8,
-            duration:1
-          }
-        }}
-        className={show ? 'text-primary_text flex w-fit rounded-lg' : 'text-primary_text flex w-fit'}>
-          <div 
-          
-          className=' rounded-lg w-fit flex items-center justify-center bg-accent_3 cursor-pointer' >
-            {
-              show ? 
-              <MdKeyboardDoubleArrowLeft 
-              onClick={() => {handleExt()}}
-              className='text-2xl'/> :
-              <MdKeyboardDoubleArrowRight 
-              onClick={() => {handleExt()}}
-              className='text-2xl'/>
-            }
-          </div>
-          
-          <motion.div 
-          animate={{
-            x: show ? [-150,0] : 0,
-          }}
-          initial={{
-            opacity:0
-          }}
-          whileInView={{
-            opacity: show ? 1 :0
-          }}
-          
-          transition={{duration:1}}
-          className='text-lg p-2 items-center justify-center bg-accent_3 rounded-lg '>
-            <p className=''>Would you like to change the language?</p>
-            <div className='flex'>
-              <p className='m-1'>English</p>
-              <FaToggleOff className='m-2'/>
-              <p className='m-1'>Bangla</p>
-            </div>
-
-          </motion.div>
-        </motion.div>
-        
+        <Translate/>
       </div> */}
       
     </motion.div>
