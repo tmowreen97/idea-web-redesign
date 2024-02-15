@@ -31,7 +31,7 @@ const Translate = ({setEnglish, english}) => {
         className='text-primary_text flex w-fit rounded-lg'>
           <div 
           onClick={() => {handleExt()}}
-          className=' rounded-lg w-fit flex items-center justify-center bg-accent_3 cursor-pointer lg:p-3 p-1' >
+          className={show ? ' rounded-lg w-fit flex items-center justify-center motion-safe:animate-pulse bg-accent_3 cursor-pointer lg:p-3 p-1' :' rounded-lg w-fit flex items-center justify-center  bg-accent_3 cursor-pointer lg:p-3 p-1'} >
             {
               !show ? 
               <MdKeyboardDoubleArrowLeft  
@@ -50,9 +50,9 @@ const Translate = ({setEnglish, english}) => {
             duration:1
           }}
           initial={{
-            opacity:0 , x:-50
+            opacity:0, x:-50
           }}
-          className='xl:p-3 lg:p-1 items-center justify-center bg-accent_3 rounded-lg flex'>
+          className='xl:p-3 lg:p-1 items-center justify-center bg-accent_3 rounded-lg flex '>
             <div className='items-center m-2'>
               <p className=''>Would you like to change the language?</p>
               <div className='flex items-center justify-center'>
