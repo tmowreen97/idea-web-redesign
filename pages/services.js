@@ -5,7 +5,6 @@ import React from "react";
 export default function Services(){
   return (
     <div>
-      {/* <Navbar lightLogo={true}/> */}
       <ServicesPage/>
     </div>
   )

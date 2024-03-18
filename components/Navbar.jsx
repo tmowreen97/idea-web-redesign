@@ -4,13 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import { BiChevronDown } from 'react-icons/bi';
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
-import { FaToggleOff } from "react-icons/fa6";
-import { FaToggleOn } from "react-icons/fa6";
 import { AiOutlineClose, AiOutlineMenu, AiFillInstagram, AiFillFacebook, AiFillLinkedin } from 'react-icons/ai';
-import Translate from './Translate';
-// import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 const Navbar = ({setLightLogo, lightLogo}) => {
   const [nav, setNav] = useState(false);
@@ -134,7 +128,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
               </li>
               <li  className=' hover:text-gray-500 text-4xl p-4'>
                 <div className="dropdown inline-block relative">
-                  <button id="about_button" aria-label='about_button' className="inline-flex items-center " id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>
+                  <button aria-label='about_button' className="inline-flex items-center " id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>
                     <div className="relative">About</div>
                     <BiChevronDown />
                     {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> */}
@@ -191,9 +185,6 @@ const Navbar = ({setLightLogo, lightLogo}) => {
         </div>
       </div>
       {/* TRANSLATE OPTION */}
-      {/* <div>
-        <Translate/>
-      </div> */}
       
     </motion.div>
     </div>

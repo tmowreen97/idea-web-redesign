@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { AiFillInstagram, AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
-import {BsArrowReturnRight, BsArrowRight} from "react-icons/bs";
+import {BsArrowRight} from "react-icons/bs";
 import Image from "next/image";
 import { motion } from "framer-motion";
 

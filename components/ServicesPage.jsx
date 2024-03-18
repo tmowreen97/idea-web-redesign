@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Link } from 'next/link';
 import { CiShare1 } from "react-icons/ci";
 import Image from 'next/image';
 

@@ -20,14 +20,6 @@ function Carousel ({array,  custom, handleIndex}){
 
         handleIndex(currentIndex)
     }
-    // console.log(array[currentIndex].image)
-    // if(array[currentIndex].image.endsWith('res-render.png')){
-    //   setTime(10000)
-    // }
-    // else{
-    //   setTime(4500)
-    // }
-    // Automatically flip through Carousel
     resetTimeout();
     timeoutRef.current = setTimeout(
       () => 
@@ -66,9 +58,6 @@ function Carousel ({array,  custom, handleIndex}){
     <div className="relative group items-center justify-center z-5">
 
       <motion.div 
-      // initial={{ opacity:0 }}
-      // whileInView={{ opacity:1 , transition:{delay:1}}}
-
       style={{backgroundImage:`url(${array[currentIndex].image})`}}
       className={custom}
       >

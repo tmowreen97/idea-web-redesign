@@ -7,7 +7,6 @@ import {React, useState, useEffect, useCallback} from "react";
 import { AiFillInstagram, AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 import {BsChevronCompactDown, BsChevronCompactUp} from 'react-icons/bs';
 
-import TextBody from "./TextBody";
 
 
 
@@ -78,8 +77,7 @@ function Culture_Page_Two(){
               href={'https://www.ideaaec.com/culture'} 
               rel="noopener noreferrer" target="_blank" 
               className="text-button_bg_2 text-shadow-lg shadow-tertiary/80 font-medium hover:underline">culture page </Link></span> 
-              and don't forget to connect with us at <Link href={"https://www.ideaaec.com"} className="text-purple_accent_3">IDEA <span className="lg:text-4xl text-2xl">AEC</span></Link>!</h1>
-            {/* <h1 className="text-4xl animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-primary_text p-4 delay-200">Connect with us:</h1> */}
+              and don't forget to connect with us at <Link href={"https://www.ideaaec.com"} rel="noopener noreferrer" target="_blank" className="text-purple_accent_3">IDEA <span className="lg:text-4xl text-2xl">AEC</span></Link>!</h1>
           </div>
       </motion.div>
         {/* social media */}
