@@ -12,7 +12,7 @@ function Intro(){
             </div>
             <motion.div 
             className="items-center flex justify-center max-w-[800px]">
-              <Image src={'/assets/logos/intro-gif.gif'} width={1700} height={100}/>
+              <Image src={'/assets/logos/intro-gif.gif'} width={1700} height={100} alt={'logo-gif'}/>
             </motion.div>
           </div>
       </div>
