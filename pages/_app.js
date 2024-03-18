@@ -26,7 +26,12 @@ export default function App({ Component, pageProps }) {
   return (
     <main className={urbanist.className}>
       <Head>
-      <title>IDEA | Inter-Disciplinary Engineering Associates</title>
+        <title>IDEA | Inter-Disciplinary Engineering Associates</title>
+        <meta
+            name="description"
+            content="IDEA CSC (Construction Solutions Company), a sister company to IDEA AEC, provides World Class Inter-Disciplinary Construction and Engineering services in Bangladesh."
+            key="desc"
+        />
       </Head>
       <Navbar setLightLogo={setLightLogo} lightLogo={lightLogo} />
       <Component {...pageProps} />
