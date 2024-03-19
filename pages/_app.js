@@ -36,7 +36,7 @@ export default function App({ Component, pageProps }) {
     <main className={urbanist.className}>
       <Head>
         <title>IDEA CSC | Construction Solutions Company</title>
-        <link className=''rel="icon" href="/assets/logos/idea-csc-symbol.png"  />
+        <link className=''rel="icon" href="/assets/logos/idea-csc-symbol.ico"  />
         <meta
             name="description"
             content="IDEA CSC (Construction Solutions Company), a sister company to IDEA AEC, provides World Class Inter-Disciplinary Construction and Engineering services in Bangladesh."
