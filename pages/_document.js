@@ -4,7 +4,11 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link className='width-5 height-5'rel="icon" href="/assets/logos/idea-csc-symbol.png"  />
+        <meta
+            name="description"
+            content="IDEA CSC (Construction Solutions Company), a sister company to IDEA AEC, provides World Class Inter-Disciplinary Construction and Engineering services in Bangladesh."
+            key="desc"
+          />
       </Head>
       <body>
         <Main />

@@ -5,12 +5,21 @@ import Footer from '@/components/Footer'
 import Head from 'next/head';
 import { Urbanist } from 'next/font/google'
 import { useState, useEffect, useReducer } from 'react'
-import {useRouter} from 'next/router'
+import {useRouter} from 'next/router';
+/** @type {import("next").Metadata} */
 
 
+export const metadata = {
+  title: 'IDEA CSC',
+  description: 'IDEA CSC (Construction Solutions Company), a sister company to IDEA AEC, provides World Class Inter-Disciplinary Construction and Engineering services in Bangladesh.'
+}
+ 
 const urbanist = Urbanist({
   subsets: ['latin']
 })
+
+
+
 export default function App({ Component, pageProps }) {
   const router = useRouter()
   const [lightLogo, setLightLogo] = useState(false)
@@ -26,7 +35,8 @@ export default function App({ Component, pageProps }) {
   return (
     <main className={urbanist.className}>
       <Head>
-        <title>IDEA | Inter-Disciplinary Engineering Associates</title>
+        <title>IDEA CSC | Construction Solutions Company</title>
+        <link className=''rel="icon" href="/assets/logos/idea-csc-symbol.png"  />
         <meta
             name="description"
             content="IDEA CSC (Construction Solutions Company), a sister company to IDEA AEC, provides World Class Inter-Disciplinary Construction and Engineering services in Bangladesh."
