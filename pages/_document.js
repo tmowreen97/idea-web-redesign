@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta
             name="description"
-            content="IDEA CSC (Construction Solutions Company), a sister company to IDEA AEC, provides World Class Inter-Disciplinary Construction and Engineering services in Bangladesh."
+            content="IDEA CSC (Construction Solutions Company), a sister company to IDEA AEC, provides Inter-Disciplinary Construction and Engineering services in Bangladesh."
             key="desc"
           />
       </Head>
