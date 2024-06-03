@@ -151,7 +151,7 @@ function Developments(){
         'Construction Management',
         "Owner’s Representation",
         "Construction Project Schedule Development",
-        "Sub-Contractor Procuremtn & Management",
+        "Sub-Contractor Procurement & Management",
         "Cost Estimation & Cost Control",
         "Construction Bid Procurement ",
         "Equipment & Material Procurement",
