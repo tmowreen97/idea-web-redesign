@@ -22,14 +22,18 @@ const AboutUs = () => {
       <div className='justify-center items-center flex'>
       <div className='m-10'>
         <div className='lg:grid lg:grid-cols-2'>
-          <h1 className="lg:text-[1100%] text-[525%] font-thin text-center md:pt-0 pt-5">About</h1>
+          <h1 className="lg:text-[1100%] text-[525%] font-thin text-center md:pt-0 pt-5">
+            {english ? 'About' : 'সম্পর্কে'}
+          </h1>
         </div>
         <div className='lg:grid lg:grid-cols-2 justify-center gap-2'>
           {/* 1st column */}
           <div className='justify-center items-center lg:max-w-[650px] lg:w-full md:w-[500px] w-[350px] bg-secondary rounded-xl lg:p-10 p-6'>
             {/* Our Story Title */}
             <div className='flex justify-left lg:px-6'>
-              <h2 className='text-dark_red text-shadow-sm shadow-red_heading/40 font-medium'>Our Story</h2>
+              <h2 className='text-dark_red text-shadow-sm shadow-red_heading/40 font-medium'>
+                {english ? 'Our Story' : 'আমাদের গল্প'}
+              </h2>
             </div>
             {/* Our Story Text */}
             <div className='lg:px-6 lg:text-xl tracking-wider font-light'>
@@ -102,7 +106,9 @@ const AboutUs = () => {
             <div className='bg-secondary lg:max-w-[580px] justify-center lg:w-full md:w-[500px] w-[350px] rounded-xl lg:p-10 p-6'>
               {/* Our Mission Title */}
               <div className='flex justify-left lg:px-6'>
-                <h2 className='text-dark_red text-shadow-sm shadow-red_heading/40 font-medium'>Our Mission</h2>
+                <h2 className='text-dark_red text-shadow-sm shadow-red_heading/40 font-medium'>
+                  {english ? 'Our Mission' : 'আমাদের লক্ষ্য'}
+                </h2>
               </div>
               {/* Our Mission Text */}
               <div className='lg:px-6 lg:text-xl tracking-wider font-light'>
@@ -112,7 +118,7 @@ const AboutUs = () => {
                 </p> 
                 :
                 <p className="my-[4%]">
-                  IDEA <span className='lg:text-base text-sm'>CSC</span>-তে, আমরা সেবা, বিশ্বাস, সহযোগিতা, এবং নির্মাণ এবং প্রযুক্তির নতুনত্বের গুণগত ভিত্তিতে দীর্ঘমেয়াদী সহযোগিতা চার্য উন্নত করতে চেষ্টা করি। আমরা আমাদের স্থায়ী মার্কিন ভিত্তিস্থ প্রযুক্তি মাতৃ সংস্থার দক্ষতা এবং অভিজ্ঞতা ব্যবহার করি আমাদের প্রযুক্তিবিদ্যা প্রতিষ্ঠান প্রণব করতে। সমমিলিতে, আমরা গ্রাহক-নির্দিষ্ট এবং টেকসই ভবন প্রণালীর সমাধান প্রযুক্ত করতে, এবং বাংলাদেশের নির্মাণ এবং প্রযুক্তি সম্প্রদায়কে শিক্ষাদান এবং শক্তিশালী করতে প্রয়োজনীয়।
+                  IDEA <span className='lg:text-base text-sm'>CSC</span>, আমরা মানসম্মত পরিষেবা, বিশ্বাস, সহযোগিতা এবং নির্মাণ ও প্রকৌশল উদ্ভাবনের নিরলস সাধনার উপর প্রতিষ্ঠিত স্থায়ী অংশীদারিত্ব গড়ে তোলার চেষ্টা করি। আমরা আমাদের উদ্যোগগুলিকে শক্তিশালী করতে আমাদের প্রতিষ্ঠিত ইউএস-ভিত্তিক ইঞ্জিনিয়ারিং মূল কোম্পানির দক্ষতা এবং অভিজ্ঞতা কাজে লাগিয়ে থাকি। সম্মিলিতভাবে, আমরা ক্লায়েন্ট দ্বারা নির্দিষ্ট এবং টেকসই বিল্ডিং সিস্টেম সমাধান বাস্তবায়নের পাশাপাশি বাংলাদেশের নির্মাণ ও প্রকৌশল সম্প্রদায়কে শিক্ষিত ও ক্ষমতায়নের জন্য সমন্বিত প্রচেষ্টা করি।
                 </p>
                 }
                 {english ? 
@@ -121,7 +127,7 @@ const AboutUs = () => {
                 </p>
                 :
                 <p className="mt-[4%]">
-                  আমাদের সংযুক্ত নির্মাণ এবং প্রযুক্তি পদ্ধতি প্রয়োজনীয়ভাবে প্রয়োগ করে প্রযুক্তিগত উন্নতি করার মধ্যে প্রযুক্তি অংশ হিসেবে গ্রহণ করে। সমন্বিতে, আমরা সীমানা চেষ্টা করি, আমাদের গ্রাহকদের এবং সহযোগী অংশীদারদের জন্য সাম্য এবং সাফল্য নিশ্চিত করতে।
+                  আমাদের সমন্বিত নির্মাণ এবং প্রকৌশল পদ্ধতি প্রযুক্তিকে সাদরে গ্রহন করে কারণ আমরা দক্ষতার বিকাশ এবং স্থাপত্য প্রকৌশল শিল্পকে উন্নত করার লক্ষ্য রাখি। আমরা আমাদের ক্লায়েন্ট এবং সহযোগী অংশীদারদের পারস্পরিক প্রবৃদ্ধি এবং সাফল্য নিশ্চিত করার জন্য একসাথে সীমানা বিস্তৃত করছি।
                 </p>
                 }
               </div>
@@ -131,7 +137,9 @@ const AboutUs = () => {
                 <div className='relative items-center justify-center  p-3'>
                   <Image src={'/assets/idea-vest.jpg'} width={400} height={100} alt={'vest'} className={show ? 'rounded-xl' : 'rounded-xl motion-safe:animate-pulse'}/>
                   <div className={show ? "absolute bg-cover bottom-3 top-3 left-3 right-3 bg-tertiary/80 rounded-xl text-dark_text  " : "hidden"}>
-                    <h1 className='flex items-center justify-center h-full text-2xl animate-none'>Click to See Our Team</h1>
+                    <h1 className='flex items-center justify-center h-full text-2xl animate-none'>
+                      {english ? 'Click to See Our Team' : 'আমাদের দল দেখতে ক্লিক করুন'}
+                    </h1>
                   </div>
                 </div>
               </Link>
