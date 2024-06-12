@@ -88,7 +88,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
               <Link href='/services' id={router.pathname == "/services" ? "active" : ""}>Services</Link>
             </li>
             <li className='m-2 p-2 hover:bg-button_bg rounded-xl'>
-              <Link href='/culture' id={router.pathname == "/culture" ? "active" : ""}>Culture</Link>
+              <Link href='/culture' id={router.pathname == "/developments" ? "active" : ""}>Developments</Link>
             </li>
             <li className='m-2 p-2 hover:bg-button_bg  rounded-xl'>
               <Link href='/contact' id={router.pathname == "/contact" ? "active" : ""}>Contact</Link>
@@ -150,7 +150,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
                 <Link href='/services' id={router.pathname == "/services" ? "active" : ""}>Services</Link>
               </li>
               <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500 '>
-                <Link href='/culture' id={router.pathname == "/culture" ? "active" : ""}>Culture</Link>
+                <Link href='/culture' id={router.pathname == "/developments" ? "active" : ""}>Developments</Link>
               </li>
               <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500 '>
                 <Link href='/contact' id={router.pathname == "/contact" ? "active" : ""}>Contact</Link>

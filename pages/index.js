@@ -3,7 +3,7 @@ import Hero from '@/components/Hero'
 import Intro from '@/components/Intro'
 import { Urbanist } from 'next/font/google'
 import { useState } from 'react';
-import Developments from '@/components/Developments'
+import Projects from '@/components/Projects';
 import AboutUs from '@/components/AboutUs'
 
 const urbanist = Urbanist({ 
@@ -19,7 +19,7 @@ export default function Home() {
       <Hero heading='We Empower Ideas'/>
       <Intro/>
       <AboutUs/>
-      <Developments/>
+      <Projects/>
       
     </main>
   )

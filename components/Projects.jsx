@@ -2,12 +2,13 @@ import Carousel from "./Carousel";
 import { useState } from "react";
 import Description from "./Description";
 import { motion } from 'framer-motion';
+import Translate from "./Translate";
 
-
-function Developments(){
+function Projects(){
   const [projectSelect, setProjectSelect]= useState(0)
   const [projClick, setProjClick] = useState(false)
   const [hide, setHide] = useState(false)
+  const [english, setEnglish] = useState(true)
 
   function handleClick(id){
     setProjClick(!projClick)
@@ -25,10 +26,14 @@ function Developments(){
     {
       id:1,
       name: 'BD HIGH-END RESIDENCE',
+      bangla_name: 'বাংলাদেশ হাই-এন্ড রেসিডেন্স',
       location:"Comilla, Bangladesh",
+      bangla_location: 'কুমিল্লা, বাংলাদেশ',
       size: '3500 SF / 325 SQM',
       sector: "Residential",
+      bangla_sector: 'আবাসিক',
       year: "JULY 2024",
+      bangla_year: 'জুলাই 2024',
       services: [
         {
           alt: 'bd-res-service-1',
@@ -42,6 +47,10 @@ function Developments(){
       desc: [
         "Renovation and addition to existing single family residence. Existing condition includes 2-Bedrooms, 2-Bathrooms; located in Comilla, Bangladesh.",
         "Residence will be upgraded to American style high-end facilities and systems. Completed project will include 4-Bedrooms and 3.5-Bathrooms. The roof level floor will be programmed with a family gathering room (Light Room). Project will also include erection of a separate utility building structure."
+      ],
+      bangla_desc: [
+        "বিদ্যমান একক পরিবারের বাসস্থান সংস্কার এবং সংযোজন। বিদ্যমান অবস্থার মধ্যে রয়েছে 2-বেডরুম, 2-বাথরুম; বাংলাদেশের কুমিল্লায় অবস্থিত।",
+        "বাসস্থানটি  উঁচু স্থাপত্যের সুবিধা এবং সিস্টেমের সাথে আমেরিকান নির্মাণশৈলিতে উন্নত করা হবে। প্রকল্পটি সম্পূর্ণ হলে 4 বেডরুম এবং 3.5 বাথরুম থাকবে। ছাদের স্তরে একটি পরিবার সম্মেলন কক্ষ (লাইট রুম) প্রোগ্রাম করা হবে। প্রকল্পে একটি আলাদা ইউটিলিটি  বিল্ডিং স্ট্রাকচার নির্মাণ করা হবে।"
       ],
       proj_features:[
         "Emergency Power (Generator) System",
@@ -177,12 +186,17 @@ function Developments(){
   }
   return(
     <div id='projects' className="w-screen h-full bg-primary justify-center">
+      <div className='absolute 2xl:my-32 z-[1]'>
+        <Translate setEnglish={setEnglish} english={english}/>
+      </div>
       <div className="justify-center items-center">
         <div  className={hide? "flex items-center justify-center lg:px-[10%] 2xl:px-[10%] bg-dark_bg/95" : "flex items-center justify-center lg:px-[10%] 2xl:px-[10%] py-10"}>
           <div className={hide ? "relative rounded-xl overflow-hidden hidden  h-full ease-in-out duration-300" : "relative rounded-xl overflow-hidden h-full ease-in-out duration-300"}>
             {/* TITLE */}
             <div>
-              <h1 className="2xl:text-[1100%] lg:text-9xl text-[350%] p-2 font-thin lg:m-12 lg:text-justify text-center">Projects</h1>
+              <h1 className="2xl:text-[1100%] lg:text-9xl text-[350%] p-2 font-thin lg:m-12 lg:text-justify text-center z-1">
+                {english ? 'Projects' : 'প্রকল্প'}
+              </h1>
             </div>
             <div className="xl:flex justify-center 2xl:gap-4 gap-2">
               <div className=" justify-center items-center flex">
@@ -190,8 +204,6 @@ function Developments(){
                   <Carousel 
                     array={projects} 
                     handleIndex = {handleIndex}
-
-                    // xl:w-[700px] xl:h-[490px] lg:w-[500px] lg:h-[400px] md:w-[400px] md:h-[300px] w-[275px] h-[200px] 
                     custom={"2xl:w-[775px] 2xl:h-[500px] xl:w-[675px] xl:h-[425px] lg:w-[625px] lg:h-[375px] md:w-[550px] md:h-[300px] w-[325px] h-[225px] rounded-2xl bg-center bg-cover hover:scale-[102%] duration-500 transform"}
                   /> 
                 </div>
@@ -247,4 +259,4 @@ function Developments(){
   )
 }
 
-export default Developments;
+export default Projects;
