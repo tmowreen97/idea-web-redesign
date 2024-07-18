@@ -55,7 +55,7 @@ function OurTeam (){
       initial={{opacity:0}}
       animate={{opacity:1, transition:{delay:1 , duration:1}}}
       className="lg:p-20 pt-20 pb-10">
-        <h1 className="md:text-[1100%] text-8xl font-thin text-primary_text text-center lg:text-left tracking-wide">Our Team</h1>
+        <h1 className="pt-10 md:text-[1100%] text-8xl font-thin text-primary_text text-center lg:text-left tracking-wide">Our Team</h1>
       </motion.div>
       {/* <div>
         <Translate english={english} setEnglish={setEnglish}/>

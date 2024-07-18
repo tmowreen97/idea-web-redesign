@@ -60,8 +60,8 @@ function Culture_Page_Two(){
       <motion.div 
       initial={{opacity:0}}
       animate={{opacity:1, transition: {delay:1, duration:1}}}
-      className="md:px-20 pt-20 pb-[80px]">
-        <h1 className="lg:text-[1000%] md:text-[700%] text-center text-5xl font-thin text-primary_text md:text-left tracking-wider">Developments</h1>
+      className="lg:p-20 pt-20 pb-10">
+        <h1 className="pt-10 lg:text-[1000%] md:text-[700%] text-center text-5xl font-thin text-primary_text md:text-left tracking-wider">Developments</h1>
       </motion.div>
       {/* Featured Video */}
       {/* Social Media Links */}

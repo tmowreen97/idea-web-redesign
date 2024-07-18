@@ -9,7 +9,7 @@ import { AiOutlineClose, AiOutlineMenu, AiFillInstagram, AiFillFacebook, AiFillL
 const Navbar = ({setLightLogo, lightLogo}) => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState('transparent');
-  const [textColor, setTextColor] = useState('');
+  const [textColor, setTextColor] = useState('#323b1e');
   
   const router = useRouter();
 
@@ -25,14 +25,14 @@ const Navbar = ({setLightLogo, lightLogo}) => {
     const changeColor = () => {
       if (window.scrollY >= 25) {
         setColor('#919d99');
-        // setTextColor("#CCF0CC")
+        setTextColor("#fdf4eb")
         
         if (setLightLogo) {
           setLightLogo(true)
         }
       } else {
         setColor('transparent');
-        // setTextColor("#FFFF00")
+        setTextColor("#323b1e")
         if (setLightLogo) {
           setLightLogo(false)
         }
@@ -47,11 +47,11 @@ const Navbar = ({setLightLogo, lightLogo}) => {
 
     
     <motion.div
-      // initial={{opacity:0}}
-      whileInView={{opacity:1, transition:{delay:0.6, duration:1}}}      
+      initial={{opacity:0}}
+      whileInView={{opacity:1, transition:{delay:1, duration:1}}}      
       className='fixed left-0 top-0 w-full z-10 ease-in duration-200 tracking-wider'
     >
-      <div style={{ backgroundColor: `${color}`, opacity:40}}>
+      <div style={{ backgroundColor: `${color}`, opacity:40}} >
         <div className='w-screen h-full m-auto flex justify-between items-center p-3 ml-1 ' 
         >
           {/* logo */}
@@ -60,15 +60,15 @@ const Navbar = ({setLightLogo, lightLogo}) => {
           >
             <Link href='/'>
               
-              {lightLogo ? <Image src={'/assets/logos/nav-bar-updated.png'} width={300} height={100} alt={'light_logo'} /> : <Image src={'/assets/logos/logo-landing.png'} width={150} height={100} alt={'dark_logo'} />}
+              {lightLogo ? <Image src={'/assets/logos/nav-bar-updated.png'} width={300} height={100} alt={'light_logo'} /> : <Image src={'/assets/logos/csc-logo-dark.png'} width={150} height={100} alt={'dark_logo'} />}
             </Link>
           </motion.div>
           {/* nav bar */}
-          <ul color={{textColor}} className='hidden sm:flex text-light_text'>
+          <ul color={{textColor}} style={{color :`${textColor}`}} className='hidden sm:flex '>
             <li className='p-4'>
             <div className="dropdown inline-block relative">
             <button aria-label='about_button' className="inline-flex items-center ">
-              <p className="mr-1 tracking-wide text-[#f5f5f5]" id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>About</p>
+              <p style={{color :`${textColor}`}} className="mr-1 tracking-wide" id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>About</p>
               <span id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}><BiChevronDown /></span>
             </button>
             <ul className="dropdown-menu absolute hidden pt-1 text-center">

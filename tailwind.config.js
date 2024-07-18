@@ -50,14 +50,15 @@ module.exports = {
         dark_shadow: '#303D38',
         button_bg: '#d15f3c',
         button_shadow: '#e97451',
-        // border: '#b29370',#4f5650
+        nav_bar_highlight: '#FFBD5E',
         border: '#747d7a',
         
         // button_bg : '#8dedd0',
         primary_text : '#323b1e',
         // #2E3A19
         // primary_text : '#FFFFF2',
-        dark_text: '#070706',
+        dark_text: '#1D2115',
+        // dark_text: '#070706',
         accent_4: '#498767',
 
       },

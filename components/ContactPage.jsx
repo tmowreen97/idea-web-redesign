@@ -10,8 +10,8 @@ function ContactPage(){
       <motion.div 
       initial={{opacity:0}}
       animate={{opacity:1, transition:{duration:2, delay:1} }}
-      className="lg:p-20 pt-20 pb-10 px-5 ">
-        <h1 className="md:text-[1100%] text-8xl font-thin text-primary_text text-left tracking-wide">Contact</h1>
+      className="lg:p-20 pt-20 pb-10">
+        <h1 className="pt-10 md:text-[1100%] text-8xl font-thin text-primary_text text-left tracking-wide">Contact</h1>
       </motion.div>
       <div className="md:grid md:grid-cols-2 items-center justify-center lg:px-20 ">
         {/* col/row 1/1 area */}
@@ -23,33 +23,33 @@ function ContactPage(){
               animate={{opacity:1, transition:{duration:2, delay:2}}}
               className=""
             >
-              <Image src={'/assets/logos/const-icon.png'} width={115} height={80} alt={'icon'}/>
+              <Image src={'/assets/logos/green-logos/const-icon-green.png'} width={115} height={80} alt={'icon'}/>
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:2.5}}}
               className=""
             >
-            <Image src={'/assets/logos/mech-icon.png'} width={115} height={80} alt={'icon'}/>              
+            <Image src={'/assets/logos/green-logos/mech-icon-green.png'} width={115} height={80} alt={'icon'}/>              
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:3}}}
               className=""
             >
-            <Image src={'/assets/logos/elec-icon.png'} width={115} height={80} alt={'icon'}/>              
+            <Image src={'/assets/logos/green-logos/elec-icon-green.png'} width={115} height={80} alt={'icon'}/>              
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:3.5}}}
             >
-            <Image src={'/assets/logos/plumb-icon.png'} width={115} height={82} alt={'icon'}/>              
+            <Image src={'/assets/logos/green-logos/plumb-icon-green.png'} width={115} height={82} alt={'icon'}/>              
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:4}}}
             >
-            <Image src={'/assets/logos/fp-icon.png'} width={115} height={82} alt={'icon'}/>              
+            <Image src={'/assets/logos/green-logos/fp-icon-green.png'} width={115} height={82} alt={'icon'}/>              
             </motion.div>
 
           </div>
@@ -120,7 +120,7 @@ function ContactPage(){
             <input type="hidden" name="_next" value="https://www.ideacsc.com/thank-you"></input>
             {/* <input type="hidden" name="_captcha" value="false"></input> */}
             <div className="text-center items-center justify-center flex ">
-              <div className="bg-button_bg hover:bg-button_bg_2/80 rounded-xl p-2 px-5 shadow-xl text-primary_text">
+              <div className="bg-button_bg hover:bg-button_shadow rounded-xl p-2 px-5 shadow-xl text-primary_text">
                 <button id='submit' aria-label="submit" type='submit'>Send</button>
               </div>
             </div>

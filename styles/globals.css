@@ -96,31 +96,6 @@ polyline {
     font-size: 2rem;
 }
 
-/* #intro-button {
-    display: absolute;
-    align-items: center;
-    justify-content: center;
-}
-
-#intro-button-link{
-    padding: 1.5rem 2rem;
-    margin: 0 1rem;
-    background-color: transparent;
-    border: solid white 1px;
-    font-size: 12px;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 0.5rem;
-    transition: 0.25s background-color;
-} */
-
-/* .buttons button:hover {
-    background-color: white;
-    color: black;
-    transition: 0.25s background-color;
-    cursor: pointer;
-} */
-
 #video {
     /* position: absolute;
     z-index: -1; */
@@ -167,7 +142,9 @@ polyline {
 /* NAV BAR ACTIVE LINK */
 #active{
   /* ff7d91 */
-  color: #fea9a9;
+  /*   e35024*/
+  color: #FFBD5E;
+  font-weight:600;
 }
 
 /* Culture Grid */
