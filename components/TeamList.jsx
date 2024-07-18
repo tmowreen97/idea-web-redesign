@@ -11,7 +11,7 @@ function TeamList({member, english}){
         <div className="flex items-center justify-center">
         <div className="relative" onMouseEnter={()=> setShowDetails(true)} onMouseLeave={()=> setShowDetails(false)}>
           <Image src={member.image} width={650} height={600} alt={'lead_team'} className="rounded-xl"/>
-          {showDetails && member.contact ? <div className="absolute top-0 bottom-0 left-0 right-0 bg-tertiary/90 rounded-xl">
+          {showDetails && member.contact ? <div className="absolute top-0 bottom-0 left-0 right-0 bg-dark_shadow/90 rounded-xl">
             <div className="flex gap-[25%] text-white items-center justify-center h-full text-lg ">
               <Link href={member.contact} legacyBehavior className="">
                 <a target="_blank" rel="noopener noreferrer" aria-label="Contact">
@@ -34,7 +34,7 @@ function TeamList({member, english}){
       <div className="2xl:w-[800px] lg:w-[600px]  text-left tracking-wider m-2 ">
         <div className=" bg-secondary rounded-xl p-4 mb-4 ">
           <div className="m-2">
-            <h2 className="text-3xl text-dark_red text-shadow-sm shadow-red_heading/40 font-medium">{member.title}</h2>
+            <h2 className="text-3xl font-medium">{member.title}</h2>
             {/* <h2 className="text-2xl">{member.heading}</h2> */}
           </div>
           <div className="flex items-center justify-center">
@@ -48,7 +48,7 @@ function TeamList({member, english}){
             }) : 
             member.body_bangla.map((body_text, index)=> {
               return(
-                 <p key={index} className="m-4 lg:text-xl ">{body_text}</p>
+                 <p key={index} className="m-4 lg:text-xl font-light">{body_text}</p>
               )
             })
             }

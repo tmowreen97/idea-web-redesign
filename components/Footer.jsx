@@ -6,9 +6,9 @@ import { useRouter } from "next/router";
 
 export default function Footer({logo}){
   return(
-    <div id='footer' className="w-full h-full  bg-secondary">
+    <div id='footer' className="w-full h-full bg-footer_bg">
       <div className="flex items-center justify-center pt-[50px]">
-        <div className=" lg:grid lg:grid-cols-2 justify-evenly text-dark_text tracking-wide">
+        <div className=" lg:grid lg:grid-cols-2 justify-evenly tracking-wide">
           <div className="items-center justify-center text-2xl font-light flex md:p-0 px-5" >
           { logo ? 
           <div className="lg:mx-4">
@@ -16,7 +16,7 @@ export default function Footer({logo}){
           </div> 
           : 
           // mx-3 mt-[20%] md:mx-0 md:mt-0 
-          <div className="  rounded-xl  text-center">
+          <div className="rounded-xl text-center">
             <div className="lg:mx-20">
               <Image src={'/assets/logos/vertical-symbol.png'} width={100} height={100} alt={"logo-vertical"}/>
             </div>
@@ -46,13 +46,13 @@ export default function Footer({logo}){
           {/* "xl:ml-[160px] lg:ml-[50px] lg:max-w-[450px] w-full  h-[95%] mt-5" */}
           <div className=" flex justify-center items-center" >
           <div className="md:max-w-[450px] max-w-[350px] w-full m-4 xl:m-0">
-          <div className="bg-footer_bg  md:h-[290px]  rounded-xl ">
+          <div className="bg-border md:h-[290px] rounded-xl ">
             <div className="items-center justify-center">
               <form 
               className="text-center pt-2 pb-4 items-center justify-center"
               action="https://formsubmit.co/info@ideacsc.com" 
               method="POST">
-                <h2 className="text-primary_text">Contact Us</h2>
+                <h2 className="text-light_text font-light">Contact Us</h2>
                 <div className="m-2">
                   {/* <label>Name:</label> */}
                   <input 
@@ -82,7 +82,7 @@ export default function Footer({logo}){
                 </div>
                 <input type="hidden" name="_next" value="https://www.ideacsc.com/thank-you"/>
                 <div className="text-center items-center justify-center flex ">
-                  <div className="bg-button_bg hover:bg-button_bg_2 rounded-xl p-2 shadow-xl ">
+                  <div className="bg-button_bg hover:bg-button_shadow rounded-xl p-2 shadow-xl ">
                     <button id='submit_2' aria-label="submit_2" type='submit'>Send</button>
                   </div>
                 </div>
@@ -98,7 +98,7 @@ export default function Footer({logo}){
             </div>
           <div className="grid grid-cols-3 gap-6 text-center items-center justify-center">
             <div className="text-center items-center justify-center flex rounded-xl ">
-              <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-beige_text ease-in-out duration-300 rounded-full p-4 text-2xl">
+              <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-light_text ease-in-out duration-300 rounded-full p-4 text-2xl">
                 <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
                     <a target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                       <AiFillInstagram/>
@@ -107,7 +107,7 @@ export default function Footer({logo}){
               </div>
             </div>
             <div className="text-center items-center justify-center flex  p-1 rounded-xl ">
-              <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-beige_text ease-in-out duration-300 rounded-full p-4 text-2xl">
+              <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-light_text ease-in-out duration-300 rounded-full p-4 text-2xl">
                 <Link href="https://www.facebook.com/profile.php?id=100076951517206" legacyBehavior>
                     <a target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                       <AiFillFacebook/>
@@ -116,7 +116,7 @@ export default function Footer({logo}){
               </div>
             </div>
             <div className="text-center items-center justify-center flex  p-1 rounded-xl ">
-              <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-beige_text ease-in-out duration-300 rounded-full p-4 text-2xl">
+              <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-light_text ease-in-out duration-300 rounded-full p-4 text-2xl">
                 <Link href="https://www.linkedin.com/company/idea-aec/" legacyBehavior>
                     <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                       <AiFillLinkedin/>

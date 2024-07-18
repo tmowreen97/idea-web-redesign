@@ -16,13 +16,13 @@ const AboutUs = () => {
 
   return (
     <div className='bg-primary w-screen'>
-      <div className='absolute 2xl:my-32 '>
+      {/* <div className='absolute 2xl:my-32 '>
         <Translate setEnglish={setEnglish} english={english}/>
-      </div>
+      </div> */}
       <div className='justify-center items-center flex'>
       <div className='m-10'>
         <div className='lg:grid lg:grid-cols-2'>
-          <h1 className="lg:text-[1100%] text-[525%] font-thin text-center md:pt-0 pt-5">
+          <h1 className="lg:text-[1100%] text-[525%] font-thin text-center md:pt-0 pt-5 text-primary_text">
             {english ? 'About' : 'সম্পর্কে'}
           </h1>
         </div>
@@ -31,7 +31,7 @@ const AboutUs = () => {
           <div className='justify-center items-center lg:max-w-[650px] lg:w-full md:w-[500px] w-[350px] bg-secondary rounded-xl lg:p-10 p-6'>
             {/* Our Story Title */}
             <div className='flex justify-left lg:px-6'>
-              <h2 className='text-dark_red text-shadow-sm shadow-red_heading/40 font-medium'>
+              <h2 className='font-medium'>
                 {english ? 'Our Story' : 'আমাদের গল্প'}
               </h2>
             </div>
@@ -39,21 +39,21 @@ const AboutUs = () => {
             <div className='lg:px-6 lg:text-xl tracking-wider font-light'>
               { english ? 
               <p className='my-[4%]'>
-                IDEA <span className='lg:text-base text-sm'>CSC</span> provides integrated Engineering and Construction Management services to the Architectural Construction Industry. We are Engineers and Construction Managers collaborating our expertise to provide top quality and uncompromised services to our clients. Our integrated approach is led by our USA based Inter-Disciplinary Engineering team, <span className='font-bold text-button_bg_2 hover:underline cursor-pointer'><Link href={"https://www.ideaaec.com"}target='_blank' rel="noopener noreferrer">IDEA <span className='lg:text-base text-sm'>AEC</span></Link></span>. We focus on building efficiency between the Design and Construction phases of a project. Our approach consists of delivering client specific, cost-effective, on schedule and coordinated solutions.
+                IDEA <span className='lg:text-base text-sm'>CSC</span> provides integrated Engineering and Construction Management services to the Architectural Construction Industry. We are Engineers and Construction Managers collaborating our expertise to provide top quality and uncompromised services to our clients. Our integrated approach is led by our USA based Inter-Disciplinary Engineering team, <span className='font-bold text-button_bg hover:underline cursor-pointer'><Link href={"https://www.ideaaec.com"}target='_blank' rel="noopener noreferrer">IDEA <span className='lg:text-base text-sm'>AEC</span></Link></span>. We focus on building efficiency between the Design and Construction phases of a project. Our approach consists of delivering client specific, cost-effective, on schedule and coordinated solutions.
               </p>
               : 
               <p className='my-[5%]'>
-                IDEA <span className='lg:text-base text-sm'>CSC</span> স্থাপত্য নির্মাণ শিল্পে সমন্বিত প্রকৌশল এবং নির্মান ব্যবস্থাপনা পরিষেবা প্রদান করে। আমরা ইঞ্জিনিয়ার এবং কনস্ট্রাকশন ম্যানেজার একত্রে আমাদের দক্ষতার সাথে সহযোগিতা করছি ক্লায়েন্টদের শীর্ষ মানের এবং আপসহীন পরিষেবা প্রদানের জন্য। আমাদের সমন্বিত পদ্ধতির নেতৃত্বে রয়েছে আমাদের ইউএসএ ভিত্তিক  আন্তঃবিভাগীয় প্রকৌশল দল, <span className='font-bold text-button_bg_2 hover:underline cursor-pointer'><Link href={"https://www.ideaaec.com"}target='_blank' rel="noopener noreferrer">IDEA <span className='lg:text-base text-sm'>AEC</span></Link></span>। আমরা একটি প্রকল্পের নকশা এবং নির্মাণ পর্যায়গুলির মধ্যে সক্ষমতা যাচাইয়ে গুরুত্ব দেই। গ্রাহকদের নির্দিষ্ঠ,  সাশ্রয়ী,  পূর্ব নির্ধারিত সময়ের মধ্যে সমন্বিত সমাধান প্রদান করা আমাদের সেবা প্রদানের পদ্ধতির অন্তর্ভুক্ত।
+                IDEA <span className='lg:text-base text-sm'>CSC</span> স্থাপত্য নির্মাণ শিল্পে সমন্বিত প্রকৌশল এবং নির্মান ব্যবস্থাপনা পরিষেবা প্রদান করে। আমরা ইঞ্জিনিয়ার এবং কনস্ট্রাকশন ম্যানেজার একত্রে আমাদের দক্ষতার সাথে সহযোগিতা করছি ক্লায়েন্টদের শীর্ষ মানের এবং আপসহীন পরিষেবা প্রদানের জন্য। আমাদের সমন্বিত পদ্ধতির নেতৃত্বে রয়েছে আমাদের ইউএসএ ভিত্তিক  আন্তঃবিভাগীয় প্রকৌশল দল, <span className='font-bold text-button_bg hover:underline cursor-pointer'><Link href={"https://www.ideaaec.com"}target='_blank' rel="noopener noreferrer">IDEA <span className='lg:text-base text-sm'>AEC</span></Link></span>। আমরা একটি প্রকল্পের নকশা এবং নির্মাণ পর্যায়গুলির মধ্যে সক্ষমতা যাচাইয়ে গুরুত্ব দেই। গ্রাহকদের নির্দিষ্ঠ,  সাশ্রয়ী,  পূর্ব নির্ধারিত সময়ের মধ্যে সমন্বিত সমাধান প্রদান করা আমাদের সেবা প্রদানের পদ্ধতির অন্তর্ভুক্ত।
               </p>
               
               }
               {english ? 
                 <p className='my-[4%]'>
-                In addition to providing unparalleled Engineering and Construction Management services, we strive to positively impact and improve the current industry in Bangladesh. Our Construction Solutions Company (IDEA <span className='text-sm'>CSC</span>) team will deploy our accomplished Inter-Disciplinary Mechanical, Electrical, Plumbing and Fire Protection Engineering from our <span className='font-bold text-button_bg_2 hover:underline cursor-pointer'><Link href={"https://www.ideaaec.com"}target='_blank' rel="noopener noreferrer">IDEA <span className='lg:text-base text-sm'>AEC</span></Link></span> parent company. Our team members' experience encompasses projects and opportunities at various scales, complexities as well as sectors of the industry including Theatrical/Performance Venues, Institutions & Campuses, High-End Residences & High-Rise Residentials, Terminal & Mixed Use, Commercial and Public Venues.
+                In addition to providing unparalleled Engineering and Construction Management services, we strive to positively impact and improve the current industry in Bangladesh. Our Construction Solutions Company (IDEA <span className='text-sm'>CSC</span>) team will deploy our accomplished Inter-Disciplinary Mechanical, Electrical, Plumbing and Fire Protection Engineering from our <span className='font-bold text-button_bg hover:underline cursor-pointer'><Link href={"https://www.ideaaec.com"}target='_blank' rel="noopener noreferrer">IDEA <span className='lg:text-base text-sm'>AEC</span></Link></span> parent company. Our team members' experience encompasses projects and opportunities at various scales, complexities as well as sectors of the industry including Theatrical/Performance Venues, Institutions & Campuses, High-End Residences & High-Rise Residentials, Terminal & Mixed Use, Commercial and Public Venues.
               </p>
               :
                 <p className='my-[5%]'>
-                  অতুলনীয় ইঞ্জিনিয়ারিং এবং কনস্ট্রাকশন ম্যানেজমেন্ট পরিষেবা প্রদানের পাশাপাশি, আমরা বাংলাদেশের বর্তমান শিল্পকে ইতিবাচকভাবে প্রভাবিত এবং উন্নত করার চেষ্টা করি। আমাদের কনস্ট্রাকশন সলিউশন কোম্পানি (IDEA <span className='text-sm'>CSC</span>) টিম আমাদের <span className='font-bold text-button_bg_2 hover:underline cursor-pointer'><Link href={"https://www.ideaaec.com"}target='_blank' rel="noopener noreferrer">IDEA <span className='lg:text-base text-sm'>AEC</span></Link></span> মূল কোম্পানি থেকে আমাদের দক্ষ আন্তঃবিভাগীয় মেকানিক্যাল, ইলেকট্রিক্যাল, প্লাম্বিং এবং ফায়ার প্রোটেকশন ইঞ্জিনিয়ারিং প্রসারিত করবে। আমাদের দলের সদস্যদের অভিজ্ঞতা বিভিন্ন পর্যায়ের প্রকল্প এবং সুযোগ, জটিলতা এবং সেইসাথে শিল্পের সেক্টর যেমন থিয়েট্রিকাল/পারফরম্যান্স ভেন্যু, প্রতিষ্ঠান এবং ক্যাম্পাস, হাই-এন্ড রেসিডেন্স এবং বহুতলবিশিষ্ট আবাসিক ভবন, টার্মিনাল এবং মিশ্র ব্যবহার, বাণিজ্যিক এবং পাবলিক ভেন্যু ইত্যাদি দ্বারা পরিবেষ্টিত।
+                  অতুলনীয় ইঞ্জিনিয়ারিং এবং কনস্ট্রাকশন ম্যানেজমেন্ট পরিষেবা প্রদানের পাশাপাশি, আমরা বাংলাদেশের বর্তমান শিল্পকে ইতিবাচকভাবে প্রভাবিত এবং উন্নত করার চেষ্টা করি। আমাদের কনস্ট্রাকশন সলিউশন কোম্পানি (IDEA <span className='text-sm'>CSC</span>) টিম আমাদের <span className='font-bold text-button_bg hover:underline cursor-pointer'><Link href={"https://www.ideaaec.com"}target='_blank' rel="noopener noreferrer">IDEA <span className='lg:text-base text-sm'>AEC</span></Link></span> মূল কোম্পানি থেকে আমাদের দক্ষ আন্তঃবিভাগীয় মেকানিক্যাল, ইলেকট্রিক্যাল, প্লাম্বিং এবং ফায়ার প্রোটেকশন ইঞ্জিনিয়ারিং প্রসারিত করবে। আমাদের দলের সদস্যদের অভিজ্ঞতা বিভিন্ন পর্যায়ের প্রকল্প এবং সুযোগ, জটিলতা এবং সেইসাথে শিল্পের সেক্টর যেমন থিয়েট্রিকাল/পারফরম্যান্স ভেন্যু, প্রতিষ্ঠান এবং ক্যাম্পাস, হাই-এন্ড রেসিডেন্স এবং বহুতলবিশিষ্ট আবাসিক ভবন, টার্মিনাল এবং মিশ্র ব্যবহার, বাণিজ্যিক এবং পাবলিক ভেন্যু ইত্যাদি দ্বারা পরিবেষ্টিত।
                 </p>
               }
               {english ? 
@@ -78,7 +78,7 @@ const AboutUs = () => {
                 {english ? 
                 english_traits.map((trait)=> {
                   return(
-                    <div key={trait} className='bg-button_bg text-center italic rounded-xl lg:p-4 p-3 text-sm lg:text-lg'>
+                    <div key={trait} className='bg-accent_bg text-center italic rounded-xl lg:p-4 p-3 text-sm lg:text-lg'>
                       <p>{trait}</p>
                     </div>
                     
@@ -106,7 +106,7 @@ const AboutUs = () => {
             <div className='bg-secondary lg:max-w-[580px] justify-center lg:w-full md:w-[500px] w-[350px] rounded-xl lg:p-10 p-6'>
               {/* Our Mission Title */}
               <div className='flex justify-left lg:px-6'>
-                <h2 className='text-dark_red text-shadow-sm shadow-red_heading/40 font-medium'>
+                <h2 className='font-medium'>
                   {english ? 'Our Mission' : 'আমাদের লক্ষ্য'}
                 </h2>
               </div>
@@ -136,8 +136,8 @@ const AboutUs = () => {
               <Link href={"/team"}>
                 <div className='relative items-center justify-center  p-3'>
                   <Image src={'/assets/idea-vest.jpg'} width={400} height={100} alt={'vest'} className={show ? 'rounded-xl' : 'rounded-xl motion-safe:animate-pulse'}/>
-                  <div className={show ? "absolute bg-cover bottom-3 top-3 left-3 right-3 bg-tertiary/80 rounded-xl text-dark_text  " : "hidden"}>
-                    <h1 className='flex items-center justify-center h-full text-2xl animate-none'>
+                  <div className={show ? "absolute bg-cover bottom-3 top-3 left-3 right-3 bg-dark_shadow/80 rounded-xl" : "hidden"}>
+                    <h1 className='flex items-center justify-center h-full text-2xl animate-none text-light_text'>
                       {english ? 'Click to See Our Team' : 'আমাদের দল দেখতে ক্লিক করুন'}
                     </h1>
                   </div>

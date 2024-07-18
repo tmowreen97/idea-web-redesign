@@ -69,7 +69,7 @@ function Carousel ({array,  custom, handleIndex}){
 
       {/* Right Arrow */}
       
-      {array.length > 1 ? <div className="hidden group-hover:block absolute top-[50%] translate-x-0 translate-y-[-50%] right-2 text-2xl p-2 rounded-full text-black bg-slate-200/60 shadow-gray-600/90 hover:bg-slate-600/50 hover:text-[#F9FBFD]">
+      {array.length > 1 ? <div className="hidden group-hover:block absolute top-[50%] translate-x-0 translate-y-[-50%] right-2 text-2xl p-2 rounded-full text-black bg-slate-200/60 shadow-gray-600/90 hover:bg-slate-600/50 hover:text-[#F9FBFD] cursor-pointer">
         <BsChevronCompactRight onClick={()=> handleRight()} size={40}/>
       </div> : ""}
       </motion.div>
@@ -78,7 +78,7 @@ function Carousel ({array,  custom, handleIndex}){
           <div
             key={i}
             onClick={() => goToSlide(i)}
-            className={ i===currentIndex ? 'text-2xl cursor-pointer text-button_bg_2' : 'text-2xl cursor-pointer text-white' }
+            className={ i===currentIndex ? 'text-2xl cursor-pointer text-button_shadow' : 'text-2xl cursor-pointer text-white' }
 
           >
             <RxDotFilled/>

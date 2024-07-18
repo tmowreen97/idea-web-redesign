@@ -14,13 +14,13 @@ function Description({data, handleClick}){
       <div className="flex justify-end m-2 ">
         <AiOutlineCloseCircle 
         onClick={()=> handleClick(fixed.id)}
-        className="cursor-pointer bg-button_bg hover:bg-dark_red hover:text-beige_text text-shadow-lg shadow-black rounded-full lg:text-4xl text-2xl" />
+        className="cursor-pointer bg-button_bg hover:bg-button_shadow hover:text-light_text text-shadow-lg shadow-black rounded-full lg:text-4xl text-2xl" />
       </div>
       <div className="2xl:flex gap-10">
         {/* Carousel */}
         <div>
           <div className=" w-full  flex justify-center">
-          <div className=" bg-secondary/80 rounded-xl max-w-[750px] xl:p-4 p-2 m-1 ">
+          <div className=" bg-border/80 rounded-xl max-w-[750px] xl:p-4 p-2 m-1 ">
             <Carousel
               array={fixed.images_array}
               custom={" xl:w-[700px] xl:h-[490px] lg:w-[500px] lg:h-[400px] md:w-[400px] md:h-[300px] w-[275px] h-[200px] m-2 rounded-2xl bg-center bg-cover hover:scale-[105%]  duration-500 transform"}

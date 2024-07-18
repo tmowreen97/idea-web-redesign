@@ -308,8 +308,8 @@ function ServicesPage(){
         alt:"existing-1",
       },
     ],
-    color: '#63a081',
-    list_color: '#498767'
+    color: '#82B39A',
+    list_color: '#6d9f85'
   }
 
   const construction_services = [

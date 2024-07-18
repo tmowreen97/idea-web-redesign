@@ -38,29 +38,27 @@ module.exports = {
 
       },
       colors:{
-        primary: '#025138',
-        secondary: '#1f6450',
-        tertiary : '#042a2c',
-        dark_bg: '#021C15',
-        footer_bg: '#0D352B',
-        red_text: '#F44336',
-        red_heading: '#DB4F58',
-        red_shadow: '#b32334',
-        red_accent_2: '#F25C5C',
-        purple_accent:'#9C36FC',
-        purple_accent_2:'#E9DCF9',
-        purple_accent_3:'#C09BEE',
-        dark_red: '#660000',
-        beige_text: '#fce5cd',
-        // dark_red: '#602020',
-// #7FFFD4
-        button_bg: '#42A26C',
-        button_bg_2: '#86DA96',
-        accent_3: '#63a081',
-        accent_4: '#498767',
+        primary: '#f9f6f4',
+        secondary: '#aabcb5',
+        nav_bar: '#919d99',
+        footer_bg: '#919d99',
+        purple_accent:'#af79d9',
+        purple_accent_2:'#cdaaec',
+        dark_red: '#2E3A19',
+        light_text: '#fdf4eb',
+        accent_bg: '#6c8a7e',
+        dark_shadow: '#303D38',
+        button_bg: '#d15f3c',
+        button_shadow: '#e97451',
+        // border: '#b29370',#4f5650
+        border: '#747d7a',
+        
         // button_bg : '#8dedd0',
-        primary_text : '#FFFFF2',
+        primary_text : '#323b1e',
+        // #2E3A19
+        // primary_text : '#FFFFF2',
         dark_text: '#070706',
+        accent_4: '#498767',
 
       },
       fontFamily: {

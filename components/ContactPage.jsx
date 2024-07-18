@@ -133,21 +133,21 @@ function ContactPage(){
         initial={{opacity:0}}
         animate={{opacity:1, transition:{duration:2, delay:2.5} }}
         className="flex justify-evenly p-14 pb-24 rounded-xl text-primary_text/90">
-          <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-beige_text ease-in-out duration-300 rounded-full p-7 text-4xl mx-2">
+          <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-light_text ease-in-out duration-300 rounded-full p-7 text-4xl mx-2">
             <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
                 <a target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                   <AiFillInstagram/>
                 </a>
             </Link>
           </div>
-          <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-beige_text ease-in-out duration-300 rounded-full p-7 text-4xl mx-2">
+          <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-light_text ease-in-out duration-300 rounded-full p-7 text-4xl mx-2">
             <Link href="https://www.facebook.com/profile.php?id=100076951517206" legacyBehavior>
                 <a target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                   <AiFillFacebook/>
                 </a>
             </Link>
           </div>
-          <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-beige_text ease-in-out duration-300 rounded-full p-7 text-4xl mx-2">
+          <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-light_text ease-in-out duration-300 rounded-full p-7 text-4xl mx-2">
             <Link href="https://www.linkedin.com/company/idea-aec/" legacyBehavior>
                 <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <AiFillLinkedin/>

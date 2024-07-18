@@ -24,15 +24,15 @@ const Navbar = ({setLightLogo, lightLogo}) => {
     // nav bar color to be transparent if at the top of the page, otherwise change the color
     const changeColor = () => {
       if (window.scrollY >= 25) {
-        setColor('#198363');
-        setTextColor("#CCFFCC")
+        setColor('#919d99');
+        // setTextColor("#CCF0CC")
         
         if (setLightLogo) {
           setLightLogo(true)
         }
       } else {
         setColor('transparent');
-        setTextColor("#FFFF00")
+        // setTextColor("#FFFF00")
         if (setLightLogo) {
           setLightLogo(false)
         }
@@ -64,33 +64,33 @@ const Navbar = ({setLightLogo, lightLogo}) => {
             </Link>
           </motion.div>
           {/* nav bar */}
-          <ul color={{textColor}} className='hidden sm:flex text-primary_text'>
+          <ul color={{textColor}} className='hidden sm:flex text-light_text'>
             <li className='p-4'>
             <div className="dropdown inline-block relative">
             <button aria-label='about_button' className="inline-flex items-center ">
-              <p className="mr-1 tracking-wide text-primary_text" id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>About</p>
+              <p className="mr-1 tracking-wide text-[#f5f5f5]" id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>About</p>
               <span id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}><BiChevronDown /></span>
             </button>
-            <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 text-center">
-              <li className="bg-button_bg_2 hover:bg-button_bg hover:text-primary_text w-[90px] ml-[-20px] rounded-xl">
+            <ul className="dropdown-menu absolute hidden pt-1 text-center">
+              <li className="bg-button_bg hover:bg-button_shadow w-[90px] ml-[-20px] rounded-xl">
                 <Link className="p-2 block mb-1" href={'/#about'}>About Us</Link>
               </li>
-              <li className="bg-button_bg_2 hover:bg-button_bg hover:text-primary_text w-[100px] ml-[-29px] rounded-xl">
+              <li className="bg-button_bg hover:bg-button_shadow w-[100px] ml-[-29px] rounded-xl">
                 <Link className="p-2 block" href={'/team'}>Our Team</Link>
               </li>
             </ul>
           </div>
             </li> 
-            <li className='m-2 p-2 hover:bg-button_bg   rounded-xl'>
+            <li className='m-2 p-2 hover:bg-button_shadow rounded-xl'>
               <Link href='/#projects' id={router.asPath == "/#projects" ? "active" : ""}>Projects</Link>
             </li>
-            <li className='m-2 p-2 hover:bg-button_bg  rounded-xl'>
+            <li className='m-2 p-2 hover:bg-button_shadow rounded-xl'>
               <Link href='/services' id={router.pathname == "/services" ? "active" : ""}>Services</Link>
             </li>
-            <li className='m-2 p-2 hover:bg-button_bg rounded-xl'>
+            <li className='m-2 p-2 hover:bg-button_shadow rounded-xl'>
               <Link href='/developments' id={router.pathname == "/developments" ? "active" : ""}>Developments</Link>
             </li>
-            <li className='m-2 p-2 hover:bg-button_bg  rounded-xl'>
+            <li className='m-2 p-2 hover:bg-button_shadow  rounded-xl'>
               <Link href='/contact' id={router.pathname == "/contact" ? "active" : ""}>Contact</Link>
             </li>
           </ul>
@@ -107,8 +107,8 @@ const Navbar = ({setLightLogo, lightLogo}) => {
           <div
             className={
               nav
-                ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-tertiary ease-in duration-300 tracking-wider pt-10 z-30'
-                : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-tertiary ease-in duration-300 tracking-wider z-30'
+                ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-nav_bar ease-in duration-300 tracking-wider pt-10 z-30'
+                : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-nav_bar ease-in duration-300 tracking-wider z-30'
             }
           >
             

@@ -186,11 +186,11 @@ function Projects(){
   }
   return(
     <div id='projects' className="w-screen h-full bg-primary justify-center">
-      <div className='absolute 2xl:my-32 z-[1]'>
+      {/* <div className='absolute 2xl:my-32 z-[1]'>
         <Translate setEnglish={setEnglish} english={english}/>
-      </div>
+      </div> */}
       <div className="justify-center items-center">
-        <div  className={hide? "flex items-center justify-center lg:px-[10%] 2xl:px-[10%] bg-dark_bg/95" : "flex items-center justify-center lg:px-[10%] 2xl:px-[10%] py-10"}>
+        <div  className={hide? "flex items-center justify-center lg:px-[10%] 2xl:px-[10%] bg-black/95" : "flex items-center justify-center lg:px-[10%] 2xl:px-[10%] py-10"}>
           <div className={hide ? "relative rounded-xl overflow-hidden hidden  h-full ease-in-out duration-300" : "relative rounded-xl overflow-hidden h-full ease-in-out duration-300"}>
             {/* TITLE */}
             <div>
@@ -212,7 +212,7 @@ function Projects(){
               <div className="flex justify-center">
               <div className="bg-secondary rounded-xl lg:max-w-[525px] md:max-w-[570px] max-w-[325px] m-2 relative xl:h-auto md:h-full h-[650px]">
                 <div className=" xl:p-10 p-4 w-full font-light mb-8 md:mb-0">
-                  <h2 className="text-dark_red text-shadow-sm shadow-red_heading/40 font-medium text-4xl">{projects[projectSelect].name}</h2>
+                  <h2 className="font-medium text-4xl">{projects[projectSelect].name}</h2>
                   <h3 className="text-2xl">{projects[projectSelect].location}</h3>
                   <h3 className="text-2xl">{projects[projectSelect].year}</h3>
                   <h3 className="text-2xl">{projects[projectSelect].size}</h3>
@@ -222,7 +222,7 @@ function Projects(){
                 <div className="justify-center items-center flex m-10">
                   <button 
                   onClick={()=> handleClick()}
-                  className="bg-button_bg hover:bg-button_bg_2  p-3 mt-[20px] md:mt-0 rounded-xl absolute md:bottom-8 bottom-4 tracking-wide font-light ease-in-out duration-300">Read More</button>
+                  className="bg-button_bg hover:bg-button_shadow text-light_text p-3 mt-[20px] md:mt-0 rounded-xl absolute md:bottom-8 bottom-4 tracking-wide font-light ease-in-out duration-300">Read More</button>
                 </div>
               </div>
               </div>
@@ -240,8 +240,8 @@ function Projects(){
           animate={{opacity:1, transition:{duration:.5}}}
           className="">
           <div className="w-full h-full bg-none top-0 bottom-0 right-0 left-0 z-10">
-            <div className="2xl:z-20 flex h-full w-full items-center justify-center bg-dark_bg/95 ease-in-out duration-200">
-              <div className="justify-center items-center bg-accent_3 text-left  p-1 rounded-2xl z-9 lg:m-20  m-6 h-full md:h-auto max-w-[2500px]  bottom-[0]">
+            <div className="2xl:z-20 flex h-full w-full items-center justify-center bg-primary ease-in-out duration-200">
+              <div className="justify-center items-center bg-secondary text-left  p-1 rounded-2xl z-9 lg:m-20  m-6 h-full md:h-auto max-w-[2500px]  bottom-[0]">
                 <Description data={projects[projectSelect]} handleClick={handleClick}/>
                 {/* <h1 className="text-7xl">{projects[projectSelect].name}</h1> */}
               </div>
