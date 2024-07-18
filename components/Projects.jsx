@@ -133,16 +133,17 @@ function Projects(){
         "Fire Protection (Sprinkler) System",
         "Low Voltage (Security & Information Technology) Design",
       ],
-      image: "/assets/projects/comm-complex-2.png",
+      image: "/assets/projects/idea-comm-complex.jpg",
       images_array: [
+        {
+          title: 'eefi-1',
+          image: '/assets/projects/idea-comm-complex.jpg'
+        },
         {
           title: 'eefi-1',
           image: '/assets/projects/comm-complex-2.png'
         },
-        {
-          title: 'eefi-1',
-          image: '/assets/projects/comm-complex.png'
-        },
+        
       ],
     },
     // 5 STORY
@@ -178,11 +179,11 @@ function Projects(){
         "Site Safety Coordination & Supervision",
         "Inspections and Completed Operations",
       ],
-      image: "/assets/projects/5story-crop.png",
+      image: "/assets/projects/5-story-res-edit.png",
       images_array: [
         {
-          title: 'eefi-1',
-          image: "/assets/projects/5story-crop.png"
+          title: '5-story-res',
+          image: "/assets/projects/5-story-res-edit.png"
         },
       ],
 
