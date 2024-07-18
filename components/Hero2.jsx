@@ -19,6 +19,7 @@ function Hero2(){
           autoPlay
           muted
           loop
+          playsInline
           id='video'
       />
   </main>
