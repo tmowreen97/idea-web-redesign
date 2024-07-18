@@ -72,20 +72,28 @@ function Projects(){
         "Mechanical (HVAC) Design",
         "Plumbing Design",
       ],
-      image: "/assets/projects/bd-render.png",
+      image: "/assets/projects/bd-res-front-view.png",
       images_array: [
         {
-          title: 'bd-res-1',
-          image: '/assets/projects/bd-render.png'
+          title: 'bd-res-front-view',
+          image: '/assets/projects/bd-res-front-view.png'
+        },
+        {
+          title: 'bd-res-indoor',
+          image: '/assets/projects/bd-res-indoor.png'
+        },
+        {
+          title: 'bd-res-restroom',
+          image: '/assets/projects/bd-res-restroom.png'
+        },
+        {
+          title: 'bd-res-aerial',
+          image: '/assets/projects/bd-res-aerial-view.png'
         },
         {
           title: 'bd-res-2',
-          image: '/assets/projects/bd-res-render-1.png'
-        },
-        {
-          title: 'bd-res-2',
-          image: '/assets/projects/walkthrough-edited.gif',
-          timer: 10000
+          image: '/assets/projects/bd-res-optimized-gif.gif',
+          timer: 15000
         },
       ],
     },
