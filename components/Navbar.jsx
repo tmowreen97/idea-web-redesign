@@ -9,7 +9,7 @@ import { AiOutlineClose, AiOutlineMenu, AiFillInstagram, AiFillFacebook, AiFillL
 const Navbar = ({setLightLogo, lightLogo}) => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState('transparent');
-  const [textColor, setTextColor] = useState('#323b1e');
+  const [textColor, setTextColor] = useState('#fdf4eb');
   
   const router = useRouter();
 
@@ -32,7 +32,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
         }
       } else {
         setColor('transparent');
-        setTextColor("#323b1e")
+        // setTextColor("#323b1e")
         if (setLightLogo) {
           setLightLogo(false)
         }
@@ -60,7 +60,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
           >
             <Link href='/'>
               
-              {lightLogo ? <Image src={'/assets/logos/nav-bar-updated.png'} width={300} height={100} alt={'light_logo'} /> : <Image src={'/assets/logos/csc-logo-dark.png'} width={150} height={100} alt={'dark_logo'} />}
+              {lightLogo ? <Image src={'/assets/logos/nav-bar-updated.png'} width={300} height={100} alt={'light_logo'} /> : <Image src={'/assets/logos/logo-landing.png'} width={150} height={100} alt={'dark_logo'} />}
             </Link>
           </motion.div>
           {/* nav bar */}

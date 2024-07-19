@@ -17,8 +17,8 @@ export default function Home() {
 
   return (
     <main className={`${urbanist.variable} font-sans tracking-wider justify-center items-center h-full`}>
-      {/* <Hero heading='We Empower Ideas'/> */}
-      <Hero2/>
+      <Hero heading='We Empower Ideas'/>
+      {/* <Hero2/> */}
       <Intro/>
       <AboutUs/>
       <Projects/>
