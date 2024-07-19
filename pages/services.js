@@ -5,6 +5,8 @@ import React from "react";
 export default function Services(){
   return (
     <div>
+      <Navbar customText={'#323b1e'} greenLogo={true}/>
+
       <ServicesPage/>
     </div>
   )

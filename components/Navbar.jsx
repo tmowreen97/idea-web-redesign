@@ -6,10 +6,11 @@ import { useRouter } from 'next/router';
 import { BiChevronDown } from 'react-icons/bi';
 import { AiOutlineClose, AiOutlineMenu, AiFillInstagram, AiFillFacebook, AiFillLinkedin } from 'react-icons/ai';
 
-const Navbar = ({setLightLogo, lightLogo}) => {
+const Navbar = ({setLightLogo, lightLogo, customText, greenLogo}) => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState('transparent');
-  const [textColor, setTextColor] = useState('#fdf4eb');
+  const [textColor, setTextColor] = useState(customText ? customText :'#323b1e');
+  const [darkerLogo, setDarkerLogo] = useState(greenLogo)
   
   const router = useRouter();
 
@@ -24,15 +25,17 @@ const Navbar = ({setLightLogo, lightLogo}) => {
     // nav bar color to be transparent if at the top of the page, otherwise change the color
     const changeColor = () => {
       if (window.scrollY >= 25) {
+        
         setColor('#919d99');
         setTextColor("#fdf4eb")
-        
+        setDarkerLogo(false)
         if (setLightLogo) {
           setLightLogo(true)
         }
       } else {
         setColor('transparent');
-        // setTextColor("#323b1e")
+        setTextColor(customText)
+        setDarkerLogo(greenLogo)
         if (setLightLogo) {
           setLightLogo(false)
         }
@@ -60,7 +63,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
           >
             <Link href='/'>
               
-              {lightLogo ? <Image src={'/assets/logos/nav-bar-updated.png'} width={300} height={100} alt={'light_logo'} /> : <Image src={'/assets/logos/logo-landing.png'} width={150} height={100} alt={'dark_logo'} />}
+              {lightLogo ? <Image src={'/assets/logos/nav-bar-updated.png'} width={300} height={100} alt={'light_logo'} /> : <Image src={darkerLogo ? '/assets/logos/csc-logo-dark.png' : '/assets/logos/logo-landing.png'} width={150} height={100} alt={'dark_logo'} />}
             </Link>
           </motion.div>
           {/* nav bar */}

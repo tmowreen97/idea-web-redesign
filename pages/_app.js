@@ -43,7 +43,7 @@ export default function App({ Component, pageProps }) {
             key="desc"
         />
       </Head>
-      <Navbar setLightLogo={setLightLogo} lightLogo={lightLogo} />
+      {/* <Navbar setLightLogo={setLightLogo} lightLogo={lightLogo} /> */}
       <Component {...pageProps} />
       <Footer logo={logo} setLogo={setLogo}/>
     </main>

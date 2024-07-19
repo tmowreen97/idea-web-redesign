@@ -5,6 +5,7 @@ export default function Contact (){
   
   return(
     <div>
+      <Navbar customText={'#323b1e'} greenLogo={true}/>
       <ContactPage/>
     </div>
   )
