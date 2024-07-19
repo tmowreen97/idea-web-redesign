@@ -24,33 +24,33 @@ function ThankYou(){
               animate={{opacity:1, transition:{duration:2, delay:2}}}
               className=""
             >
-              <Image src={'/assets/logos/const-icon.png'} width={115} height={80} alt={'icon'}/>
+              <Image src={'/assets/logos/green-logos/const-icon-green.png'} width={115} height={80} alt={'icon'}/>
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:2.5}}}
               className=""
             >
-            <Image src={'/assets/logos/mech-icon.png'} width={115} height={80} alt={'icon'}/>              
+            <Image src={'/assets/logos/green-logos/mech-icon-green.png'} width={115} height={80} alt={'icon'}/>              
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:3}}}
               className=""
             >
-            <Image src={'/assets/logos/elec-icon.png'} width={115} height={80} alt={'icon'}/>              
+            <Image src={'/assets/logos/green-logos/elec-icon-green.png'} width={115} height={80} alt={'icon'}/>              
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:3.5}}}
             >
-            <Image src={'/assets/logos/plumb-icon.png'} width={115} height={82} alt={'icon'}/>              
+            <Image src={'/assets/logos/green-logos/plumb-icon-green.png'} width={115} height={82} alt={'icon'}/>              
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:4}}}
             >
-            <Image src={'/assets/logos/fp-icon.png'} width={115} height={82} alt={'icon'}/>              
+            <Image src={'/assets/logos/green-logos/fp-icon-green.png'} width={115} height={82} alt={'icon'}/>              
             </motion.div>
           </div>
           {/* col/row 1/1 text */}
