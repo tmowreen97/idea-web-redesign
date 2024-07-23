@@ -160,7 +160,7 @@ const Navbar = ({setLightLogo, lightLogo, customText, greenLogo}) => {
               </li>
               </ul>
             
-            <div className="flex justify-evenly py-5 pt-10 rounded-xl text-dark_text/90">
+            <div className="flex justify-evenly py-5 pt-10 rounded-xl text-light_text">
                   <div className="bg-button_bg/90 hover:bg-button_bg/80 hover:text-primary_text  rounded-full p-5 text-4xl mx-5">
                     <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
                         <a target="_blank" rel="noopener noreferrer" aria-label="Instagram">
