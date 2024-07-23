@@ -74,7 +74,7 @@ function DevelopmentsPage(){
           <div className="flex text-center justify-center xl:mx-[10%] xl:my-[5%] mx-5 my-5 w-full">
             <h1 className="lg:text-6xl text-4xl font-thin tracking-wide lg:leading-[70px] leading-[40px]">
               Check out our <span className="motion-safe:animate-pulse hover:animate-none"><Link 
-              href={'https://www.ideaaec.com/culture'} 
+              href={'https://www.ideaaec.com/developments'} 
               rel="noopener noreferrer" target="_blank" 
               className="text-button_bg font-medium hover:underline">culture page</Link> </span> 
               and don't forget to connect with us at <Link href={"https://www.ideaaec.com"} rel="noopener noreferrer" target="_blank" className="text-purple_accent font-medium hover:underline">IDEA <span className="lg:text-4xl text-2xl">AEC</span></Link>!</h1>
