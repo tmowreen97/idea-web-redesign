@@ -85,7 +85,7 @@ function Culture_Page_Two(){
         <motion.div
         initial={{opacity:0}}
         animate={{opacity:1, transition:{delay:2, duration:1.5} }} 
-        className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-light_text ease-in-out duration-300 rounded-full lg:p-7 p-5 lg:text-5xl text-4xl mx-2">
+        className="bg-button_bg text-light_text hover:bg-dark_red hover:text-light_text ease-in-out duration-300 rounded-full lg:p-7 p-5 lg:text-5xl text-4xl mx-2">
           <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
               <a target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <AiFillInstagram/>
@@ -95,7 +95,7 @@ function Culture_Page_Two(){
         <motion.div
         initial={{opacity:0}}
         animate={{opacity:1, transition:{delay:2.5, duration:1.5} }}  
-        className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-light_text ease-in-out duration-300 rounded-full lg:p-7 p-5 lg:text-5xl text-4xl mx-2">
+        className="bg-button_bg text-light_text hover:bg-dark_red hover:text-light_text ease-in-out duration-300 rounded-full lg:p-7 p-5 lg:text-5xl text-4xl mx-2">
           <Link href="https://www.facebook.com/profile.php?id=100076951517206" legacyBehavior>
               <a target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <AiFillFacebook/>
@@ -105,7 +105,7 @@ function Culture_Page_Two(){
         <motion.div
         initial={{opacity:0}}
         animate={{opacity:1, transition:{delay:3, duration:1.5} }}   
-        className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-light_text ease-in-out duration-300 rounded-full lg:p-7 p-5 lg:text-5xl text-4xl mx-2">
+        className="bg-button_bg text-light_text hover:bg-dark_red hover:text-light_text ease-in-out duration-300 rounded-full lg:p-7 p-5 lg:text-5xl text-4xl mx-2">
           <Link href="https://www.linkedin.com/company/idea-aec/" legacyBehavior>
               <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <AiFillLinkedin/>

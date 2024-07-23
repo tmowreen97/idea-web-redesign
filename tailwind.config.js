@@ -48,8 +48,8 @@ module.exports = {
         light_text: '#fdf4eb',
         accent_bg: '#6c8a7e',
         dark_shadow: '#303D38',
-        button_bg: '#d15f3c',
-        button_shadow: '#e97451',
+        button_bg: '#921b25',
+        button_shadow: '#C1A6A3',
         nav_bar_highlight: '#FFBD5E',
         border: '#747d7a',
         

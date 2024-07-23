@@ -69,16 +69,16 @@ const Navbar = ({setLightLogo, lightLogo, customText, greenLogo}) => {
           {/* nav bar */}
           <ul color={{textColor}} style={{color :`${textColor}`}} className='hidden sm:flex '>
             <li className='p-4'>
-            <div className="dropdown inline-block relative">
+            <div className="dropdown inline-block relative" style={{color :`${textColor}`}}>
             <button aria-label='about_button' className="inline-flex items-center ">
-              <p style={{color :`${textColor}`}} className="mr-1 tracking-wide" id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>About</p>
+              <span  className="mr-1 tracking-wide" id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>About</span>
               <span id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}><BiChevronDown /></span>
             </button>
             <ul className="dropdown-menu absolute hidden pt-1 text-center">
-              <li className="bg-button_bg hover:bg-button_shadow w-[90px] ml-[-20px] rounded-xl">
+              <li className="bg-button_bg hover:bg-button_shadow w-[90px] ml-[-20px] rounded-xl text-light_text">
                 <Link className="p-2 block mb-1" href={'/#about'}>About Us</Link>
               </li>
-              <li className="bg-button_bg hover:bg-button_shadow w-[100px] ml-[-29px] rounded-xl">
+              <li className="bg-button_bg hover:bg-button_shadow w-[100px] ml-[-29px] rounded-xl text-light_text">
                 <Link className="p-2 block" href={'/team'}>Our Team</Link>
               </li>
             </ul>
@@ -136,11 +136,11 @@ const Navbar = ({setLightLogo, lightLogo, customText, greenLogo}) => {
                     <BiChevronDown />
                     {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> */}
                   </button>
-                  <ul className="dropdown-menu absolute left-0 hidden text-gray-70 text-center z-30">
-                    <li onClick={handleNav} className="bg-button_bg hover:bg-button_bg hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[200px] m-2 ">
+                  <ul className="dropdown-menu absolute left-0 hidden text-gray-70 text-center z-30 font-light">
+                    <li onClick={handleNav} className="bg-button_bg hover:bg-button_shadow text-light_text rounded-xl text-4xl p-2 w-[200px] m-2 ">
                       <Link className="block " href={'/#about'}>About Us</Link>
                     </li>
-                    <li onClick={handleNav} className="bg-button_bg hover:bg-button_bg hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[200px] m-2">
+                    <li onClick={handleNav} className="bg-button_bg hover:bg-button_shadow text-light_text rounded-xl text-4xl p-2 w-[200px] m-2">
                       <Link className="block" href={'/team'}>Our Team</Link>
                     </li>
                   </ul>
