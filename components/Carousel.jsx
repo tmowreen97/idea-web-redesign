@@ -78,7 +78,7 @@ function Carousel ({array,  custom, handleIndex}){
           <div
             key={i}
             onClick={() => goToSlide(i)}
-            className={ i===currentIndex ? 'text-2xl cursor-pointer text-button_shadow' : 'text-2xl cursor-pointer text-white' }
+            className={ i===currentIndex ? 'text-2xl cursor-pointer text-button_bg' : 'text-2xl cursor-pointer text-white' }
 
           >
             <RxDotFilled/>
