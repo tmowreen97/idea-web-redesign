@@ -49,7 +49,7 @@ export default function Footer({logo}){
           <div className="bg-border md:h-[290px] rounded-xl ">
             <div className="items-center justify-center">
               <form 
-              className="text-center pt-2 pb-4 items-center justify-center"
+              className="text-center pt-2 pb-4 items-center justify-center text-light_text"
               action="https://formsubmit.co/info@ideacsc.com" 
               method="POST">
                 <h2 className="text-light_text font-light">Contact Us</h2>
@@ -98,7 +98,7 @@ export default function Footer({logo}){
             </div>
           <div className="grid grid-cols-3 gap-6 text-center items-center justify-center">
             <div className="text-center items-center justify-center flex rounded-xl ">
-              <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-light_text ease-in-out duration-300 rounded-full p-4 text-2xl">
+              <div className="bg-button_bg text-dark_text hover:bg-dark_green hover:text-light_text ease-in-out duration-300 rounded-full p-4 text-2xl">
                 <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
                     <a target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                       <AiFillInstagram/>
@@ -107,7 +107,7 @@ export default function Footer({logo}){
               </div>
             </div>
             <div className="text-center items-center justify-center flex  p-1 rounded-xl ">
-              <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-light_text ease-in-out duration-300 rounded-full p-4 text-2xl">
+              <div className="bg-button_bg text-dark_text hover:bg-dark_green hover:text-light_text ease-in-out duration-300 rounded-full p-4 text-2xl">
                 <Link href="https://www.facebook.com/profile.php?id=100076951517206" legacyBehavior>
                     <a target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                       <AiFillFacebook/>
@@ -116,7 +116,7 @@ export default function Footer({logo}){
               </div>
             </div>
             <div className="text-center items-center justify-center flex  p-1 rounded-xl ">
-              <div className="bg-button_bg text-dark_text hover:bg-dark_red hover:text-light_text ease-in-out duration-300 rounded-full p-4 text-2xl">
+              <div className="bg-button_bg text-dark_text hover:bg-dark_green hover:text-light_text ease-in-out duration-300 rounded-full p-4 text-2xl">
                 <Link href="https://www.linkedin.com/company/idea-aec/" legacyBehavior>
                     <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                       <AiFillLinkedin/>
