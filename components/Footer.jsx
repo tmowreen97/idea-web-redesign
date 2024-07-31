@@ -49,7 +49,7 @@ export default function Footer({logo}){
           <div className="bg-border md:h-[290px] rounded-xl ">
             <div className="items-center justify-center">
               <form 
-              className="text-center pt-2 pb-4 items-center justify-center text-light_text"
+              className="text-center pt-2 pb-4 items-center justify-center text-primary_text"
               action="https://formsubmit.co/info@ideacsc.com" 
               method="POST">
                 <h2 className="text-light_text font-light">Contact Us</h2>
