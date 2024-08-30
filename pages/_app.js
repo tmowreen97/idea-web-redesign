@@ -6,6 +6,7 @@ import Head from 'next/head';
 import { Urbanist } from 'next/font/google'
 import { useState, useEffect, useReducer } from 'react'
 import {useRouter} from 'next/router';
+import { Analytics } from "@vercel/analytics/react"
 /** @type {import("next").Metadata} */
 
 
@@ -45,6 +46,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       {/* <Navbar setLightLogo={setLightLogo} lightLogo={lightLogo} /> */}
       <Component {...pageProps} />
+      <Analytics/>
       <Footer logo={logo} setLogo={setLogo}/>
     </main>
     
