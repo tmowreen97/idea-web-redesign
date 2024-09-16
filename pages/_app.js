@@ -40,7 +40,6 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>IDEA CSC | Construction Solutions Company</title>
         <link className=''rel="icon" href="/assets/logos/idea-csc-symbol.ico"  />
-        <script defer data-domain="ideacsc.com" src="https://plausible.io/js/script.js"></script>
         <meta
             name="description"
             content="IDEA CSC (Construction Solutions Company), a sister company to IDEA AEC, provides Inter-Disciplinary Construction and Engineering services in Bangladesh."
