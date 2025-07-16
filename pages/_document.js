@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <script defer data-domain="ideacsc.com" src="https://plausible.io/js/script.js"></script>
         <meta
-            name="descriptin"
+            name="description"
             content="IDEA CSC (Construction Solutions Company), a sister company to IDEA AEC, provides Inter-Disciplinary Construction and Engineering services in Bangladesh."
             key="desc"
           />
